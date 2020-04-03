@@ -1,0 +1,29 @@
+<root>
+
+	<styles>
+		<include src="file://{resources}/styles/base_styles.css" />
+		<include src="file://{resources}/styles/info_panels.css" />
+	</styles>
+
+	<script>
+    (function()
+    {
+      CustomNetTables.SubscribeNetTableListener("game", UpdateCount);
+      UpdateCount();
+    })();
+    function UpdateCount()
+    {
+      $("#count").text = "Hidden Fallout Figurines: " + CustomNetTables.GetTableValue("game", "count").value;
+    }
+	</script>
+
+	<ClientUIDialogPanel class="InWorldInfoPanel">
+		<Panel class="Page" id="byteframe2_Welcome">
+			<Panel class="TextArea">
+				<Label class="Text" text="#byteframe2_Welcome_Text" />
+        <Label id="count" class="Desc" text="undefined" />
+			</Panel>
+		</Panel>
+	</ClientUIDialogPanel>
+
+</root>

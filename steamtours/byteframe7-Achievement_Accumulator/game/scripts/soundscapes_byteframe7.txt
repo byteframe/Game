@@ -1,0 +1,9 @@
+"soundscape_byteframe7"
+{
+    "playlooping"
+    {
+      "volume"        "1.0"
+      "pitch"         "100"
+      "wave"          "sounds/hub_amb_lp_01.vsnd"
+    }
+}

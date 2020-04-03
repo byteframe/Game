@@ -1,0 +1,51 @@
+<root>
+
+	<styles>
+		<include src="file://{resources}/styles/base_styles.css" />
+		<include src="file://{resources}/styles/info_panels.css" />
+	</styles>
+
+	<script>
+    (function()
+    {
+      CustomNetTables.SubscribeNetTableListener("game", UpdateCount);
+      UpdateCount();
+      ChangeFortune()
+    })();
+    function ResetFallout() 
+    {
+      GameEvents.SendCustomGameEventToServer( "reset_fallout", { } );
+    }
+    function UpdateCount()
+    {
+      $("#count").text = "Hidden Fallout People: " + CustomNetTables.GetTableValue("game", "count").value;
+    }
+    function ChangeFortune()
+    {
+      GameEvents.SendCustomGameEventToServer( "change_fortune", { } );
+      $("#fortune").text = $.Localize("#byteframe4_wisdom_text" + Math.floor(Math.random()*549));
+    }
+	</script>
+
+	<ClientUIDialogPanel class="InWorldInfoPanel AlwaysVisible">
+
+    <Panel class="InfoDialogButton" style="	vertical-align: top; margin-top: 30px;">
+      <Button id="ResetFallout" class="DialogButton Visible" onactivate="ResetFallout()">
+        <Label text="Reset Fallout" />
+      </Button>
+    </Panel>
+
+    <Panel class="TextArea Big">
+      <Label id="count" class="Desc" style="margin-bottom: 30px;" text="UNDEFINED" />
+      <Label id="fortune" class="Text" style="margin-bottom: 20px; font-size: 42px; color: blue;" text="#byteframe4_wisdom_text42" />
+    </Panel>
+
+    <Panel class="InfoDialogButton">
+      <Button id="ChangeFortune" class="DialogButton Visible" onactivate="ChangeFortune()">
+        <Label text="New Fortune" />
+      </Button> 
+    </Panel>
+
+	</ClientUIDialogPanel>
+
+</root>
