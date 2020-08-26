@@ -1,0 +1,174 @@
+Here are all the models (with material files) from Left 4 Dead 2 converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on these asset packs.
+
+I would have included the materials in one download but this was too big for the VPK builder and it runs out of memory and crashes. This was the case with Portal 2. Unlike that game, L4D2 used many props and assets from prior Valve titles, like CSS and Half-Life 2. In trying to get the VPK build to finish, the materials for model files were put into this pack, but it was still not enough, so all compiled files from L4D2 that were found in any other asset pack was culled for release. Please include those other packs to fix a few missing textures, or to have access to all assets that were found in the Left 4 Dead game. Still, the Left 4 Dead variant of the file that was lost might have been newer, or had more material features.
+
+I could not get the following models to compile, including all the survivors. I have trouble with these character models.
+
+-- c1_chargerexit\doors_glass_5
+-- c1_chargerexit\doors_glass_6
+-- c1_chargerexit\plywood_cent
+-- c5_bridge_destruction\bridge_left_tower
+-- c5_bridge_destruction\bridge_right_tower
+-- c5m3_bridge_overpass_debris\bridgedebris_set_a
+-- destruction_tanker\destruction_tanker_debris_1
+-- destruction_tanker\destruction_tanker_debris_2
+-- destruction_tanker\destruction_tanker_debris_4
+-- hybridphysx\map1_tarp_4
+-- hybridphysx\map1_tarp_3
+-- hybridphysx\map1_tarp_2
+-- hybridphysx\map1_tarp_1
+-- hybridphysx\gasstationpart_5
+-- hybridphysx\gasstationpart_4
+-- hybridphysx\gasstationpart_3
+-- hybridphysx\gasstationpart_1
+-- hybridphysx\airliner_left_wing_secondary
+-- hybridphysx\airliner_left_wing_secondary_4
+-- hybridphysx\airliner_left_wing_secondary_3
+-- hybridphysx\airliner_left_wing_secondary_2
+-- hybridphysx\airliner_left_wing_secondary_1
+-- infected\boomer
+-- infected\boomette
+-- infected\common_morph_test
+-- infected\witch
+-- props_destruction\general_dest_concrete_set
+-- props_destruction\general_dest_roof_set
+-- survivors\survivor_biker
+-- survivors\survivor_biker_light
+-- survivors\survivor_coach
+-- survivors\survivor_gambler
+-- survivors\survivor_manager
+-- survivors\survivor_mechanic
+-- survivors\survivor_manvet
+-- survivors\survivor_producer
+-- survivors\survivor_teenangst
+-- survivors\survivor_teenangst_light
+
+A list of all (compiled) files shared by other asset packs that were culled for this release can be found here: https://paste.ee/p/VM0rJ
+
+TOTAL: 4379 vmdl_c files, 2632 vmat_c
+VERSION: 1
+
+
+Here are all the materials (sans model files) from Left 4 Dead 2 converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2104098750 for more information on the Left 4 Dead 2 asset packs.
+
+Like the HL2 pack, certain tool/developer assets were not included, either because they were a duplicate, or seemed otherwise dubious to include. They include the following:
+
+materials/
+-- debug/debugempty
+-- debug/particleerror
+-- dev/dev_measuredoor01
+-- dev/dev_measuregeneric01
+-- dev/dev_measuregeneric01b
+-- dev/dev_normal
+-- dev/flat_normal
+-- dev/reflectivity_*
+-- editor/*
+-- tools/*
+-- models/editor/*
+-- models/props_debris/reflectivity_50b
+-- models/props_fairgrounds/*reflectivity_50b
+-- models/props_fortifications/reflectivity_50b
+-- models/props_mill/reflectivity_50b
+-- vgui/hud/800corner*
+-- vgui/white
+-- vgui/white_additive
+models/
+-- editor/*
+
+Observe the following material changes:
+
+> //TextureNormal "materials/nature/water_frame01_dudv.tga"
+materials/nature/water_swamp_beneath.vmat
+materials/liquids/militiawaterbeneath.vmat
+materials/liquids/ruralwater_drainage_pretty.vmat
+materials/liquids/ruralwater_river.vmat
+materials/liquids/water_drainage_lowend.vmat
+materials/liquids/water_drainage_refract.vmat
+materials/dev/dev_water2.vmat
+materials/dev/dev_water2_cheap.vmat
+materials/dev/dev_water3.vmat
+materials/dev/dev_water3_beneath.vmat
+materials/dev/dev_water3_exp.vmat
+materials/dev/dev_water4.vmat
+materials/dev/dev_water5.vmat
+materials/dev/dev_waterbeneath2.vmat
+> //TextureNormal "materials/dev/water_dudv.tga"
+materials/dev/ocean.vmat
+materials/dev/oceanbeneath.vmat
+> //TextureTranslucency "materials/_alpha.tga"
+materials/vgui/hud/scope_sniper_ll.vmat
+materials/vgui/hud/scope_sniper_lr.vmat
+materials/vgui/hud/scope_sniper_ul.vmat
+materials/vgui/hud/scope_sniper_ur.vmat
+materials/particle/screenspace_fog.vmat
+materials/particle/warp_pool_01.vmat
+materials/particle/warp_ripple.vmat
+materials/particle/warp_ripple2.vmat
+materials/particle/warp_ripple3.vmat
+materials/particle/warp_ripple3_noz.vmat
+materials/particle/water/water_beam_01_warp_alpha.vmat
+< TextureColor "materials/vgui/white.tga"
+> TextureColor "materials/sprites/white.tga"
+materials/effects/flashbang.vmat
+materials/effects/flashbang_white.vmat
+materials/effects/nightvision.vmat
+< TextureColor "materials/white.tga"
+> TextureColor "materials/sprites/white.tga"
+materials/dev/glow_color.vmat
+> //TextureReflectance "materials/concrete/blacktop_ext_01_height-ssbump_alpha.tga"
+materials/concrete/blend_blacktop_01_wet.vmat
+> //TextureReflectance "materials/stone/cobblestone_01-ssbump_alpha.tga"
+materials/concrete/blend_blacktop_cobb_01.vmat
+> //TextureReflectance "materials/stone/cobblestone_02-ssbump_alpha.tga"
+materials/concrete/blend_blacktop_cobb_02.vmat
+> //TextureReflectance "materials/concrete/sidewalk_01_ssb-ssbump_alpha.tga"
+materials/concrete/blend_sidewalk_01_wet.vmat
+> //TextureReflectance "materials/concrete/road01turn_wet_ref.tga"
+materials/concrete/road01turn_wet.vmat
+< TextureColor "materials/models//3dm_beehive.tga"
+> TextureColor "materials/gm_forest/3dm_beehive.tga"
+materials/gm_forest/3dm_beehive.vmat
+< TextureColor "materials/models/gm_forest/grovedenstam.tga"
+> TextureColor "materials/gm_forest/grovedenstam.tga"
+materials/gm_forest/grovedenstam.vmat
+< TextureColor "materials/gm_forest/linde_tak_1.vmt.tga"
+> TextureColor "materials/gm_forest/linde_tak_1.tga"
+< TextureTranslucency "materials/gm_forest/linde_tak_1.vmt_alpha.tga"
+> //TextureTranslucency "materials/gm_forest/linde_tak_1.vmt_alpha.tga"
+materials/gm_forest/linde_tak_1.vmat
+> //TextureNormal "materials/concrete/concrete_ext_04_height-ssbump.tga"
+materials/models/c5_bridge_destruction/destruction_concrete_ext_04.vmat
+> //TextureReflectance "materials/models/props_fairgrounds/quad_light_envmap_mask.tga"
+materials/models/props_fairgrounds/quad_light.vmat
+> //TextureReflectance "materials/models/props_interiors/waterheater_alpha.tga"
+materials/models/props_interiors/waterheater.vmat
+> //TextureColor "materials/Dev/reflectivity_70b.tga"
+materials/models/props_mall/info_desk_signage.vmat
+> //TextureColor "materials/Dev/reflectivity_10b.tga"
+materials/models/props_mall/skylight_frame.vmat
+< TextureNormal "materials/models/props_misc/hospital_banner_normal.psd.tga"
+> TextureNormal "materials/models/props_misc/hospital_banner_normal.tga"
+materials/models/props_misc/hotel_banner.vmat
+< TextureReflectance "materials/Models/props_vehicles/police_cab_ref.tga.tga"
+> TextureReflectance "materials/Models/props_vehicles/police_cab_ref.tga"
+materials/models/props_vehicles/police_cab_city.vmat
+< TextureReflectance "materials/Models/props_vehicles/police_cab_ref.tga.tga"
+> TextureReflectance "materials/Models/props_vehicles/police_cab_ref.tga"
+materials/models/props_vehicles/police_cab_rural.vmat
+< TextureLayer1Color "materials/tools/toolsblack.tga"
+> //TextureLayer1Color "materials/vgui/black.tga"
+materials/nature/blend_grass_black_01.vmat
+> //TextureReflectance "materials/sewage/sewagescumintersection_drainage01_normal_alpha.tga"
+materials/sewage/sewagescumintersection_drainage01.vmat
+> //TextureNormal "materials/TextureHub/destruction/destruct_stonetiles1_norm_spi.tga"
+materials/texturehub/destruction/destruct_stonetiles1_spi.vmat
+< TextureColor "materials/zfpx/zwaterstream.tga"
+> TextureColor "materials/ti/zwaterstream.tga"
+< TextureNormal "materials/zfpx/zwaterstream.tga"
+> TextureNormal "materials/ti/zwaterstream.tga"
+< TextureTranslucency "materials/zfpx/zwaterstream_alpha.tga"
+> //TextureTranslucency "materials/zfpx/zwaterstream_alpha.tga"
+materials/ti/zwaterstream.vmat
+
+TOTAL: 2522 vmat_c files
+VERSION: 1

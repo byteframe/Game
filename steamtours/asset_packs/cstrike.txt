@@ -1,0 +1,33 @@
+Here are all the materials and models from Counter-Strike: Source converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on these asset packs. Most importantly, a few models/materials will fail out as red outlines unless you subscribe to and include the Half-Life 2 pack.
+
+Like the HL2 pack, certain tool/developer assets were not included, either because they were a duplicate, or seemed otherwise dubious to include. They include the following:
+
+-- materials/dev/upscale
+-- materials/tools/*
+-- materials/models/shadertest/*
+-- models/shadertest/*,
+
+I was unable to get the following models to build:
+
+-- models/characters/hostage01
+-- models/characters/hostage02
+
+Observe the following material changes:
+
+> //TextureReflectance "materials/de_aztec/ground01grass_normal_alpha.tga"
+materials/de_aztec/ground01_blend.vmat
+> //TextureReflectance "materials/de_aztec/ground01grass_normal_alpha.tga"
+materials/de_aztec/ground02_blend.vmat
+> //TextureReflectance "materials/de_aztec/swampground01a_normal_alpha.tga"
+materials/de_aztec/swampground_blend.vmat
+> //TextureReflectance "materials/dev/water_normal_alpha.tga"
+materials/de_nuke/nukwater_movingplane.vmat
+... (the rest were many related to cs_havana, and were maybe unused files, that I fixed anyway, see: https://paste.ee/p/7riIE
+
+Please see the following link for the full list of conflicts with the Half-Life 2 pack: https://paste.ee/p/koqMX Typically the CSS version of the file will be selected over hl2, as it was in the original game. Finally, the following is a list of potential conflicts with official valve steamtours releases. It might not be fully accurate.
+
+-- asset_pack_hlvr.txt:materials/brick/brickwall031d.vmat_c
+
+TOTAL: 3608 vmat_c files, 1407 vmdl_c files
+VERSION: 2
+CHANGES: built with hl2 gameinfo instead of with hl2 materials, saved 2 hostages (I had all 4 working at one point!?)

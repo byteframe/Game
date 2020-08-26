@@ -1,0 +1,1325 @@
+Team Fortress 2/:
+total 188
+drwxrwxrwx 1 byteframe users   4096 May 18 10:57 bin
+drwxrwxrwx 1 byteframe users   4096 May 18 10:57 hl2
+-rwxrwxrwx 1 byteframe users 139552 May 18 10:55 hl2.exe
+drwxrwxrwx 1 byteframe users   4096 May 18 10:57 platform
+drwxrwxrwx 1 byteframe users   4096 May 18 10:57 tf
+-rwxrwxrwx 1 byteframe users  47432 May 18 10:55 thirdpartylegalnotices.txt
+
+Team Fortress 2/bin:
+total 93932
+-rwxrwxrwx 1 byteframe users   888608 May 18 10:44 AdminServer.dll
+-rwxrwxrwx 1 byteframe users   341355 May 18 10:44 base.fgd
+-rwxrwxrwx 1 byteframe users     1740 May 18 10:44 basehaptics.txt
+-rwxrwxrwx 1 byteframe users   233760 May 18 10:55 binkw32.dll
+-rwxrwxrwx 1 byteframe users   347424 May 18 10:44 bsppack.dll
+-rwxrwxrwx 1 byteframe users   355328 May 18 10:44 bspzip.exe
+-rwxrwxrwx 1 byteframe users   177440 May 18 10:55 bugreporter.dll
+-rwxrwxrwx 1 byteframe users   195360 May 18 10:55 bugreporter_filequeue.dll
+-rwxrwxrwx 1 byteframe users   162080 May 18 10:55 bugreporter_public.dll
+-rwxrwxrwx 1 byteframe users   216576 May 18 10:55 captioncompiler.exe
+-rwxrwxrwx 1 byteframe users      244 May 18 10:55 check_sdk_env.bat
+-rwxrwxrwx 1 byteframe users    21063 May 18 10:55 CmdSeq.wc
+-rwxrwxrwx 1 byteframe users   278816 May 18 10:44 datacache.dll
+-rwxrwxrwx 1 byteframe users  1040384 May 18 10:44 datamodel.dll
+-rwxrwxrwx 1 byteframe users   102400 May 18 10:55 demoinfo.exe
+-rwxrwxrwx 1 byteframe users   712704 May 18 10:44 dmserializers.dll
+-rwxrwxrwx 1 byteframe users   552960 May 18 10:44 dmxconvert.exe
+-rwxrwxrwx 1 byteframe users  1562112 May 18 10:44 dmxedit.exe
+-rwxrwxrwx 1 byteframe users   398709 May 18 10:44 dxsupport.cfg
+-rwxrwxrwx 1 byteframe users   116397 May 18 10:55 dxsupport.csv
+-rwxrwxrwx 1 byteframe users      544 May 18 10:55 dxsupport_episodic.cfg
+-rwxrwxrwx 1 byteframe users   310041 May 18 10:44 dxsupport_sp.cfg
+-rwxrwxrwx 1 byteframe users  3015680 May 18 10:44 elementviewer.exe
+-rwxrwxrwx 1 byteframe users  4158240 May 18 10:44 engine.dll
+-rwxrwxrwx 1 byteframe users      278 May 18 10:55 Faceposer.bat
+-rwxrwxrwx 1 byteframe users  2300704 May 18 10:44 FileSystemOpenDialog.dll
+-rwxrwxrwx 1 byteframe users   666400 May 18 10:44 FileSystem_Stdio.dll
+drwxrwxrwx 1 byteframe users     4096 May 18 10:57 filters
+-rwxrwxrwx 1 byteframe users  2117408 May 18 10:44 GameUI.dll
+-rwxrwxrwx 1 byteframe users   225792 May 18 10:55 glview.exe
+-rwxrwxrwx 1 byteframe users   207524 May 18 10:55 halflife2.fgd
+-rwxrwxrwx 1 byteframe users      266 May 18 10:55 Hammer.bat
+-rwxrwxrwx 1 byteframe users  5777696 May 18 10:44 hammer_dll.dll
+-rwxrwxrwx 1 byteframe users   198656 May 18 10:55 hammer.exe
+-rwxrwxrwx 1 byteframe users   252704 May 18 10:55 haptics.dll
+-rwxrwxrwx 1 byteframe users   725504 May 18 10:44 height2normal.exe
+-rwxrwxrwx 1 byteframe users    29926 May 18 10:55 height2normal.ico
+-rwxrwxrwx 1 byteframe users   736256 May 18 10:44 height2ssbump.exe
+-rwxrwxrwx 1 byteframe users  1614848 May 18 10:44 hlfaceposer.exe
+-rwxrwxrwx 1 byteframe users      267 May 18 10:55 HLMV.bat
+-rwxrwxrwx 1 byteframe users   499200 May 18 10:44 hlmv.exe
+-rwxrwxrwx 1 byteframe users 10899456 May 18 10:44 icudt42.dll
+-rwxrwxrwx 1 byteframe users  9955112 May 18 10:44 icudt.dll
+-rwxrwxrwx 1 byteframe users   179488 May 18 10:55 inputsystem.dll
+-rwxrwxrwx 1 byteframe users  1981728 May 18 10:44 itemtest.com
+-rwxrwxrwx 1 byteframe users   210720 May 18 10:55 launcher.dll
+-rwxrwxrwx 1 byteframe users   323584 May 18 10:44 libcurl.dll
+-rwxrwxrwx 1 byteframe users  6709576 May 18 10:44 libfbxsdk.dll
+-rwxrwxrwx 1 byteframe users    81920 May 18 10:55 libsasl.dll
+-rwxrwxrwx 1 byteframe users  1466368 May 18 10:44 MakeScenesImage.exe
+-rwxrwxrwx 1 byteframe users  1244960 May 18 10:44 MaterialSystem.dll
+-rwxrwxrwx 1 byteframe users   162080 May 18 10:55 mdllib.dll
+-rwxrwxrwx 1 byteframe users   736768 May 18 10:44 mksheet.exe
+-rwxrwxrwx 1 byteframe users   269312 May 18 10:44 motionmapper.exe
+drwxrwxrwx 1 byteframe users     4096 May 18 10:57 motionmappertemplates
+-rwxrwxrwx 1 byteframe users   453920 May 18 10:44 Mss32.dll
+-rwxrwxrwx 1 byteframe users    14624 May 18 10:55 mssdolby.flt
+-rwxrwxrwx 1 byteframe users    20256 May 18 10:55 mssds3d.flt
+-rwxrwxrwx 1 byteframe users    62240 May 18 10:55 mssdsp.flt
+-rwxrwxrwx 1 byteframe users    62752 May 18 10:55 msseax.flt
+-rwxrwxrwx 1 byteframe users    78624 May 18 10:55 mssmp3.asi
+-rwxrwxrwx 1 byteframe users    19744 May 18 10:55 msssrs.flt
+-rwxrwxrwx 1 byteframe users   160032 May 18 10:55 mssvoice.asi
+-rwxrwxrwx 1 byteframe users   348160 May 18 10:44 msvcr71.dll
+-rwxrwxrwx 1 byteframe users   106272 May 18 10:55 mysql_wrapper.dll
+-rwxrwxrwx 1 byteframe users   721408 May 18 10:44 normal2ssbump.exe
+-rwxrwxrwx 1 byteframe users    65312 May 18 10:55 openvr_api.dll
+-rwxrwxrwx 1 byteframe users   648704 May 18 10:44 pfm2tgas.exe
+drwxrwxrwx 1 byteframe users     4096 May 18 10:57 phonemeextractors
+-rwxrwxrwx 1 byteframe users  3152896 May 18 10:44 qc_eyes.exe
+-rwxrwxrwx 1 byteframe users   918304 May 18 10:44 replay.dll
+-rwxrwxrwx 1 byteframe users   152352 May 18 10:55 scenefilecache.dll
+-rwxrwxrwx 1 byteframe users      110 May 18 10:55 sdkenginetools.txt
+-rwxrwxrwx 1 byteframe users   781600 May 18 10:44 SDL2.dll
+-rwxrwxrwx 1 byteframe users   937760 May 18 10:44 ServerBrowser.dll
+-rwxrwxrwx 1 byteframe users   168736 May 18 10:55 serverplugin_empty.dll
+-rwxrwxrwx 1 byteframe users      588 May 18 10:55 set_sdk_env.bat
+-rwxrwxrwx 1 byteframe users   967456 May 18 10:44 shaderapidx9.dll
+-rwxrwxrwx 1 byteframe users   111904 May 18 10:55 shaderapiempty.dll
+-rwxrwxrwx 1 byteframe users   476960 May 18 10:44 shadercompile_dll.dll
+-rwxrwxrwx 1 byteframe users   135680 May 18 10:55 shadercompile.exe
+-rwxrwxrwx 1 byteframe users   622592 May 18 10:44 sixense.dll
+-rwxrwxrwx 1 byteframe users   294912 May 18 10:44 sixense_utils.dll
+-rwxrwxrwx 1 byteframe users   187680 May 18 10:55 SoundEmitterSystem.dll
+-rwxrwxrwx 1 byteframe users   185120 May 18 10:55 soundsystem.dll
+-rwxrwxrwx 1 byteframe users   167712 May 18 10:55 sourcevr.dll
+-rwxrwxrwx 1 byteframe users   195072 May 18 10:55 splitskybox.exe
+-rwxrwxrwx 1 byteframe users   179488 May 18 10:55 stdshader_dbg.dll
+-rwxrwxrwx 1 byteframe users   258848 May 18 10:55 stdshader_dx6.dll
+-rwxrwxrwx 1 byteframe users   190240 May 18 10:55 stdshader_dx7.dll
+-rwxrwxrwx 1 byteframe users   373536 May 18 10:44 stdshader_dx8.dll
+-rwxrwxrwx 1 byteframe users   589088 May 18 10:44 stdshader_dx9.dll
+-rwxrwxrwx 1 byteframe users   257312 May 18 10:55 steam_api.dll
+-rwxrwxrwx 1 byteframe users   513216 May 18 10:44 steamerrorreporter.exe
+-rwxrwxrwx 1 byteframe users  2473248 May 18 10:44 steamnetworkingsockets.dll
+-rwxrwxrwx 1 byteframe users  1676288 May 18 10:44 studiomdl.exe
+-rwxrwxrwx 1 byteframe users   529696 May 18 10:44 StudioRender.dll
+-rwxrwxrwx 1 byteframe users    75264 May 18 10:55 telemetry32.dll
+-rwxrwxrwx 1 byteframe users   378144 May 18 10:44 texturecompile_dll.dll
+-rwxrwxrwx 1 byteframe users   122478 May 18 10:55 tf.fgd
+-rwxrwxrwx 1 byteframe users   317216 May 18 10:44 tier0.dll
+drwxrwxrwx 1 byteframe users     4096 May 18 10:57 tools
+-rwxrwxrwx 1 byteframe users   104736 May 18 10:55 unicode.dll
+-rwxrwxrwx 1 byteframe users   245408 May 18 10:55 unicows.dll
+-rwxrwxrwx 1 byteframe users    81184 May 18 10:55 unitlib.dll
+-rwxrwxrwx 1 byteframe users   125440 May 18 10:55 valvedeviceapi.dll
+-rwxrwxrwx 1 byteframe users   191776 May 18 10:55 vaudio_celt.dll
+-rwxrwxrwx 1 byteframe users   106784 May 18 10:55 vaudio_miles.dll
+-rwxrwxrwx 1 byteframe users   233248 May 18 10:55 vaudio_speex.dll
+-rwxrwxrwx 1 byteframe users  1266688 May 18 10:44 vbsp.exe
+-rwxrwxrwx 1 byteframe users   314368 May 18 10:44 vbspinfo.exe
+-rwxrwxrwx 1 byteframe users   376096 May 18 10:44 vgui2.dll
+-rwxrwxrwx 1 byteframe users  1341728 May 18 10:44 vguimatsurface.dll
+-rwxrwxrwx 1 byteframe users       20 May 18 10:55 vidcfg.bin
+-rwxrwxrwx 1 byteframe users   166176 May 18 10:55 video_bink.dll
+-rwxrwxrwx 1 byteframe users   172320 May 18 10:55 video_quicktime.dll
+-rwxrwxrwx 1 byteframe users   153888 May 18 10:55 video_services.dll
+-rwxrwxrwx 1 byteframe users   909088 May 18 10:44 vphysics.dll
+-rwxrwxrwx 1 byteframe users   643584 May 18 10:44 vpk.exe
+-rwxrwxrwx 1 byteframe users  1433888 May 18 10:44 vrad_dll.dll
+-rwxrwxrwx 1 byteframe users   136192 May 18 10:55 vrad.exe
+-rwxrwxrwx 1 byteframe users   211744 May 18 10:55 vstdlib.dll
+-rwxrwxrwx 1 byteframe users      240 May 18 10:55 vtex.bat
+-rwxrwxrwx 1 byteframe users   368640 May 18 10:44 vtex.dll
+-rwxrwxrwx 1 byteframe users   844064 May 18 10:44 vtex_dll.dll
+-rwxrwxrwx 1 byteframe users   125952 May 18 10:55 vtex.exe
+-rwxrwxrwx 1 byteframe users    29926 May 18 10:55 vtex.ico
+-rwxrwxrwx 1 byteframe users   740864 May 18 10:44 vtf2tga.exe
+-rwxrwxrwx 1 byteframe users   548128 May 18 10:44 vvis_dll.dll
+-rwxrwxrwx 1 byteframe users   126464 May 18 10:55 vvis.exe
+-rwxrwxrwx 1 byteframe users    68888 May 18 10:55 xinput1_3.dll
+
+Team Fortress 2/bin/filters:
+total 60
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 add1x1.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 add3x3.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 add5x5.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 add7x7.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 add9x9.ico
+-rwxrwxrwx 1 byteframe users 5128 May 18 10:55 dispfilters.txt
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 flat1x1.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 flat3x3.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 flat5x5.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 flat7x7.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 flat9x9.ico
+-rwxrwxrwx 1 byteframe users  630 May 18 10:55 raiseto1x1.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 raiseto5x5.ico
+-rwxrwxrwx 1 byteframe users 3126 May 18 10:55 smooth3x3.ico
+
+Team Fortress 2/bin/motionmappertemplates:
+total 48
+-rwxrwxrwx 1 byteframe users  759 May 18 10:55 default.mmt
+-rwxrwxrwx 1 byteframe users 1142 May 18 10:55 rootLock.mmt
+-rwxrwxrwx 1 byteframe users 1356 May 18 10:55 template1.mmt
+-rwxrwxrwx 1 byteframe users 1203 May 18 10:55 template2.mmt
+-rwxrwxrwx 1 byteframe users 1235 May 18 10:55 template3.mmt
+-rwxrwxrwx 1 byteframe users 1251 May 18 10:55 template4.mmt
+-rwxrwxrwx 1 byteframe users 1268 May 18 10:55 template5.mmt
+-rwxrwxrwx 1 byteframe users 1323 May 18 10:55 template6.mmt
+-rwxrwxrwx 1 byteframe users 1284 May 18 10:55 template7.mmt
+-rwxrwxrwx 1 byteframe users 1076 May 18 10:55 twoHandedShoulderWeapon.mmt
+-rwxrwxrwx 1 byteframe users 1049 May 18 10:55 twoHandedWeapon.mmt
+-rwxrwxrwx 1 byteframe users  839 May 18 10:55 walk.mmt
+
+Team Fortress 2/bin/phonemeextractors:
+total 780
+-rwxrwxrwx 1 byteframe users 471040 May 18 10:44 ims_helper.dll
+-rwxrwxrwx 1 byteframe users 162080 May 18 10:55 phonemeextractor.dll
+-rwxrwxrwx 1 byteframe users 161568 May 18 10:55 phonemeextractor_ims.dll
+
+Team Fortress 2/bin/tools:
+total 7896
+-rwxrwxrwx 1 byteframe users 1432352 May 18 10:44 commedit.dll
+-rwxrwxrwx 1 byteframe users 3521824 May 18 10:44 pet.dll
+-rwxrwxrwx 1 byteframe users 3125536 May 18 10:44 vmt.dll
+
+Team Fortress 2/hl2:
+total 2727000
+-rwxrwxrwx 1 byteframe users 119280838 May 18 10:44 hl2_misc_000.vpk
+-rwxrwxrwx 1 byteframe users 116673308 May 18 10:44 hl2_misc_001.vpk
+-rwxrwxrwx 1 byteframe users 112736030 May 18 10:44 hl2_misc_002.vpk
+-rwxrwxrwx 1 byteframe users 121877968 May 18 10:44 hl2_misc_003.vpk
+-rwxrwxrwx 1 byteframe users    721800 May 18 10:44 hl2_misc_dir.vpk
+-rwxrwxrwx 1 byteframe users 133335825 May 18 10:44 hl2_sound_misc_000.vpk
+-rwxrwxrwx 1 byteframe users 133272663 May 18 10:44 hl2_sound_misc_001.vpk
+-rwxrwxrwx 1 byteframe users 133054761 May 18 10:44 hl2_sound_misc_002.vpk
+-rwxrwxrwx 1 byteframe users    113317 May 18 10:45 hl2_sound_misc_dir.vpk
+-rwxrwxrwx 1 byteframe users  20868868 May 18 10:44 hl2_sound_misc.vpk.sound.cache
+-rwxrwxrwx 1 byteframe users 119762707 May 18 10:44 hl2_sound_vo_english_000.vpk
+-rwxrwxrwx 1 byteframe users 119927424 May 18 10:44 hl2_sound_vo_english_001.vpk
+-rwxrwxrwx 1 byteframe users 119668742 May 18 10:44 hl2_sound_vo_english_002.vpk
+-rwxrwxrwx 1 byteframe users 120245738 May 18 10:44 hl2_sound_vo_english_003.vpk
+-rwxrwxrwx 1 byteframe users 119467000 May 18 10:44 hl2_sound_vo_english_004.vpk
+-rwxrwxrwx 1 byteframe users     97210 May 18 10:45 hl2_sound_vo_english_dir.vpk
+-rwxrwxrwx 1 byteframe users  29164433 May 18 10:44 hl2_sound_vo_english.vpk.sound.cache
+-rwxrwxrwx 1 byteframe users 105604395 May 18 10:44 hl2_textures_000.vpk
+-rwxrwxrwx 1 byteframe users 105598908 May 18 10:44 hl2_textures_001.vpk
+-rwxrwxrwx 1 byteframe users 105549960 May 18 10:44 hl2_textures_002.vpk
+-rwxrwxrwx 1 byteframe users 108974645 May 18 10:44 hl2_textures_003.vpk
+-rwxrwxrwx 1 byteframe users 106515966 May 18 10:44 hl2_textures_004.vpk
+-rwxrwxrwx 1 byteframe users 209442559 May 18 10:44 hl2_textures_005.vpk
+-rwxrwxrwx 1 byteframe users 109119875 May 18 10:44 hl2_textures_006.vpk
+-rwxrwxrwx 1 byteframe users 105222483 May 18 10:44 hl2_textures_007.vpk
+-rwxrwxrwx 1 byteframe users 106273432 May 18 10:44 hl2_textures_008.vpk
+-rwxrwxrwx 1 byteframe users 209601866 May 18 10:44 hl2_textures_009.vpk
+-rwxrwxrwx 1 byteframe users    213663 May 18 10:46 hl2_textures_dir.vpk
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 media
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 resource
+
+Team Fortress 2/hl2/media:
+total 14332
+-rwxrwxrwx 1 byteframe users       17 May 18 10:55 startupvids.txt
+-rwxrwxrwx 1 byteframe users 14672796 May 18 10:44 valve.bik
+
+Team Fortress 2/hl2/resource:
+total 50108
+-rwxrwxrwx 1 byteframe users     326 May 18 10:45 block.cur
+-rwxrwxrwx 1 byteframe users   28610 May 18 10:45 boxrocket_english.txt
+-rwxrwxrwx 1 byteframe users   55464 May 18 10:45 boxrocket.ttf
+-rwxrwxrwx 1 byteframe users    2066 May 18 10:46 chat_brazilian.txt
+-rwxrwxrwx 1 byteframe users    2122 May 18 10:46 chat_bulgarian.txt
+-rwxrwxrwx 1 byteframe users    2006 May 18 10:46 chat_czech.txt
+-rwxrwxrwx 1 byteframe users    2014 May 18 10:45 chat_danish.txt
+-rwxrwxrwx 1 byteframe users    2052 May 18 10:46 chat_dutch.txt
+-rwxrwxrwx 1 byteframe users     798 May 18 10:46 chat_english.txt
+-rwxrwxrwx 1 byteframe users    2066 May 18 10:46 chat_finnish.txt
+-rwxrwxrwx 1 byteframe users    2038 May 18 10:46 chat_french.txt
+-rwxrwxrwx 1 byteframe users    2078 May 18 10:46 chat_german.txt
+-rwxrwxrwx 1 byteframe users    2072 May 18 10:46 chat_greek.txt
+-rwxrwxrwx 1 byteframe users    2024 May 18 10:46 chat_hungarian.txt
+-rwxrwxrwx 1 byteframe users    2052 May 18 10:46 chat_italian.txt
+-rwxrwxrwx 1 byteframe users    1860 May 18 10:46 chat_japanese.txt
+-rwxrwxrwx 1 byteframe users    1832 May 18 10:45 chat_koreana.txt
+-rwxrwxrwx 1 byteframe users    1832 May 18 10:45 chat_korean.txt
+-rwxrwxrwx 1 byteframe users    2069 May 18 10:45 chat_latam.txt
+-rwxrwxrwx 1 byteframe users    2044 May 18 10:46 chat_norwegian.txt
+-rwxrwxrwx 1 byteframe users    2042 May 18 10:46 chat_polish.txt
+-rwxrwxrwx 1 byteframe users    2092 May 18 10:46 chat_portuguese.txt
+-rwxrwxrwx 1 byteframe users    2050 May 18 10:46 chat_romanian.txt
+-rwxrwxrwx 1 byteframe users    2046 May 18 10:45 chat_russian.txt
+-rwxrwxrwx 1 byteframe users    1824 May 18 10:45 chat_schinese.txt
+-rwxrwxrwx 1 byteframe users    2042 May 18 10:46 chat_spanish.txt
+-rwxrwxrwx 1 byteframe users    2024 May 18 10:46 chat_swedish.txt
+-rwxrwxrwx 1 byteframe users    1822 May 18 10:46 chat_tchinese.txt
+-rwxrwxrwx 1 byteframe users    1984 May 18 10:46 chat_thai.txt
+-rwxrwxrwx 1 byteframe users    2048 May 18 10:45 chat_turkish.txt
+-rwxrwxrwx 1 byteframe users    2070 May 18 10:46 chat_ukrainian.txt
+-rwxrwxrwx 1 byteframe users    1829 May 18 10:46 chat_vietnamese.txt
+-rwxrwxrwx 1 byteframe users  372224 May 18 10:44 closecaption_brazilian.dat
+-rwxrwxrwx 1 byteframe users 1098514 May 18 10:44 closecaption_brazilian.txt
+-rwxrwxrwx 1 byteframe users  364032 May 18 10:44 closecaption_bulgarian.dat
+-rwxrwxrwx 1 byteframe users 1091868 May 18 10:44 closecaption_bulgarian.txt
+-rwxrwxrwx 1 byteframe users  355840 May 18 10:44 closecaption_czech.dat
+-rwxrwxrwx 1 byteframe users 1080812 May 18 10:44 closecaption_czech.txt
+-rwxrwxrwx 1 byteframe users  355840 May 18 10:44 closecaption_danish.dat
+-rwxrwxrwx 1 byteframe users 1086286 May 18 10:44 closecaption_danish.txt
+-rwxrwxrwx 1 byteframe users  372224 May 18 10:44 closecaption_dutch.dat
+-rwxrwxrwx 1 byteframe users 1095022 May 18 10:44 closecaption_dutch.txt
+-rwxrwxrwx 1 byteframe users  364032 May 18 10:44 closecaption_english.dat
+-rwxrwxrwx 1 byteframe users  521614 May 18 10:44 closecaption_english.txt
+-rwxrwxrwx 1 byteframe users  364032 May 18 10:44 closecaption_finnish.dat
+-rwxrwxrwx 1 byteframe users 1090770 May 18 10:44 closecaption_finnish.txt
+-rwxrwxrwx 1 byteframe users  372224 May 18 10:44 closecaption_french.dat
+-rwxrwxrwx 1 byteframe users 1094392 May 18 10:44 closecaption_french.txt
+-rwxrwxrwx 1 byteframe users  355840 May 18 10:44 closecaption_german.dat
+-rwxrwxrwx 1 byteframe users 1086060 May 18 10:44 closecaption_german.txt
+-rwxrwxrwx 1 byteframe users  396800 May 18 10:44 closecaption_greek.dat
+-rwxrwxrwx 1 byteframe users 1120520 May 18 10:44 closecaption_greek.txt
+-rwxrwxrwx 1 byteframe users  364032 May 18 10:44 closecaption_hungarian.dat
+-rwxrwxrwx 1 byteframe users 1087774 May 18 10:44 closecaption_hungarian.txt
+-rwxrwxrwx 1 byteframe users  364032 May 18 10:44 closecaption_italian.dat
+-rwxrwxrwx 1 byteframe users 1087178 May 18 10:44 closecaption_italian.txt
+-rwxrwxrwx 1 byteframe users  241152 May 18 10:46 closecaption_japanese.dat
+-rwxrwxrwx 1 byteframe users  968596 May 18 10:44 closecaption_japanese.txt
+-rwxrwxrwx 1 byteframe users  249344 May 18 10:45 closecaption_koreana.dat
+-rwxrwxrwx 1 byteframe users  976278 May 18 10:44 closecaption_koreana.txt
+-rwxrwxrwx 1 byteframe users  249344 May 18 10:45 closecaption_korean.dat
+-rwxrwxrwx 1 byteframe users  976278 May 18 10:44 closecaption_korean.txt
+-rwxrwxrwx 1 byteframe users 1090715 May 18 10:44 closecaption_latam.txt
+-rwxrwxrwx 1 byteframe users  372224 May 18 10:44 closecaption_norwegian.dat
+-rwxrwxrwx 1 byteframe users 1097356 May 18 10:44 closecaption_norwegian.txt
+-rwxrwxrwx 1 byteframe users  380416 May 18 10:44 closecaption_polish.dat
+-rwxrwxrwx 1 byteframe users 1104314 May 18 10:44 closecaption_polish.txt
+-rwxrwxrwx 1 byteframe users  355840 May 18 10:44 closecaption_portuguese.dat
+-rwxrwxrwx 1 byteframe users 1086596 May 18 10:44 closecaption_portuguese.txt
+-rwxrwxrwx 1 byteframe users  372224 May 18 10:44 closecaption_romanian.dat
+-rwxrwxrwx 1 byteframe users 1097950 May 18 10:44 closecaption_romanian.txt
+-rwxrwxrwx 1 byteframe users  331264 May 18 10:44 closecaption_russian.dat
+-rwxrwxrwx 1 byteframe users 1060466 May 18 10:44 closecaption_russian.txt
+-rwxrwxrwx 1 byteframe users  208384 May 18 10:46 closecaption_schinese.dat
+-rwxrwxrwx 1 byteframe users  939406 May 18 10:44 closecaption_schinese.txt
+-rwxrwxrwx 1 byteframe users  355840 May 18 10:44 closecaption_spanish.dat
+-rwxrwxrwx 1 byteframe users 1083330 May 18 10:44 closecaption_spanish.txt
+-rwxrwxrwx 1 byteframe users  372224 May 18 10:44 closecaption_swedish.dat
+-rwxrwxrwx 1 byteframe users 1099798 May 18 10:44 closecaption_swedish.txt
+-rwxrwxrwx 1 byteframe users  208384 May 18 10:46 closecaption_tchinese.dat
+-rwxrwxrwx 1 byteframe users  937272 May 18 10:44 closecaption_tchinese.txt
+-rwxrwxrwx 1 byteframe users  331264 May 18 10:44 closecaption_thai.dat
+-rwxrwxrwx 1 byteframe users 1059628 May 18 10:44 closecaption_thai.txt
+-rwxrwxrwx 1 byteframe users  372224 May 18 10:44 closecaption_turkish.dat
+-rwxrwxrwx 1 byteframe users 1098006 May 18 10:44 closecaption_turkish.txt
+-rwxrwxrwx 1 byteframe users 1096791 May 18 10:44 closecaption_ukrainian.txt
+-rwxrwxrwx 1 byteframe users     842 May 18 10:46 colorpicker.cur
+-rwxrwxrwx 1 byteframe users     326 May 18 10:46 crosshair.cur
+-rwxrwxrwx 1 byteframe users    4428 May 18 10:45 dmecontrols_english.txt
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 drag_copy.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 drag_link.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 drag_move.cur
+-rwxrwxrwx 1 byteframe users     326 May 18 10:46 entity.cur
+-rwxrwxrwx 1 byteframe users     326 May 18 10:45 eyedropper.cur
+-rwxrwxrwx 1 byteframe users     326 May 18 10:46 game_1bpp.ico
+-rwxrwxrwx 1 byteframe users  153036 May 18 10:46 game.icns
+-rwxrwxrwx 1 byteframe users   29926 May 18 10:45 game.ico
+-rwxrwxrwx 1 byteframe users    9286 May 18 10:46 game-icon.bmp
+-rwxrwxrwx 1 byteframe users  202968 May 18 10:45 gameui_brazilian.txt
+-rwxrwxrwx 1 byteframe users  203182 May 18 10:46 gameui_bulgarian.txt
+-rwxrwxrwx 1 byteframe users  199204 May 18 10:45 gameui_czech.txt
+-rwxrwxrwx 1 byteframe users  198876 May 18 10:46 gameui_danish.txt
+-rwxrwxrwx 1 byteframe users  202748 May 18 10:46 gameui_dutch.txt
+-rwxrwxrwx 1 byteframe users   92906 May 18 10:46 gameui_english.txt
+-rwxrwxrwx 1 byteframe users  200756 May 18 10:45 gameui_finnish.txt
+-rwxrwxrwx 1 byteframe users  206364 May 18 10:46 gameui_french.txt
+-rwxrwxrwx 1 byteframe users  205440 May 18 10:45 gameui_german.txt
+-rwxrwxrwx 1 byteframe users  204184 May 18 10:45 gameui_greek.txt
+-rwxrwxrwx 1 byteframe users  199102 May 18 10:46 gameui_hungarian.txt
+-rwxrwxrwx 1 byteframe users  205214 May 18 10:46 gameui_italian.txt
+-rwxrwxrwx 1 byteframe users  177194 May 18 10:45 gameui_japanese.txt
+-rwxrwxrwx 1 byteframe users  174502 May 18 10:45 gameui_koreana.txt
+-rwxrwxrwx 1 byteframe users  174502 May 18 10:45 gameui_korean.txt
+-rwxrwxrwx 1 byteframe users  206461 May 18 10:46 gameui_latam.txt
+-rwxrwxrwx 1 byteframe users  198842 May 18 10:46 gameui_norwegian.txt
+-rwxrwxrwx 1 byteframe users  199828 May 18 10:45 gameui_polish.txt
+-rwxrwxrwx 1 byteframe users  202690 May 18 10:46 gameui_portuguese.txt
+-rwxrwxrwx 1 byteframe users  203712 May 18 10:46 gameui_romanian.txt
+-rwxrwxrwx 1 byteframe users  199072 May 18 10:46 gameui_russian.txt
+-rwxrwxrwx 1 byteframe users  170914 May 18 10:46 gameui_schinese.txt
+-rwxrwxrwx 1 byteframe users  204902 May 18 10:45 gameui_spanish.txt
+-rwxrwxrwx 1 byteframe users  199686 May 18 10:46 gameui_swedish.txt
+-rwxrwxrwx 1 byteframe users  170594 May 18 10:46 gameui_tchinese.txt
+-rwxrwxrwx 1 byteframe users  195834 May 18 10:46 gameui_thai.txt
+-rwxrwxrwx 1 byteframe users  198796 May 18 10:46 gameui_turkish.txt
+-rwxrwxrwx 1 byteframe users  200748 May 18 10:46 gameui_ukrainian.txt
+-rwxrwxrwx 1 byteframe users  130241 May 18 10:46 gameui_vietnamese.txt
+-rwxrwxrwx 1 byteframe users   92796 May 18 10:45 halflife2.ttf
+-rwxrwxrwx 1 byteframe users   31610 May 18 10:46 hl2_brazilian.txt
+-rwxrwxrwx 1 byteframe users   31590 May 18 10:46 hl2_bulgarian.txt
+-rwxrwxrwx 1 byteframe users    4000 May 18 10:46 hl2crosshairs.ttf
+-rwxrwxrwx 1 byteframe users   30900 May 18 10:46 hl2_czech.txt
+-rwxrwxrwx 1 byteframe users   30854 May 18 10:45 hl2_danish.txt
+-rwxrwxrwx 1 byteframe users   30984 May 18 10:46 hl2_dutch.txt
+-rwxrwxrwx 1 byteframe users   14686 May 18 10:46 hl2_english.txt
+-rwxrwxrwx 1 byteframe users    5032 May 18 10:46 hl2ep2.ttf
+-rwxrwxrwx 1 byteframe users   31300 May 18 10:46 hl2_finnish.txt
+-rwxrwxrwx 1 byteframe users   32528 May 18 10:46 hl2_french.txt
+-rwxrwxrwx 1 byteframe users   31926 May 18 10:46 hl2_german.txt
+-rwxrwxrwx 1 byteframe users   32210 May 18 10:46 hl2_greek.txt
+-rwxrwxrwx 1 byteframe users   31564 May 18 10:45 hl2_hungarian.txt
+-rwxrwxrwx 1 byteframe users   32140 May 18 10:46 hl2_italian.txt
+-rwxrwxrwx 1 byteframe users   27908 May 18 10:46 hl2_japanese.txt
+-rwxrwxrwx 1 byteframe users   27660 May 18 10:46 hl2_koreana.txt
+-rwxrwxrwx 1 byteframe users   27660 May 18 10:46 hl2_korean.txt
+-rwxrwxrwx 1 byteframe users   31929 May 18 10:46 hl2_latam.txt
+-rwxrwxrwx 1 byteframe users   30886 May 18 10:45 hl2_norwegian.txt
+-rwxrwxrwx 1 byteframe users   31412 May 18 10:45 hl2_polish.txt
+-rwxrwxrwx 1 byteframe users   31548 May 18 10:46 hl2_portuguese.txt
+-rwxrwxrwx 1 byteframe users   31670 May 18 10:46 hl2_romanian.txt
+-rwxrwxrwx 1 byteframe users   31004 May 18 10:46 hl2_russian.txt
+-rwxrwxrwx 1 byteframe users   26902 May 18 10:45 hl2_schinese.txt
+-rwxrwxrwx 1 byteframe users   31680 May 18 10:46 hl2_spanish.txt
+-rwxrwxrwx 1 byteframe users   30760 May 18 10:46 hl2_swedish.txt
+-rwxrwxrwx 1 byteframe users   26876 May 18 10:46 hl2_tchinese.txt
+-rwxrwxrwx 1 byteframe users   30552 May 18 10:45 hl2_thai.txt
+-rwxrwxrwx 1 byteframe users   31130 May 18 10:46 hl2_turkish.txt
+-rwxrwxrwx 1 byteframe users   31222 May 18 10:45 hl2_ukrainian.txt
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_cliproll.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_cliprsr.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_clipscale.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_curve.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_dragin.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_dragin_roll.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_dragin_scale.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_dragout.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_dragout_roll.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_dragout_scale.cur
+-rwxrwxrwx 1 byteframe users    2238 May 18 10:45 ifm_grab.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:45 ifm_inout.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:45 ifm_inout_rr.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_inout_rs.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_inout_scale.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_inout_sr.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_inout_ss.cur
+-rwxrwxrwx 1 byteframe users    2238 May 18 10:46 ifm_move.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_multiselect_after.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_scaler.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_select_after.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_ts_doubleline.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_ts_full_region.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:46 ifm_ts_line.cur
+-rwxrwxrwx 1 byteframe users     766 May 18 10:45 ifm_ts_region.cur
+-rwxrwxrwx 1 byteframe users   31266 May 18 10:45 itemtest_english.txt
+-rwxrwxrwx 1 byteframe users     842 May 18 10:46 jumptotime.cur
+-rwxrwxrwx 1 byteframe users     326 May 18 10:45 magnify.cur
+-rwxrwxrwx 1 byteframe users    6136 May 18 10:46 marlett.ttf
+-rwxrwxrwx 1 byteframe users    1292 May 18 10:46 mp3player_english.txt
+-rwxrwxrwx 1 byteframe users     167 May 18 10:45 mp3settings.txt
+-rwxrwxrwx 1 byteframe users     326 May 18 10:45 newobj.cur
+-rwxrwxrwx 1 byteframe users   95766 May 18 10:45 replay_brazilian.txt
+-rwxrwxrwx 1 byteframe users   96768 May 18 10:45 replay_bulgarian.txt
+-rwxrwxrwx 1 byteframe users   93850 May 18 10:46 replay_czech.txt
+-rwxrwxrwx 1 byteframe users   94320 May 18 10:45 replay_danish.txt
+-rwxrwxrwx 1 byteframe users   95700 May 18 10:46 replay_dutch.txt
+-rwxrwxrwx 1 byteframe users   47254 May 18 10:46 replay_english.txt
+-rwxrwxrwx 1 byteframe users   94630 May 18 10:46 replay_finnish.txt
+-rwxrwxrwx 1 byteframe users   98324 May 18 10:46 replay_french.txt
+-rwxrwxrwx 1 byteframe users   97598 May 18 10:45 replay_german.txt
+-rwxrwxrwx 1 byteframe users   96720 May 18 10:46 replay_greek.txt
+-rwxrwxrwx 1 byteframe users   95496 May 18 10:46 replay_hungarian.txt
+-rwxrwxrwx 1 byteframe users   97440 May 18 10:46 replay_italian.txt
+-rwxrwxrwx 1 byteframe users   83554 May 18 10:46 replay_japanese.txt
+-rwxrwxrwx 1 byteframe users   78370 May 18 10:46 replay_koreana.txt
+-rwxrwxrwx 1 byteframe users   78370 May 18 10:46 replay_korean.txt
+-rwxrwxrwx 1 byteframe users   97867 May 18 10:46 replay_latam.txt
+-rwxrwxrwx 1 byteframe users   93220 May 18 10:46 replay_norwegian.txt
+-rwxrwxrwx 1 byteframe users   95608 May 18 10:46 replay_polish.txt
+-rwxrwxrwx 1 byteframe users   97044 May 18 10:46 replay_portuguese.txt
+-rwxrwxrwx 1 byteframe users   95486 May 18 10:46 replay_romanian.txt
+-rwxrwxrwx 1 byteframe users   95082 May 18 10:46 replay_russian.txt
+-rwxrwxrwx 1 byteframe users   78820 May 18 10:45 replay_schinese.txt
+-rwxrwxrwx 1 byteframe users   97140 May 18 10:45 replay_spanish.txt
+-rwxrwxrwx 1 byteframe users   94592 May 18 10:46 replay_swedish.txt
+-rwxrwxrwx 1 byteframe users   78986 May 18 10:46 replay_tchinese.txt
+-rwxrwxrwx 1 byteframe users   92138 May 18 10:46 replay_thai.txt
+-rwxrwxrwx 1 byteframe users   93384 May 18 10:45 replay_turkish.txt
+-rwxrwxrwx 1 byteframe users   94736 May 18 10:46 replay_ukrainian.txt
+-rwxrwxrwx 1 byteframe users     326 May 18 10:46 rotate.cur
+-rwxrwxrwx 1 byteframe users     326 May 18 10:46 smartclick.cur
+-rwxrwxrwx 1 byteframe users     618 May 18 10:46 toolactbusy_english.txt
+-rwxrwxrwx 1 byteframe users    1278 May 18 10:46 toolcommedit_english.txt
+-rwxrwxrwx 1 byteframe users    1008 May 18 10:46 toolfoundry_english.txt
+-rwxrwxrwx 1 byteframe users    1518 May 18 10:45 toolpet_english.txt
+-rwxrwxrwx 1 byteframe users    1722 May 18 10:46 toolshared_english.txt
+-rwxrwxrwx 1 byteframe users    1434 May 18 10:46 toolvcdblock_english.txt
+-rwxrwxrwx 1 byteframe users     630 May 18 10:46 toolvmt_english.txt
+-rwxrwxrwx 1 byteframe users  101574 May 18 10:46 valve_brazilian.txt
+-rwxrwxrwx 1 byteframe users  103244 May 18 10:46 valve_bulgarian.txt
+-rwxrwxrwx 1 byteframe users  100872 May 18 10:46 valve_czech.txt
+-rwxrwxrwx 1 byteframe users  100622 May 18 10:46 valve_danish.txt
+-rwxrwxrwx 1 byteframe users  102800 May 18 10:45 valve_dutch.txt
+-rwxrwxrwx 1 byteframe users   50166 May 18 10:46 valve_english.txt
+-rwxrwxrwx 1 byteframe users  101052 May 18 10:45 valve_finnish.txt
+-rwxrwxrwx 1 byteframe users  103580 May 18 10:46 valve_french.txt
+-rwxrwxrwx 1 byteframe users  103570 May 18 10:46 valve_german.txt
+-rwxrwxrwx 1 byteframe users  103162 May 18 10:46 valve_greek.txt
+-rwxrwxrwx 1 byteframe users  101112 May 18 10:45 valve_hungarian.txt
+-rwxrwxrwx 1 byteframe users  103586 May 18 10:46 valve_italian.txt
+-rwxrwxrwx 1 byteframe users   90426 May 18 10:45 valve_japanese.txt
+-rwxrwxrwx 1 byteframe users   89888 May 18 10:46 valve_koreana.txt
+-rwxrwxrwx 1 byteframe users   89888 May 18 10:46 valve_korean.txt
+-rwxrwxrwx 1 byteframe users  104362 May 18 10:46 valve_latam.txt
+-rwxrwxrwx 1 byteframe users  100838 May 18 10:45 valve_norwegian.txt
+-rwxrwxrwx 1 byteframe users  101128 May 18 10:46 valve_polish.txt
+-rwxrwxrwx 1 byteframe users  102022 May 18 10:46 valve_portuguese.txt
+-rwxrwxrwx 1 byteframe users   98606 May 18 10:46 valve_romanian.txt
+-rwxrwxrwx 1 byteframe users  101000 May 18 10:46 valve_russian.txt
+-rwxrwxrwx 1 byteframe users   86716 May 18 10:46 valve_schinese.txt
+-rwxrwxrwx 1 byteframe users  103292 May 18 10:46 valve_spanish.txt
+-rwxrwxrwx 1 byteframe users  100566 May 18 10:45 valve_swedish.txt
+-rwxrwxrwx 1 byteframe users   87124 May 18 10:46 valve_tchinese.txt
+-rwxrwxrwx 1 byteframe users   98840 May 18 10:46 valve_thai.txt
+-rwxrwxrwx 1 byteframe users  100472 May 18 10:46 valve_turkish.txt
+-rwxrwxrwx 1 byteframe users  101100 May 18 10:46 valve_ukrainian.txt
+-rwxrwxrwx 1 byteframe users   98150 May 18 10:46 valve_vietnamese.txt
+-rwxrwxrwx 1 byteframe users   13294 May 18 10:46 youtube_brazilian.txt
+-rwxrwxrwx 1 byteframe users   13316 May 18 10:46 youtube_bulgarian.txt
+-rwxrwxrwx 1 byteframe users   13052 May 18 10:46 youtube_czech.txt
+-rwxrwxrwx 1 byteframe users   13222 May 18 10:46 youtube_danish.txt
+-rwxrwxrwx 1 byteframe users   13342 May 18 10:45 youtube_dutch.txt
+-rwxrwxrwx 1 byteframe users    6456 May 18 10:46 youtube_english.txt
+-rwxrwxrwx 1 byteframe users   13144 May 18 10:45 youtube_finnish.txt
+-rwxrwxrwx 1 byteframe users   13340 May 18 10:46 youtube_french.txt
+-rwxrwxrwx 1 byteframe users   13654 May 18 10:46 youtube_german.txt
+-rwxrwxrwx 1 byteframe users   13710 May 18 10:46 youtube_greek.txt
+-rwxrwxrwx 1 byteframe users   13282 May 18 10:46 youtube_hungarian.txt
+-rwxrwxrwx 1 byteframe users   13450 May 18 10:46 youtube_italian.txt
+-rwxrwxrwx 1 byteframe users   11660 May 18 10:46 youtube_japanese.txt
+-rwxrwxrwx 1 byteframe users   11414 May 18 10:46 youtube_koreana.txt
+-rwxrwxrwx 1 byteframe users   11414 May 18 10:46 youtube_korean.txt
+-rwxrwxrwx 1 byteframe users   13595 May 18 10:46 youtube_latam.txt
+-rwxrwxrwx 1 byteframe users   13186 May 18 10:45 youtube_norwegian.txt
+-rwxrwxrwx 1 byteframe users   13282 May 18 10:46 youtube_polish.txt
+-rwxrwxrwx 1 byteframe users   13604 May 18 10:46 youtube_portuguese.txt
+-rwxrwxrwx 1 byteframe users   13328 May 18 10:46 youtube_romanian.txt
+-rwxrwxrwx 1 byteframe users   13284 May 18 10:46 youtube_russian.txt
+-rwxrwxrwx 1 byteframe users   10786 May 18 10:46 youtube_schinese.txt
+-rwxrwxrwx 1 byteframe users   13520 May 18 10:45 youtube_spanish.txt
+-rwxrwxrwx 1 byteframe users   13330 May 18 10:46 youtube_swedish.txt
+-rwxrwxrwx 1 byteframe users   10814 May 18 10:45 youtube_tchinese.txt
+-rwxrwxrwx 1 byteframe users   13024 May 18 10:46 youtube_thai.txt
+-rwxrwxrwx 1 byteframe users   13008 May 18 10:46 youtube_turkish.txt
+-rwxrwxrwx 1 byteframe users   13126 May 18 10:46 youtube_ukrainian.txt
+
+Team Fortress 2/platform:
+total 4660
+drwxrwxrwx 1 byteframe users    4096 May 18 10:57 admin
+-rwxrwxrwx 1 byteframe users 4750195 May 18 10:44 platform_misc_000.vpk
+-rwxrwxrwx 1 byteframe users   17417 May 18 10:45 platform_misc_dir.vpk
+drwxrwxrwx 1 byteframe users    4096 May 18 10:57 resource
+drwxrwxrwx 1 byteframe users    4096 May 18 10:57 servers
+drwxrwxrwx 1 byteframe users    4096 May 18 10:57 vgui
+
+Team Fortress 2/platform/admin:
+total 1328
+-rwxrwxrwx 1 byteframe users 42008 May 18 10:46 admin_brazilian.txt
+-rwxrwxrwx 1 byteframe users 42440 May 18 10:45 admin_bulgarian.txt
+-rwxrwxrwx 1 byteframe users 41150 May 18 10:46 admin_czech.txt
+-rwxrwxrwx 1 byteframe users 41744 May 18 10:46 admin_danish.txt
+-rwxrwxrwx 1 byteframe users 41954 May 18 10:46 admin_dutch.txt
+-rwxrwxrwx 1 byteframe users 19372 May 18 10:46 admin_english.txt
+-rwxrwxrwx 1 byteframe users 41552 May 18 10:46 admin_finnish.txt
+-rwxrwxrwx 1 byteframe users 42914 May 18 10:46 admin_french.txt
+-rwxrwxrwx 1 byteframe users 42036 May 18 10:45 admin_german.txt
+-rwxrwxrwx 1 byteframe users 42622 May 18 10:46 admin_greek.txt
+-rwxrwxrwx 1 byteframe users 41364 May 18 10:46 admin_hungarian.txt
+-rwxrwxrwx 1 byteframe users 42136 May 18 10:46 admin_italian.txt
+-rwxrwxrwx 1 byteframe users 37486 May 18 10:46 admin_japanese.txt
+-rwxrwxrwx 1 byteframe users 37768 May 18 10:46 admin_koreana.txt
+-rwxrwxrwx 1 byteframe users 37768 May 18 10:46 admin_korean.txt
+-rwxrwxrwx 1 byteframe users 41720 May 18 10:45 admin_norwegian.txt
+-rwxrwxrwx 1 byteframe users 40928 May 18 10:46 admin_polish.txt
+-rwxrwxrwx 1 byteframe users 42490 May 18 10:46 admin_portuguese.txt
+-rwxrwxrwx 1 byteframe users 42202 May 18 10:46 admin_romanian.txt
+-rwxrwxrwx 1 byteframe users 42236 May 18 10:46 admin_russian.txt
+-rwxrwxrwx 1 byteframe users 36702 May 18 10:46 admin_schinese.txt
+-rwxrwxrwx 1 byteframe users 43204 May 18 10:46 admin_spanish.txt
+-rwxrwxrwx 1 byteframe users 41788 May 18 10:46 admin_swedish.txt
+-rwxrwxrwx 1 byteframe users 36900 May 18 10:46 admin_tchinese.txt
+-rwxrwxrwx 1 byteframe users 41094 May 18 10:46 admin_thai.txt
+-rwxrwxrwx 1 byteframe users 40844 May 18 10:45 admin_turkish.txt
+-rwxrwxrwx 1 byteframe users  8378 May 18 10:46 game_ready.wav
+-rwxrwxrwx 1 byteframe users   875 May 18 10:46 helpfile_adminmod.vdf
+-rwxrwxrwx 1 byteframe users  3412 May 18 10:46 helpfile_cstrike.vdf
+-rwxrwxrwx 1 byteframe users  5094 May 18 10:46 helpfile.vdf
+-rwxrwxrwx 1 byteframe users  1886 May 18 10:46 hlds_logo.tga
+-rwxrwxrwx 1 byteframe users   677 May 18 10:46 mainserverconfig.vdf
+-rwxrwxrwx 1 byteframe users  6394 May 18 10:46 server_brazilian.txt
+-rwxrwxrwx 1 byteframe users  6470 May 18 10:46 server_bulgarian.txt
+-rwxrwxrwx 1 byteframe users  6296 May 18 10:46 server_czech.txt
+-rwxrwxrwx 1 byteframe users  6244 May 18 10:45 server_danish.txt
+-rwxrwxrwx 1 byteframe users  6420 May 18 10:45 server_dutch.txt
+-rwxrwxrwx 1 byteframe users  3110 May 18 10:46 server_english.txt
+-rwxrwxrwx 1 byteframe users  6416 May 18 10:45 server_finnish.txt
+-rwxrwxrwx 1 byteframe users  6450 May 18 10:46 server_french.txt
+-rwxrwxrwx 1 byteframe users  6462 May 18 10:46 server_german.txt
+-rwxrwxrwx 1 byteframe users  6544 May 18 10:46 server_greek.txt
+-rwxrwxrwx 1 byteframe users  6300 May 18 10:46 server_hungarian.txt
+-rwxrwxrwx 1 byteframe users  6392 May 18 10:46 server_italian.txt
+-rwxrwxrwx 1 byteframe users  5650 May 18 10:46 server_japanese.txt
+-rwxrwxrwx 1 byteframe users  5642 May 18 10:46 server_koreana.txt
+-rwxrwxrwx 1 byteframe users  5642 May 18 10:46 server_korean.txt
+-rwxrwxrwx 1 byteframe users  6226 May 18 10:46 server_norwegian.txt
+-rwxrwxrwx 1 byteframe users  6282 May 18 10:46 server_polish.txt
+-rwxrwxrwx 1 byteframe users  6432 May 18 10:46 server_portuguese.txt
+-rwxrwxrwx 1 byteframe users  6396 May 18 10:45 server_romanian.txt
+-rwxrwxrwx 1 byteframe users  6402 May 18 10:46 server_russian.txt
+-rwxrwxrwx 1 byteframe users  5452 May 18 10:46 server_schinese.txt
+-rwxrwxrwx 1 byteframe users  6478 May 18 10:46 server_spanish.txt
+-rwxrwxrwx 1 byteframe users  6278 May 18 10:45 server_swedish.txt
+-rwxrwxrwx 1 byteframe users  5504 May 18 10:46 server_tchinese.txt
+-rwxrwxrwx 1 byteframe users  6316 May 18 10:46 server_thai.txt
+-rwxrwxrwx 1 byteframe users  6258 May 18 10:46 server_turkish.txt
+
+Team Fortress 2/platform/resource:
+total 1244
+-rwxrwxrwx 1 byteframe users  1068 May 18 10:45 icon_blank.tga
+-rwxrwxrwx 1 byteframe users   911 May 18 10:46 icon_file.tga
+-rwxrwxrwx 1 byteframe users   911 May 18 10:46 icon_folder_selected.tga
+-rwxrwxrwx 1 byteframe users  1406 May 18 10:46 icon_folder.tga
+-rwxrwxrwx 1 byteframe users  1406 May 18 10:46 icon_folderup.tga
+-rwxrwxrwx 1 byteframe users  1307 May 18 10:46 icon_hlicon1.tga
+-rwxrwxrwx 1 byteframe users  1307 May 18 10:46 icon_hlicon2.tga
+-rwxrwxrwx 1 byteframe users  1068 May 18 10:46 icon_password.tga
+-rwxrwxrwx 1 byteframe users  1068 May 18 10:46 icon_replay.tga
+-rwxrwxrwx 1 byteframe users  1307 May 18 10:45 icon_steam_disabled.tga
+-rwxrwxrwx 1 byteframe users  1307 May 18 10:46 icon_steam.tga
+-rwxrwxrwx 1 byteframe users  1558 May 18 10:45 platform_brazilian.txt
+-rwxrwxrwx 1 byteframe users  1548 May 18 10:46 platform_bulgarian.txt
+-rwxrwxrwx 1 byteframe users  1532 May 18 10:46 platform_czech.txt
+-rwxrwxrwx 1 byteframe users  1516 May 18 10:46 platform_danish.txt
+-rwxrwxrwx 1 byteframe users  1556 May 18 10:46 platform_dutch.txt
+-rwxrwxrwx 1 byteframe users   718 May 18 10:46 platform_english.txt
+-rwxrwxrwx 1 byteframe users  1540 May 18 10:46 platform_finnish.txt
+-rwxrwxrwx 1 byteframe users  1548 May 18 10:45 platform_french.txt
+-rwxrwxrwx 1 byteframe users  1554 May 18 10:46 platform_german.txt
+-rwxrwxrwx 1 byteframe users  1574 May 18 10:46 platform_greek.txt
+-rwxrwxrwx 1 byteframe users  1542 May 18 10:45 platform_hungarian.txt
+-rwxrwxrwx 1 byteframe users  1528 May 18 10:45 platform_italian.txt
+-rwxrwxrwx 1 byteframe users  1424 May 18 10:46 platform_japanese.txt
+-rwxrwxrwx 1 byteframe users  1398 May 18 10:46 platform_koreana.txt
+-rwxrwxrwx 1 byteframe users  1398 May 18 10:46 platform_korean.txt
+-rwxrwxrwx 1 byteframe users  1534 May 18 10:46 platform_norwegian.txt
+-rwxrwxrwx 1 byteframe users  1524 May 18 10:46 platform_polish.txt
+-rwxrwxrwx 1 byteframe users  1554 May 18 10:46 platform_portuguese.txt
+-rwxrwxrwx 1 byteframe users  1522 May 18 10:45 platform_romanian.txt
+-rwxrwxrwx 1 byteframe users  1516 May 18 10:46 platform_russian.txt
+-rwxrwxrwx 1 byteframe users  1388 May 18 10:46 platform_schinese.txt
+-rwxrwxrwx 1 byteframe users  1558 May 18 10:46 platform_spanish.txt
+-rwxrwxrwx 1 byteframe users  1540 May 18 10:45 platform_swedish.txt
+-rwxrwxrwx 1 byteframe users  1394 May 18 10:46 platform_tchinese.txt
+-rwxrwxrwx 1 byteframe users  1526 May 18 10:46 platform_thai.txt
+-rwxrwxrwx 1 byteframe users  1548 May 18 10:46 platform_turkish.txt
+-rwxrwxrwx 1 byteframe users 10284 May 18 10:46 valve_logo.tga
+-rwxrwxrwx 1 byteframe users 42824 May 18 10:46 vgui_brazilian.txt
+-rwxrwxrwx 1 byteframe users 43134 May 18 10:46 vgui_bulgarian.txt
+-rwxrwxrwx 1 byteframe users 42258 May 18 10:46 vgui_czech.txt
+-rwxrwxrwx 1 byteframe users 42258 May 18 10:45 vgui_danish.txt
+-rwxrwxrwx 1 byteframe users 42522 May 18 10:46 vgui_dutch.txt
+-rwxrwxrwx 1 byteframe users 19510 May 18 10:46 vgui_english.txt
+-rwxrwxrwx 1 byteframe users 42202 May 18 10:46 vgui_finnish.txt
+-rwxrwxrwx 1 byteframe users 43412 May 18 10:46 vgui_french.txt
+-rwxrwxrwx 1 byteframe users 42606 May 18 10:45 vgui_german.txt
+-rwxrwxrwx 1 byteframe users 43014 May 18 10:46 vgui_greek.txt
+-rwxrwxrwx 1 byteframe users 42410 May 18 10:46 vgui_hungarian.txt
+-rwxrwxrwx 1 byteframe users 42814 May 18 10:46 vgui_italian.txt
+-rwxrwxrwx 1 byteframe users 31674 May 18 10:46 vgui_japanese.txt
+-rwxrwxrwx 1 byteframe users 38276 May 18 10:46 vgui_koreana.txt
+-rwxrwxrwx 1 byteframe users 38276 May 18 10:46 vgui_korean.txt
+-rwxrwxrwx 1 byteframe users 42516 May 18 10:46 vgui_norwegian.txt
+-rwxrwxrwx 1 byteframe users 42062 May 18 10:46 vgui_polish.txt
+-rwxrwxrwx 1 byteframe users 42754 May 18 10:45 vgui_portuguese.txt
+-rwxrwxrwx 1 byteframe users 41882 May 18 10:46 vgui_romanian.txt
+-rwxrwxrwx 1 byteframe users 42450 May 18 10:46 vgui_russian.txt
+-rwxrwxrwx 1 byteframe users 37342 May 18 10:45 vgui_schinese.txt
+-rwxrwxrwx 1 byteframe users 43070 May 18 10:46 vgui_spanish.txt
+-rwxrwxrwx 1 byteframe users 41996 May 18 10:46 vgui_swedish.txt
+-rwxrwxrwx 1 byteframe users 37418 May 18 10:46 vgui_tchinese.txt
+-rwxrwxrwx 1 byteframe users 27436 May 18 10:46 vgui_thai.txt
+-rwxrwxrwx 1 byteframe users 41640 May 18 10:46 vgui_turkish.txt
+-rwxrwxrwx 1 byteframe users  5006 May 18 10:46 warning.wav
+
+Team Fortress 2/platform/servers:
+total 1456
+-rwxrwxrwx 1 byteframe users 57572 May 18 10:46 serverbrowser_brazilian.txt
+-rwxrwxrwx 1 byteframe users 58424 May 18 10:46 serverbrowser_bulgarian.txt
+-rwxrwxrwx 1 byteframe users 58660 May 18 10:46 serverbrowser_czech.txt
+-rwxrwxrwx 1 byteframe users 57062 May 18 10:46 serverbrowser_danish.txt
+-rwxrwxrwx 1 byteframe users 58634 May 18 10:46 serverbrowser_dutch.txt
+-rwxrwxrwx 1 byteframe users 27402 May 18 10:46 serverbrowser_english.txt
+-rwxrwxrwx 1 byteframe users 57028 May 18 10:46 serverbrowser_finnish.txt
+-rwxrwxrwx 1 byteframe users 59538 May 18 10:46 serverbrowser_french.txt
+-rwxrwxrwx 1 byteframe users 59456 May 18 10:46 serverbrowser_german.txt
+-rwxrwxrwx 1 byteframe users 59322 May 18 10:46 serverbrowser_greek.txt
+-rwxrwxrwx 1 byteframe users 57976 May 18 10:46 serverbrowser_hungarian.txt
+-rwxrwxrwx 1 byteframe users 59718 May 18 10:46 serverbrowser_italian.txt
+-rwxrwxrwx 1 byteframe users 51676 May 18 10:46 serverbrowser_japanese.txt
+-rwxrwxrwx 1 byteframe users 51978 May 18 10:46 serverbrowser_koreana.txt
+-rwxrwxrwx 1 byteframe users 51978 May 18 10:46 serverbrowser_korean.txt
+-rwxrwxrwx 1 byteframe users 56454 May 18 10:46 serverbrowser_norwegian.txt
+-rwxrwxrwx 1 byteframe users 58104 May 18 10:46 serverbrowser_polish.txt
+-rwxrwxrwx 1 byteframe users 57530 May 18 10:46 serverbrowser_portuguese.txt
+-rwxrwxrwx 1 byteframe users 58668 May 18 10:46 serverbrowser_romanian.txt
+-rwxrwxrwx 1 byteframe users 56064 May 18 10:46 serverbrowser_russian.txt
+-rwxrwxrwx 1 byteframe users 48728 May 18 10:46 serverbrowser_schinese.txt
+-rwxrwxrwx 1 byteframe users 60202 May 18 10:46 serverbrowser_spanish.txt
+-rwxrwxrwx 1 byteframe users 56888 May 18 10:46 serverbrowser_swedish.txt
+-rwxrwxrwx 1 byteframe users 48866 May 18 10:46 serverbrowser_tchinese.txt
+-rwxrwxrwx 1 byteframe users 57938 May 18 10:46 serverbrowser_thai.txt
+-rwxrwxrwx 1 byteframe users 57308 May 18 10:46 serverbrowser_turkish.txt
+
+Team Fortress 2/platform/vgui:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 hud
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 resource
+
+Team Fortress 2/platform/vgui/hud:
+total 0
+-rwxrwxrwx 1 byteframe users 274 May 18 10:46 800corner1.tga
+-rwxrwxrwx 1 byteframe users 274 May 18 10:46 800corner2.tga
+-rwxrwxrwx 1 byteframe users 274 May 18 10:46 800corner3.tga
+-rwxrwxrwx 1 byteframe users 274 May 18 10:46 800corner4.tga
+-rwxrwxrwx 1 byteframe users 210 May 18 10:46 800corner.tga
+
+Team Fortress 2/platform/vgui/resource:
+total 12
+-rwxrwxrwx 1 byteframe users  812 May 18 10:46 icon_newfolder.tga
+-rwxrwxrwx 1 byteframe users 1307 May 18 10:45 icon_steam_disabled.tga
+-rwxrwxrwx 1 byteframe users 1307 May 18 10:46 icon_steam.tga
+
+Team Fortress 2/tf:
+total 14580476
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 bin
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 cfg
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 custom
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 download
+-rwxrwxrwx 1 byteframe users      3706 May 18 10:46 gameinfo.txt
+-rwxrwxrwx 1 byteframe users      2417 May 18 10:46 item_whitelist_example.txt
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 maps
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 materials
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 media
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 resource
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 scripts
+-rwxrwxrwx 1 byteframe users       115 May 18 10:49 steam.inf
+-rwxrwxrwx 1 byteframe users 113118802 May 18 10:44 tf2_misc_000.vpk
+-rwxrwxrwx 1 byteframe users 113232661 May 18 10:44 tf2_misc_001.vpk
+-rwxrwxrwx 1 byteframe users 133013249 May 18 10:44 tf2_misc_002.vpk
+-rwxrwxrwx 1 byteframe users 128283748 May 18 10:44 tf2_misc_003.vpk
+-rwxrwxrwx 1 byteframe users 133200495 May 18 10:44 tf2_misc_004.vpk
+-rwxrwxrwx 1 byteframe users 157190295 May 18 10:44 tf2_misc_005.vpk
+-rwxrwxrwx 1 byteframe users 133081373 May 18 10:44 tf2_misc_006.vpk
+-rwxrwxrwx 1 byteframe users 142434170 May 18 10:44 tf2_misc_007.vpk
+-rwxrwxrwx 1 byteframe users 116769855 May 18 10:44 tf2_misc_008.vpk
+-rwxrwxrwx 1 byteframe users 116741863 May 18 10:44 tf2_misc_009.vpk
+-rwxrwxrwx 1 byteframe users 136452648 May 18 10:44 tf2_misc_010.vpk
+-rwxrwxrwx 1 byteframe users 125617028 May 18 10:44 tf2_misc_011.vpk
+-rwxrwxrwx 1 byteframe users 128425232 May 18 10:44 tf2_misc_012.vpk
+-rwxrwxrwx 1 byteframe users 128345896 May 18 10:44 tf2_misc_013.vpk
+-rwxrwxrwx 1 byteframe users 119657019 May 18 10:44 tf2_misc_014.vpk
+-rwxrwxrwx 1 byteframe users 119522947 May 18 10:44 tf2_misc_015.vpk
+-rwxrwxrwx 1 byteframe users 120753420 May 18 10:44 tf2_misc_016.vpk
+-rwxrwxrwx 1 byteframe users 119629071 May 18 10:44 tf2_misc_017.vpk
+-rwxrwxrwx 1 byteframe users 125193971 May 18 10:44 tf2_misc_018.vpk
+-rwxrwxrwx 1 byteframe users 122098204 May 18 10:44 tf2_misc_019.vpk
+-rwxrwxrwx 1 byteframe users 121863561 May 18 10:44 tf2_misc_020.vpk
+-rwxrwxrwx 1 byteframe users   4242136 May 18 10:44 tf2_misc_dir.vpk
+-rwxrwxrwx 1 byteframe users 106136036 May 18 10:44 tf2_sound_misc_000.vpk
+-rwxrwxrwx 1 byteframe users 111828380 May 18 10:44 tf2_sound_misc_001.vpk
+-rwxrwxrwx 1 byteframe users 112366106 May 18 10:44 tf2_sound_misc_002.vpk
+-rwxrwxrwx 1 byteframe users 108330205 May 18 10:44 tf2_sound_misc_003.vpk
+-rwxrwxrwx 1 byteframe users 110417076 May 18 10:44 tf2_sound_misc_004.vpk
+-rwxrwxrwx 1 byteframe users 108006342 May 18 10:44 tf2_sound_misc_005.vpk
+-rwxrwxrwx 1 byteframe users 113147373 May 18 10:44 tf2_sound_misc_006.vpk
+-rwxrwxrwx 1 byteframe users 140070997 May 18 10:44 tf2_sound_misc_007.vpk
+-rwxrwxrwx 1 byteframe users 121509333 May 18 10:44 tf2_sound_misc_008.vpk
+-rwxrwxrwx 1 byteframe users 120749451 May 18 10:44 tf2_sound_misc_009.vpk
+-rwxrwxrwx 1 byteframe users 120683029 May 18 10:44 tf2_sound_misc_010.vpk
+-rwxrwxrwx 1 byteframe users 120638882 May 18 10:44 tf2_sound_misc_011.vpk
+-rwxrwxrwx 1 byteframe users    157308 May 18 10:52 tf2_sound_misc_dir.vpk
+-rwxrwxrwx 1 byteframe users  47579955 May 18 10:44 tf2_sound_misc.vpk.sound.cache
+-rwxrwxrwx 1 byteframe users 191239687 May 18 10:44 tf2_sound_vo_english_000.vpk
+-rwxrwxrwx 1 byteframe users 133556954 May 18 10:44 tf2_sound_vo_english_001.vpk
+-rwxrwxrwx 1 byteframe users 170723520 May 18 10:44 tf2_sound_vo_english_002.vpk
+-rwxrwxrwx 1 byteframe users    560097 May 18 10:44 tf2_sound_vo_english_dir.vpk
+-rwxrwxrwx 1 byteframe users   1475275 May 18 10:44 tf2_sound_vo_english.vpk.sound.cache
+-rwxrwxrwx 1 byteframe users 109393360 May 18 10:44 tf2_textures_000.vpk
+-rwxrwxrwx 1 byteframe users 108164814 May 18 10:44 tf2_textures_001.vpk
+-rwxrwxrwx 1 byteframe users 107238032 May 18 10:44 tf2_textures_002.vpk
+-rwxrwxrwx 1 byteframe users 109637518 May 18 10:44 tf2_textures_003.vpk
+-rwxrwxrwx 1 byteframe users 156240032 May 18 10:44 tf2_textures_004.vpk
+-rwxrwxrwx 1 byteframe users 110306452 May 18 10:44 tf2_textures_005.vpk
+-rwxrwxrwx 1 byteframe users 149146351 May 18 10:44 tf2_textures_006.vpk
+-rwxrwxrwx 1 byteframe users 112935992 May 18 10:44 tf2_textures_007.vpk
+-rwxrwxrwx 1 byteframe users 128833303 May 18 10:44 tf2_textures_008.vpk
+-rwxrwxrwx 1 byteframe users 109401592 May 18 10:44 tf2_textures_009.vpk
+-rwxrwxrwx 1 byteframe users 124380776 May 18 10:44 tf2_textures_010.vpk
+-rwxrwxrwx 1 byteframe users 147358200 May 18 10:44 tf2_textures_011.vpk
+-rwxrwxrwx 1 byteframe users 113691004 May 18 10:44 tf2_textures_012.vpk
+-rwxrwxrwx 1 byteframe users 110538216 May 18 10:44 tf2_textures_013.vpk
+-rwxrwxrwx 1 byteframe users 107409632 May 18 10:44 tf2_textures_014.vpk
+-rwxrwxrwx 1 byteframe users 121236932 May 18 10:44 tf2_textures_015.vpk
+-rwxrwxrwx 1 byteframe users 108977730 May 18 10:44 tf2_textures_016.vpk
+-rwxrwxrwx 1 byteframe users 110276887 May 18 10:44 tf2_textures_017.vpk
+-rwxrwxrwx 1 byteframe users 116887580 May 18 10:44 tf2_textures_018.vpk
+-rwxrwxrwx 1 byteframe users 129733784 May 18 10:44 tf2_textures_019.vpk
+-rwxrwxrwx 1 byteframe users 108398616 May 18 10:44 tf2_textures_020.vpk
+-rwxrwxrwx 1 byteframe users 116776704 May 18 10:44 tf2_textures_021.vpk
+-rwxrwxrwx 1 byteframe users 118623726 May 18 10:44 tf2_textures_022.vpk
+-rwxrwxrwx 1 byteframe users 124516265 May 18 10:44 tf2_textures_023.vpk
+-rwxrwxrwx 1 byteframe users 129361808 May 18 10:44 tf2_textures_024.vpk
+-rwxrwxrwx 1 byteframe users 133120492 May 18 10:44 tf2_textures_025.vpk
+-rwxrwxrwx 1 byteframe users 114181126 May 18 10:44 tf2_textures_026.vpk
+-rwxrwxrwx 1 byteframe users 125035677 May 18 10:44 tf2_textures_027.vpk
+-rwxrwxrwx 1 byteframe users 112573454 May 18 10:44 tf2_textures_028.vpk
+-rwxrwxrwx 1 byteframe users 126132144 May 18 10:44 tf2_textures_029.vpk
+-rwxrwxrwx 1 byteframe users 146174184 May 18 10:44 tf2_textures_030.vpk
+-rwxrwxrwx 1 byteframe users 110212705 May 18 10:44 tf2_textures_031.vpk
+-rwxrwxrwx 1 byteframe users 112220132 May 18 10:44 tf2_textures_032.vpk
+-rwxrwxrwx 1 byteframe users 108074196 May 18 10:44 tf2_textures_033.vpk
+-rwxrwxrwx 1 byteframe users 115515572 May 18 10:44 tf2_textures_034.vpk
+-rwxrwxrwx 1 byteframe users 124879072 May 18 10:44 tf2_textures_035.vpk
+-rwxrwxrwx 1 byteframe users 129025485 May 18 10:44 tf2_textures_036.vpk
+-rwxrwxrwx 1 byteframe users 189797961 May 18 10:44 tf2_textures_037.vpk
+-rwxrwxrwx 1 byteframe users 120294911 May 18 10:44 tf2_textures_038.vpk
+-rwxrwxrwx 1 byteframe users 129709944 May 18 10:44 tf2_textures_039.vpk
+-rwxrwxrwx 1 byteframe users 112020096 May 18 10:44 tf2_textures_040.vpk
+-rwxrwxrwx 1 byteframe users 117422516 May 18 10:44 tf2_textures_041.vpk
+-rwxrwxrwx 1 byteframe users 109059904 May 18 10:44 tf2_textures_042.vpk
+-rwxrwxrwx 1 byteframe users 111856584 May 18 10:44 tf2_textures_043.vpk
+-rwxrwxrwx 1 byteframe users 120242664 May 18 10:44 tf2_textures_044.vpk
+-rwxrwxrwx 1 byteframe users 123041248 May 18 10:44 tf2_textures_045.vpk
+-rwxrwxrwx 1 byteframe users 114652784 May 18 10:44 tf2_textures_046.vpk
+-rwxrwxrwx 1 byteframe users 114652576 May 18 10:44 tf2_textures_047.vpk
+-rwxrwxrwx 1 byteframe users 123204953 May 18 10:44 tf2_textures_048.vpk
+-rwxrwxrwx 1 byteframe users 117448988 May 18 10:44 tf2_textures_049.vpk
+-rwxrwxrwx 1 byteframe users 117448784 May 18 10:44 tf2_textures_050.vpk
+-rwxrwxrwx 1 byteframe users 117449488 May 18 10:44 tf2_textures_051.vpk
+-rwxrwxrwx 1 byteframe users 156169740 May 18 10:44 tf2_textures_052.vpk
+-rwxrwxrwx 1 byteframe users 111579524 May 18 10:44 tf2_textures_053.vpk
+-rwxrwxrwx 1 byteframe users 117426232 May 18 10:44 tf2_textures_054.vpk
+-rwxrwxrwx 1 byteframe users 114991913 May 18 10:44 tf2_textures_055.vpk
+-rwxrwxrwx 1 byteframe users 113149732 May 18 10:44 tf2_textures_056.vpk
+-rwxrwxrwx 1 byteframe users 138840560 May 18 10:44 tf2_textures_057.vpk
+-rwxrwxrwx 1 byteframe users 138191607 May 18 10:44 tf2_textures_058.vpk
+-rwxrwxrwx 1 byteframe users 106425252 May 18 10:44 tf2_textures_059.vpk
+-rwxrwxrwx 1 byteframe users 137661240 May 18 10:44 tf2_textures_060.vpk
+-rwxrwxrwx 1 byteframe users 125554680 May 18 10:44 tf2_textures_061.vpk
+-rwxrwxrwx 1 byteframe users 140863156 May 18 10:44 tf2_textures_062.vpk
+-rwxrwxrwx 1 byteframe users 122415748 May 18 10:44 tf2_textures_063.vpk
+-rwxrwxrwx 1 byteframe users 118657818 May 18 10:44 tf2_textures_064.vpk
+-rwxrwxrwx 1 byteframe users 117475237 May 18 10:44 tf2_textures_065.vpk
+-rwxrwxrwx 1 byteframe users 118682243 May 18 10:44 tf2_textures_066.vpk
+-rwxrwxrwx 1 byteframe users 106681536 May 18 10:44 tf2_textures_067.vpk
+-rwxrwxrwx 1 byteframe users 117136326 May 18 10:44 tf2_textures_068.vpk
+-rwxrwxrwx 1 byteframe users 118378888 May 18 10:44 tf2_textures_069.vpk
+-rwxrwxrwx 1 byteframe users 139347724 May 18 10:44 tf2_textures_070.vpk
+-rwxrwxrwx 1 byteframe users 136737235 May 18 10:44 tf2_textures_071.vpk
+-rwxrwxrwx 1 byteframe users 116992777 May 18 10:44 tf2_textures_072.vpk
+-rwxrwxrwx 1 byteframe users 118865061 May 18 10:44 tf2_textures_073.vpk
+-rwxrwxrwx 1 byteframe users 116556336 May 18 10:44 tf2_textures_074.vpk
+-rwxrwxrwx 1 byteframe users 127179864 May 18 10:44 tf2_textures_075.vpk
+-rwxrwxrwx 1 byteframe users 122779505 May 18 10:44 tf2_textures_076.vpk
+-rwxrwxrwx 1 byteframe users 121136616 May 18 10:44 tf2_textures_077.vpk
+-rwxrwxrwx 1 byteframe users 107984456 May 18 10:44 tf2_textures_078.vpk
+-rwxrwxrwx 1 byteframe users 123355284 May 18 10:44 tf2_textures_079.vpk
+-rwxrwxrwx 1 byteframe users 109572608 May 18 10:44 tf2_textures_080.vpk
+-rwxrwxrwx 1 byteframe users 118163416 May 18 10:44 tf2_textures_081.vpk
+-rwxrwxrwx 1 byteframe users 118797876 May 18 10:44 tf2_textures_082.vpk
+-rwxrwxrwx 1 byteframe users 136947616 May 18 10:44 tf2_textures_083.vpk
+-rwxrwxrwx 1 byteframe users 111026944 May 18 10:44 tf2_textures_084.vpk
+-rwxrwxrwx 1 byteframe users   1439211 May 18 10:44 tf2_textures_dir.vpk
+drwxrwxrwx 1 byteframe users      4096 May 18 10:57 workshop
+
+Team Fortress 2/tf/bin:
+total 24272
+-rwxrwxrwx 1 byteframe users 14092576 May 18 10:44 client.dll
+-rwxrwxrwx 1 byteframe users 10756896 May 18 10:44 server.dll
+
+Team Fortress 2/tf/cfg:
+total 52
+-rwxrwxrwx 1 byteframe users 1114 May 18 10:46 360controller.cfg
+-rwxrwxrwx 1 byteframe users  358 May 18 10:46 360controller-linux.cfg
+-rwxrwxrwx 1 byteframe users   28 May 18 10:46 chapter1.cfg
+-rwxrwxrwx 1 byteframe users   32 May 18 10:46 chapter2.cfg
+-rwxrwxrwx 1 byteframe users   27 May 18 10:46 chapter3.cfg
+-rwxrwxrwx 1 byteframe users 1954 May 18 10:46 config_default.cfg
+-rwxrwxrwx 1 byteframe users   11 May 18 10:46 mapcycle_beta_asteroid.txt
+-rwxrwxrwx 1 byteframe users   15 May 18 10:46 mapcycle_beta_cactus_canyon.txt
+-rwxrwxrwx 1 byteframe users   46 May 18 10:46 mapcycle_beta_mannpower.txt
+-rwxrwxrwx 1 byteframe users 1040 May 18 10:46 mapcycle_default.txt
+-rwxrwxrwx 1 byteframe users   17 May 18 10:46 mapcycle_doomsday_event_247.txt
+-rwxrwxrwx 1 byteframe users   55 May 18 10:46 mapcycle_featured_maps.txt
+-rwxrwxrwx 1 byteframe users   77 May 18 10:46 mapcycle_halloween_event_247.txt
+-rwxrwxrwx 1 byteframe users  194 May 18 10:46 mapcycle_halloween.txt
+-rwxrwxrwx 1 byteframe users   19 May 18 10:46 mapcycle_hightower_event_247.txt
+-rwxrwxrwx 1 byteframe users   61 May 18 10:46 mapcycle_invasion_maps.txt
+-rwxrwxrwx 1 byteframe users  137 May 18 10:46 mapcycle_ladder.txt
+-rwxrwxrwx 1 byteframe users   19 May 18 10:46 mapcycle_lakeside_event_247.txt
+-rwxrwxrwx 1 byteframe users   46 May 18 10:46 mapcycle_mannpower.txt
+-rwxrwxrwx 1 byteframe users  157 May 18 10:46 mapcycle_quickplay_arena.txt
+-rwxrwxrwx 1 byteframe users  111 May 18 10:46 mapcycle_quickplay_attackdefense.txt
+-rwxrwxrwx 1 byteframe users  254 May 18 10:46 mapcycle_quickplay_cp.txt
+-rwxrwxrwx 1 byteframe users   98 May 18 10:46 mapcycle_quickplay_ctf.txt
+-rwxrwxrwx 1 byteframe users  150 May 18 10:46 mapcycle_quickplay_koth.txt
+-rwxrwxrwx 1 byteframe users   53 May 18 10:46 mapcycle_quickplay_misc.txt
+-rwxrwxrwx 1 byteframe users   48 May 18 10:46 mapcycle_quickplay_passtime.txt
+-rwxrwxrwx 1 byteframe users   50 May 18 10:46 mapcycle_quickplay_payloadrace.txt
+-rwxrwxrwx 1 byteframe users  155 May 18 10:46 mapcycle_quickplay_payload.txt
+-rwxrwxrwx 1 byteframe users  674 May 18 10:46 motd_default.txt
+-rwxrwxrwx 1 byteframe users  674 May 18 10:46 motd_text_default.txt
+-rwxrwxrwx 1 byteframe users  311 May 18 10:46 mtp.cfg
+-rwxrwxrwx 1 byteframe users  853 May 18 10:46 pure_server_full.txt
+-rwxrwxrwx 1 byteframe users 1389 May 18 10:46 pure_server_minimal.txt
+-rwxrwxrwx 1 byteframe users 2446 May 18 10:46 pure_server_whitelist_example.txt
+-rwxrwxrwx 1 byteframe users 3050 May 18 10:46 replay_example.cfg
+-rwxrwxrwx 1 byteframe users  118 May 18 10:46 server_247_mannpower.cfg
+-rwxrwxrwx 1 byteframe users   93 May 18 10:46 server_247_rounds.cfg
+-rwxrwxrwx 1 byteframe users  152 May 18 10:46 server_bootcamp.cfg
+-rwxrwxrwx 1 byteframe users  347 May 18 10:46 server_casual.cfg
+-rwxrwxrwx 1 byteframe users  108 May 18 10:46 server_casual_max_rounds_win_conditions.cfg
+-rwxrwxrwx 1 byteframe users  123 May 18 10:46 server_casual_max_rounds_win_conditions_mannpower.cfg
+-rwxrwxrwx 1 byteframe users  103 May 18 10:46 server_casual_rounds_win_conditions.cfg
+-rwxrwxrwx 1 byteframe users  123 May 18 10:46 server_casual_stopwatch_win_conditions.cfg
+-rwxrwxrwx 1 byteframe users  343 May 18 10:46 server_competitive.cfg
+-rwxrwxrwx 1 byteframe users  108 May 18 10:46 server_competitive_max_rounds_win_conditions.cfg
+-rwxrwxrwx 1 byteframe users  108 May 18 10:46 server_competitive_max_rounds_win_conditions_high_skill.cfg
+-rwxrwxrwx 1 byteframe users  112 May 18 10:46 server_competitive_rounds_win_conditions.cfg
+-rwxrwxrwx 1 byteframe users  123 May 18 10:46 server_competitive_rounds_win_conditions_high_skill.cfg
+-rwxrwxrwx 1 byteframe users  128 May 18 10:46 server_competitive_stopwatch_win_conditions.cfg
+-rwxrwxrwx 1 byteframe users  139 May 18 10:46 server_competitive_stopwatch_win_conditions_high_skill.cfg
+-rwxrwxrwx 1 byteframe users   94 May 18 10:46 server_limited_rounds.cfg
+-rwxrwxrwx 1 byteframe users   93 May 18 10:46 server_limited_time.cfg
+-rwxrwxrwx 1 byteframe users  142 May 18 10:46 server_mannup.cfg
+-rwxrwxrwx 1 byteframe users 1074 May 18 10:46 server_matchmaking_base.cfg
+-rwxrwxrwx 1 byteframe users  176 May 18 10:46 server_mvm.cfg
+-rwxrwxrwx 1 byteframe users 3078 May 18 10:46 sfm_defaultanimationgroups.txt
+-rwxrwxrwx 1 byteframe users  102 May 18 10:46 sourcevr_tf.cfg
+-rwxrwxrwx 1 byteframe users  785 May 18 10:46 trusted_keys_base.txt
+-rwxrwxrwx 1 byteframe users 1417 May 18 10:46 trusted_keys_example.txt
+-rwxrwxrwx 1 byteframe users  142 May 18 10:46 undo360controller.cfg
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 unencrypted
+
+Team Fortress 2/tf/cfg/unencrypted:
+total 0
+
+Team Fortress 2/tf/custom:
+total 4
+-rwxrwxrwx 1 byteframe users 1553 May 18 10:46 readme.txt
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 workshop
+
+Team Fortress 2/tf/custom/workshop:
+total 0
+-rwxrwxrwx 1 byteframe users 103 May 18 10:46 readme.txt
+
+Team Fortress 2/tf/download:
+total 0
+-rwxrwxrwx 1 byteframe users 376 May 18 10:46 readme.txt
+
+Team Fortress 2/tf/maps:
+total 4444060
+-rwxrwxrwx 1 byteframe users  42140260 May 18 10:44 arena_badlands.bsp
+-rwxrwxrwx 1 byteframe users  16843394 May 18 10:44 arena_byre.bsp
+-rwxrwxrwx 1 byteframe users  27281556 May 18 10:44 arena_granary.bsp
+-rwxrwxrwx 1 byteframe users  22953100 May 18 10:44 arena_lumberyard.bsp
+-rwxrwxrwx 1 byteframe users  29487244 May 18 10:44 arena_nucleus.bsp
+-rwxrwxrwx 1 byteframe users  36719028 May 18 10:44 arena_offblast_final.bsp
+-rwxrwxrwx 1 byteframe users  24793072 May 18 10:44 arena_ravine.bsp
+-rwxrwxrwx 1 byteframe users  26684696 May 18 10:44 arena_sawmill.bsp
+-rwxrwxrwx 1 byteframe users  16738664 May 18 10:44 arena_watchtower.bsp
+-rwxrwxrwx 1 byteframe users  18921132 May 18 10:44 arena_well.bsp
+-rwxrwxrwx 1 byteframe users   6306640 May 18 10:44 background01.bsp
+-rwxrwxrwx 1 byteframe users  84272008 May 18 10:44 cp_5gorge.bsp
+-rwxrwxrwx 1 byteframe users  25981141 May 18 10:44 cp_badlands.bsp
+-rwxrwxrwx 1 byteframe users    933248 May 18 10:44 cp_cloak.bsp
+-rwxrwxrwx 1 byteframe users  58001996 May 18 10:44 cp_coldfront.bsp
+-rwxrwxrwx 1 byteframe users  23158732 May 18 10:44 cp_degrootkeep.bsp
+-rwxrwxrwx 1 byteframe users  21945050 May 18 10:44 cp_dustbowl.bsp
+-rwxrwxrwx 1 byteframe users  83655888 May 18 10:44 cp_egypt_final.bsp
+-rwxrwxrwx 1 byteframe users  39550196 May 18 10:44 cp_fastlane.bsp
+-rwxrwxrwx 1 byteframe users  60363472 May 18 10:44 cp_foundry.bsp
+-rwxrwxrwx 1 byteframe users  77271944 May 18 10:44 cp_freight_final1.bsp
+-rwxrwxrwx 1 byteframe users  50238340 May 18 10:44 cp_gorge.bsp
+-rwxrwxrwx 1 byteframe users  15886471 May 18 10:44 cp_gorge_event.bsp
+-rwxrwxrwx 1 byteframe users  59598692 May 18 10:44 cp_granary.bsp
+-rwxrwxrwx 1 byteframe users  47374712 May 18 10:44 cp_gravelpit.bsp
+-rwxrwxrwx 1 byteframe users  24500234 May 18 10:44 cp_gullywash_final1.bsp
+-rwxrwxrwx 1 byteframe users  31464656 May 18 10:44 cp_junction_final.bsp
+-rwxrwxrwx 1 byteframe users  20041032 May 18 10:44 cp_manor_event.bsp
+-rwxrwxrwx 1 byteframe users  28501274 May 18 10:44 cp_mercenarypark.bsp
+-rwxrwxrwx 1 byteframe users  18970621 May 18 10:44 cp_metalworks.bsp
+-rwxrwxrwx 1 byteframe users  39903530 May 18 10:44 cp_mossrock.bsp
+-rwxrwxrwx 1 byteframe users  50152164 May 18 10:44 cp_mountainlab.bsp
+-rwxrwxrwx 1 byteframe users  23538902 May 18 10:44 cp_powerhouse.bsp
+-rwxrwxrwx 1 byteframe users  49282532 May 18 10:44 cp_process_final.bsp
+-rwxrwxrwx 1 byteframe users  20378888 May 18 10:44 cp_snakewater_final1.bsp
+-rwxrwxrwx 1 byteframe users 127291673 May 18 10:44 cp_snowplow.bsp
+-rwxrwxrwx 1 byteframe users  42159356 May 18 10:44 cp_standin_final.bsp
+-rwxrwxrwx 1 byteframe users  58310672 May 18 10:44 cp_steel.bsp
+-rwxrwxrwx 1 byteframe users  30319857 May 18 10:44 cp_sunshine.bsp
+-rwxrwxrwx 1 byteframe users  22116510 May 18 10:44 cp_sunshine_event.bsp
+-rwxrwxrwx 1 byteframe users  23923129 May 18 10:44 cp_vanguard.bsp
+-rwxrwxrwx 1 byteframe users  69715720 May 18 10:44 cp_well.bsp
+-rwxrwxrwx 1 byteframe users  45109920 May 18 10:44 cp_yukon_final.bsp
+-rwxrwxrwx 1 byteframe users  22751863 May 18 10:44 ctf_2fort.bsp
+-rwxrwxrwx 1 byteframe users  67736140 May 18 10:44 ctf_2fort_invasion.bsp
+-rwxrwxrwx 1 byteframe users  64552676 May 18 10:44 ctf_doublecross.bsp
+-rwxrwxrwx 1 byteframe users  20753429 May 18 10:44 ctf_foundry.bsp
+-rwxrwxrwx 1 byteframe users  71050644 May 18 10:44 ctf_gorge.bsp
+-rwxrwxrwx 1 byteframe users  40274552 May 18 10:44 ctf_hellfire.bsp
+-rwxrwxrwx 1 byteframe users  19970093 May 18 10:44 ctf_landfall.bsp
+-rwxrwxrwx 1 byteframe users  32109104 May 18 10:44 ctf_sawmill.bsp
+-rwxrwxrwx 1 byteframe users  45892652 May 18 10:44 ctf_thundermountain.bsp
+-rwxrwxrwx 1 byteframe users  21477832 May 18 10:44 ctf_turbine.bsp
+-rwxrwxrwx 1 byteframe users  54717620 May 18 10:44 ctf_well.bsp
+-rwxrwxrwx 1 byteframe users   2897004 May 18 10:44 itemtest.bsp
+-rwxrwxrwx 1 byteframe users  52963576 May 18 10:44 koth_badlands.bsp
+-rwxrwxrwx 1 byteframe users  23969169 May 18 10:44 koth_bagel_event.bsp
+-rwxrwxrwx 1 byteframe users  25242947 May 18 10:44 koth_brazil.bsp
+-rwxrwxrwx 1 byteframe users  13052633 May 18 10:44 koth_harvest_event.bsp
+-rwxrwxrwx 1 byteframe users  26691032 May 18 10:44 koth_harvest_final.bsp
+-rwxrwxrwx 1 byteframe users  26385650 May 18 10:44 koth_highpass.bsp
+-rwxrwxrwx 1 byteframe users  42468908 May 18 10:44 koth_king.bsp
+-rwxrwxrwx 1 byteframe users  15771120 May 18 10:44 koth_lakeside_event.bsp
+-rwxrwxrwx 1 byteframe users  41123424 May 18 10:44 koth_lakeside_final.bsp
+-rwxrwxrwx 1 byteframe users  97639992 May 18 10:44 koth_lazarus.bsp
+-rwxrwxrwx 1 byteframe users  11676393 May 18 10:44 koth_maple_ridge_event.bsp
+-rwxrwxrwx 1 byteframe users  22652241 May 18 10:44 koth_moonshine_event.bsp
+-rwxrwxrwx 1 byteframe users  31958404 May 18 10:44 koth_nucleus.bsp
+-rwxrwxrwx 1 byteframe users  28978218 May 18 10:44 koth_probed.bsp
+-rwxrwxrwx 1 byteframe users  27758576 May 18 10:44 koth_sawmill.bsp
+-rwxrwxrwx 1 byteframe users  62596005 May 18 10:44 koth_slasher.bsp
+-rwxrwxrwx 1 byteframe users 101788519 May 18 10:44 koth_slaughter_event.bsp
+-rwxrwxrwx 1 byteframe users  45572559 May 18 10:44 koth_suijin.bsp
+-rwxrwxrwx 1 byteframe users  41690668 May 18 10:44 koth_viaduct.bsp
+-rwxrwxrwx 1 byteframe users  18463931 May 18 10:44 koth_viaduct_event.bsp
+-rwxrwxrwx 1 byteframe users  36424584 May 18 10:44 mvm_bigrock.bsp
+-rwxrwxrwx 1 byteframe users  26451620 May 18 10:44 mvm_coaltown.bsp
+-rwxrwxrwx 1 byteframe users  16232280 May 18 10:44 mvm_decoy.bsp
+-rwxrwxrwx 1 byteframe users  27494252 May 18 10:44 mvm_ghost_town.bsp
+-rwxrwxrwx 1 byteframe users  45160432 May 18 10:44 mvm_mannhattan.bsp
+-rwxrwxrwx 1 byteframe users  21074232 May 18 10:44 mvm_mannworks.bsp
+-rwxrwxrwx 1 byteframe users  39445852 May 18 10:44 mvm_rottenburg.bsp
+-rwxrwxrwx 1 byteframe users  50729656 May 18 10:44 pass_brickyard.bsp
+-rwxrwxrwx 1 byteframe users  60451264 May 18 10:44 pass_district.bsp
+-rwxrwxrwx 1 byteframe users  51286184 May 18 10:44 pass_timbertown.bsp
+-rwxrwxrwx 1 byteframe users  79799451 May 18 10:44 pd_cursed_cove_event.bsp
+-rwxrwxrwx 1 byteframe users 104257080 May 18 10:44 pd_monster_bash.bsp
+-rwxrwxrwx 1 byteframe users  25077288 May 18 10:44 pd_pit_of_death_event.bsp
+-rwxrwxrwx 1 byteframe users  40424945 May 18 10:44 pd_watergate.bsp
+-rwxrwxrwx 1 byteframe users  16619247 May 18 10:44 pl_badwater.bsp
+-rwxrwxrwx 1 byteframe users  20421584 May 18 10:44 pl_barnblitz.bsp
+-rwxrwxrwx 1 byteframe users  25120725 May 18 10:44 pl_borneo.bsp
+-rwxrwxrwx 1 byteframe users  39349800 May 18 10:44 pl_cactuscanyon.bsp
+-rwxrwxrwx 1 byteframe users  94280953 May 18 10:44 pl_enclosure_final.bsp
+-rwxrwxrwx 1 byteframe users  23091172 May 18 10:44 pl_fifthcurve_event.bsp
+-rwxrwxrwx 1 byteframe users  65560520 May 18 10:44 pl_frontier_final.bsp
+-rwxrwxrwx 1 byteframe users  29332763 May 18 10:44 pl_goldrush.bsp
+-rwxrwxrwx 1 byteframe users  29219626 May 18 10:44 pl_hoodoo_final.bsp
+-rwxrwxrwx 1 byteframe users  20739994 May 18 10:44 pl_millstone_event.bsp
+-rwxrwxrwx 1 byteframe users  32508595 May 18 10:44 pl_precipice_event_final.bsp
+-rwxrwxrwx 1 byteframe users  29880969 May 18 10:44 plr_bananabay.bsp
+-rwxrwxrwx 1 byteframe users  48498836 May 18 10:44 plr_hightower.bsp
+-rwxrwxrwx 1 byteframe users  21895223 May 18 10:44 plr_hightower_event.bsp
+-rwxrwxrwx 1 byteframe users  29287134 May 18 10:44 plr_nightfall_final.bsp
+-rwxrwxrwx 1 byteframe users  79846492 May 18 10:44 plr_pipeline.bsp
+-rwxrwxrwx 1 byteframe users  28008407 May 18 10:44 pl_rumble_event.bsp
+-rwxrwxrwx 1 byteframe users  39088460 May 18 10:44 pl_snowycoast.bsp
+-rwxrwxrwx 1 byteframe users  24871221 May 18 10:44 pl_swiftwater_final1.bsp
+-rwxrwxrwx 1 byteframe users  79006680 May 18 10:44 pl_thundermountain.bsp
+-rwxrwxrwx 1 byteframe users  67848972 May 18 10:44 pl_upward.bsp
+-rwxrwxrwx 1 byteframe users  44429872 May 18 10:44 rd_asteroid.bsp
+-rwxrwxrwx 1 byteframe users  46663560 May 18 10:44 sd_doomsday.bsp
+-rwxrwxrwx 1 byteframe users  21503458 May 18 10:44 sd_doomsday_event.bsp
+-rwxrwxrwx 1 byteframe users  25638706 May 18 10:44 tc_hydro.bsp
+-rwxrwxrwx 1 byteframe users  59462540 May 18 10:44 tr_dustbowl.bsp
+-rwxrwxrwx 1 byteframe users  18592124 May 18 10:44 tr_target.bsp
+
+Team Fortress 2/tf/materials:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 models
+
+Team Fortress 2/tf/materials/models:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 player
+
+Team Fortress 2/tf/materials/models/player:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 items
+
+Team Fortress 2/tf/materials/models/player/items:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 templates
+
+Team Fortress 2/tf/materials/models/player/items/templates:
+total 4
+-rwxrwxrwx 1 byteframe users 3011 May 18 10:49 standard.vmt
+
+Team Fortress 2/tf/media:
+total 429392
+-rwxrwxrwx 1 byteframe users  13128016 May 18 10:44 arena_intro.bik
+-rwxrwxrwx 1 byteframe users  13809344 May 18 10:44 cp_badlands.bik
+-rwxrwxrwx 1 byteframe users  13762856 May 18 10:44 cp_coldfront.bik
+-rwxrwxrwx 1 byteframe users  13448480 May 18 10:44 cp_dustbowl.bik
+-rwxrwxrwx 1 byteframe users  12886472 May 18 10:44 cp_granary.bik
+-rwxrwxrwx 1 byteframe users  13473632 May 18 10:44 cp_gravelpit.bik
+-rwxrwxrwx 1 byteframe users  16861268 May 18 10:44 cp_steel.bik
+-rwxrwxrwx 1 byteframe users  12780688 May 18 10:44 cp_well.bik
+-rwxrwxrwx 1 byteframe users  13823304 May 18 10:44 ctf_2fort.bik
+-rwxrwxrwx 1 byteframe users  14514292 May 18 10:44 ctf_well.bik
+-rwxrwxrwx 1 byteframe users   6009920 May 18 10:44 cyoa_intro_stage1.bik
+-rwxrwxrwx 1 byteframe users   8986660 May 18 10:44 cyoa_intro_stage2.bik
+-rwxrwxrwx 1 byteframe users   7211876 May 18 10:44 cyoa_intro_stage3.bik
+-rwxrwxrwx 1 byteframe users 116479736 May 18 10:44 mvm_intro.bik
+-rwxrwxrwx 1 byteframe users  13498512 May 18 10:44 pl_badwater.bik
+-rwxrwxrwx 1 byteframe users  13823336 May 18 10:44 pl_goldrush.bik
+-rwxrwxrwx 1 byteframe users        17 May 18 10:55 startupvids.txt
+-rwxrwxrwx 1 byteframe users  16174068 May 18 10:44 tc_hydro.bik
+-rwxrwxrwx 1 byteframe users  13448480 May 18 10:44 tr_dustbowl.bik
+-rwxrwxrwx 1 byteframe users  13823336 May 18 10:44 tr_goldrush.bik
+-rwxrwxrwx 1 byteframe users  17537856 May 18 10:44 tr_target.bik
+-rwxrwxrwx 1 byteframe users  27085984 May 18 10:44 tr_target_demo.bik
+-rwxrwxrwx 1 byteframe users  18487348 May 18 10:44 tr_target_engineer.bik
+-rwxrwxrwx 1 byteframe users  28591472 May 18 10:44 tr_target_spy.bik
+
+Team Fortress 2/tf/resource:
+total 136960
+-rwxrwxrwx 1 byteframe users   99328 May 18 10:48 closecaption_brazilian.dat
+-rwxrwxrwx 1 byteframe users  162588 May 18 10:48 closecaption_brazilian.txt
+-rwxrwxrwx 1 byteframe users  107520 May 18 10:49 closecaption_bulgarian.dat
+-rwxrwxrwx 1 byteframe users  166528 May 18 10:49 closecaption_bulgarian.txt
+-rwxrwxrwx 1 byteframe users   74752 May 18 10:48 closecaption_czech.dat
+-rwxrwxrwx 1 byteframe users  148614 May 18 10:49 closecaption_czech.txt
+-rwxrwxrwx 1 byteframe users   91136 May 18 10:50 closecaption_danish.dat
+-rwxrwxrwx 1 byteframe users  162434 May 18 10:48 closecaption_danish.txt
+-rwxrwxrwx 1 byteframe users   99328 May 18 10:48 closecaption_dutch.dat
+-rwxrwxrwx 1 byteframe users  166568 May 18 10:49 closecaption_dutch.txt
+-rwxrwxrwx 1 byteframe users   91136 May 18 10:49 closecaption_english.dat
+-rwxrwxrwx 1 byteframe users   77906 May 18 10:49 closecaption_english.txt
+-rwxrwxrwx 1 byteframe users   91136 May 18 10:49 closecaption_finnish.dat
+-rwxrwxrwx 1 byteframe users  157580 May 18 10:48 closecaption_finnish.txt
+-rwxrwxrwx 1 byteframe users   99328 May 18 10:48 closecaption_french.dat
+-rwxrwxrwx 1 byteframe users  167536 May 18 10:48 closecaption_french.txt
+-rwxrwxrwx 1 byteframe users   99328 May 18 10:48 closecaption_german.dat
+-rwxrwxrwx 1 byteframe users  163278 May 18 10:48 closecaption_german.txt
+-rwxrwxrwx 1 byteframe users  107520 May 18 10:50 closecaption_greek.dat
+-rwxrwxrwx 1 byteframe users  167874 May 18 10:50 closecaption_greek.txt
+-rwxrwxrwx 1 byteframe users   91136 May 18 10:50 closecaption_hungarian.dat
+-rwxrwxrwx 1 byteframe users  156994 May 18 10:48 closecaption_hungarian.txt
+-rwxrwxrwx 1 byteframe users   91136 May 18 10:50 closecaption_italian.dat
+-rwxrwxrwx 1 byteframe users  159420 May 18 10:48 closecaption_italian.txt
+-rwxrwxrwx 1 byteframe users   41984 May 18 10:49 closecaption_japanese.dat
+-rwxrwxrwx 1 byteframe users  117812 May 18 10:49 closecaption_japanese.txt
+-rwxrwxrwx 1 byteframe users   41984 May 18 10:48 closecaption_koreana.dat
+-rwxrwxrwx 1 byteframe users  120342 May 18 10:48 closecaption_koreana.txt
+-rwxrwxrwx 1 byteframe users   41984 May 18 10:48 closecaption_korean.dat
+-rwxrwxrwx 1 byteframe users  120342 May 18 10:48 closecaption_korean.txt
+-rwxrwxrwx 1 byteframe users   91136 May 18 10:48 closecaption_norwegian.dat
+-rwxrwxrwx 1 byteframe users  155040 May 18 10:48 closecaption_norwegian.txt
+-rwxrwxrwx 1 byteframe users   99328 May 18 10:49 closecaption_polish.dat
+-rwxrwxrwx 1 byteframe users  163270 May 18 10:50 closecaption_polish.txt
+-rwxrwxrwx 1 byteframe users   99328 May 18 10:50 closecaption_portuguese.dat
+-rwxrwxrwx 1 byteframe users  166064 May 18 10:49 closecaption_portuguese.txt
+-rwxrwxrwx 1 byteframe users   99328 May 18 10:49 closecaption_romanian.dat
+-rwxrwxrwx 1 byteframe users  163012 May 18 10:49 closecaption_romanian.txt
+-rwxrwxrwx 1 byteframe users   74752 May 18 10:49 closecaption_russian.dat
+-rwxrwxrwx 1 byteframe users  148764 May 18 10:49 closecaption_russian.txt
+-rwxrwxrwx 1 byteframe users   33792 May 18 10:49 closecaption_schinese.dat
+-rwxrwxrwx 1 byteframe users  107268 May 18 10:50 closecaption_schinese.txt
+-rwxrwxrwx 1 byteframe users   99328 May 18 10:49 closecaption_spanish.dat
+-rwxrwxrwx 1 byteframe users  166634 May 18 10:50 closecaption_spanish.txt
+-rwxrwxrwx 1 byteframe users   82944 May 18 10:48 closecaption_swedish.dat
+-rwxrwxrwx 1 byteframe users  152498 May 18 10:49 closecaption_swedish.txt
+-rwxrwxrwx 1 byteframe users   33792 May 18 10:49 closecaption_tchinese.dat
+-rwxrwxrwx 1 byteframe users  107186 May 18 10:49 closecaption_tchinese.txt
+-rwxrwxrwx 1 byteframe users    7688 May 18 10:49 closecaption_thai.txt
+-rwxrwxrwx 1 byteframe users   91136 May 18 10:49 closecaption_turkish.dat
+-rwxrwxrwx 1 byteframe users  158830 May 18 10:49 closecaption_turkish.txt
+-rwxrwxrwx 1 byteframe users  145644 May 18 10:49 closecaption_ukrainian.txt
+-rwxrwxrwx 1 byteframe users     326 May 18 10:49 game_1bpp.ico
+-rwxrwxrwx 1 byteframe users  152683 May 18 10:49 game.icns
+-rwxrwxrwx 1 byteframe users   21342 May 18 10:48 game.ico
+-rwxrwxrwx 1 byteframe users    9286 May 18 10:49 game-icon.bmp
+-rwxrwxrwx 1 byteframe users   24316 May 18 10:48 ocra.ttf
+-rwxrwxrwx 1 byteframe users   61696 May 18 10:49 tf2build.ttf
+-rwxrwxrwx 1 byteframe users   47480 May 18 10:50 tf2professor.ttf
+-rwxrwxrwx 1 byteframe users   73424 May 18 10:50 tf2secondary.ttf
+-rwxrwxrwx 1 byteframe users   68828 May 18 10:50 tf2.ttf
+-rwxrwxrwx 1 byteframe users 4996898 May 18 10:44 tf_brazilian.txt
+-rwxrwxrwx 1 byteframe users 5071996 May 18 10:44 tf_bulgarian.txt
+-rwxrwxrwx 1 byteframe users 4850620 May 18 10:44 tf_czech.txt
+-rwxrwxrwx 1 byteframe users 4915728 May 18 10:44 tf_danish.txt
+-rwxrwxrwx 1 byteframe users   44180 May 18 10:50 tfd.ttf
+-rwxrwxrwx 1 byteframe users 4916892 May 18 10:44 tf_dutch.txt
+-rwxrwxrwx 1 byteframe users 2300084 May 18 10:44 tf_english.txt
+-rwxrwxrwx 1 byteframe users 4623270 May 18 10:44 tf_finnish.txt
+-rwxrwxrwx 1 byteframe users 5092512 May 18 10:44 tf_french.txt
+-rwxrwxrwx 1 byteframe users 4882750 May 18 10:44 tf_german.txt
+-rwxrwxrwx 1 byteframe users 5025030 May 18 10:44 tf_greek.txt
+-rwxrwxrwx 1 byteframe users 4935094 May 18 10:44 tf_hungarian.txt
+-rwxrwxrwx 1 byteframe users 5119704 May 18 10:44 tf_italian.txt
+-rwxrwxrwx 1 byteframe users 2055842 May 18 10:44 tf_japanese.txt
+-rwxrwxrwx 1 byteframe users 3743304 May 18 10:44 tf_koreana.txt
+-rwxrwxrwx 1 byteframe users 3743304 May 18 10:44 tf_korean.txt
+-rwxrwxrwx 1 byteframe users    8420 May 18 10:49 tflogo.ttf
+-rwxrwxrwx 1 byteframe users 3040018 May 18 10:44 tf_norwegian.txt
+-rwxrwxrwx 1 byteframe users 2097224 May 18 10:44 tf_pirate.txt
+-rwxrwxrwx 1 byteframe users 4973976 May 18 10:44 tf_polish.txt
+-rwxrwxrwx 1 byteframe users 5132132 May 18 10:44 tf_portuguese.txt
+-rwxrwxrwx 1 byteframe users  258992 May 18 10:50 tf_proto_obj_defs_brazilian.txt
+-rwxrwxrwx 1 byteframe users  264430 May 18 10:44 tf_proto_obj_defs_bulgarian.txt
+-rwxrwxrwx 1 byteframe users  260226 May 18 10:48 tf_proto_obj_defs_czech.txt
+-rwxrwxrwx 1 byteframe users  258402 May 18 10:49 tf_proto_obj_defs_danish.txt
+-rwxrwxrwx 1 byteframe users  197906 May 18 10:49 tf_proto_obj_defs_dutch.txt
+-rwxrwxrwx 1 byteframe users  102962 May 18 10:48 tf_proto_obj_defs_english.txt
+-rwxrwxrwx 1 byteframe users  261254 May 18 10:50 tf_proto_obj_defs_finnish.txt
+-rwxrwxrwx 1 byteframe users  265520 May 18 10:44 tf_proto_obj_defs_french.txt
+-rwxrwxrwx 1 byteframe users  261404 May 18 10:48 tf_proto_obj_defs_german.txt
+-rwxrwxrwx 1 byteframe users  262982 May 18 10:44 tf_proto_obj_defs_greek.txt
+-rwxrwxrwx 1 byteframe users  260724 May 18 10:49 tf_proto_obj_defs_hungarian.txt
+-rwxrwxrwx 1 byteframe users  265908 May 18 10:44 tf_proto_obj_defs_italian.txt
+-rwxrwxrwx 1 byteframe users     862 May 18 10:48 tf_proto_obj_defs_koreana.txt
+-rwxrwxrwx 1 byteframe users     862 May 18 10:48 tf_proto_obj_defs_korean.txt
+-rwxrwxrwx 1 byteframe users  206078 May 18 10:49 tf_proto_obj_defs_norwegian.txt
+-rwxrwxrwx 1 byteframe users  258008 May 18 10:48 tf_proto_obj_defs_polish.txt
+-rwxrwxrwx 1 byteframe users  262760 May 18 10:44 tf_proto_obj_defs_portuguese.txt
+-rwxrwxrwx 1 byteframe users  227680 May 18 10:48 tf_proto_obj_defs_romanian.txt
+-rwxrwxrwx 1 byteframe users  253760 May 18 10:48 tf_proto_obj_defs_russian.txt
+-rwxrwxrwx 1 byteframe users  223714 May 18 10:50 tf_proto_obj_defs_schinese.txt
+-rwxrwxrwx 1 byteframe users  261284 May 18 10:49 tf_proto_obj_defs_spanish.txt
+-rwxrwxrwx 1 byteframe users  254418 May 18 10:49 tf_proto_obj_defs_swedish.txt
+-rwxrwxrwx 1 byteframe users   17918 May 18 10:49 tf_proto_obj_defs_tchinese.txt
+-rwxrwxrwx 1 byteframe users  255854 May 18 10:48 tf_proto_obj_defs_thai.txt
+-rwxrwxrwx 1 byteframe users  257994 May 18 10:49 tf_proto_obj_defs_turkish.txt
+-rwxrwxrwx 1 byteframe users  258566 May 18 10:49 tf_proto_obj_defs_ukrainian.txt
+-rwxrwxrwx 1 byteframe users  179458 May 18 10:50 tf_quests_brazilian.txt
+-rwxrwxrwx 1 byteframe users  184628 May 18 10:49 tf_quests_bulgarian.txt
+-rwxrwxrwx 1 byteframe users  179316 May 18 10:49 tf_quests_czech.txt
+-rwxrwxrwx 1 byteframe users  180222 May 18 10:49 tf_quests_danish.txt
+-rwxrwxrwx 1 byteframe users  181246 May 18 10:49 tf_quests_dutch.txt
+-rwxrwxrwx 1 byteframe users   85852 May 18 10:49 tf_quests_english.txt
+-rwxrwxrwx 1 byteframe users  182212 May 18 10:50 tf_quests_finnish.txt
+-rwxrwxrwx 1 byteframe users  188218 May 18 10:50 tf_quests_french.txt
+-rwxrwxrwx 1 byteframe users  186166 May 18 10:49 tf_quests_german.txt
+-rwxrwxrwx 1 byteframe users  183446 May 18 10:48 tf_quests_greek.txt
+-rwxrwxrwx 1 byteframe users  181428 May 18 10:49 tf_quests_hungarian.txt
+-rwxrwxrwx 1 byteframe users  186680 May 18 10:48 tf_quests_italian.txt
+-rwxrwxrwx 1 byteframe users    2568 May 18 10:49 tf_quests_japanese.txt
+-rwxrwxrwx 1 byteframe users  121194 May 18 10:49 tf_quests_koreana.txt
+-rwxrwxrwx 1 byteframe users  121194 May 18 10:49 tf_quests_korean.txt
+-rwxrwxrwx 1 byteframe users   25510 May 18 10:50 tf_quests_norwegian.txt
+-rwxrwxrwx 1 byteframe users  180760 May 18 10:49 tf_quests_polish.txt
+-rwxrwxrwx 1 byteframe users  184648 May 18 10:49 tf_quests_portuguese.txt
+-rwxrwxrwx 1 byteframe users  182604 May 18 10:49 tf_quests_romanian.txt
+-rwxrwxrwx 1 byteframe users  175334 May 18 10:49 tf_quests_russian.txt
+-rwxrwxrwx 1 byteframe users  147852 May 18 10:50 tf_quests_schinese.txt
+-rwxrwxrwx 1 byteframe users  184344 May 18 10:49 tf_quests_spanish.txt
+-rwxrwxrwx 1 byteframe users  178600 May 18 10:49 tf_quests_swedish.txt
+-rwxrwxrwx 1 byteframe users   98870 May 18 10:49 tf_quests_tchinese.txt
+-rwxrwxrwx 1 byteframe users  178816 May 18 10:48 tf_quests_thai.txt
+-rwxrwxrwx 1 byteframe users  180578 May 18 10:50 tf_quests_turkish.txt
+-rwxrwxrwx 1 byteframe users  178336 May 18 10:49 tf_quests_ukrainian.txt
+-rwxrwxrwx 1 byteframe users 4755688 May 18 10:44 tf_romanian.txt
+-rwxrwxrwx 1 byteframe users 4918364 May 18 10:44 tf_russian.txt
+-rwxrwxrwx 1 byteframe users 4047740 May 18 10:44 tf_schinese.txt
+-rwxrwxrwx 1 byteframe users 5054114 May 18 10:44 tf_spanish.txt
+-rwxrwxrwx 1 byteframe users 4627996 May 18 10:44 tf_swedish.txt
+-rwxrwxrwx 1 byteframe users 3917710 May 18 10:44 tf_tchinese.txt
+-rwxrwxrwx 1 byteframe users 4820804 May 18 10:44 tf_thai.txt
+-rwxrwxrwx 1 byteframe users  115928 May 18 10:49 tf.ttf
+-rwxrwxrwx 1 byteframe users 4891268 May 18 10:44 tf_turkish.txt
+-rwxrwxrwx 1 byteframe users 4930780 May 18 10:44 tf_ukrainian.txt
+
+Team Fortress 2/tf/scripts:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 items
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 protodefs
+
+Team Fortress 2/tf/scripts/items:
+total 4844
+-rwxrwxrwx 1 byteframe users 4958779 May 18 10:44 items_game.txt
+-rwxrwxrwx 1 byteframe users     128 May 18 10:50 items_game.txt.sig
+
+Team Fortress 2/tf/scripts/protodefs:
+total 5068
+-rwxrwxrwx 1 byteframe users 5189619 May 18 10:44 proto_defs.vpd
+-rwxrwxrwx 1 byteframe users     128 May 18 10:50 proto_defs.vpd.sig
+
+Team Fortress 2/tf/workshop:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 content
+
+Team Fortress 2/tf/workshop/content:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 models
+
+Team Fortress 2/tf/workshop/content/models:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 player
+
+Team Fortress 2/tf/workshop/content/models/player:
+total 0
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 demo
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 engineer
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 heavy
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 medic
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 pyro
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 scout
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 sniper
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 soldier
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 spy
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 tf_animation_rules
+
+Team Fortress 2/tf/workshop/content/models/player/demo:
+total 16
+-rwxrwxrwx 1 byteframe users 13145 May 18 10:55 demo_definebones.qci
+
+Team Fortress 2/tf/workshop/content/models/player/engineer:
+total 12
+-rwxrwxrwx 1 byteframe users 11370 May 18 10:55 engineer_definebones.qci
+
+Team Fortress 2/tf/workshop/content/models/player/heavy:
+total 12
+-rwxrwxrwx 1 byteframe users 12212 May 18 10:55 heavy_definebones.qci
+
+Team Fortress 2/tf/workshop/content/models/player/medic:
+total 16
+-rwxrwxrwx 1 byteframe users 15527 May 18 10:55 medic_definebones.qci
+
+Team Fortress 2/tf/workshop/content/models/player/pyro:
+total 12
+-rwxrwxrwx 1 byteframe users 11814 May 18 10:55 pyro_definebones.qci
+
+Team Fortress 2/tf/workshop/content/models/player/scout:
+total 12
+-rwxrwxrwx 1 byteframe users 12043 May 18 10:55 scout_definebones.qci
+
+Team Fortress 2/tf/workshop/content/models/player/sniper:
+total 12
+-rwxrwxrwx 1 byteframe users 11640 May 18 10:55 sniper_definebones.qci
+
+Team Fortress 2/tf/workshop/content/models/player/soldier:
+total 16
+-rwxrwxrwx 1 byteframe users 14025 May 18 10:55 soldier_definebones.qci
+
+Team Fortress 2/tf/workshop/content/models/player/spy:
+total 16
+-rwxrwxrwx 1 byteframe users 13331 May 18 10:55 spy_definebones.qci
+
+Team Fortress 2/tf/workshop/content/models/player/tf_animation_rules:
+total 4
+drwxrwxrwx 1 byteframe users 4096 May 18 10:57 anim_macros
+-rwxrwxrwx 1 byteframe users  362 May 18 10:55 ruleshierarchy.qci
+-rwxrwxrwx 1 byteframe users 2415 May 18 10:55 tf_macros_list.qci
+
+Team Fortress 2/tf/workshop/content/models/player/tf_animation_rules/anim_macros:
+total 4
+-rwxrwxrwx 1 byteframe users 3831 May 18 10:55 tf_weightlists.qci

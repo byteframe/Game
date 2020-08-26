@@ -1,0 +1,140 @@
+"soundscape_byteframe12"
+{
+    "playlooping"
+    {
+        "volume"        "0.666"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_100dB"
+        "wave"          "sounds/elysis.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.25"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_100dB"
+        "wave"          "sounds/ambient_loop_outdoor.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "1.25"
+        "pitch"         "100"
+        "time"          "7, 14"
+        "soundlevel"    "SNDLVL_100dB"
+        "position"      "random"
+        "rndwave"
+        {
+            "wave"          "sounds/home/ambient_forest_wind_01.vsnd"
+            "wave"          "sounds/home/ambient_forest_wind_02.vsnd"
+            "wave"          "sounds/home/ambient_forest_wind_03.vsnd"
+            "wave"          "sounds/home/ambient_forest_wind_04.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "1.0"
+        "pitch"         "100"     
+        "time"          "4, 10"
+        "soundlevel"    "SNDLVL_80dB"
+        "position"      "random"
+        "rndwave"
+        {
+            "wave"       "sounds/night_cicada_01.vsnd"
+            "wave"       "sounds/night_cicada_02.vsnd"
+            "wave"       "sounds/night_cicada_03.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "1.0"
+        "origin"      "152, -1335, 21"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/log_fire_close.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.0"
+        "origin"      "64, -675, 14"
+        "pitch"         "80"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/waterfeature.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.8"
+        "origin"      "-1127, -1103, 103"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/bee_swarm_loop.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.0"
+        "origin"      "-983, 1258, 234"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/ambient/ac_vent1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.8"
+        "origin"      "-584, 640, 68"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/fly_swarm_loop.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.8"
+        "origin"      "-365.913, -1450, 26"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/fly_swarm_loop.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.8"
+        "origin"      "-1050, -1274, 80"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/fly_swarm_loop.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.8"
+        "pitch"         "100"     
+        "time"          "2, 4"
+        "soundlevel"    "SNDLVL_70dB"
+        "origin"   "-1480, 1056, 138"
+        "rndwave"
+        {
+            "wave"       "sounds/bee_1.vsnd"
+            "wave"       "sounds/bee_2.vsnd"
+            "wave"       "sounds/bee_3.vsnd"
+            "wave"       "sounds/bee_4.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.5"
+        "pitch"         "100"     
+        "time"          "60, 90"
+        "soundlevel"    "SNDLVL_80dB"
+        "position"      "random"
+        "rndwave"
+        {
+            "wave"       "sounds/ambient_mp3/animal_call_unknown_howl1.vsnd"
+            "wave"       "sounds/ambient_mp3/animal_call_unknown_howl2.vsnd"
+            "wave"       "sounds/ambient_mp3/animal_call_unknown_howl6.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "0.75"
+        "origin"      "683, -219, 88"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/ambient/cap_3_inside_computer_bank1.vsnd"
+    }
+
+}

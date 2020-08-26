@@ -1,0 +1,141 @@
+Here are all the materials and models from Half-Life 2 (and assets from HL2:DM, and Lost Coast that didn't conflict overlaid on top) converted into the Source 2 format for use in your VR environments! I used https://github.com/DankParrot/source2utils (with modifications to the vmt script for blend materials), and https://www.tophattwaffle.com/downloads/vtfedit/ to convert vtf files to tga.
+
+There are also Day of Defeat: Source, and Counter-Strike: Source asset packs available! They were built with a set of the hl2 materials (as things like models and blend materials might reference a basic hl2 material). Furthermore, each game had various materials that were the same path and name as hl2 variants, but was different content (they were replaced). Originally, a copy (and resulting compilation and space-saving cull thereof) of the hl2 materials would accompany these asset packs, but recent versions of these asset packs are safely built with the hl2 materials segregated. This means that, unlike version 1, these asset packs will have their uniquely modified versions of materials retained, and as much space is saved as possible. These games (as well as TF2) shipped with a set of the hl2 assets, and so various map recreation projects will still need to also require the Half-Life-2 Asset Pack. See changenotes for the version 1 release blurb.
+
+If you include multiple packs, there might be various name conflicts, hopefully just between files identical, but sometimes not. Also, the official Valve destinations/packs also tend to use alot of upscaled source 1 assets and/or filenames. The asset browser for your addon will only see one file, presumably for the first included asset pack listed by alphabetical order. This shouldn't be a problem for most map makers, but is something to be aware of.
+
+To prevent cross contamination with default Source 2 base textures and tool resources, the following files were culled prior to building. Alot of the Source 2 special textures seem to have been renamed/moved to avoid this, but not all.
+
+materials/
+-- debug/debugempty
+-- debug/particleerror
+-- dev/bloom
+-- dev/dev_measuredoor01
+-- dev/dev_measuregeneric01
+-- dev/dev_measuregeneric01b
+-- dev/dev_normal
+-- dev/downsample
+-- dev/flat_normal
+-- dev/graygrid
+-- dev/reflectivity_*
+-- editor/*
+-- tools/*
+-- models/editor/*
+-- models/tools/*
+-- vgui/hud/800corner*
+-- vgui/white
+-- vgui/white_additive
+-- vr/*
+models/
+-- editor/*
+-- tools/*
+
+As for this asset pack, I was unable to get the following models to build. Many other human models would crash the asset browser, but would come out successful on the other side of a restart, but unfortunately not all of them. I am sad the vorigtaunt would not materialize, and that most of the human resistance npc's don't build, but I somehow got a few more to build than last time.
+
+-- breen_monitor
+-- vortigaunt
+-- odessa
+-- humans/group01/female[1,4,6]
+-- humans/group01/male[1-9]
+-- humans/group02/female[1,3,4,6]
+-- humans/group02/male[1-9]
+-- humans/group03/female_[3,4,5,6,7,8,9]
+-- humans/group03/female_bloody_[2,3,4,6,7]
+-- humans/group03/male_[2-9]
+-- humans/group03/male_bloody_[1-9]_bloody
+-- humans/group03m/*
+
+Each game had various materials that were missing a texture map, or had an obvious typo, so those were corrected. Other than that, all vmat/vmdl files are the resulting output of the python scripts and nothing was processed through the tools and re-saved. Default reflection max is 0.030 down from 0.050.
+
+> //TextureReflectance "halflife/fifties_dr5dr.tga"
+perftest/fifties_dr5d
+> //TextureReflectance "shadertest/translucentspecularsphericalenvmapwithmaskedbase_alpha.tga"
+shadertest/translucentspecularsphericalenvmapwithmaskedbase
+> //TextureNormal "demo/hl-logo.tga"
+building_template/ss_bump_test
+> //TextureReflectance "lostcoast/nature/rockwall021e_normal_alpha.tga"
+lostcoast/nature/blendrockwetrock001a
+> //TextureReflectance "lostcoast/nature/sandfloor007c_normal_alpha.tga"
+lostcoast/nature/blendsandrock005b
+> //TextureReflectance "lostcoast/nature/sandfloor007c_normal_alpha.tga"
+lostcoast/nature/blendsandsand007a
+> //TextureReflectance "lostcoast/nature/sandfloor007c_normal_alpha.tga"
+lostcoast/nature/blendsandsand007b
+> //TextureReflectance "lostcoast/nature/sandfloor007c_normal_alpha.tga"
+lostcoast/nature/blendsandsand007c
+> //TextureReflectance "lostcoast/nature/sandfloor007c_normal_alpha.tga"
+lostcoast/nature/blendsandsand007d
+< TextureColor "Nature/grassweeds001a.tga"
+> TextureColor "lostcoast/Nature/grassweeds001a.tga"
+lostcoast/nature/grassweeds001a
+> //TextureColor "_rt_Camera.tga"
+> //TextureTranslucency "_rt_camera_alpha.tga"
+models/effects/portalrift_sheet
+< TextureColor "error/green.tga"
+> TextureColor "models/error/green.tga"
+> //TextureTranslucency "error/green_alpha.tga"
+models/error/green
+> //TextureReflectance "models/props_buildings/watertower_001a_alpha.tga"
+models/props_buildings/watertower_001a
+> //TextureReflectance "models/props_buildings/watertower_001c_alpha.tga"
+models/props_buildings/watertower_001c
+> //TextureReflectance "models/props_docks/waterdirectionalbouis_alpha.tga"
+models/props_docks/waterdirectionalbouis
+> //TextureReflectance "models/props_rooftop/parliament_dome_destroyed_interior_alpha.tga"
+models/props_rooftop/parliament_dome_destroyed_interior
+> //TextureColor "_rt_Camera.tga"
+> //TextureTranslucency "_rt_camera_alpha.tga"
+models/shadertest/point_camera
+> //TextureReflectance "nature/mudfloor001a_normal_alpha.tga"
+nature/blenddirtmud003a
+> //TextureReflectance "nature/slime_normal_alpha.tga"
+nature/toxicslime002a
+> //TextureReflectance "dev/water_normal_alpha.tga"
+nature/water_movingplane
+> //TextureTranslucency "_alpha.tga"
+particle/particle_ring_refract_01
+particle/screenspace_fog
+particle/warp1_warp
+particle/warp2_warp
+particle/warp3_warp_noz
+particle/warp4_warp
+particle/warp4_warp_noz
+particle/warp5_warp
+particle/warp_ripple
+particle/water/waterdrop_001a_refract
+particle/water/watersplash_001a_refract
+sprites/heatwave
+effects/strider_bulge_dudv
+effects/strider_pinch_dudv
+effects/tp_eyefx/tp_eyefx
+
+The Half-Life 2: Deathmatch and Lost-Cost VPKs for combined with hl2, but did not overwrite any files. Please see the following link for the full list of skipped file conflicts. https://paste.ee/p/djeZt Finally, the following is a list of potential conflicts with official valve steamtours releases. It might not be fully accurate.
+
+-- game_steamtours: lights/white001
+-- game_steamtours: models/props_junk/fruit_objects01
+-- game_steamtours: models/seagull/seagull
+-- game_steamtours: props_junk/watermelon01.* (model)
+-- game_steamtours: models/crow/crow01
+-- game_steamtours: models/pigeon/pigeon_sheet
+-- tf2_spytech: concrete/concretewall015a
+-- tf2_spytech: glass/glasswindow002a
+-- tf2_spytech: metal/metaldoor001a
+-- hlvr: brick/brickwall031d
+-- hlvr: metal/metalroof003a.*
+-- hlvr: tile/tileroof004a
+-- hlvr: models/props_buildings/long_building001a
+-- hlvr: models/props_buildings/project_building01
+-- hlvr: models/props_c17/light_magnifyinglamp01
+-- hlvr: models/props_c17/playground
+-- hlvr: models/props_c17/playground_carousel01
+-- hlvr: models/props_c17/playground_teetertoter_seat
+-- hlvr: models/props_c17/playgroundtick-tack-toe_post01
+-- hlvr: models/props_canal/canal_bridge02
+-- hlvr: models/props_junk/woodcrates01a
+-- hlvr: models/props_lab/monitor02
+-- hlvr: models/props_wasteland/speakercluster01a
+-- hlvr: models/props_wasteland/wood_fence01a_skin2
+
+TOTAL: 4486 vmat_c files, 2286 vmdl_c files
+VERSION: 2
+CHANGES: content dir name, lost coast, proper negations, structured routines and tracking, stock vpk checks, fixed more assets, asset cleanup,

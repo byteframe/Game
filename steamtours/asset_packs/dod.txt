@@ -1,0 +1,36 @@
+Here are all the materials and models from Day of Defeat: Source converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on these asset packs. Most importantly, a few models/materials will fail out as red outlines unless you subscribe to and include the Half-Life 2 pack.
+
+Like the HL2 pack, certain tool/developer assets were not included, either because they were a duplicate, or seemed otherwise dubious to include. They include the following:
+
+-- materials/dev/*
+-- materials/debug/debugempty
+-- materials/tools/*
+-- materials/tools/editor/*
+-- models/error
+
+Observe the following material changes:
+
+> //TextureReflectance "materials/ground/ice01_normal_alpha.tga"
+materials/ground/blendicesnow01.vmat
+> //TextureReflectance "materials/ground/snow01_alpha.tga"
+materials/ground/blendsnowgrass01.vmat
+> //TextureReflectance "materials/ground/snow01_alpha.tga"
+materials/ground/blendsnowgrass02.vmat
+> //TextureReflectance "materials/models/props_normandy/mill_water_wheel_alpha.tga"
+materials/models/props_normandy/mill_water_wheel.vmat
+> //TextureReflectance "materials/nature/sandfloor007c_normal_alpha.tga"
+materials/nature/blendsandrock005b.vmat
+> //TextureReflectance "materials/nature/sandfloor007c_normal_alpha.tga"
+materials/nature/blendsandsand007a.vmat
+> //TextureReflectance "materials/stone/cobble08b_normal_alpha.tga"
+materials/stone/blendcobblegrass002a.vmat
+
+Please see the following link for the full list of conflicts with the Half-Life 2 pack: https://paste.ee/p/MEk3k Typically the DOD version of the file will be selected over hl2, as it was in the original game. Finally, the following is a list of potential conflicts with official valve steamtours releases. It might not be fully accurate.
+
+-- asset_pack_tf2_spytech: materials/brick/brickwall001.vmat_c
+-- asset_pack_tf2_spytech: materials/brick/brickwall002.vmat_c
+-- asset_pack_tf2_spytech: materials/brick/brickwall002b.vmat_c
+
+TOTAL: 1394 vmat_c files, 818 vmdl_c files
+VERSION: 2
+CHANGES: built with hl2 gameinfo instead of with hl2 materials

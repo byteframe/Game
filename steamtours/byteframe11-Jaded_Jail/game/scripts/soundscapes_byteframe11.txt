@@ -1,0 +1,11 @@
+"soundscape_byteframe11"
+{
+    "playlooping"
+    {
+        "volume"        "1.0"
+        "origin"      "146, -22, 28"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_145dB"
+        "wave"          "sounds/OyBgx8TwB3Q.vsnd"
+    }
+}
