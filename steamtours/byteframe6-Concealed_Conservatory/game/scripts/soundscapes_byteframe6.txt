@@ -1,0 +1,58 @@
+"soundscape_byteframe6"
+{
+    "playrandom"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "time"          "7, 14"
+        "soundlevel"    "SNDLVL_100dB"
+        "position"      "random"
+        "rndwave"
+        {
+          "wave"          "sounds/home/ambient_forest_wind_01.vsnd"
+          "wave"          "sounds/home/ambient_forest_wind_02.vsnd"
+          "wave"          "sounds/home/ambient_forest_wind_03.vsnd"
+          "wave"          "sounds/home/ambient_forest_wind_04.vsnd"
+        }
+    }
+    "playlooping"
+    {
+      "volume"        "0.8"
+      "pitch"         "100"
+      "wave"          "sounds/ambient_loop_outdoor.vsnd"
+    }
+		    "playlooping"
+    {
+      "volume"        "0.3"
+      "pitch"         "100"
+      "wave"          "sounds/biosphere_cirque.vsnd"
+    }
+    "playrandom"
+    {
+      "volume"        "0.7"
+      "pitch"         "100"     
+      "time"          "5, 15"
+      "soundlevel"    "SNDLVL_50dB"
+      "position"      "random"
+      "rndwave"
+      {
+         "wave"       "sounds\home\ambient_forest_bird_01.vsnd"
+         "wave"       "sounds\home\ambient_forest_bird_02.vsnd"
+         "wave"       "sounds\home\ambient_forest_bird_03.vsnd"
+      }
+    }
+    "playrandom"
+    {
+        "volume"        "0.3"
+        "pitch"         "100"     
+        "time"          "4, 10"
+        "soundlevel"    "SNDLVL_80dB"
+        "position"      "random"
+        "rndwave"
+        {
+            "wave"       "sounds/night_cicada_01.vsnd"
+            "wave"       "sounds/night_cicada_02.vsnd"
+            "wave"       "sounds/night_cicada_03.vsnd"
+        }
+    }
+}

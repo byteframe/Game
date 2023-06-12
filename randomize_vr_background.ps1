@@ -1,0 +1,2 @@
+$files = @(Get-ChildItem -Path 'C:\Program Files (x86)\Steam\steamapps\workshop\content\250820\' -Recurse -Include *.jpg, *.png | ForEach-Object {$_.Fullname})
+(Get-Content 'C:\Program Files (x86)\Steam\config\steamvr.vrsettings') -replace '"background".*' , ('"background" : "' + $files[(Get-Random -Maximum ($files).count)] + '",') -replace "\\", "\\" | Set-Content 'C:\Program Files (x86)\Steam\config\steamvr.vrsettings'

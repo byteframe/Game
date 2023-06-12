@@ -1,0 +1,46 @@
+"soundscape_byteframe1"
+{
+    "playlooping"
+    {
+        "volume"        "0.8"
+        "pitch"         "100"
+        "wave"          "sounds/ambient_loop_outdoor.vsnd"
+    }
+		"playlooping"
+    {
+        "volume"        "0.125"
+        "pitch"         "100"
+        "wave"          "sounds/gosub.vsnd"
+    }
+    "playrandom"
+    {
+      "volume"        "0.35"
+      "pitch"         "100"     
+      "time"          "10, 45"
+      "soundlevel"    "SNDLVL_50dB"
+      "position"      "random"
+      "rndwave"
+      {
+         "wave"       "sounds/night_owl_a_01.vsnd"
+         "wave"       "sounds/night_owl_a_02.vsnd"
+         "wave"       "sounds/night_owl_a_03.vsnd"
+         "wave"       "sounds/night_owl_b_01.vsnd"
+         "wave"       "sounds/night_owl_b_02.vsnd"
+         "wave"       "sounds/night_owl_b_03.vsnd"
+      }
+    }
+    "playrandom"
+    {
+      "volume"        "0.35"
+      "pitch"         "100"
+      "time"          "90, 180"
+      "soundlevel"    "SNDLVL_50dB"
+      "position"      "random"
+      "rndwave"
+      {
+         "wave"       "sounds/night_howl_01.vsnd"
+         "wave"       "sounds/night_howl_02.vsnd"
+         "wave"       "sounds/night_howl_03.vsnd"
+      }
+    }
+}

@@ -1,0 +1,1062 @@
+13c13
+< 	TextureTranslucency "materials/cable/cable_alpha.tga"
+---
+> //TextureTranslucency "materials/cable/cable_alpha.tga"
+materials/cable/cable_back.vmat
+11c11
+< 	TextureTranslucency "materials/cable/chain_alpha.tga"
+---
+> //TextureTranslucency "materials/cable/chain_alpha.tga"
+materials/cable/chain.vmat
+12c12
+< 	TextureTranslucency "materials/decals/decalstreet008b_alpha.tga"
+---
+> //TextureTranslucency "materials/decals/decalstreet008b_alpha.tga"
+materials/decals/decalstreet008b.vmat
+12c12
+< 	TextureTranslucency "materials/decals/shockwave/shockwave_impact_alpha.tga"
+---
+> //TextureTranslucency "materials/decals/shockwave/shockwave_impact_alpha.tga"
+materials/decals/shockwave/shockwave_impact.vmat
+11c11
+< 	TextureTranslucency "materials/_alpha.tga"
+---
+> //TextureTranslucency "materials/_alpha.tga"
+materials/effects/duag_shot_dudv.vmat
+11c11
+< 	TextureTranslucency "materials/_rt_fullframefb_alpha.tga"
+---
+> //TextureTranslucency "materials/_rt_fullframefb_alpha.tga"
+materials/effects/frontbuffer.vmat
+9c9
+< 	TextureTranslucency "materials/effects/holo_light/holo_warp_none_alpha.tga"
+---
+> //TextureTranslucency "materials/effects/holo_light/holo_warp_none_alpha.tga"
+materials/effects/holo_light/holo_warp_none.vmat
+11c11
+< 	TextureTranslucency "materials/_alpha.tga"
+---
+> //TextureTranslucency "materials/_alpha.tga"
+materials/effects/poison_time_dudv.vmat
+13c13
+< 	TextureTranslucency "materials/effects/running_water/water_alpha.tga"
+---
+> //TextureTranslucency "materials/effects/running_water/water_alpha.tga"
+materials/effects/running_water/water.vmat
+13c13
+< 	TextureTranslucency "materials/effects/running_water/water_splash_alpha.tga"
+---
+> //TextureTranslucency "materials/effects/running_water/water_splash_alpha.tga"
+materials/effects/running_water/water_splash.vmat
+11c11
+< 	TextureTranslucency "materials/_alpha.tga"
+---
+> //TextureTranslucency "materials/_alpha.tga"
+materials/effects/shockwave/shockwave.vmat
+17c17
+< 	TextureTranslucency "materials/highrise/atriumwindow_01_alpha.tga"
+---
+> //TextureTranslucency "materials/highrise/atriumwindow_01_alpha.tga"
+19c19
+< 	TextureReflectance "materials/highrise/atriumwindow_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/atriumwindow_01_normal_alpha.tga"
+materials/highrise/atriumwindow_01.vmat
+17c17
+< 	TextureTranslucency "materials/highrise/atriumwindow_02_alpha.tga"
+---
+> //TextureTranslucency "materials/highrise/atriumwindow_02_alpha.tga"
+19c19
+< 	TextureReflectance "materials/highrise/atriumwindow_02_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/atriumwindow_02_normal_alpha.tga"
+materials/highrise/atriumwindow_02.vmat
+15c15
+< 	TextureReflectance "materials/highrise/atriumwindow_02_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/atriumwindow_02_normal_alpha.tga"
+materials/highrise/atriumwindow_03.vmat
+14c14
+< 	TextureReflectance "materials/highrise/building_wall_03a_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/building_wall_03a_alpha.tga"
+materials/highrise/building_wall_03a.vmat
+14c14
+< 	TextureReflectance "materials/highrise/building_wall_03b_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/building_wall_03b_alpha.tga"
+materials/highrise/building_wall_03b.vmat
+14c14
+< 	TextureReflectance "materials/highrise/building_wall_05_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/building_wall_05_alpha.tga"
+materials/highrise/building_wall_05.vmat
+14c14
+< 	TextureReflectance "materials/highrise/building_wall_05_b_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/building_wall_05_b_alpha.tga"
+materials/highrise/building_wall_05_b.vmat
+15c15
+< 	TextureReflectance "materials/highrise/columncement_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/columncement_01_normal_alpha.tga"
+materials/highrise/columncementdarkcyan_01.vmat
+15c15
+< 	TextureReflectance "materials/highrise/columncement_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/columncement_01_normal_alpha.tga"
+materials/highrise/columncement_01.vmat
+15c15
+< 	TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+materials/highrise/marbledarkcyan_01.vmat
+15c15
+< 	TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+materials/highrise/marbledarkcyan_04.vmat
+15c15
+< 	TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+materials/highrise/marble_017.vmat
+15c15
+< 	TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+materials/highrise/marble_019.vmat
+15c15
+< 	TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+materials/highrise/marble_023.vmat
+15c15
+< 	TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/marbledarkcyan_01_normal_alpha.tga"
+materials/highrise/marble_09.vmat
+15c15
+< 	TextureReflectance "materials/highrise/plaster_normal_01_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/plaster_normal_01_alpha.tga"
+materials/highrise/plastertan_02.vmat
+15c15
+< 	TextureReflectance "materials/highrise/plaster_normal_01_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/plaster_normal_01_alpha.tga"
+materials/highrise/plasterwhite_01.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/u4lab/se1_tv_static_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/u4lab/se1_tv_static_alpha.tga"
+materials/highrise/se1_monitor_static.vmat
+14c14
+< 	TextureReflectance "materials/highrise/stucco_014_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/stucco_014_alpha.tga"
+materials/highrise/stucco_014.vmat
+14c14
+< 	TextureReflectance "materials/highrise/stucco_015_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/stucco_015_alpha.tga"
+materials/highrise/stucco_015.vmat
+15c15
+< 	TextureReflectance "materials/highrise/stucco_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/highrise/stucco_01_normal_alpha.tga"
+materials/highrise/stucco_09.vmat
+10c10
+< 	TextureNormal "materials/LABS/SE1_glass_window_05_Normal.tga"
+---
+> //TextureNormal "materials/LABS/SE1_glass_window_05_Normal.tga"
+19c19
+< 	TextureReflectance "materials/labs/se1_glass_window_05_normal_alpha.tga"
+---
+> //TextureReflectance "materials/labs/se1_glass_window_05_normal_alpha.tga"
+materials/labs/se1_glass_window_05.vmat
+8c8
+< 	TextureNormal "materials/LABS/SE1_lights_lab_tiles_01_Normal.tga"
+---
+> //TextureNormal "materials/LABS/SE1_lights_lab_tiles_01_Normal.tga"
+15c15
+< 	TextureReflectance "materials/labs/se1_lights_lab_tiles_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/labs/se1_lights_lab_tiles_01_normal_alpha.tga"
+materials/labs/se1_lights_lab_tiles_01.vmat
+8c8
+< 	TextureNormal "materials/LABS/SE1_lights_lab_tiles_sm_01_Normal.tga"
+---
+> //TextureNormal "materials/LABS/SE1_lights_lab_tiles_sm_01_Normal.tga"
+15c15
+< 	TextureReflectance "materials/labs/se1_lights_lab_tiles_sm_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/labs/se1_lights_lab_tiles_sm_01_normal_alpha.tga"
+materials/labs/se1_lights_lab_tiles_sm_01.vmat
+12c12
+< 	TextureTranslucency "materials/models/characters/elexis/hair_alpha.tga"
+---
+> //TextureTranslucency "materials/models/characters/elexis/hair_alpha.tga"
+14c14
+< 	TextureTranslucency "materials/models/characters/elexis/hair_alpha.tga"
+---
+> //TextureTranslucency "materials/models/characters/elexis/hair_alpha.tga"
+materials/models/characters/elexis/hair.vmat
+11c11
+< 	TextureTranslucency "materials/_alpha.tga"
+---
+> //TextureTranslucency "materials/_alpha.tga"
+materials/models/characters/elexis/holo/holo_warp.vmat
+11c11
+< 	TextureTranslucency "materials/models/characters/elexis/holo/holo_warp_none_alpha.tga"
+---
+> //TextureTranslucency "materials/models/characters/elexis/holo/holo_warp_none_alpha.tga"
+materials/models/characters/elexis/holo/holo_warp_none.vmat
+15c15
+< 	TextureReflectance "materials/models/characters/gibsmutant/gibsmutant_01/gibs_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/characters/gibsmutant/gibsmutant_01/gibs_01_normal_alpha.tga"
+materials/models/characters/gibsmutant/gibsmutant_01/gibs_01.vmat
+15c15
+< 	TextureReflectance "materials/models/characters/gibsmutant/gibsmutant_02/gibsmutant_02_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/characters/gibsmutant/gibsmutant_02/gibsmutant_02_normal_alpha.tga"
+materials/models/characters/gibsmutant/gibsmutant_02/gibsmutant_02.vmat
+materials/models/characters/jessica/jessica_body.vmat
+9c9
+< 	TextureReflectance "materials/1.tga"
+---
+> //TextureReflectance "materials/1.tga"
+materials/models/characters/mobgrunt/decaphead.vmat
+9c9
+< 	TextureReflectance "materials/1.tga"
+---
+> //TextureReflectance "materials/1.tga"
+materials/models/characters/mobgrunt/grunt_head.vmat
+9c9
+< 	TextureReflectance "materials/1.tga"
+---
+> //TextureReflectance "materials/1.tga"
+materials/models/characters/mobgrunt/head_gibs1.vmat
+9c9
+< 	TextureReflectance "materials/1.tga"
+---
+> //TextureReflectance "materials/1.tga"
+materials/models/characters/mobgrunt/head_gibs2.vmat
+8c8
+< 	TextureReflectance "materials/1.tga"
+---
+> //TextureReflectance "materials/1.tga"
+materials/models/characters/mobgrunt/hosthead.vmat
+16c16
+< 	TextureTranslucency "materials/models/characters/mutants/majorconverted/tornuniform_alpha.tga"
+---
+> //TextureTranslucency "materials/models/characters/mutants/majorconverted/tornuniform_alpha.tga"
+18c18
+< 	TextureReflectance "materials/models/characters/mutants/majorconverted/tornuniform_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/characters/mutants/majorconverted/tornuniform_normal_alpha.tga"
+materials/models/characters/mutants/majorconverted/tornuniform.vmat
+17c17
+< 	TextureReflectance "materials/models/characters/mutants/minor/sack_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/characters/mutants/minor/sack_normal_alpha.tga"
+19c19
+< 	TextureSelfIllumMask "materials/models/characters/mutants/minor/sack_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/characters/mutants/minor/sack_alpha.tga"
+materials/models/characters/mutants/minor/sack.vmat
+11c11
+< 	TextureTranslucency "materials/models/characters/nofirequad/nofirequad_alpha.tga"
+---
+> //TextureTranslucency "materials/models/characters/nofirequad/nofirequad_alpha.tga"
+materials/models/characters/nofirequad/nofirequad.vmat
+materials/models/characters/npc_bum/bum_body1.vmat
+materials/models/characters/npc_bum/bum_body2.vmat
+materials/models/characters/npc_bum/bum_face1.vmat
+materials/models/characters/npc_bum/bum_face2.vmat
+17c17
+< 	TextureSelfIllumMask "materials/models/characters/securitydrone_02/securitydrone_02_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/characters/securitydrone_02/securitydrone_02_alpha.tga"
+materials/models/characters/securitydrone_02/securitydrone_02.vmat
+17c17
+< 	TextureTranslucency "materials/models/characters/u4labtechs/mask_alpha.tga"
+---
+> //TextureTranslucency "materials/models/characters/u4labtechs/mask_alpha.tga"
+19c19
+< 	TextureReflectance "materials/models/characters/u4labtechs/u4labtechmask_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/characters/u4labtechs/u4labtechmask_01_normal_alpha.tga"
+materials/models/characters/u4labtechs/mask.vmat
+16c16
+< 	TextureReflectance "materials/models/characters/u4labtechs/u4labtech_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/characters/u4labtechs/u4labtech_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/characters/u4labtechs/u4labtech_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/characters/u4labtechs/u4labtech_01_alpha.tga"
+materials/models/characters/u4labtechs/u4labtech_01.vmat
+16c16
+< 	TextureReflectance "materials/models/characters/u4labtechs/u4labtech_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/characters/u4labtechs/u4labtech_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/characters/u4labtechs/u4labtech_02_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/characters/u4labtechs/u4labtech_02_alpha.tga"
+materials/models/characters/u4labtechs/u4labtech_02.vmat
+16c16
+< 	TextureReflectance "materials/models/characters/u4labtechs/u4labtech_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/characters/u4labtechs/u4labtech_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/characters/u4labtechs/u4labtech_03_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/characters/u4labtechs/u4labtech_03_alpha.tga"
+materials/models/characters/u4labtechs/u4labtech_03.vmat
+17c17
+< 	TextureReflectance "materials/models/containers/mutagen_barrel_new_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/containers/mutagen_barrel_new_normal_alpha.tga"
+19c19
+< 	TextureSelfIllumMask "materials/models/containers/mutagen_barrel_new_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/containers/mutagen_barrel_new_alpha.tga"
+materials/models/containers/mutagen_barrel_new.vmat
+17c17
+< 	TextureTranslucency "materials/models/containers/sack_alpha.tga"
+---
+> //TextureTranslucency "materials/models/containers/sack_alpha.tga"
+19c19
+< 	TextureReflectance "materials/models/characters/mutants/minor/sack_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/characters/mutants/minor/sack_normal_alpha.tga"
+materials/models/containers/sack.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/weapons/v_slam/new light1_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/weapons/v_slam/new light1_alpha.tga"
+materials/models/error/new light1.vmat
+9c9
+< 	TextureTranslucency "materials/models/finale/finale_skybox_trees_alpha.tga"
+---
+> //TextureTranslucency "materials/models/finale/finale_skybox_trees_alpha.tga"
+materials/models/finale/finale_skybox_trees.vmat
+15c15
+< 	TextureReflectance "materials/models/finale/helipad_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/finale/helipad_normal_alpha.tga"
+materials/models/finale/helipad.vmat
+15c15
+< 	TextureReflectance "materials/models/finale/helipad_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/finale/helipad_normal_alpha.tga"
+materials/models/finale/helipad_2.vmat
+16c16
+< 	TextureReflectance "materials/models/finale/light_tower_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/finale/light_tower_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/finale/light_tower_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/finale/light_tower_01_alpha.tga"
+materials/models/finale/light_tower_01.vmat
+13c13
+< 	TextureTranslucency "materials/models/finale/metal_grate_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/finale/metal_grate_01_alpha.tga"
+materials/models/finale/metal_grate_01.vmat
+15c15
+< 	TextureReflectance "materials/models/finale/se1_grip_floor_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/finale/se1_grip_floor_01_normal_alpha.tga"
+materials/models/finale/se1_grip_floor_01.vmat
+15c15
+< 	TextureReflectance "materials/models/highrise/angel_brass_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/angel_brass_alpha.tga"
+materials/models/highrise/angel_brass.vmat
+9c9
+< 	TextureTranslucency "materials/models/highrise/astroclock_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/highrise/astroclock_01_alpha.tga"
+materials/models/highrise/astroclock_01.vmat
+16c16
+< 	TextureReflectance "materials/models/highrise/brass_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/brass_normal_alpha.tga"
+materials/models/highrise/brass.vmat
+15c15
+< 	TextureReflectance "materials/models/highrise/columncement_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/columncement_01_normal_alpha.tga"
+materials/models/highrise/columncementdarkcyan_01.vmat
+16c16
+< 	TextureReflectance "materials/models/highrise/copyprinter_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/copyprinter_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/highrise/copyprinter_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/highrise/copyprinter_01_alpha.tga"
+materials/models/highrise/copyprinter_01.vmat
+16c16
+< 	TextureReflectance "materials/models/highrise/cubicle_base_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/cubicle_base_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/highrise/cubicle_base_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/highrise/cubicle_base_01_alpha.tga"
+materials/models/highrise/cubicle_base_01.vmat
+15c15
+< 	TextureReflectance "materials/models/highrise/cubicle_desknchair_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/cubicle_desknchair_normal_alpha.tga"
+materials/models/highrise/cubicle_desknchair.vmat
+15c15
+< 	TextureReflectance "materials/models/highrise/cubicle_monitor_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/cubicle_monitor_01_normal_alpha.tga"
+materials/models/highrise/cubicle_monitor_01_gib.vmat
+18c18
+< 	TextureTranslucency "materials/models/highrise/door_glass_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/highrise/door_glass_01_alpha.tga"
+materials/models/highrise/door_glass_01.vmat
+14c14
+< 	TextureReflectance "materials/models/highrise/door_glass_frame_01_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/door_glass_frame_01_alpha.tga"
+materials/models/highrise/door_glass_frame_01.vmat
+16c16
+< 	TextureReflectance "materials/models/highrise/drawers_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/drawers_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/highrise/drawers_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/highrise/drawers_01_alpha.tga"
+materials/models/highrise/drawers_01.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/highrise/exitsignbase_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/highrise/exitsignbase_01_alpha.tga"
+materials/models/highrise/exitsignbase_01.vmat
+13c13
+< 	TextureTranslucency "materials/models/highrise/exitsignlight_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/highrise/exitsignlight_01_alpha.tga"
+materials/models/highrise/exitsignlight_01.vmat
+15c15
+< 	TextureTranslucency "materials/models/highrise/fusebox_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/highrise/fusebox_01_alpha.tga"
+17c17
+< 	TextureReflectance "materials/models/highrise/fusebox_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/fusebox_01_normal_alpha.tga"
+materials/models/highrise/fusebox_01.vmat
+17c17
+< 	TextureTranslucency "materials/models/highrise/fuseglass_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/highrise/fuseglass_01_alpha.tga"
+19c19
+< 	TextureReflectance "materials/models/highrise/fuseglass_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/fuseglass_01_normal_alpha.tga"
+materials/models/highrise/fuseglass_01.vmat
+16c16
+< 	TextureReflectance "materials/models/highrise/fuse_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/fuse_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/highrise/fuse_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/highrise/fuse_01_alpha.tga"
+materials/models/highrise/fuse_01.vmat
+16c16
+< 	TextureReflectance "materials/models/highrise/fuse_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/fuse_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/highrise/fuse_working_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/highrise/fuse_working_alpha.tga"
+materials/models/highrise/fuse_working.vmat
+12c12
+< 	TextureTranslucency "materials/models/highrise/handrail_02_center_alpha.tga"
+---
+> //TextureTranslucency "materials/models/highrise/handrail_02_center_alpha.tga"
+materials/models/highrise/handrail_02_center.vmat
+14c14
+< 	TextureReflectance "materials/models/highrise/monitorscreen_03_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/monitorscreen_03_alpha.tga"
+materials/models/highrise/monitorscreen_03.vmat
+17c17
+< 	TextureTranslucency "materials/models/highrise/sculptureglasswater_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/highrise/sculptureglasswater_01_alpha.tga"
+19c19
+< 	TextureReflectance "materials/models/highrise/sculptureglasswater_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/sculptureglasswater_01_normal_alpha.tga"
+materials/models/highrise/sculptureglasswater_01.vmat
+16c16
+< 	TextureReflectance "materials/models/highrise/sculptureglass_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/sculptureglass_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/highrise/sculptureglass_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/highrise/sculptureglass_01_alpha.tga"
+materials/models/highrise/sculptureglass_01.vmat
+14c14
+< 	TextureReflectance "materials/models/highrise/se1_door_wood_03c_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/se1_door_wood_03c_alpha.tga"
+materials/models/highrise/se1_door_wood_03c.vmat
+14c14
+< 	TextureReflectance "materials/models/highrise/trash_can_03_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/trash_can_03_alpha.tga"
+materials/models/highrise/trash_can_03.vmat
+15c15
+< 	TextureReflectance "materials/models/highrise/trash_can_base_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/trash_can_base_01_normal_alpha.tga"
+materials/models/highrise/trash_can_base_01.vmat
+11c11
+< 	TextureSelfIllumMask "materials/models/highrise/water_cooler_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/highrise/water_cooler_01_alpha.tga"
+materials/models/highrise/water_cooler_01.vmat
+18c18
+< 	TextureTranslucency "materials/models/highrise/water_cooler_glass_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/highrise/water_cooler_glass_01_alpha.tga"
+20c20
+< 	TextureReflectance "materials/models/highrise/water_cooler_glass_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/highrise/water_cooler_glass_01_normal_alpha.tga"
+materials/models/highrise/water_cooler_glass_01.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/intro/se1_parking_screens_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/intro/se1_parking_screens_01_alpha.tga"
+materials/models/intro/se1_parking_screens_01.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/intro/se1_parking_screens_02_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/intro/se1_parking_screens_02_alpha.tga"
+materials/models/intro/se1_parking_screens_02.vmat
+15c15
+< 	TextureReflectance "materials/models/pit/foremen_trailer/trailer_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/pit/foremen_trailer/trailer_01_normal_alpha.tga"
+materials/models/pit/foremen_trailer/trailer_01.vmat
+15c15
+< 	TextureReflectance "materials/models/pit/foremen_trailer/trailer_05_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/pit/foremen_trailer/trailer_05_normal_alpha.tga"
+materials/models/pit/foremen_trailer/trailer_05.vmat
+15c15
+< 	TextureReflectance "materials/models/pit/foremen_trailer/trailer_06_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/pit/foremen_trailer/trailer_06_normal_alpha.tga"
+materials/models/pit/foremen_trailer/trailer_06.vmat
+14c14
+< 	TextureTranslucency "materials/models/pit/tarps/rebar_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/pit/tarps/rebar_01_alpha.tga"
+materials/models/pit/tarps/rebar_01.vmat
+15c15
+< 	TextureReflectance "materials/models/pit/tarps/wall_tarp_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/pit/tarps/wall_tarp_01_normal_alpha.tga"
+materials/models/pit/tarps/wall_tarp_01.vmat
+15c15
+< 	TextureReflectance "materials/models/pit/tarps/wall_tarp_top_detail_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/pit/tarps/wall_tarp_top_detail_01_normal_alpha.tga"
+materials/models/pit/tarps/wall_tarp_top_detail_01.vmat
+15c15
+< 	TextureReflectance "materials/models/pit/trough_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/pit/trough_normal_alpha.tga"
+materials/models/pit/trough.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_general/cigarette/cigarette_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_general/cigarette/cigarette_alpha.tga"
+materials/models/props_general/cigarette/cigarette.vmat
+13c13
+< 	TextureTranslucency "materials/models/props_general/hololight_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/props_general/hololight_01_alpha.tga"
+materials/models/props_general/hololight_01.vmat
+9c9
+< 	TextureTranslucency "materials/models/props_general/papers/eley_strain_alpha.tga"
+---
+> //TextureTranslucency "materials/models/props_general/papers/eley_strain_alpha.tga"
+materials/models/props_general/papers/eley_strain.vmat
+9c9
+< 	TextureTranslucency "materials/models/props_general/papers/encryp_proto_alpha.tga"
+---
+> //TextureTranslucency "materials/models/props_general/papers/encryp_proto_alpha.tga"
+materials/models/props_general/papers/encryp_proto.vmat
+12c12
+< 	TextureTranslucency "materials/models/props_general/papers/st_const_plans_alpha.tga"
+---
+> //TextureTranslucency "materials/models/props_general/papers/st_const_plans_alpha.tga"
+materials/models/props_general/papers/st_const_plans.vmat
+17c17
+< 	TextureTranslucency "materials/models/props_general/payphone_glass_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/props_general/payphone_glass_01_alpha.tga"
+materials/models/props_general/payphone_glass_01.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_general/pda/alecto_incident_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_general/pda/alecto_incident_alpha.tga"
+materials/models/props_general/pda/alecto_incident.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_general/pda/jordan_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_general/pda/jordan_alpha.tga"
+materials/models/props_general/pda/jordan.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_general/pda/promexia_project_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_general/pda/promexia_project_alpha.tga"
+materials/models/props_general/pda/promexia_project.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_general/pda/u4_prod_rec_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_general/pda/u4_prod_rec_alpha.tga"
+materials/models/props_general/pda/u4_prod_rec.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_general/pda/we're_coming_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_general/pda/we're_coming_alpha.tga"
+materials/models/props_general/pda/we're_coming.vmat
+12c12
+< 	TextureSelfIllumMask "materials/models/props_general/phone_holo/holo__alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_general/phone_holo/holo__alpha.tga"
+materials/models/props_general/phone_holo/holo_.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_u4/u4needle/u4needle_alpha.tga"
+---
+>   //TextureSelfIllumMask "materials/models/props_u4/u4needle/u4needle_alpha.tga"
+materials/models/props_u4/u4needle/u4needle.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_u4/u4needle/u4needle_green_alpha.tga"
+---
+>   //TextureSelfIllumMask "materials/models/props_u4/u4needle/u4needle_green_alpha.tga"
+materials/models/props_u4/u4needle/u4needle_green.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_warehouse/bulletinboard/trim_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_warehouse/bulletinboard/trim_alpha.tga"
+materials/models/props_warehouse/bulletinboard/trim.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/gas_can/gas_can1_spec_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/gas_can/gas_can1_spec_alpha.tga"
+materials/models/props_warehouse/gas_can/gas_can1.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/gas_can/gas_can2_spec_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/gas_can/gas_can2_spec_alpha.tga"
+materials/models/props_warehouse/gas_can/gas_can2.vmat
+16c16
+< 	TextureReflectance "materials/models/props_warehouse/industrial_lights/se1_light_dock_e_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/industrial_lights/se1_light_dock_e_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/props_warehouse/industrial_lights/se1_light_dock_e_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_warehouse/industrial_lights/se1_light_dock_e_01_alpha.tga"
+materials/models/props_warehouse/industrial_lights/se1_light_dock_e_01.vmat
+16c16
+< 	TextureReflectance "materials/models/props_warehouse/industrial_lights/se1_light_dock_f_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/industrial_lights/se1_light_dock_f_01_normal_alpha.tga"
+18c18
+< 	TextureSelfIllumMask "materials/models/props_warehouse/industrial_lights/se1_light_dock_f_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/props_warehouse/industrial_lights/se1_light_dock_f_01_alpha.tga"
+materials/models/props_warehouse/industrial_lights/se1_light_dock_f_01.vmat
+11c11
+< 	TextureTranslucency "materials/models/props_warehouse/industrial_sink/water_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/props_warehouse/industrial_sink/water_01_alpha.tga"
+materials/models/props_warehouse/industrial_sink/water_01.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/robot_arm/robot_arm_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/robot_arm/robot_arm_normal_alpha.tga"
+materials/models/props_warehouse/robot_arm/robot_arm.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/security_desk/security_desk_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/security_desk/security_desk_normal_alpha.tga"
+materials/models/props_warehouse/security_desk/security_desk.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/security_desk/utility_desk_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/security_desk/utility_desk_normal_alpha.tga"
+materials/models/props_warehouse/security_desk/utility_desk.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_warehouse/sign_frame/se1_sign_frames_01_alpha.tga"
+---
+>   //TextureSelfIllumMask "materials/models/props_warehouse/sign_frame/se1_sign_frames_01_alpha.tga"
+materials/models/props_warehouse/sign_frame/se1_sign_frames_01.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+materials/models/props_warehouse/train_cars/boxcar_07.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+materials/models/props_warehouse/train_cars/boxcar_08.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+materials/models/props_warehouse/train_cars/boxcar_09.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+materials/models/props_warehouse/train_cars/boxcar_10.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_normal_alpha.tga"
+materials/models/props_warehouse/train_cars/boxcar_11.vmat
+15c15
+< 	TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/props_warehouse/train_cars/boxcar_exterior_01_normal_alpha.tga"
+materials/models/props_warehouse/train_cars/boxcar_12.vmat
+7c7
+< 	TextureColor "materials/_rt_Camera.tga"
+---
+> 	//TextureColor "materials/_rt_Camera.tga"
+materials/models/start_menu/camera_1.vmat
+11c11
+< 	TextureTranslucency "materials/start_menu/credits_frame_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/credits_frame_alpha.tga"
+materials/models/start_menu/credits_frame.vmat
+16c16
+< 	TextureReflectance "materials/models/u4lab/desktoplabequipment_02_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/u4lab/desktoplabequipment_02_normal_alpha.tga"
+materials/models/u4lab/desktoplabequipment_02.vmat
+16c16
+< 	TextureSelfIllumMask "materials/models/u4lab/se1_computer_screen_a_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/u4lab/se1_computer_screen_a_alpha.tga"
+materials/models/u4lab/se1_computer_screen_a.vmat
+15c15
+< 	TextureReflectance "materials/models/u4lab/se1_desktoplabequipment_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/u4lab/se1_desktoplabequipment_01_normal_alpha.tga"
+materials/models/u4lab/se1_desktoplabequipment_01.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/u4lab/se1_heat_panel_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/u4lab/se1_heat_panel_01_alpha.tga"
+materials/models/u4lab/se1_heat_panel_01.vmat
+15c15
+< 	TextureTranslucency "materials/models/u4lab/se1_largetankpump_01_alpha.tga"
+---
+> //TextureTranslucency "materials/models/u4lab/se1_largetankpump_01_alpha.tga"
+17c17
+< 	TextureReflectance "materials/models/u4lab/se1_largetankpump_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/u4lab/se1_largetankpump_01_normal_alpha.tga"
+materials/models/u4lab/se1_largetankpump_01.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/u4lab/se1_stemcell_screen_01_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/u4lab/se1_stemcell_screen_01_alpha.tga"
+materials/models/u4lab/se1_stemcell_screen_01.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/u4lab/se1_stemcell_screen_02_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/u4lab/se1_stemcell_screen_02_alpha.tga"
+materials/models/u4lab/se1_stemcell_screen_02.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/vehicles/sintek_helicopter/sin_light_01_chopper_alpha.tga"
+---
+> //TextureSelfIllumMask "materials/models/vehicles/sintek_helicopter/sin_light_01_chopper_alpha.tga"
+materials/models/vehicles/sintek_helicopter/sin_light_01_chopper.vmat
+15c15
+< 	TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+materials/models/vehicles/sin_hatchback/se1_car_hatchback01.vmat
+15c15
+< 	TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+materials/models/vehicles/sin_hatchback/se1_car_hatchback02.vmat
+15c15
+< 	TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+materials/models/vehicles/sin_hatchback/se1_car_hatchback03.vmat
+15c15
+< 	TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+materials/models/vehicles/sin_hatchback/se1_car_hatchback04.vmat
+15c15
+< 	TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+materials/models/vehicles/sin_hatchback/se1_car_hatchback05.vmat
+15c15
+< 	TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+materials/models/vehicles/sin_hatchback/se1_car_hatchback06.vmat
+15c15
+< 	TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/vehicles/sin_hatchback/se1_car_hatchback_normal_alpha.tga"
+materials/models/vehicles/sin_hatchback/se1_car_hatchback07.vmat
+12c12
+< 	TextureTranslucency "materials/_alpha.tga"
+---
+> //TextureTranslucency "materials/_alpha.tga"
+materials/models/weapons/grenades/se1_frag_grenade_glow01.vmat
+7c7
+< 	TextureColor "materials/Models/weapons/Lead Pipe/LeadPipe.tga"
+---
+> 	TextureColor "materials/Models/weapons/LeadPipe/LeadPipe.tga"
+14c14
+< 	TextureReflectance "materials/models/weapons/lead pipe/leadpipe_alpha.tga"
+---
+> //TextureReflectance "materials/models/weapons/leadpipe/leadpipe_alpha.tga"
+materials/models/weapons/leadpipe/leadpipe.vmat
+13c13
+< 	TextureNormal "materials/Models/Weapons/V_Rocket_launcher/flat_normal.tga"
+---
+> //TextureNormal "materials/Models/Weapons/V_Rocket_launcher/flat_normal.tga"
+17c17
+< 	TextureReflectance "materials/models/weapons/v_rocket_launcher/flat_normal_alpha.tga"
+---
+> //TextureReflectance "materials/models/weapons/v_rocket_launcher/flat_normal_alpha.tga"
+materials/models/weapons/v_rocket_launcher/rocket launcher sheet.vmat
+19c19
+< 	TextureReflectance "materials/dev/water_normal_alpha.tga"
+---
+> //TextureReflectance "materials/dev/water_normal_alpha.tga"
+materials/nature/water_movingplane.vmat
+10c10
+< 	TextureTranslucency "materials/_alpha.tga"
+---
+> //TextureTranslucency "materials/_alpha.tga"
+materials/particle/screenspace_fog.vmat
+19c19
+< 	TextureReflectance "materials/pit/se1_drying_mud_01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/pit/se1_drying_mud_01_normal_alpha.tga"
+materials/pit/blnd_dryingmud_wetgrass_01.vmat
+9c9
+< 	TextureColor "materials/SE1_Decals/phone_numbers/big_pig_soap_128x256.tga"
+---
+> 	TextureColor "materials/SE1_Decals/phone_numbers/big_pig_soap128x256.tga"
+12c12
+< 	TextureTranslucency "materials/se1_decals/phone_numbers/big_pig_soap_128x256_alpha.tga"
+---
+> //TextureTranslucency "materials/se1_decals/phone_numbers/big_pig_soap_128x256_alpha.tga"
+materials/se1_decals/phone_numbers/big_pig_soap_128x256.vmat
+11c11
+< 	TextureTranslucency "materials/_alpha.tga"
+---
+> //TextureTranslucency "materials/_alpha.tga"
+materials/sprites/heatwave.vmat
+11c11
+< 	TextureTranslucency "materials/start_menu/border_01_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/border_01_alpha.tga"
+materials/start_menu/border_01.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/credits_frame_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/credits_frame_alpha.tga"
+materials/start_menu/credits_frame.vmat
+11c11
+< 	TextureTranslucency "materials/start_menu/emergence_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/emergence_alpha.tga"
+materials/start_menu/emergence.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_01_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_01_alpha.tga"
+materials/start_menu/equations_blue_01.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_02_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_02_alpha.tga"
+materials/start_menu/equations_blue_02.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_03_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_03_alpha.tga"
+materials/start_menu/equations_blue_03.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_04_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_04_alpha.tga"
+materials/start_menu/equations_blue_04.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_05_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_05_alpha.tga"
+materials/start_menu/equations_blue_05.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_06_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_06_alpha.tga"
+materials/start_menu/equations_blue_06.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_07_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_07_alpha.tga"
+materials/start_menu/equations_blue_07.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_01_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_01_alpha.tga"
+materials/start_menu/equations_credits_01.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_02_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_02_alpha.tga"
+materials/start_menu/equations_credits_02.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_03_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_03_alpha.tga"
+materials/start_menu/equations_credits_03.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_04_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_04_alpha.tga"
+materials/start_menu/equations_credits_04.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_05_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_05_alpha.tga"
+materials/start_menu/equations_credits_05.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_06_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_06_alpha.tga"
+materials/start_menu/equations_credits_06.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/equations_blue_07_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/equations_blue_07_alpha.tga"
+materials/start_menu/equations_credits_07.vmat
+11c11
+< 	TextureTranslucency "materials/start_menu/main_test_se1_logo_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/main_test_se1_logo_alpha.tga"
+materials/start_menu/main_test_se1_logo.vmat
+12c12
+< 	TextureTranslucency "materials/start_menu/main_test_se1_logo_lines_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/main_test_se1_logo_lines_alpha.tga"
+materials/start_menu/main_test_se1_logo_lines.vmat
+11c11
+< 	TextureTranslucency "materials/start_menu/main_test_se1_logo_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/main_test_se1_logo_alpha.tga"
+materials/start_menu/main_test_se1_logo_pulse.vmat
+11c11
+< 	TextureTranslucency "materials/start_menu/main_test_se1_ritual_logo_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/main_test_se1_ritual_logo_alpha.tga"
+materials/start_menu/main_test_se1_ritual_logo.vmat
+11c11
+< 	TextureTranslucency "materials/start_menu/main_test_se1_ritual_logo_end_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/main_test_se1_ritual_logo_end_alpha.tga"
+materials/start_menu/main_test_se1_ritual_logo_end.vmat
+11c11
+< 	TextureTranslucency "materials/start_menu/sin_logo_alpha.tga"
+---
+> //TextureTranslucency "materials/start_menu/sin_logo_alpha.tga"
+materials/start_menu/sin_logo.vmat
+8c8
+< 	TextureNormal "materials/WAREHOUSE/TEMP_Grating01_normal.tga"
+---
+> //TextureNormal "materials/WAREHOUSE/TEMP_Grating01_normal.tga"
+15c15
+< 	TextureTranslucency "materials/temp/temp_grating01_alpha.tga"
+---
+>   TextureTranslucency "materials/temp/temp_grating01_alpha.tga"
+17c17
+< 	TextureReflectance "materials/warehouse/temp_grating01_normal_alpha.tga"
+---
+> //TextureReflectance "materials/warehouse/temp_grating01_normal_alpha.tga"
+materials/temp/temp_grating01.vmat
+11c11
+< 	TextureTranslucency "materials/vgui/friends/icon_away_alpha.tga"
+---
+> //TextureTranslucency "materials/vgui/friends/icon_away_alpha.tga"
+materials/vgui/friends/icon_away.vmat
+11c11
+< 	TextureTranslucency "materials/vgui/friends/icon_blocked_alpha.tga"
+---
+> //TextureTranslucency "materials/vgui/friends/icon_blocked_alpha.tga"
+materials/vgui/friends/icon_blocked.vmat
+11c11
+< 	TextureTranslucency "materials/vgui/friends/icon_busy_alpha.tga"
+---
+> //TextureTranslucency "materials/vgui/friends/icon_busy_alpha.tga"
+materials/vgui/friends/icon_busy.vmat
+11c11
+< 	TextureTranslucency "materials/vgui/friends/icon_connecting_alpha.tga"
+---
+> //TextureTranslucency "materials/vgui/friends/icon_connecting_alpha.tga"
+materials/vgui/friends/icon_connecting.vmat
+11c11
+< 	TextureTranslucency "materials/vgui/friends/icon_in-game_alpha.tga"
+---
+> //TextureTranslucency "materials/vgui/friends/icon_in-game_alpha.tga"
+materials/vgui/friends/icon_in-game.vmat
+11c11
+< 	TextureTranslucency "materials/vgui/friends/icon_message_alpha.tga"
+---
+> //TextureTranslucency "materials/vgui/friends/icon_message_alpha.tga"
+materials/vgui/friends/icon_message.vmat
+11c11
+< 	TextureTranslucency "materials/vgui/friends/icon_offline_alpha.tga"
+---
+> //TextureTranslucency "materials/vgui/friends/icon_offline_alpha.tga"
+materials/vgui/friends/icon_offline.vmat
+11c11
+< 	TextureTranslucency "materials/vgui/friends/icon_online_alpha.tga"
+---
+> //TextureTranslucency "materials/vgui/friends/icon_online_alpha.tga"
+materials/vgui/friends/icon_online.vmat
+11c11
+< 	TextureTranslucency "materials/vgui/friends/icon_snooze_alpha.tga"
+---
+> //TextureTranslucency "materials/vgui/friends/icon_snooze_alpha.tga"
+materials/vgui/friends/icon_snooze.vmat

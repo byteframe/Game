@@ -1,0 +1,157 @@
+// 2021 abridged checks
+fs = require('fs');
+vdf = require('simple-vdf');
+screenshots_vdf = vdf.parse(fs.readFileSync('/mnt/c/Program Files (x86)/Steam/userdata/752001/760/screenshots.vdf', 'utf8')).screenshots;
+Object.keys(screenshots_vdf).forEach((appid) =>
+  (appid != 'shortcutnames' && appid != '0') && (
+    Object.keys(screenshots_vdf[appid]).forEach((file) => (
+      (!fs.existsSync("/mnt/c/Program Files (x86)/Steam/userdata/752001/760/remote/" + screenshots_vdf[appid][file].filename)) &&
+        console.log('2D not on filesystem: ' + screenshots_vdf[appid][file].filename),
+      (screenshots_vdf[appid][file].vrfilename && !fs.existsSync("/mnt/c/Program Files (x86)/Steam/userdata/752001/760/remote/" + screenshots_vdf[appid][file].vrfilename)) &&
+        console.log('VR not on filesystem: ' + screenshots_vdf[appid][file].vrfilename)))))
+
+// check for junk stereo files
+  cd /mnt/c/Program\ Files\ \(x86\)/Steam/userdata/752001/760/remote/
+  find . -type f -name "*_vr.jpg" -not -path "*thumbnails*" | while read FILE; do
+    if [ ! -e "${FILE/_vr.jpg/.jpg}" ]; then
+      echo "${FILE}"
+    fi
+  done
+
+// thumbnails culls
+   cd /mnt/c/Program\ Files\ \(x86\)/Steam/userdata/752001/760/remote/
+  find . -path "*thumbnails*" -type f | while read FILE; do
+    if [ ! -e "${FILE/\/thumbnails/}" ]; then
+      echo rm -v "${FILE}"
+    fi
+  done
+  (it did good there was some 220 hl2 mod stuff tat the end for some reason)
+
+// find screenshot files in cloud but not in vdf
+might have been some tidbits from prior, but was mostly by errant deletions during the cull (steamvr, and destinations?)
+I deleted them by picture, but still have a list of entires to remove from remotecache (81+5)
+because that file is unused now, keeping them here for lazyness
+    250820/screenshots/20170725155133_1.jpg
+    250820/screenshots/20170725174736_1.jpg
+    250820/screenshots/20170725174746_1.jpg
+    250820/screenshots/20170725174835_1.jpg
+    250820/screenshots/20170725175305_1.jpg
+    250820/screenshots/20170725175341_1.jpg
+    250820/screenshots/20170725175414_1.jpg
+    250820/screenshots/20170728022617_1.jpg
+    250820/screenshots/20170728022806_1.jpg
+    250820/screenshots/20170728023742_1.jpg
+    250820/screenshots/20170728033156_1.jpg
+    250820/screenshots/20170728033236_1.jpg
+    250820/screenshots/20170728033253_1.jpg
+    250820/screenshots/20170728033304_1.jpg
+    250820/screenshots/20170729014933_1.jpg
+    250820/screenshots/20170801215415_1.jpg
+    250820/screenshots/20170801215654_1.jpg
+    250820/screenshots/20170801215845_1.jpg
+    250820/screenshots/20170801215917_1.jpg
+    250820/screenshots/20170803010418_1.jpg
+    250820/screenshots/20170905040921_1.jpg
+    250820/screenshots/20180820145949_1.jpg
+    250820/screenshots/20180825130939_1.jpg
+    250820/screenshots/20180825135816_1.jpg
+    250820/screenshots/20180825140406_1.jpg
+    250820/screenshots/20180903225712_1.jpg
+    250820/screenshots/20180903230833_1.jpg
+    250820/screenshots/20180905025637_1.jpg
+    250820/screenshots/20180905030305_1.jpg
+    250820/screenshots/20180908024518_1.jpg
+    250820/screenshots/20180908024713_1.jpg
+    250820/screenshots/20180908030742_1.jpg
+    250820/screenshots/20180908034135_1.jpg
+    250820/screenshots/20180908035456_1.jpg
+    250820/screenshots/20180910171551_1.jpg
+    250820/screenshots/20180912174809_1.jpg
+    250820/screenshots/20180912175355_1.jpg
+    250820/screenshots/20180912180055_1.jpg
+    250820/screenshots/20180913014039_1.jpg
+    250820/screenshots/20180914005541_1.jpg
+    250820/screenshots/20180914005704_1.jpg
+    250820/screenshots/20180914010358_1.jpg
+    250820/screenshots/20180916025033_1.jpg
+    250820/screenshots/20180916031812_1.jpg
+    250820/screenshots/20180916033924_1.jpg
+    250820/screenshots/20180916033954_1.jpg
+    250820/screenshots/20180921154014_1.jpg
+    250820/screenshots/20180921154428_1.jpg
+    250820/screenshots/20180921154431_1.jpg
+    250820/screenshots/20180921154547_1.jpg
+    250820/screenshots/20180921165446_1.jpg
+    250820/screenshots/20180921232203_1.jpg
+    250820/screenshots/20180921232257_1.jpg
+    250820/screenshots/20180921233032_1.jpg
+    250820/screenshots/20180921234302_1.jpg
+    250820/screenshots/20180921234524_1.jpg
+    250820/screenshots/20180921235025_1.jpg
+    250820/screenshots/20180921235042_1.jpg
+    250820/screenshots/20180923210746_1.jpg
+    250820/screenshots/20180923211754_1.jpg
+    250820/screenshots/20180927144744_1.jpg
+    250820/screenshots/20180927151920_1.jpg
+    250820/screenshots/20180927214856_1.jpg
+    250820/screenshots/20181015004529_1.jpg
+    250820/screenshots/20181015010601_1.jpg
+    250820/screenshots/20181015011552_1.jpg
+    250820/screenshots/20181015011604_1.jpg
+    250820/screenshots/20181021191451_1.jpg
+    250820/screenshots/20181021191629_1.jpg
+    250820/screenshots/20181021192907_1.jpg
+    250820/screenshots/20181026152915_1.jpg
+    250820/screenshots/20181026153259_1.jpg
+    250820/screenshots/20181026153719_1.jpg
+    250820/screenshots/20181026153724_1.jpg
+    250820/screenshots/20181026153729_1.jpg
+    250820/screenshots/20181026153857_1.jpg
+    250820/screenshots/20181029000847_1.jpg
+    250820/screenshots/20181029000850_1.jpg
+    250820/screenshots/20181029001632_1.jpg
+    250820/screenshots/20181029002444_1.jpg
+    250820/screenshots/20181029003157_1.jpg
+
+// reintegrated desktop shit and leftovers
+    the lab, paperman, dontlookdowndemo, horizonbeyond, hl2somatic, hl2missinginformation, nightnatalievr, etc...
+
+// count vdf files and check for cloud status
+    total_vdf_count seemed off by 2, but Im subtracting it down there for some reason, presuably not relevant?
+    since remotecache.vdf isnt used anymore, I had to add entires for recent uploads "no upload reference")
+    other removals (like that stanely parable 211 sourcesdk shot) also had the same problem.
+    99% sure there was no 'unknown refernnce' aka an unuploaded entry also found in remotecache
+
+// move files and/or check filesystem existence
+    this was useful to find missing files I deleted in explorer, but pertained to intact upload entries
+    I was missing a few files at the end too, that might have been because of bash and spaces, manually put those back
+
+// get web appids and cross check
+    web_appids is 955? didnt confirm with jquery, but it should match cause size is 9685
+    and the cross checks didnt fire
+
+// count web totals
+    some weird [0] error initially (because no config.screenshots?) but didnt do it this last time
+    but otherwise seems to work, slowly, dealing with empty pages and that.
+
+// record image checksums
+    if I take 7564 and add 424+131+1766 I get over 9685!? this is likely related to ctrl-c and that
+    doing one last run then im done
+    final count is still bogus, whatever
+
+// print final results
+    (this shas count seems bogus, but might be too hard to fix, and everything else checks out)
+        total_shas_count+2+87: 7845
+    (these dir counts also look bogus, but I fixed actual dir count to vdf_counts.length with removing empty dirs! )
+        vdf_counts.length: 1436, web_appids.length: 955
+    (im subtracting 2 from total vdf cont, and one from web_appids.size, I dont remember why, prolly bans, but it adds it up)
+        total_vdf_count: 9683, web_appids.size: 9684
+
+// get all files not present in last backup (4tb external ext4) x(8496)
+    cd /cygdrive/c/Users/byteframe/Desktop/Steam/remote/
+    mkdir ../savers
+    find . -type f -not -path "*thumbnails*" -not -name "*_vr.jpg" | while read FILE; do
+      if [ ! -e /cygdrive/c/Program\ Files\ \(x86\)/Steam/userdata/752001/760/remote/"${FILE:2}" ]; then
+        cp -v "${FILE}" ../savers/
+      fi
+    done

@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File "c:\Program Files (x86)\Steam\steamapps\OpenVRStartup_v0.13\stop\randomize_vr_background.ps1"

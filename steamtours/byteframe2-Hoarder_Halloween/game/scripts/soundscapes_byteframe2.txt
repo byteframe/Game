@@ -1,0 +1,100 @@
+"soundscape_byteframe2"
+{
+    "playlooping"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_45dB"
+        "wave"          "sounds/ambient_loop_threshold.vsnd"
+    }
+		"playlooping"
+    {
+        "volume"        "0.20"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_45dB"
+        "wave"          "sounds/metamatics.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1"
+        "origin"      "369, -168, -20"
+        "pitch"         "100"
+        "wave"          "sounds/ambience_greenhouse_tone_loop.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "time"          "8, 16"
+        "soundlevel"    "SNDLVL_100dB"
+        "position"      "random"
+        "rndwave"
+        {
+          "wave"          "sounds/home/ambient_forest_wind_01.vsnd"
+          "wave"          "sounds/home/ambient_forest_wind_02.vsnd"
+          "wave"          "sounds/home/ambient_forest_wind_03.vsnd"
+          "wave"          "sounds/home/ambient_forest_wind_04.vsnd"
+        }
+    }
+    "playrandom"
+    {
+      "volume"        "0.1"
+      "pitch"         "100"     
+      "time"          "60, 120"
+      "soundlevel"    "SNDLVL_50dB"
+      "position"      "random"
+      "rndwave"
+      {
+         "wave"       "sounds\alien_monster_growl_01.vsnd"
+         "wave"       "sounds\alien_monster_growl_02.vsnd"
+         "wave"       "sounds\alien_monster_growl_03.vsnd"
+         "wave"       "sounds\alien_monster_growl_04.vsnd"
+         "wave"       "sounds\alien_monster_growl_05.vsnd"
+      }
+    }
+    "playrandom"
+    {
+      "volume"        "0.50"
+      "pitch"         "100"     
+      "time"          "5, 15"
+      "soundlevel"    "SNDLVL_50dB"
+      "position"      "random"
+      "rndwave"
+      {
+         "wave"       "sounds\night_cicada_01.vsnd"
+         "wave"       "sounds\night_cicada_02.vsnd"
+         "wave"       "sounds\night_cicada_03.vsnd"
+      }
+    }
+    "playrandom"
+    {
+      "volume"        "0.50"
+      "pitch"         "100"     
+      "time"          "15, 55"
+      "soundlevel"    "SNDLVL_50dB"
+      "position"      "random"
+      "rndwave"
+      {
+         "wave"       "sounds/night_owl_a_01.vsnd"
+         "wave"       "sounds/night_owl_a_02.vsnd"
+         "wave"       "sounds/night_owl_a_03.vsnd"
+         "wave"       "sounds/night_owl_b_01.vsnd"
+         "wave"       "sounds/night_owl_b_02.vsnd"
+         "wave"       "sounds/night_owl_b_03.vsnd"
+      }
+    }
+    "playrandom"
+    {
+      "volume"        "0.50"
+      "pitch"         "100"
+      "time"          "90, 180"
+      "soundlevel"    "SNDLVL_50dB"
+      "position"      "random"
+      "rndwave"
+      {
+         "wave"       "sounds/night_howl_01.vsnd"
+         "wave"       "sounds/night_howl_02.vsnd"
+         "wave"       "sounds/night_howl_03.vsnd"
+      }
+    }
+}

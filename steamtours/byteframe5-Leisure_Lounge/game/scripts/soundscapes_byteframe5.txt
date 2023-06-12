@@ -1,0 +1,55 @@
+"soundscape_byteframe5"
+{
+    "playlooping"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_100dB"
+        "wave"          "sounds/ambience_indoor.vsnd"
+    }
+		    "playlooping"
+    {
+        "volume"        "0.1"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_100dB"
+        "wave"          "sounds/ruxpin.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.3"
+        "pitch"         "100"     
+        "time"          "4, 10"
+        "soundlevel"    "SNDLVL_80dB"
+        "position"      "random"
+        "rndwave"
+        {
+            "wave"       "sounds/night_cicada_01.vsnd"
+            "wave"       "sounds/night_cicada_02.vsnd"
+            "wave"       "sounds/night_cicada_03.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "0.2"
+        "origin"      "750, 414, 94"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/ambient/ac_vent1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.5"
+        "origin"      "0, 490, -104"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/log_fire_close.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.1"
+        "origin"      "-527, 665, 52"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/ambient/cap_3_inside_computer_bank1.vsnd"
+    }
+}

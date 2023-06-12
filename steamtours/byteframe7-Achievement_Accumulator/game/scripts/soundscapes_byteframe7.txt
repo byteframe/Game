@@ -1,0 +1,9 @@
+"soundscape_byteframe7"
+{
+    "playlooping"
+    {
+      "volume"        "0.2"
+      "pitch"         "100"
+      "wave"          "sounds/theaceofclubs.vsnd"
+    }
+}

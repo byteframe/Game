@@ -1,0 +1,63 @@
+"soundscape_byteframe10"
+{
+    "playrandom"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "time"          "7, 14"
+        "soundlevel"    "SNDLVL_100dB"
+        "position"      "random"
+        "rndwave"
+        {
+          "wave"          "sounds/home/ambient_forest_wind_01.vsnd"
+          "wave"          "sounds/home/ambient_forest_wind_02.vsnd"
+          "wave"          "sounds/home/ambient_forest_wind_03.vsnd"
+          "wave"          "sounds/home/ambient_forest_wind_04.vsnd"
+        }
+    }
+    "playlooping"
+    {
+      "volume"        "0.8"
+      "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+      "wave"          "sounds/ambient_loop_outdoor.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.5"
+        "origin"      "0, 175, 20"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/log_fire_close.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.3"
+        "origin"      "0, -175, 20"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/ambient/ac_vent1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "4.0"
+        "origin"      "-76, -150, 188"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_100dB"
+        "wave"          "sounds/aria.vsnd"
+    }
+    "playrandom"
+    {
+      "volume"        "0.5"
+      "pitch"         "100"     
+      "time"          "5, 15"
+      "soundlevel"    "SNDLVL_50dB"
+      "position"      "random"
+      "rndwave"
+      {
+         "wave"       "sounds\home\ambient_forest_bird_01.vsnd"
+         "wave"       "sounds\home\ambient_forest_bird_02.vsnd"
+         "wave"       "sounds\home\ambient_forest_bird_03.vsnd"
+      }
+    }
+}

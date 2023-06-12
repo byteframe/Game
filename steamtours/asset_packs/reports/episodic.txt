@@ -1,0 +1,11 @@
+Here are all the materials and models from Half-Life 2: Episode 1 converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/itemedittext/?id=2737660237 for more information on these Half-Life Episode asset packs. I'm still working on the third one. Most importantly, you'll likely want to include the Half-Life 2 pack to satisfy some material dependencies.
+
+Like the HL2 pack, certain tool/developer assets were not included, either because they were a duplicate, or seemed otherwise dubious to include. They include the following:
+
+-- materials/dev/dev_monitor_simple
+-- materials/dev/dev_monitoradditive
+
+Observe the following material changes here: https://paste.ee/p/pC1k1 and see this link for a list of culled (by name) files already present in the Half-Life 2 pack: https://paste.ee/p/K3QEj
+
+ADDON: asset_pack_episodic
+TOTAL: 292 vmat_c files, 124 vmdl_c files

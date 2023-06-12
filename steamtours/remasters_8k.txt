@@ -1,0 +1,115 @@
+I bought 64 gigabytes (wow!) of RAM (randumb access mummery), which is like a kind of food for your computer, and now vrad3 doesnt crash when building 8k lightmaps. Other than 2 junk and 2 fully outdoor environments, I remastered the rest, again.
+
+This isn't (intended to be) self promotion nor do I recommend you actually boot these up in your goggles (though they do look better and if you had to pick one it would be #9), but just some kind of self reward system to cap off what amounted to being much more work than I thought, and of course, reapplying new skills (lighting, texturing, etc) to old releases is very satisifying.
+
+It takes like 18 hours to build each map (though you can more or less do two at a time) and I thought that would be fine and I would just hit a button on each, but of course I wanted to do more rehabs and wasn't disciplined enough to check every little thing before building, so I wasted alot of build time. I certainly got my fill of the '3d or media asset takes forever to render and you have to adjust your whole work/mindspace to deal with it' aspect of digital media production just before everything starts using raytracing hardware. CS2 vrad does this I'm told. Still, I could have been much more diligent and avoid many, many wasted full 8k final builds. I've learned I don't have to upgrade my CPU cooler though, so that's positive.
+
+I also did my best to codify all the things I learned from the steamvr lightmapper into an expansion of the lighting wiki article. The instructional tone clashes somewhat with the more technical breakdown of the original contents, and it was written by someone whose basically never touched the HLA tools, but I think it's still very useful as there are alot of caveats using vrad3.
+https://developer.valvesoftware.com/wiki/SteamVR/Environments/Adding_Lighting#Lightmapping
+
+I'm too lazy (atm) to actually make new screenshots, not that you could tell from most of them the difference between 4k and 8k, but I think it is worth it. I might have missed by chance by updating the submissions to get proper before/after, shucks. Anyway, a lot of really minute shadow detail does show up in the higher resolution and it seems like indrect and AO all gets nicer. Switching some lights to fully baked will also help performance.  I think it was worth it because I really like the look of nice lightmaps both for VR experiences and in regular games  -- incidentally, the original Rage now works on Steam Deck. Thanks for reading!
+
+CHANGELOG: (now out of date with the reddit post)
+
+================================================================================ #1
+rebuild lightmaps with 8k resolution
+reapplied and scaled down plaster+carpet textures
+deinstance frames for wood texturing and soft lines (and fix bottom of door frame)
+hide steamvr dome prop on the wall
+correct steamvr panel plasment
+revamp lighting in closet and bevel wall edges
+bake green light under desk
+animate bird
+turn off biasing
+================================================================================ #2
+fixed some living room props not touching floor
+fixed another bird painting
+overlap main window cube maps on height
+rebuild lightmaps with 8k resolution
+removed last hidden teleport entity fixing inability to for the user to teleport
+heavily reworked all geometry, splits and texutring to fix remaining errors with added curves and increased polygon counts throughout
+baked and relight kitchen area, losing spooky flicker
+further reduce outside black mesh and remove more trees
+set ambient boosts 1.5 on pool lights, 1.25 on upper passageway
+moderate prop shuffling, reductions, and color grading
+aggressive campaign to rebias everything
+================================================================================ #4
+rebuild lightmaps with 8k resolution
+baked (turning off flicker) and fixed angle of garden light
+backside blocklight>concrete retextur with biasing to -8),
+new concrete roof texture now biased
+grass displacement, down scale, and bias -3>-4,
+reduce water particles,
+removed ambient_color = "35 35 48 255" on directional,
+other minor bias adjusts
+new geo rework on bar table
+shrunk all shelve objects and other minor prop fiddling
+softeded red valve
+bulged brown beams
+adjusted beveling and split at top window outsides
+moved some props out of of the way inside to avoid some weird shadowing 
+ERRATA=cubemap overlap for glass, fully baked sun removes too much character but it could be done if wood floor still pops
+================================================================================ #5
+rebuild lightmaps with 8k resolution
+turned off bathroom flicker and bake light
+fix some outside blocklights
+adjust position of hanging weed near bathroom door 
+higher stalagtite res
+minor prop fiddling
+adjust reach of lightmap space mesh to include marble window sill
+brighter sun 0.8 to 1.2 and tint adjustment
+ERRATA=hanging prop still broken, and might need to double check adjacent wall heights and/or nearest (in height) blocklight strip
+================================================================================ #8
+rebuild lightmaps with 8k resolution
+redo kitchen scene texturing and texutring,
+ensure+sweeten lighting now baked and
+reconfigure directional and like priority
+trimmed selection sets
+added critters
+meaningful and fixed biasing collates
+large campaign to buldg and curve window frames,
+cut outside dust particles and terrain subd in half
+missing flower pot now upscaled
+deinstance and merge walls for seamless retexturing,
+moderate prop fiddling and grading
+(re?)added steamvr tv panels in bar tvs
+added new flower pot mesh and hover junkers statue at red curve
+added more music (HIA)
+ERRATA=ceiling should be split for cubemaps
+================================================================================ #9
+fix bird painting z fighting with the wall fml twice
+scale down new grass thing a bit
+increased voluem of turret sound event to 0.3
+smootherpuddle displacement
+rebuild lightmaps with 8k resolution
+enabled rocking critter,
+fixed gap in terrarium window side curve
+rehabbed all window frames and glass ensuring proper reflection/lighting origina assingments
+widened and simplified window beams to floor at concrete ingress in computer entrance
+reverted to dual cubemaps in computer hall
+rescaled cubemaps to present correctly in player visible glass reflections
+soft-harded gold beams and beveled metal beams in cave
+softened concrete at inside windows and outside bevel as well as brick+concrete top ribs
+minor prop fiddling with some added bushes
+disabled cubemap render on splotchy water pool
+added additional displacement mesh using translucent foliage materials for ground detail
+ripped new portugese_laurel texture to disable wind
+beveled and retextured concrete flower beds
+increased volume of music to 0.2>>0.8
+================================================================================ #10
+rebuild lightmaps with 8k resolution
+scaled down plaster
+softed gold edges on railing
+biasing adjustments and corrections
+adjusted moon tint
+spreaded outside trees and other minor prop fiddling
+now with symlinks all set im trying some kinda of seperate baked build here and fully testing vrad3 on the symlinks
+================================================================================ #11
+rebuild lightmaps with 8k resolution
+changed indirect light multiplier on dark side from 0.8 to 1.2
+used darker material under grate
+safe now static prop
+connected (hastily) lines on either side of book shelve
+removed soft normal line at wall>trim intersection
+bias now -1 on floor faces
+fix some marked texture errors and reapplied with scale down

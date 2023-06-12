@@ -1,0 +1,437 @@
+================================================================================ "."
+asset_pack_bms/materials/models/kleiner/glassesside_walter.vmat
+asset_pack_csgo/materials/gg_tibet/blend_snow_tile_tibet.vmat
+asset_pack_insurgency/materials/models/static_military/sandbag_wall_short_dm.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_assault_ct_body.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_assault_ct_holster.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_assault_ct_mask.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_commander_ct_assault.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_commander_ct_exo.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_commander_ct_main.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_commander_ct_stealth.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_commander_ct_support.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_exo_ct_mask.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_stealth_ct_body.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_stealth_ct_holster.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_support_ct_belt.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_support_ct_body.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_support_ct_holster.vmat
+asset_pack_nucleardawn/materials/models/players/consortium/nd_support_ct_mask.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_assault_emp_body.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_assault_emp_holster.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_commander_emp_assault.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_commander_emp_stealth.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_exo_emp_bandolier.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_exo_emp_belt.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_exo_emp_body.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_exo_emp_holster.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_exo_emp_mask.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_stealth_emp_body.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_support_emp_backpack.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_support_emp_body.vmat
+asset_pack_nucleardawn/materials/models/players/empire/nd_support_emp_holster.vmat
+asset_pack_nucleardawn/materials/models/players/special/nd_adopter_medal.vmat
+asset_pack_nucleardawn/materials/models/props/nd_vyksa/structures/airtraftower01_vk.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_armoury/rts_armoury_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_armoury/rts_armoury_ct_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_armoury/rts_armoury_ct_displays.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_armoury/rts_armoury_emp.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_armoury/rts_armoury_emp_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_armoury/rts_armoury_emp_displays.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_armoury/rts_armoury_emp_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_artillery/rts_artillery_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_artillery/rts_artillery_ct_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_artillery/rts_artillery_emp.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_artillery/rts_artillery_emp_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_artillery/rts_artillery_emp_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_assembler/rts_assembler_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_assembler/rts_assembler_ct_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_assembler/rts_assembler_ct_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_assembler/rts_assembler_emp.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_assembler/rts_assembler_emp_damage.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_assembler/rts_assembler_emp_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_assembler/rts_assembler_emp_glow.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_assembler/rts_assembler_emp_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_bunker/rts_bunker_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_bunker/rts_bunker_ct_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_bunker/rts_bunker_ct_interior.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_bunker/rts_bunker_ct_interior_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_bunker/rts_bunker_ct_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_radar/rts_radar_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_radar/rts_radar_ct_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_radar/rts_radar_ct_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_radar/rts_radar_emp.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_radar/rts_radar_emp_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_radar/rts_radar_emp_glow.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_radar/rts_radar_emp_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_reactor/rts_mainpower_ct_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_reactor/rts_prtower_emp_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_reactor/rts_reactorf_ct_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_supply/rts_supply_emp_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_tgate/rts_ltgate_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_tgate/rts_ltgate_ct_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_tgate/rts_ltgate_ct_glass.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_tgate/rts_ltgate_ct_glass_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_tgate/rts_ltgate_emp_lights.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_sturret_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_sturret_ct_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_turretft_emp.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_turretft_emp_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_turretmg_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_turretmg_ct_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_turretmg_ct_light.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_turretrt_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_turretrt_ct_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_turretrt_emp.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_turret/rts_turretrt_emp_damaged.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_wall/rts_barrier.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_wall/rts_barrier_ct.vmat
+asset_pack_nucleardawn/materials/models/rts_structures/rts_wall/rts_barrier_emp.vmat
+asset_pack_nucleardawn/materials/models/weapons/att_acog/acog.vmat
+asset_pack_nucleardawn/materials/models/weapons/att_laser/laser.vmat
+asset_pack_nucleardawn/materials/models/weapons/att_launcher/launcher.vmat
+asset_pack_nucleardawn/materials/models/weapons/att_reflex/reflex.vmat
+asset_pack_nucleardawn/materials/models/weapons/att_silencer/silencer.vmat
+asset_pack_nucleardawn/materials/models/weapons/att_silencer/silencer_large.vmat
+asset_pack_nucleardawn/materials/models/weapons/att_tier2/att_tier2.vmat
+asset_pack_nucleardawn/materials/models/weapons/avenger/avenger.vmat
+asset_pack_nucleardawn/materials/models/weapons/avenger/avenger_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/bag90/bag90.vmat
+asset_pack_nucleardawn/materials/models/weapons/blowtorch/blowtorch.vmat
+asset_pack_nucleardawn/materials/models/weapons/chaingun/chaingun.vmat
+asset_pack_nucleardawn/materials/models/weapons/chaingun/chaingun_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/ct_arms/nd_assault_ct_arms.vmat
+asset_pack_nucleardawn/materials/models/weapons/ct_arms/nd_assault_ct_hands.vmat
+asset_pack_nucleardawn/materials/models/weapons/ct_arms/nd_exo_ct_arms.vmat
+asset_pack_nucleardawn/materials/models/weapons/ct_arms/nd_stealth_ct_arms.vmat
+asset_pack_nucleardawn/materials/models/weapons/ct_arms/nd_support_ct_arms.vmat
+asset_pack_nucleardawn/materials/models/weapons/emp_arms/nd_assault_emp_arms.vmat
+asset_pack_nucleardawn/materials/models/weapons/emp_arms/nd_exo_emp_arms.vmat
+asset_pack_nucleardawn/materials/models/weapons/emp_arms/nd_stealth_emp_arms.vmat
+asset_pack_nucleardawn/materials/models/weapons/emp_arms/nd_support_emp_arms.vmat
+asset_pack_nucleardawn/materials/models/weapons/f2000/f2000.vmat
+asset_pack_nucleardawn/materials/models/weapons/f2000/f2000_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/grenade_launcher/grenade_launcher.vmat
+asset_pack_nucleardawn/materials/models/weapons/hypospray/hypospray.vmat
+asset_pack_nucleardawn/materials/models/weapons/hypospray/hypospray_glass.vmat
+asset_pack_nucleardawn/materials/models/weapons/knives/knives.vmat
+asset_pack_nucleardawn/materials/models/weapons/m95/m95.vmat
+asset_pack_nucleardawn/materials/models/weapons/m95/m95_lens.vmat
+asset_pack_nucleardawn/materials/models/weapons/m95/m95_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/mp500/mp500.vmat
+asset_pack_nucleardawn/materials/models/weapons/mp7/mp7.vmat
+asset_pack_nucleardawn/materials/models/weapons/mp7/mp7_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/nx300/nx300.vmat
+asset_pack_nucleardawn/materials/models/weapons/nx300/nx300_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/p900/p900.vmat
+asset_pack_nucleardawn/materials/models/weapons/paladin/paladin.vmat
+asset_pack_nucleardawn/materials/models/weapons/paladin/paladin_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/pp22/pp22.vmat
+asset_pack_nucleardawn/materials/models/weapons/pp22/pp22_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/projectiles/projectiles_all.vmat
+asset_pack_nucleardawn/materials/models/weapons/projectiles/projectile_m95.vmat
+asset_pack_nucleardawn/materials/models/weapons/projectiles/projectile_tank.vmat
+asset_pack_nucleardawn/materials/models/weapons/projectiles/projectile_x01.vmat
+asset_pack_nucleardawn/materials/models/weapons/psg5/psg5.vmat
+asset_pack_nucleardawn/materials/models/weapons/psg5/psg5_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/repair/repair_ct.vmat
+asset_pack_nucleardawn/materials/models/weapons/shotgun/shotgun.vmat
+asset_pack_nucleardawn/materials/models/weapons/shotgun/shotgun_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/sp5/sp5.vmat
+asset_pack_nucleardawn/materials/models/weapons/sp5/sp5_v2.vmat
+asset_pack_nucleardawn/materials/models/weapons/steroids/steroids_case.vmat
+asset_pack_nucleardawn/materials/models/weapons/steroids/steroids_needle.vmat
+asset_pack_nucleardawn/materials/models/weapons/wrench/wrench.vmat
+asset_pack_nucleardawn/materials/models/weapons/x01/x01.vmat
+asset_pack_nucleardawn/materials/models/weapons/x01/x01_v2.vmat
+asset_pack_tf/materials/models/player/demo/demoman_blue_zombie.vmat
+asset_pack_tf/materials/models/player/items/templates/standard.vmat
+asset_pack_tf/materials/models/player/pyro/pyro_zombie_red.vmat
+
+================================================================================
+
+diff --git a/utils/materials_import.py b/utils/materials_import.py
+old mode 100644
+new mode 100755
+index 90669c2..f80c87b
+--- a/utils/materials_import.py
++++ b/utils/materials_import.py
+@@ -100,6 +100,7 @@ def main():
+             import_total += 1
+         else:
+             sh.skip("invalid", vmt_path)
++            failureList.add(f"invalid", f'{vmt.path.local}')
+             import_invalid += 1
+ 
+     print("\nSkybox materials...")
+@@ -126,7 +127,7 @@ def main():
+     except Exception: pass
+     # csgo -> 183 / 15308 | 1.20 % Error rate -- 4842 / 15308 | 31.63 % Skip rate
+     # l4d2 -> 504 / 3675 | 13.71 % Error rate -- 374 / 3675 | 10.18 % Skip rate
+-    print("\nFinished! Your materials are now ready.")
++    print("\nLooks like we are done!")
+ 
+ class ValveMaterial:
+     def __init__(self, shader, kv):
+@@ -284,7 +285,7 @@ def static_decal_solution():
+     return core.static_overlay()
+ 
+ shaderDict = {
+-    "black":                "black",
++    "black":                main_ubershader,
+     "sky":                  "sky",
+     "unlitgeneric":         main_ubershader,
+     "vertexlitgeneric":     main_ubershader,
+@@ -295,7 +296,7 @@ shaderDict = {
+     "customcharacter":      main_ubershader,
+     "teeth":                main_ubershader,
+     "water":                main_water,
+-    #"refract":              "refract",
++    "refract":              "refract",
+     "worldvertextransition":main_blendable,
+     "lightmapped_4wayblend":main_blendable,  # TODO: Form blendmap from luminance https://developer.valvesoftware.com/wiki/Lightmapped_4WayBlend#Controlling_Blendinghttps://developer.valvesoftware.com/wiki/Lightmapped_4WayBlend#Controlling_Blending
+     "multiblend":           main_blendable,
+@@ -303,12 +304,15 @@ shaderDict = {
+     "unlittwotexture":      main_ubershader,  # 2 multiblend $texture2 nocull scrolling, model, additive.
+     "cable":                "cables",
+     "splinerope":           "cables",
+-    "shatteredglass":       core.glass,
++    "shatteredglass":       main_ubershader,
++    "outlinelitgeneric":       main_ubershader,
+     "wireframe":            "tools_wireframe",
+     "wireframe_dx9":        "error",
+-    #"spritecard":           "spritecard",  these are just vtexes with params defined in vpcf renderer - skip
+-    #"subrect":              "spritecard",  # should we just cut? $Pos "256 0" $Size "256 256" $decalscale 0.25 decals\blood1_subrect.vmt
+-    #"weapondecal": weapon sticker
++    "modulate":               main_ubershader,  # these are just vtexes with params defined in vpcf renderer - skip
++    "sprite":               main_ubershader,  # these are just vtexes with params defined in vpcf renderer - skip
++    "spritecard":           main_ubershader,  # these are just vtexes with params defined in vpcf renderer - skip
++    "subrect":              main_ubershader,  # should we just cut? $Pos "256 0" $Size "256 256" $decalscale 0.25 decals\blood1_subrect.vmt
++    "weapondecal":          main_ubershader,
+     "patch":                main_ubershader, # fallback if include doesn't have one
+     #grass
+     #customweapon
+@@ -319,7 +323,10 @@ shaderDict = {
+     #particlesphere
+     #shadow
+     #weapondecal
+-    #eyes
++    "eyes": main_ubershader,
++    "eyeball": main_ubershader,
++    "eyerefract": main_ubershader,
++    "de_unlitthreetexture": main_ubershader,
+     #flashlight_shadow_decal
+     #modulate
+     #weapondecal_dx9
+@@ -330,9 +337,10 @@ def chooseShader():
+     d = {get_shader(x):0 for x in list(shaderDict.values())}
+ 
+     if vmt.shader not in shaderDict:
+-        if sh.DEBUG:
+-            failureList.add(f"{vmt.shader} unsupported shader", vmt.path)
+-        return core.black_unlit()
++        ####if sh.DEBUG:
++        failureList.add(f"{vmt.shader} unsupported shader", vmt.path.local)
++        ####return core.black_unlit
++        return "vr_standard"
+ 
+     d[get_shader(shaderDict[vmt.shader])] += 1
+ 
+@@ -344,8 +352,9 @@ def chooseShader():
+ 
+     if vmt.shader == "decalmodulate":
+         if STEAMVR:
+-            vmat.KeyValues["F_MODULATE_2X"] = 1
+-            return steamvr.projected_decal_modulate()
++            ####vmat.KeyValues["F_MODULATE_2X"] = 1
++            ####return steamvr.projected_decal_modulate()
++            return "vr_standard"
+         return core.projected_decals()
+ 
+     if vmt.KeyValues['$decal'] == 1:
+@@ -381,6 +390,12 @@ def fixVmtTextureDir(localPath, fileExt = TEXTURE_FILEEXT) -> str:
+ 
+ def formatNewTexturePath(vmtPath: str, textureType: str) -> str:
+     texturePath = sh.output(fixVmtTextureDir(vmtPath))
++    texturePath2 = sh.output(Path("../asset_pack_hl2/materials/" + vmtPath.lstrip('\\/') + ".tga").as_posix())
++    if not texturePath.is_file() and texturePath2.is_file():
++        print("copying file from dependancy addon: " + vmtPath)
++        Path(texturePath.parent).mkdir(parents=True, exist_ok=True)
++        copyfile(texturePath2, texturePath)
++
+     # check if texture exists on disk
+     if texturePath.is_file():
+         # check if this texture was generated from a previous run
+@@ -405,6 +420,7 @@ def formatNewTexturePath(vmtPath: str, textureType: str) -> str:
+     # TODO: other textures like cubemaps, depths, etc
+ 
+     # couldn't find the texture
++    failureList.add(f"formatNewTexturePath", f'{vmt.path.local}')
+     if REPLACE_MISSING_TEXTURES_WITH_DEFAULT:
+         return default(textureType)
+ 
+@@ -418,16 +434,25 @@ def getTexture(vtf_path):
+     # source1import does the same
+     return None
+ 
+-def createMask(image_path, copySub = '_mask', channel = 'A', invert = False, queue = True) -> str:
++def createMask(_image_path, copySub = '_mask', channel = 'A', invert = False, queue = True) -> str:
+ 
+-    if not (image_path:=fixVmtTextureDir(image_path)):
++    if not (image_path:=fixVmtTextureDir(_image_path)):
+         return default(copySub)
+     image_path = sh.output(Path(image_path))
+ 
+     newMaskPath = image_path.parent /\
+         f"{image_path.stem}_{channel[:3].lower()}{'-1' if invert else ''}{copySub + image_path.suffix}"
+-
+-    sh.msg(f"createMask{image_path.local.relative_to(materials).as_posix(), copySub, channel, invert, queue} -> {newMaskPath.local}")
++    if not image_path.is_file():
++      image_path = sh.output(Path("../asset_pack_hl2/materials/" + _image_path.lstrip('\\/') + ".tga").as_posix())
++      if image_path.exists():
++        print("found outside material file: " + str(image_path))
++      else:
++        image_path = sh.output(Path("../asset_pack_episodicOFF/materials/" + _image_path + ".tga").as_posix())
++        if image_path.exists():
++          print("found outside material file: " + str(image_path))
++      sh.msg(f"createMask{image_path.local.as_posix(), copySub, channel, invert, queue} -> {newMaskPath.local}")
++    else:
++      sh.msg(f"createMask{image_path.local.relative_to(materials).as_posix(), copySub, channel, invert, queue} -> {newMaskPath.local}")
+ 
+     if sh.MOCK:
+         newMaskPath.open('a').close()
+@@ -464,6 +489,9 @@ def createMask(image_path, copySub = '_mask', channel = 'A', invert = False, que
+     # Copy the specified channel to the new image using itself as the mask
+     bg.paste(imgChannel)
+ 
++    #### sometimes needed see lostcoast models/gibs/combine whatever needs a texture from hl2/models/combine/helicopter and would try to save in that dir in hl2mp (as it should) but 404
++    Path(newMaskPath.parent).mkdir(parents=True, exist_ok=True)
++
+     bg.convert('L').save(newMaskPath, optimize=True)  #.convert('P', palette=Image.ADAPTIVE, colors=8)
+     bg.close()
+     print("+ Saved mask to", newMaskPath.local)
+@@ -698,8 +726,9 @@ def fix_envmap(vmtVal):
+     elif 'env_cubemap' == vmtVal:
+         vmat.KeyValues['F_SPECULAR_CUBE_MAP'] = 1
+     else:
+-        vmat.KeyValues['F_SPECULAR_CUBE_MAP'] = 2
+-        vmat.KeyValues['TextureCubeMap'] = default('_cube', '.pfm')#TODO
++        vmat.KeyValues['F_SPECULAR_CUBE_MAP'] = 1
++        ####vmat.KeyValues['F_SPECULAR_CUBE_MAP'] = 2
++        ####vmat.KeyValues['TextureCubeMap'] = default('_cube', '.pfm')#TODO
+     return 1  # presence()
+ 
+ 
+@@ -1312,6 +1341,7 @@ def convertSpecials():
+     # fix mod2x logic for projected_decals
+     if vmt.shader == 'decalmodulate':
+         vmat.KeyValues['F_BLEND_MODE'] = 1 if (vmat.shader == core.projected_decals()) else 3
++        vmt.KeyValues['$translucent'] = 1
+ 
+     # fix lit logic for projected_decals
+     if vmt.shader in ('lightmappedgeneric', 'vertexlitgeneric'):
+@@ -1463,8 +1493,8 @@ def ImportVMTtoVMAT(vmt_path: Path, preset_vmat = False):
+                 return
+             if not any(wd in vmt.shader for wd in shaderDict):
+                 vmt.KeyValues.clear()
+-                print("Include has unsupported shader.")
+-                return
++                print("Include has unsupported shader: " + vmt.shader)
++                ####return
+             print("Done!")
+             vmt.KeyValues.update(patchKeyValues)
+             if vmt.KeyValues['insert']:
+@@ -1479,8 +1509,8 @@ def ImportVMTtoVMAT(vmt_path: Path, preset_vmat = False):
+         if face in SKY_FACES:
+             return collectSkybox(name, face, vmt)
+ 
+-    if not validMaterial:
+-        return
++    ####if not validMaterial:
++    ####    return
+ 
+     if not preset_vmat:
+         vmat = VMAT()
+@@ -1499,7 +1529,7 @@ def ImportVMTtoVMAT(vmt_path: Path, preset_vmat = False):
+     convertVmtToVmat()
+ 
+     if (not IGNORE_PROXIES) and (proxies:= vmt.KeyValues["proxies"]):
+-        kvalues, vmat.KeyValues['DynamicParams'] = ProxiesToDynamicParams(proxies, KNOWN, vmt.KeyValues)
++        kvalues, vmat.KeyValues['DynamicParamsDisabled'] = ProxiesToDynamicParams(proxies, KNOWN, vmt.KeyValues)
+         vmat.KeyValues.update(kvalues)
+ 
+     if SIMPLE_SHADER_WHERE_POSSIBLE:
+diff --git a/utils/particles_import.py b/utils/particles_import.py
+old mode 100644
+new mode 100755
+index 4e46f09..e92b9ea
+--- a/utils/particles_import.py
++++ b/utils/particles_import.py
+@@ -1984,6 +1984,9 @@ def pcfkv_convert(key, value):
+                     if isinstance(value2, dmx.Element):
+                         value2 = value2.name
+                     else: input(f'Ref not an element {key2}: {value2}')
++                    #### revelations thing maybe another
++                    if (value2 is None):
++                        break
+                     value2 = kv3.resource(Path(vpcf.path.local.parent / (value2  + '.vpcf')))
+                 elif isinstance(subkey, (minof, maxof)):
+                     bMin = isinstance(subkey, minof)
+diff --git a/utils/shared/base_utils2.py b/utils/shared/base_utils2.py
+old mode 100644
+new mode 100755
+diff --git a/utils/shared/import_blacklist.json b/utils/shared/import_blacklist.json
+old mode 100644
+new mode 100755
+index 05e225c..bd98ef8
+--- a/utils/shared/import_blacklist.json
++++ b/utils/shared/import_blacklist.json
+@@ -1,11 +1,9 @@
+ {
+     "materials": [
+-        "/models/weapons/customization/stickers/",
+-        "/models/hybridphysx/",
+         "/debug/",
+         "/editor/",
+         "/models/editor/",
+-        "/dev/",
++
+         "/engine/additivevertexcolorvertexalpha.vmt",
+         "/engine/colorcorrection.vmt",
+         "/engine/depthwritealphatest.vmt",
+@@ -25,13 +23,13 @@
+         "/engine/volumetricfog.vmt",
+         "/engine/writestencil.vmt",
+         "/engine/writez.vmt",
+-        "/tools/toolsskyfog.vmt",
++
++        "/tools/",
+         "/decals/rendershadow.vmt",
+         "/decals/rendermodelshadow.vmt",
+         "/decals/simpleshadow.vmt"
+     ],
+     "models": [
+-        "/hybridphysx/",
+         "/editor/",
+         "/player/custom_player/animset",
+         "/props_wasteland/bridge_railing.mdl"
+diff --git a/utils/shared/material_proxies.py b/utils/shared/material_proxies.py
+old mode 100644
+new mode 100755
+index 48de07d..3cf25a5
+--- a/utils/shared/material_proxies.py
++++ b/utils/shared/material_proxies.py
+@@ -94,9 +94,10 @@ def texturescroll(texturescrollvar, texturescrollrate, texturescrollangle, **_):
+     return f"float2({texturescrollrate} * cos({texturescrollangle}, {texturescrollrate} * sin({texturescrollrate}))"
+ 
+ def get_resultvar(proxy: dict):
+-    for key, val in proxy.items():
+-        if key == "resultvar":
+-            return val
++    if not isinstance(proxy, str):
++        for key, val in proxy.items():
++            if key == "resultvar":
++                return val
+     return None
+ 
+ def search_res(proxies, result: str):

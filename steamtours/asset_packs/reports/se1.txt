@@ -1,0 +1,20 @@
+Here are all the materials and models from Sin Episodes Emergence converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on these asset packs. In the case of this game, I did not (unlike cstrike/dod) build the mod referencing of a set of hl2 files, so, like Portal 2, the Sin Episodes pack contains various duplications of Half Life 2 content that shipped with the game. Culling the handfuls of cardboard boxes, etc, might have been desirable, but I don't have the ability (source files) or want to properly check against the base half life 2 game files. Also, Sin isn't really a addon(vpk wise) to Half-Life 2 like css/dod, came out way before Steam Pipe and Source 2013, is not a Valve game etc, so it might be proper to just ship all the files verbatim like here. This is all more of a personal note.
+
+In any event, the amount of duplicated content seems quite small, everything builds (except the eyeballs and skys of course.) I used the default script converter refraction maximum of 0.050, instead of lowering it, as I want a bit more shininess in the map I'm working on.  I'm unsure at this point if the scripts I ran were the same ones from last time, or even if any improvements to them are available. I didn't have to do anything to get the (likely hl2) blend materials to work, and overall my procedure was honed and I built the pack in a night, I hope I didn't make a mistake. Some characters didn't build until typos were fixed, and some quick bash/sed fixed the missing files. The missing files seem to be endless amounts of alpha masks, and I presume this is junk output from the material converter script, and there are plenty of transparent materials properly converted. Finger's crossed.
+
+The only content culled from release was the following debug/dev files:
+
+-- materials/debug/
+-- materials/engine/
+-- materials/hlmv/
+-- materials/shadertest/
+-- materials/tools/
+-- materials/vgui/hud
+-- materials/models/editor/
+-- models/editor/
+-- models/error
+
+Observe the following material changes (more like lost files): https://paste.ee/p/BTAOl A list of all pre-processed (before negation/cull) content files shared by the hl2 asset pack can be found here: https://paste.ee/p/LdqoD
+
+ADDON: asset_pack_se1
+TOTAL: 1104 vmdl_c files, 2713 vmat_c

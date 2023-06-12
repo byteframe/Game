@@ -1,0 +1,21 @@
+< 	TextureReflectance "materials/ground/ice01_normal_alpha.tga"
+> 	//TextureReflectance "materials/ground/ice01_normal_alpha.tga"
+materials/ground/blendicesnow01.vmat
+< 	TextureReflectance "materials/ground/snow01_alpha.tga"
+> 	//TextureReflectance "materials/ground/snow01_alpha.tga"
+materials/ground/blendsnowgrass01.vmat
+< 	TextureReflectance "materials/ground/snow01_alpha.tga"
+> 	//TextureReflectance "materials/ground/snow01_alpha.tga"
+materials/ground/blendsnowgrass02.vmat
+< 	TextureReflectance "materials/models/props_normandy/mill_water_wheel_alpha.tga"
+> 	//TextureReflectance "materials/models/props_normandy/mill_water_wheel_alpha.tga"
+materials/models/props_normandy/mill_water_wheel.vmat
+< 	TextureReflectance "materials/nature/sandfloor007c_normal_alpha.tga"
+> 	//TextureReflectance "materials/nature/sandfloor007c_normal_alpha.tga"
+materials/nature/blendsandrock005b.vmat
+< 	TextureReflectance "materials/nature/sandfloor007c_normal_alpha.tga"
+> 	//TextureReflectance "materials/nature/sandfloor007c_normal_alpha.tga"
+materials/nature/blendsandsand007a.vmat
+< 	TextureReflectance "materials/stone/cobble08b_normal_alpha.tga"
+> 	//TextureReflectance "materials/stone/cobble08b_normal_alpha.tga"
+materials/stone/blendcobblegrass002a.vmat

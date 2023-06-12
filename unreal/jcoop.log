@@ -1,0 +1,221 @@
+Log: Log file open, 07/27/04 21:21:24
+Init: Name subsystem initialized
+Init: Detected: Microsoft Windows 98 4.10 (Build: 67766446)
+Init: Version: 225
+Init: Compiled: May 31 1999 19:04:30
+Init: Command line: nyleve.unr?game=JCoop4.JCoopGame?difficulty=4 -useini ini=jcoop.ini -uselog log=jcoop.log
+Init: Base directory: C:\Unreal\System\
+Init: Character set: Unicode
+Log: Bound to Core.dll
+Init: Object subsystem initialized
+Init: Computer: stroggos
+Init: User: ftgow
+Init: Memory total: Phys=125816K Pagef=498952K Virt=2097087K
+Init: Working set: 2000000 / 2000000
+Init: CPU Speed=932.594186 MHz
+Init: CPU Page size=4096, Processors=1
+Init: CPU Detected: PentiumPro-class processor (GenuineIntel)
+Init: CPU Features: MMX CMov FPU TimeStamp
+Log: Bound to Engine.dll
+Log: Loading: Package Engine
+Log: Loading: Package Core
+Log: Executing Class Engine.ServerCommandlet
+Init: Unreal engine initialized
+Log: Browse: nyleve.unr?Name=Player?Class=UnrealI.FemaleOne?game=JCoop4.JCoopGame?difficulty=4
+Log: LoadMap: nyleve.unr?Name=Player?Class=UnrealI.FemaleOne?game=JCoop4.JCoopGame?difficulty=4
+Log: Loading: Package nyleve
+Log: Loading: Package Mine
+Log: Loading: Package Detail
+Log: Bound to Fire.dll
+Log: Loading: Package Fire
+Log: Loading: Package GenEarth
+Log: Loading: Package NaliCast
+Log: Loading: Package PlayrShp
+Log: Loading: Package UnrealI
+Log: Loading: Package UnrealShare
+Log: Loading: Package GenIn
+Log: Loading: Package TCrystal
+Log: Loading: Package HubEffects
+Log: Loading: Package GenFluid
+Log: Loading: Package GenFX
+Log: Loading: Package shaneDAY
+Log: Loading: Package AmbOutside
+Log: Loading: Package AmbModern
+Log: Loading: Package DoorsMod
+Log: Loading: Package SKYBox
+Log: Loading: Package Activates
+Log: Loading: Package Ancient
+Log: Loading: Package GenTerra
+Log: Loading: Package dusk
+Log: Loading: Package Male2Skins
+Log: Loading: Package Male3Skins
+Log: Loading: Package shanesky
+Log: Loading: Package GenWarp
+Log: Loading: Package AmbAncient
+Log: Loading: Package Male1Skins
+Log: Loading: Package Female1Skins
+Log: Collecting garbage
+Log: Purging garbage
+Log: Loading: Package JCoop4
+Log: Game class is 'JCoopGame'
+Log: Bound to IpDrv.dll
+Log: Loading: Package IpDrv
+Init: WinSock: version 1.1 (2.2), MaxSocks=128, MaxUdp=1024
+Init: WinSock: WinSock 2.0
+Init: WinSock: Socket queue 217088 / 217088
+Init: WinSock: I am stroggos (192.168.1.2)
+DevNet: TcpNetDriver on port 7777
+Log: Server Package: Female1skins
+Log: Server Package: Female2skins
+Log: Loading: Package Female2skins
+Log: Server Package: Male1skins
+Log: Server Package: Male2skins
+Log: Server Package: Male3skins
+Log: Server Package: SkTrooperskins
+Log: Loading: Package SkTrooperskins
+Log: Spawning: IpDrv.UdpBeacon
+Log: Spawning: IpServer.UdpServerQuery
+Log: Loading: Package IpServer
+Log: Spawning: IpServer.UdpServerUplink
+Log: Spawning: IpServer.UdpServerUplink
+Log: Bringing Level nyleve.MyLevel up for play...
+ScriptLog: InitGame: ?Name=Player?Class=UnrealI.FemaleOne?game=JCoop4.JCoopGame?difficulty=4
+ScriptLog: Difficulty 4
+ScriptLog: Remote Administration with Password
+ScriptLog: Base Mutator is nyleve.Mutator0
+JCoop: CustomMapTimer list: 
+JCoop: thisMap: nyleve.unr
+ScriptLog: ServerBeacon listening on port 7775
+ScriptLog: Broadcasting Beacon
+JCoop: ======================================================================================
+JCoop: JCoop version 4.0 by Joss Liu j88oss@yahoo.com www.geocities.com/j88oss
+JCoop: Original coding by Joss Liu, September 2002 - January 2003
+JCoop: Thanks go to:
+JCoop:      Maniac, Cherokee, Teela, (DarkSW)Wolf - for your constant stream of ideas and encouragement
+JCoop:      Zora, Zombie, digital zynthetic, Koopa888, }TCP{Wolf - for ideas and feedback making JCoop better game
+JCoop: ======================================================================================
+JCoop: Current password settings:
+JCoop: AdminPassword[0]:
+JCoop: AdminPassword[1]:
+JCoop: AdminPassword[2]:
+JCoop: AdminPassword[3]:
+JCoop: GamePassword:
+JCoop: TimeLimit=0 minutes (map timer disabled) Next Map: dig
+Init: Game engine initialized
+DevNet: NotifyAcceptingConnection: Server MyLevel accept
+NetComeGo: Open MyLevel 07/27/04 21:21:49
+DevNet: NotifyAcceptingChannel Control 0 server Level nyleve.MyLevel: Accepted
+DevNet: Level server received: HELLO REVISION=0 MINVER=224 VER=226
+Log: Bird14 flew out of the world!
+DevNet: Level server received: NETSPEED 5000
+Log: Client netspeed is 5000
+DevNet: Level server received: LOGIN RESPONSE=-766335782 URL=vortex2?Name=<first-thought\\giver-of-will> AWAY?Class=UnrealShare.FemaleOne?Skin=Female1Skins.Gina?Team=255?Face=
+DevNet: Login request: vortex2?Name=<first-thought\\giver-of-will>
+Log: Resolved master0.gamespy.com (207.38.8.34)
+ScriptLog: UdpServerUplink: Master Server is master0.gamespy.com:27900
+ScriptLog: UdpServerUplink: Port 7779 successfully bound.
+ScriptLog: UdpServerUplink: Resuming by request.
+Log: Resolved www.epicgames.com (207.135.145.4)
+ScriptLog: UdpServerUplink: Master Server is www.epicgames.com:27900
+ScriptLog: UdpServerUplink: Port 7779 successfully bound.
+ScriptLog: UdpServerUplink: Resuming by request.
+DevNet: Level server received: HAVE GUID=678F6F6D11D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=678F6F6C11D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=1E90ACBE11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=678F6F7011D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=1E90ACAD11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACBF11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC211D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=678F6F7311D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=678F6F7211D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=1E90ACB011D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACCD11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACB511D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACAE11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACAF11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC511D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC911D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACA311D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACB111D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACBB11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACBC11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC611D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACB211D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACBA11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACAA11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACAB11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC811D1ED664544279700005453 GEN=2
+DevNet: Level server received: JOIN
+DevNet: Join request: vortex2?Name=<first-thought\\giver-of-will>
+JCoop: Login: <first-thought\\give
+JCoop: Login(): Player has no PlayerClass, giving DefaultPlayerClass.
+JCoop: Incoming Player named <first-thought\\give desired jFemaleTwo and got jFemaleTwo
+Warning: Failed to load 'Texture Female2skins.': Failed to find object 'Texture Female2skins.'
+JCoop: Logging in to NyLeve's Falls
+Log: Possessed PlayerPawn: jFemaleTwo nyleve.jFemaleTwo0
+ScriptLog: All inventory from <first-thought\\give is accepted
+JCoop: PostLogin(): Score entry added: 0 <first-thought\\give
+JCoop: Current Score Table contents:
+JCoop:     0: <first-thought\\give
+DevNet: Join succeeded: <first-thought\\give
+DevNet: Level server received: NETSPEED 10000
+Log: Client netspeed is 10000
+NetComeGo: Close TcpipConnection0 07/27/04 21:26:23
+JCoop: Logout: <first-thought\\give logging out
+DevNet: NotifyAcceptingConnection: Server MyLevel accept
+NetComeGo: Open MyLevel 07/27/04 22:54:02
+DevNet: NotifyAcceptingChannel Control 0 server Level nyleve.MyLevel: Accepted
+DevNet: Level server received: HELLO REVISION=0 MINVER=224 VER=226
+DevNet: Level server received: NETSPEED 5000
+Log: Client netspeed is 5000
+DevNet: Level server received: LOGIN RESPONSE=728459192 URL=Index.unr?Name=?Class=unreali.skaarjplayer?Skin=Male2Skins.Male2Gib?Team=255?Face=
+DevNet: Login request: Index.unr?Name=?Class=unreali.skaarjplayer?Skin=Male2Skins.Male2Gib?Team=255?Face=
+DevNet: Level server received: HAVE GUID=678F6F6D11D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=678F6F6C11D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=1E90ACBE11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=678F6F7011D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=1E90ACAD11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACBF11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC211D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=678F6F7311D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=678F6F7211D2FEB4C000FDAAE072794F GEN=7
+DevNet: Level server received: HAVE GUID=1E90ACB011D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACCD11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACB511D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACAE11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACAF11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC511D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC911D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACA311D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACB111D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACBB11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACBC11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC611D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACB211D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACBA11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACAA11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACAB11D1ED664544279700005453 GEN=2
+DevNet: Level server received: HAVE GUID=1E90ACC811D1ED664544279700005453 GEN=2
+DevNet: Level server received: JOIN
+DevNet: Join request: Index.unr?Name=?Class=unreali.skaarjplayer?Skin=Male2Skins.Male2Gib?Team=255?Face=
+ScriptLog: Team 255
+JCoop: Login: 
+JCoop: Incoming Player named  desired skaarjplayer and got jSkaarjPlayer
+JCoop: Logging in to NyLeve's Falls
+Log: Possessed PlayerPawn: jSkaarjPlayer nyleve.jSkaarjPlayer0
+ScriptLog: All inventory from  is accepted
+JCoop: PostLogin(): Score entry added: 1 
+JCoop: Current Score Table contents:
+JCoop:     0: <first-thought\\give
+JCoop:     1: 
+DevNet: Join succeeded: 
+NetComeGo: Close TcpipConnection1 07/27/04 22:56:34
+JCoop: Logout:  logging out
+DevNet: NotifyAcceptingConnection: Server MyLevel accept
+NetComeGo: Open MyLevel 07/28/04 02:48:53
+DevNet: NotifyAcceptingChannel Control 0 server Level nyleve.MyLevel: Accepted
+DevNet: Level server received: HELLO REVISION=0 MINVER=224 VER=226
+DevNet: Level server received: NETSPEED 2600
+Log: Client netspeed is 2600
+DevNet: Level server received: LOGIN RESPONSE=-1309016954 URL=Index.unr?Name=Drake_Crowind**PHX**?Class=UnrealShare.MaleThree?Skin=Male3Skins.Dante?Team=255?Face=
+DevNet: Login request: Index.unr?Name=Drake_Crowind**PHX**?Class=UnrealShare.MaleThree?Skin=Male3Skins.Dante?Team=25

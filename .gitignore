@@ -1,0 +1,13 @@
+*.vpk
+*.vphys_c
+*.vmdl_c
+*.vanim_c
+*.vmat_c
+*.vmesh_c
+*.vmorf_c
+*.vsnd_c
+*.vseq_c
+*.vsndevts_c
+*.vtex_c
+*.vxml_c
+*.mp3

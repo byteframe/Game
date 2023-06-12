@@ -1,0 +1,95 @@
+10c10
+< 	TextureTranslucency "materials/models/cliffs/clifftrees_cardboard01_alpha.tga"
+---
+> 	TextureTranslucency "materials/nature/clifftrees_cardboard01a_alpha.tga"
+materials/models/cliffs/clifftrees_cardboard01.vmat
+10c10
+< 	TextureTranslucency "materials/models/cliffs/clifftrees_cardboard02_alpha.tga"
+---
+> 	TextureTranslucency "materials/nature/clifftrees_cardboard02a_alpha.tga"
+materials/models/cliffs/clifftrees_cardboard02.vmat
+10c10
+< 	TextureTranslucency "materials/models/cliffs/clifftrees_cardboard03_alpha.tga"
+---
+> 	TextureTranslucency "materials/nature/clifftrees_cardboard03a_alpha.tga"
+materials/models/cliffs/clifftrees_cardboard03.vmat
+7c7
+< 	TextureColor "materials/Wood/woodfloor005a.tga"
+---
+> 	TextureColor "materials/models/advisorbarn/woodfloor005a.tga"
+materials/models/map12a_hangar/woodfloor005a.vmat
+14c14
+< 	TextureReflectance "materials/models/props_interiors/furniture_shelf01a_alpha.tga"
+---
+> 	//TextureReflectance "materials/models/props_interiors/furniture_shelf01a_alpha.tga"
+materials/models/props_forest/furniture_shelf01a.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_forest/light_security_alpha.tga"
+---
+> 	//TextureSelfIllumMask "materials/models/props_forest/light_security_alpha.tga"
+materials/models/props_forest/light_security.vmat
+17c17
+< 	TextureSelfIllumMask "materials/models/props_silo/desk_console1_alpha.tga"
+---
+> 	TextureSelfIllumMask "materials/models/props_silo/desk_console1_ref.tga"
+materials/models/props_silo/desk_console1.vmat
+17c17
+< 	TextureSelfIllumMask "materials/models/props_silo/desk_console1b_alpha.tga"
+---
+> 	TextureSelfIllumMask "materials/models/props_silo/desk_console1b_ref.tga"
+materials/models/props_silo/desk_console1b.vmat
+17c17
+< 	TextureSelfIllumMask "materials/models/props_silo/desk_console1c_alpha.tga"
+---
+> 	TextureSelfIllumMask "materials/models/props_silo/desk_console1c_ref.tga"
+materials/models/props_silo/desk_console1c.vmat
+17c17
+< 	TextureSelfIllumMask "materials/models/props_silo/desk_console2_alpha.tga"
+---
+> 	TextureSelfIllumMask "materials/models/props_silo/desk_console2_ref.tga"
+materials/models/props_silo/desk_console2.vmat
+17c17
+< 	TextureSelfIllumMask "materials/models/props_silo/industriallight01_alpha.tga"
+---
+> 	TextureSelfIllumMask "materials/models/props_silo/industriallight01_ref.tga"
+materials/models/props_silo/industriallight01.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_silo/launch_button_alpha.tga"
+---
+> 	//TextureSelfIllumMask "materials/models/props_silo/launch_button_alpha.tga"
+materials/models/props_silo/launch_button.vmat
+10c10
+< 	TextureSelfIllumMask "materials/models/props_silo/launch_button02_alpha.tga"
+---
+> 	//TextureSelfIllumMask "materials/models/props_silo/launch_button02_alpha.tga"
+materials/models/props_silo/launch_button02.vmat
+17c17
+< 	TextureSelfIllumMask "materials/models/props_silo/light_wall_alpha.tga"
+---
+> 	TextureSelfIllumMask "materials/models/props_silo/light_wall_ref.tga"
+materials/models/props_silo/light_wall.vmat
+15c15
+< 	TextureReflectance "materials/models/props_silo/silo_hatch_normal_alpha.tga"
+---
+> 	TextureReflectance "materials/models/props_silo/silo_hatch_normal.tga"
+materials/models/props_silo/silo_hatch.vmat
+17c17
+< 	TextureSelfIllumMask "materials/models/props_silo/wall_console1_alpha.tga"
+---
+> 	TextureSelfIllumMask "materials/models/props_silo/wall_console1_ref.tga"
+materials/models/props_silo/wall_console1.vmat
+17c17
+< 	TextureSelfIllumMask "materials/models/props_silo/wall_console2_alpha.tga"
+---
+> 	TextureSelfIllumMask "materials/models/props_silo/wall_console2_ref.tga"
+materials/models/props_silo/wall_console2.vmat
+14c14
+< 	TextureReflectance "materials/models/props_trainstation/wrecked_train_01col_alpha.tga"
+---
+> 	TextureReflectance "materials/models/props_trainstation/wrecked_train_01normal.tga"
+materials/models/props_trainstation/wrecked_train_01col.vmat
+15c15
+< 	TextureReflectance "materials/models/props_trainstation/wrecked_train_divider_normal_alpha.tga"
+---
+> 	TextureReflectance "materials/models/props_trainstation/wrecked_train_divider_normal.tga"
+materials/models/props_trainstation/wrecked_train_divider.vmat

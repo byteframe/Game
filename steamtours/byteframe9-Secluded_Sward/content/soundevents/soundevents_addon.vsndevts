@@ -1,0 +1,24 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+  byteframe4 =
+  {
+    type = "destinations.simple_vr"
+    preload_vsnds = true
+    volume = 0.3
+    vsnd_files = "sounds/byteframe4.vsnd"
+  }
+  byteframe4_fortune =
+  {
+    type = "destinations.simple_vr"
+    preload_vsnds = true
+    volume = 0.25
+    vsnd_files = 
+    [
+      "sounds/ambient/electric_fence_spark_small_01.vsnd",
+      "sounds/ambient/electric_fence_spark_small_02.vsnd",
+      "sounds/ambient/electric_fence_spark_small_03.vsnd",
+      "sounds/ambient/electric_fence_spark_small_04.vsnd",
+      "sounds/ambient/electric_fence_spark_small_05.vsnd",
+    ]
+  }
+}
