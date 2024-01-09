@@ -1,0 +1,10 @@
+"soundscape_valvedemoroom"
+{
+    "playlooping"
+    {
+        "volume"        "0.10"
+        "pitch"         "100"
+        "origin"        "-44, 60, 10"
+        "wave"          "sounds/interior_04.vsnd"
+    }
+}

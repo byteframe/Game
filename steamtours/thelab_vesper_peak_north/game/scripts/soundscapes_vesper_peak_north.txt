@@ -1,0 +1,9 @@
+"soundscape_vesper_peak_north"
+{
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "wave"          "sounds/wind_01.vsnd"
+    }
+}

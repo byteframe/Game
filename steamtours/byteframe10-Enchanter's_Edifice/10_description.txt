@@ -1,0 +1,17 @@
+Welcome to the magical abode of a fancy wizard. You can't touch anything, sorry, your hand will go right through it. This started as an attempt to recreate Hannibal's office from the TV show. Hence the music.
+
+Really tried to fulfill my want to do more ornate detailing, and properly beveling, and succeeded well in scratching that itch. Kept the geometry nearly 100% on point, much satisfy. I caught all of the microscopic inconsistencies (see screen-shot) that happen when I bridge/bevel, and remade stuff alot to ensure consistency. Some prior complaints about 'my geometry all going off grid', might be explained by inconsistent bridging.
+
+It's still my usual silly curved surface-template dealie, but I learned more about how to do that properly and take it further. I finally sustained the realization that I sunlight shines through a face unless its double sided, or a thick wall. I'd assume only my second submission is affected by this, I don't recall exactly though. See the screenshot for how the (suboptimal) house 'layers' looks from the outside. If I am to make a fully visible house one can see from the outside I will need to plan for this, but in this level, there is no outside. This explains some annoying lighting artifacts I noticed before.
+
+The top and bottom are more or less seperate maps with the bottom using a different style where everything is all square, and gridlike, 17x17 to be exact. I think I got confused about texture scalling and this could have been 16x16, which would have made the dimension of the bottom room of the same size of the top room and then they could have been layered properly.
+
+Really went gungho for the first time with serious vertex merging and that enabled me to actually make a (somewhat) proper roof, instead of the flat quads I use in my prior maps, which come to think of it, are not double sided. Damnit. In any event, doing more smooth+wider wall curves can help the roof phase
+
+As you can see, I made alot more stuff myself, like the TV and the shelves below it, and a couple other fabrications, along with my heavy detailing. However, I (yet again) ended up putting in too many props. I think they are less intrusive and more like wallpaper then ever before, which is good, but I made too many shelves, which is what screwed me. That and the general design of having just an open air space that I must then fill. I want to do just detailing and make actual house with corridors and stuff. I understand people want them to be phyics props they can toss around, but I'm too lazy to do that, and just hope my next level wont have all these objects.
+
+Part of the problem is that I'm sick of the props and assets that I have access too. I think if I started to import models then It would seem silly not to consider learning unity. Waiting for the new Half-Life game.
+
+Uses a few textures from freepbr; stucco1 on the roof, the tile4b wall, and a wet stone texture behind one of the nature walls. Not too bad, I think I imported them somewhat correctly.
+
+Blah Blah blah, Ok I should actually build the map and test it out, here I go...Hey not too shabby! Looks good.

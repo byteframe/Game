@@ -1,0 +1,9 @@
+"soundscape_atlas_balloon_room"
+{
+    "playlooping"
+    {
+        "volume"        "0.075"
+        "pitch"         "100"
+        "wave"          "sounds/interior_05.vsnd"
+    }
+}

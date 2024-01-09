@@ -21,12 +21,12 @@
 				"AutoLaunchGameListCheck"		"0"
 				"PrivacyPolicyVersion"		"2"
 				"cloudenabled"		"1"
-				"SurveyDate"		"2022-10-04"
+				"SurveyDate"		"2023-10-31"
 				"SurveyDateVersion"		"2821247978136819932"
-				"ShowScreenshotManager"		"0"
+				"ShowScreenshotManager"		"1"
 				"FriendsUI"
 				{
-					"FriendsUIJSON"		"{\"bNotifications_ShowIngame\":false,\"bNotifications_ShowOnline\":false,\"bNotifications_ShowMessage\":true,\"bNotifications_EventsAndAnnouncements\":false,\"bSounds_PlayIngame\":false,\"bSounds_PlayOnline\":false,\"bSounds_PlayMessage\":false,\"bSounds_EventsAndAnnouncements\":false,\"bAlwaysNewChatWindow\":false,\"bForceAlphabeticFriendSorting\":true,\"nChatFlashMode\":0,\"bRememberOpenChats\":false,\"bCompactQuickAccess\":true,\"bCompactFriendsList\":true,\"bNotifications_ShowChatRoomNotification\":false,\"bSounds_PlayChatRoomNotification\":false,\"bHideOfflineFriendsInTagGroups\":false,\"bHideCategorizedFriends\":true,\"bCategorizeInGameFriendsByGame\":false,\"nChatFontSize\":1,\"b24HourClock\":true,\"bDoNotDisturbMode\":false,\"bDisableEmbedInlining\":false,\"bSignIntoFriends\":true,\"bDisableSpellcheck\":false,\"bDisableRoomEffects\":false,\"bAnimatedAvatars\":true,\"featuresEnabled\":{\"DoNotDisturb\":1,\"LoaderWindowSynchronization\":1,\"NonFriendMessageHandling\":1,\"NewVoiceHotKeyState\":1,\"PersonaNotifications\":1,\"ServerVirtualizedMemberLists\":1,\"SteamworksChatAPI\":1,\"FriendsFilter\":1},\"bAutoSignIntoFriends\":false,\"bShowTimeInChatLogCheck\":false}"
+					"FriendsUIJSON"		"{\"bNotifications_ShowIngame\":false,\"bNotifications_ShowOnline\":false,\"bNotifications_ShowMessage\":true,\"bNotifications_EventsAndAnnouncements\":true,\"bSounds_PlayIngame\":false,\"bSounds_PlayOnline\":false,\"bSounds_PlayMessage\":true,\"bSounds_EventsAndAnnouncements\":false,\"bAlwaysNewChatWindow\":false,\"bForceAlphabeticFriendSorting\":true,\"nChatFlashMode\":0,\"bRememberOpenChats\":false,\"bCompactQuickAccess\":true,\"bCompactFriendsList\":true,\"bNotifications_ShowChatRoomNotification\":false,\"bSounds_PlayChatRoomNotification\":false,\"bHideOfflineFriendsInTagGroups\":false,\"bHideCategorizedFriends\":true,\"bCategorizeInGameFriendsByGame\":false,\"nChatFontSize\":1,\"b24HourClock\":true,\"bDoNotDisturbMode\":false,\"bDisableEmbedInlining\":false,\"bSignIntoFriends\":false,\"bDisableSpellcheck\":false,\"bDisableRoomEffects\":false,\"bAnimatedAvatars\":true,\"featuresEnabled\":{\"DoNotDisturb\":1,\"LoaderWindowSynchronization\":1,\"NonFriendMessageHandling\":1,\"NewVoiceHotKeyState\":1,\"PersonaNotifications\":1,\"ServerVirtualizedMemberLists\":1,\"SteamworksChatAPI\":1,\"FriendsFilter\":1},\"bAutoSignIntoFriends\":false,\"bShowTimeInChatLogCheck\":false}"
 				}
 				"tools"
 				{
@@ -47,6 +47,14 @@
 						"Registered"		"1"
 					}
 					"1493710"
+					{
+						"Registered"		"1"
+					}
+					"2348590"
+					{
+						"Registered"		"1"
+					}
+					"1628350"
 					{
 						"Registered"		"1"
 					}
@@ -15596,10 +15604,6 @@
 					{
 						"hidden"		"1"
 					}
-					"459860"
-					{
-						"hidden"		"1"
-					}
 					"261980"
 					{
 						"hidden"		"1"
@@ -15637,10 +15641,6 @@
 						"hidden"		"1"
 					}
 					"642810"
-					{
-						"hidden"		"1"
-					}
-					"1911920"
 					{
 						"hidden"		"1"
 					}
@@ -15992,10 +15992,6 @@
 					{
 						"hidden"		"1"
 					}
-					"1288950"
-					{
-						"hidden"		"1"
-					}
 					"629390"
 					{
 						"hidden"		"1"
@@ -16250,7 +16246,11 @@
 					}
 					"1471060"
 					{
-						"hidden"		"1"
+						"hidden"		"0"
+						"tags"
+						{
+							"0"		"Removed"
+						}
 					}
 					"516990"
 					{
@@ -16289,10 +16289,6 @@
 						"hidden"		"1"
 					}
 					"749630"
-					{
-						"hidden"		"1"
-					}
-					"1710800"
 					{
 						"hidden"		"1"
 					}
@@ -16397,10 +16393,6 @@
 						"hidden"		"1"
 					}
 					"1900430"
-					{
-						"hidden"		"1"
-					}
-					"2080760"
 					{
 						"hidden"		"1"
 					}
@@ -16830,7 +16822,11 @@
 					}
 					"1921410"
 					{
-						"hidden"		"1"
+						"hidden"		"0"
+						"tags"
+						{
+							"0"		"Removed"
+						}
 					}
 					"921620"
 					{
@@ -17190,7 +17186,11 @@
 					}
 					"1535140"
 					{
-						"hidden"		"1"
+						"hidden"		"0"
+						"tags"
+						{
+							"0"		"Removed"
+						}
 					}
 					"805250"
 					{
@@ -17274,7 +17274,11 @@
 					}
 					"1758980"
 					{
-						"hidden"		"1"
+						"hidden"		"0"
+						"tags"
+						{
+							"0"		"Removed"
+						}
 					}
 					"1185550"
 					{
@@ -17566,10 +17570,6 @@
 					}
 					"2378970"
 					{
-						"tags"
-						{
-							"0"		"VR"
-						}
 					}
 					"2360710"
 					{
@@ -17631,7 +17631,7 @@
 					{
 						"tags"
 						{
-							"0"		"VR"
+							"0"		"favorite"
 						}
 					}
 					"2272070"
@@ -17736,7 +17736,7 @@
 					{
 						"tags"
 						{
-							"0"		"VR"
+							"0"		"favorite"
 						}
 					}
 					"2196950"
@@ -17750,7 +17750,7 @@
 					{
 						"tags"
 						{
-							"0"		"VR"
+							"0"		"favorite"
 						}
 					}
 					"2177710"
@@ -17771,7 +17771,7 @@
 					{
 						"tags"
 						{
-							"0"		"VR"
+							"0"		"favorite"
 						}
 					}
 					"2177680"
@@ -18033,7 +18033,7 @@
 					{
 						"tags"
 						{
-							"0"		"VR"
+							"0"		"favorite"
 						}
 					}
 					"892900"
@@ -18080,10 +18080,6 @@
 					}
 					"833740"
 					{
-						"tags"
-						{
-							"0"		"VR"
-						}
 					}
 					"831250"
 					{
@@ -18173,7 +18169,7 @@
 					{
 						"tags"
 						{
-							"0"		"VR"
+							"0"		"favorite"
 						}
 					}
 					"589680"
@@ -18269,10 +18265,6 @@
 					}
 					"279920"
 					{
-						"tags"
-						{
-							"0"		"VR"
-						}
 					}
 					"223750"
 					{
@@ -18290,16 +18282,12 @@
 					}
 					"208600"
 					{
-						"tags"
-						{
-							"0"		"VR"
-						}
 					}
 					"2139520"
 					{
 						"tags"
 						{
-							"0"		"VR"
+							"0"		"favorite"
 						}
 					}
 					"1949370"
@@ -18376,7 +18364,7 @@
 					{
 						"tags"
 						{
-							"0"		"2D"
+							"0"		"favorite"
 						}
 					}
 					"1987570"
@@ -20393,13 +20381,53 @@
 					}
 					"1956780"
 					{
-						"hidden"		"1"
+						"hidden"		"0"
 						"tags"
 						{
 							"0"		"Removed"
 						}
 					}
 					"1606390"
+					{
+						"hidden"		"0"
+						"tags"
+						{
+							"0"		"Removed"
+						}
+					}
+					"459860"
+					{
+						"hidden"		"0"
+						"tags"
+						{
+							"0"		"Removed"
+						}
+					}
+					"1911920"
+					{
+						"hidden"		"0"
+						"tags"
+						{
+							"0"		"Removed"
+						}
+					}
+					"1288950"
+					{
+						"hidden"		"0"
+						"tags"
+						{
+							"0"		"Removed"
+						}
+					}
+					"1710800"
+					{
+						"hidden"		"0"
+						"tags"
+						{
+							"0"		"Removed"
+						}
+					}
+					"2080760"
 					{
 						"hidden"		"0"
 						"tags"
@@ -20428,8 +20456,678 @@
 							"0"		"2D"
 						}
 					}
+					"37000"
+					{
+						"tags"
+						{
+							"0"		"2D"
+						}
+					}
+					"629730"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"996690"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1448350"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2339570"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2379680"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"884220"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2163140"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2413080"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2416150"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2389770"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2192260"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2413930"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2413030"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"1763510"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2223230"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2385390"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1481780"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1337530"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"1337100"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"1947500"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2333040"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"350610"
+					{
+						"tags"
+						{
+							"0"		"2D"
+						}
+					}
+					"1079800"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2467630"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2445540"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2417310"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2418990"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2501210"
+					{
+						"tags"
+						{
+							"0"		"2D"
+						}
+					}
+					"2347760"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1887760"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2281170"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2182790"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2335910"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2436210"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1461130"
+					{
+						"tags"
+						{
+							"0"		"2D"
+						}
+					}
+					"1782330"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"790800"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2473400"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2530030"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2461890"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2499150"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1863550"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2526010"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2557700"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2538150"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2411590"
+					{
+						"tags"
+						{
+							"0"		"2D"
+						}
+					}
+					"2571030"
+					{
+						"hidden"		"1"
+					}
+					"843390"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1992580"
+					{
+						"tags"
+						{
+							"0"		"2D"
+						}
+					}
+					"2601130"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2559060"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2605210"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2543150"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2569320"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2628680"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2492600"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2524980"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2620340"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"1803610"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2590670"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2625430"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"887330"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2519830"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2593770"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2331260"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2587250"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1853360"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2595440"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2537360"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2399850"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"2506830"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2568060"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2569520"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2564460"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1899820"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2529130"
+					{
+						"tags"
+						{
+							"0"		"favorite"
+						}
+					}
+					"1978380"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2597240"
+					{
+						"hidden"		"1"
+					}
+					"2599190"
+					{
+						"hidden"		"1"
+					}
+					"2601330"
+					{
+						"hidden"		"1"
+					}
+					"2643510"
+					{
+						"hidden"		"1"
+					}
+					"2631360"
+					{
+						"hidden"		"1"
+					}
+					"2394150"
+					{
+						"hidden"		"1"
+					}
+					"2329340"
+					{
+						"hidden"		"1"
+					}
+					"2492160"
+					{
+						"hidden"		"1"
+					}
+					"2531800"
+					{
+						"hidden"		"1"
+					}
+					"1794040"
+					{
+						"hidden"		"1"
+					}
+					"2242480"
+					{
+						"hidden"		"1"
+					}
+					"2216540"
+					{
+						"hidden"		"1"
+					}
+					"2229970"
+					{
+						"hidden"		"1"
+					}
+					"2262140"
+					{
+						"hidden"		"1"
+					}
+					"1818150"
+					{
+						"tags"
+						{
+							"0"		"2D"
+						}
+					}
+					"1282670"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2406220"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2687540"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2690220"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2511270"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2294980"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
+					"2680700"
+					{
+						"tags"
+						{
+							"0"		"VR"
+						}
+					}
 				}
 			}
 		}
 	}
+	"JSClientStorage"
+	{
+		"spotlight.review.2310"
+		{
+			"rgPromptDismissals"		"3"
+			"bWasAskedToRevise"		"1"
+		}
+		"spotlight.review.730"
+		{
+			"rgPromptDismissals"		"4"
+			"bWasAskedToRevise"		"1"
+		}
+	}
+	"ScreenshotViewItemsPerRow"		"3"
+	"PlaySoundOnToast"		"0"
 }

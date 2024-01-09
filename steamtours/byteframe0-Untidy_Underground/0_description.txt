@@ -1,0 +1,9 @@
+I did it! My first level released for a game ever! After all these years I released a level for something! It sucks. It's just a dumb cave with tons of assets and crappy lighting. Real amateur hour. I'm not really pleased with it, but rather, pleased from what I learned from it.
+
+Source 2 geometry construction is fun! I recall the Unreal Engine 1-2 methods of geometry construction, and did a lil quake2/hammer style back in the day, but I never released anything. I've never used unity, but as I understand you either assemble tons of meshes, and/or theres also a popular ProBuilder addon to do Hammer style brush construction. My interest in the other engines at this point is only related to the geometry stuff, I might toy with unity, but prolly wont install Unreal because you have to do that whole thing with their launcher and stuff. UDK 3 is still on steam though I should play with that for a tick.
+
+This is the result of finishing Mesh Editing Tutorial #3 and having a kind of cave room, and figuring I could go nuts inside of that. Overall, it worked out, but I spend too much time cutting up the geometry, when I should have kept that much simpler, and used displacement surfaces at the end. I did both, and you can see how craggily the floor is. While going up my own arse with geometry layouts is something I'll have to start avoiding, it's still worthwhile practice and I am really comfortable now.
+
+After completing mesh tutorial 4 with the focus on local axis or what not, I feel confident I could make the shapes/spaces I want, but I still need more discipline about planning it out.
+
+Lighting sucks, but I didn't bake any in. That water brush in the middle is probably nonsense too. This uses all the asset packs, which confuses the visual style and makes this like potentially huge download.

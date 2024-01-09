@@ -1,3 +1,7 @@
 "AddonInfo"
 {
+	"Dependencies"
+	{
+		"1"		"steamvr_home"
+  }
 }

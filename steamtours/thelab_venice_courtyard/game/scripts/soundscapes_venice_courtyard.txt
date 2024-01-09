@@ -1,0 +1,35 @@
+"soundscape_venice_courtyard"
+{
+    "playrandom"
+    {
+        "volume"        "0.125"
+        "pitch"         "100"
+        "time"          "30, 60"
+        "soundlevel"    "SNDLVL_60dB"
+        "position"      "random"
+        "rndwave"
+        {
+            "wave"       "sounds/window_01.vsnd"
+            "wave"       "sounds/window_02.vsnd"
+            "wave"       "sounds/window_03.vsnd"
+            "wave"       "sounds/window_04.vsnd"
+            "wave"       "sounds/window_05.vsnd"
+            "wave"       "sounds/window_06.vsnd"
+            "wave"       "sounds/window_07.vsnd"
+            "wave"       "sounds/window_09.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "0.15"
+        "pitch"         "100"
+        "wave"          "sounds/town_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.3"
+        "pitch"         "100"
+        "origin"      "511, 444, -17"
+        "wave"          "sounds/music_cs_italy.vsnd"
+    }
+}

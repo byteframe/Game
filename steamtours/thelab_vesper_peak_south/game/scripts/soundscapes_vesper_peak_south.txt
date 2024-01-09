@@ -1,0 +1,38 @@
+"soundscape_vesper_peak_south"
+{
+    "playrandom"
+    {
+        "volume"        "0.1"
+        "pitch"         "100"
+        "time"          "4, 20"
+        "soundlevel"    "SNDLVL_60dB"
+        "position"      "random"
+        "rndwave"
+        {
+            "wave"       "sounds/ambience_bird_01.vsnd"
+            "wave"       "sounds/ambience_bird_02.vsnd"
+            "wave"       "sounds/ambience_bird_03.vsnd"
+            "wave"       "sounds/ambience_bird_04.vsnd"
+            "wave"       "sounds/ambience_bird_05.vsnd"
+            "wave"       "sounds/ambience_bird_06.vsnd"
+            "wave"       "sounds/ambience_bird_07.vsnd"
+            "wave"       "sounds/ambience_bird_08.vsnd"
+            "wave"       "sounds/ambience_bird_09.vsnd"
+            "wave"       "sounds/ambience_bird_10.vsnd"
+            "wave"       "sounds/ambience_bird_11.vsnd"
+            "wave"       "sounds/ambience_bird_12.vsnd"
+            "wave"       "sounds/ambience_bird_13.vsnd"
+            "wave"       "sounds/ambience_bird_15.vsnd"
+            "wave"       "sounds/ambience_bird_17.vsnd"
+            "wave"       "sounds/ambience_bird_18.vsnd"
+            "wave"       "sounds/ambience_bird_19.vsnd"
+            "wave"       "sounds/ambience_bird_20.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "0.35"
+        "pitch"         "100"
+        "wave"          "sounds/wind_vp_01.vsnd"
+    }
+}

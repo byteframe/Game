@@ -11,7 +11,12 @@
 *.vtex_c
 *.vxml_c
 *.mp3
+*.ain
+*.vagrp_c
 demoheader.tmp
 tools_asset_info.bin
 tools_thumbnail_cache.bin
-
+**/_bakeresourcecache
+**/_vrad3
+steamtours/thelab_*/content/materials/models/thelab/*.png
+steamtours/thelab_*/content/models/thelab/*.dmx

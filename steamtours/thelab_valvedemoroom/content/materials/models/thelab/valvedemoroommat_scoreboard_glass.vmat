@@ -1,0 +1,5 @@
+"Layer0"
+{
+	"Shader"		"vr_unlit.vfx"
+	"TextureColor"		"materials/models\thelab/valvedemoroommat_scoreboard_glass_color.png"
+}

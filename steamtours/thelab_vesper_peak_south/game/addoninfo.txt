@@ -1,0 +1,6 @@
+"AddonInfo"
+{
+	"Dependencies"
+	{
+	}
+}

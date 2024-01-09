@@ -1,0 +1,15 @@
+"soundscape_cindercone"
+{
+    "playlooping"
+    {
+        "volume"        "0.25"
+        "pitch"         "100"
+        "wave"          "sounds/ambience_birds.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.25"
+        "pitch"         "100"
+        "wave"          "sounds/wind_vp_06.vsnd"
+    }
+}

@@ -198,11 +198,6 @@ MAKE_ASSET_PACK()
   } >> ${DIR}/${DIR}-6-diff.txt 2>&1
 }
 
-################################################################################ ? supply via environmental variables (but then have to unset them
-################################################################################ ? seds for werid quirks and 360 manuals)
-################################################################################ deactivate models (dont want to cull defectives, theres one wound)
-################################################################################ split up hl2?
-
 echo MAKE_ASSET_PACK asset_pack_hl2 3 "${SRC}/AAA_DOWNLOAD/Half-Life 2/hl2" none "hl2_misc_dir.vpk+hl2" "hl2_textures_dir.vpk+hl2" "../lostcoast/lostcoast_pak_dir.vpk+lostcoast" "../../Half-Life 2 Deathmatch/hl2mp/hl2mp_pak_dir.vpk+hl2mp"
 		 echo sed -i -e "s/\.mdl/_mdl/" asset_pack_hl2/models/breen_monitor.vmdl
 		 echo sed -i -e "s/\.mdl/_mdl/" asset_pack_hl2/models/vortigaunt.vmdl
