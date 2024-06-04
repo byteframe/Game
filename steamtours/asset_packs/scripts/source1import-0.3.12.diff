@@ -1,0 +1,314 @@
+diff -r source1import-0.3.12_orig/utils/materials_import.py source1import-0.3.12/utils/materials_import.py
+24c24
+< REPLACE_MISSING_TEXTURES_WITH_DEFAULT = False # valve uses dev/white
+---
+> REPLACE_MISSING_TEXTURES_WITH_DEFAULT = True # valve uses dev/white
+28c28
+< IGNORE_PROXIES = False
+---
+> IGNORE_PROXIES = True
+35c35
+< TEXTURE_FILEEXT = ".tga"
+---
+> TEXTURE_FILEEXT = ".tiff"
+68c68
+<     print('\nSource 2 Material Converter!')
+---
+>     ########print('\nSource 2 Material Converter!')
+106a107
+>             failureList.add(f"invalid", f'{vmt.path.local}')
+109c110
+<     print("\nSkybox materials...")
+---
+>     ########print("\nSkybox materials...")
+133c134
+<     print("\nFinished! Your materials are now ready.")
+---
+>     print("\nLooks like we are done!")
+332c333
+<     "black":                "black",
+---
+>     "black":                main_ubershader,
+343c344
+<     "refract":              csgo.refract,
+---
+>     "refract":              "refract",
+351c352
+<     "shatteredglass":       core.glass,
+---
+>     "shatteredglass":       main_ubershader,
+356c357
+<     "weapondecal":          csgo.weapon_sticker,
+---
+>     "weapondecal":          main_ubershader,
+376,378c377,380
+<         if sh.DEBUG:
+<             failureList.add(f"{vmt.shader} unsupported shader", vmt.path)
+<         return core.black_unlit()
+---
+>         #### UUU if sh.DEBUG:
+>         failureList.add(f"{vmt.shader} unsupported shader", vmt.path.local)
+>         ####return core.black_unlit()
+>         return "vr_standard"
+431c433
+<     return (materials / localPath.lstrip('\\/')).with_suffix(fileExt).as_posix()
+---
+>     return (materials / localPath.lstrip('\\/').replace(" ", "_").replace("\\","/")).with_suffix(fileExt).as_posix()
+432a435
+> import os
+434c437,476
+<     texturePath = sh.output(fixVmtTextureDir(vmtPath))
+---
+>     vmtPath = fixVmtTextureDir(vmtPath)
+>     texturePath = sh.output(vmtPath)
+>     if not texturePath.is_file():
+>       vmt_path_local = str(vmt.path.local).replace("\\","/")
+>       texturePath2 = sh.output(Path(os.path.dirname(vmt_path_local) + '/' + os.path.basename(vmtPath)).as_posix())
+>       if texturePath2.exists():
+>         print("formatNewTexturePath: " + vmt_path_local + " referencing texture file from <<< (vicinity) >>>: " + os.path.basename(vmtPath))
+>         texturePath = texturePath2
+>       else:
+>         texturePath2 = sh.output(Path("../source1import_hl2/" + vmtPath).as_posix())
+>         if texturePath2.exists():
+>           print("formatNewTexturePath: " + vmt_path_local + " copying texture file from HL2: " + vmtPath)
+>         else:
+>           texturePath2 = sh.output(Path("../source1import_episodic/" + vmtPath).as_posix())
+>           if texturePath2.exists():
+>             print("formatNewTexturePath: " + vmt_path_local + " copying texture file from EPISODIC: " + vmtPath)
+>           else:
+>             texturePath2 = sh.output(Path("../source1import_ep2/" + vmtPath).as_posix())
+>             if texturePath2.exists():
+>               print("formatNewTexturePath: " + vmt_path_local + " copying texture file from EP2: " + vmtPath)
+>             else:
+>               texturePath2 = sh.output(Path("../source1import_cstrike/" + vmtPath).as_posix())
+>               if texturePath2.exists():
+>                 print("formatNewTexturePath: " + vmt_path_local + " copying texture file from CSTRIKE: " + vmtPath)
+>               else:
+>                 texturePath2 = sh.output(Path("../source1import_dod/" + vmtPath).as_posix())
+>                 if texturePath2.exists():
+>                   print("formatNewTexturePath: " + vmt_path_local + " copying texture file from DOD: " + vmtPath)
+>                 else:
+>                   texturePath2 = sh.output(Path("../source1import_left4dead2/" + vmtPath).as_posix())
+>                   if texturePath2.exists():
+>                     print("formatNewTexturePath: " + vmt_path_local + " copying texture file from LEFT4DEAD2: " + vmtPath)
+>                   else:
+>                     texturePath2 = sh.output(Path("../source1import_portal2/" + vmtPath).as_posix())
+>                     if texturePath2.exists():
+>                       print("formatNewTexturePath: " + vmt_path_local + " copying texture file from PORTAL2: " + vmtPath)
+>         if not texturePath.exists() and texturePath2.exists():
+>           Path(texturePath.parent).mkdir(parents=True, exist_ok=True)
+>           copyfile(texturePath2, texturePath)
+> 
+458a501
+>     failureList.add(f"formatNewTexturePath", f'{vmt.path.local} - {texturePath.local}')
+472c515
+< def createMask(image_path, copySub = '_mask', channel = 'A', invert = False, queue = True) -> str:
+---
+> def createMask(_image_path, copySub = '_mask', channel = 'A', invert = False, queue = True) -> str:
+474c517
+<     if not (image_path:=fixVmtTextureDir(image_path)):
+---
+>     if not (_image_path:=fixVmtTextureDir(_image_path)):
+476c519
+<     image_path = sh.output(Path(image_path))
+---
+>     image_path = sh.output(Path(_image_path))
+479,481c522
+<         f"{image_path.stem}_{channel[:3].lower()}{'-1' if invert else ''}{copySub + image_path.suffix}"
+< 
+<     sh.msg(f"createMask{image_path.local.relative_to(materials).as_posix(), copySub, channel, invert, queue} -> {newMaskPath.local}")
+---
+>         f"{image_path.stem}___{channel[:3].lower()}{'-1' if invert else ''}{copySub + image_path.suffix}"
+482a524,560
+>     if not image_path.is_file():      
+>       vmt_path_local = str(vmt.path.local).replace("\\","/")
+>       image_path = sh.output(Path(os.path.dirname(vmt_path_local) + '/' + os.path.basename(_image_path)).as_posix())
+>       if image_path.exists():
+>         print("          createMask: " + vmt_path_local + "   using texture file from <<< (vicinity) >>>: " + _image_path)
+>       else:
+>         image_path = sh.output(Path("../source1import_hl2/" + _image_path ).as_posix())
+>         if image_path.exists():
+>           print("          createMask: " + vmt_path_local + "   using texture file from HL2: " + _image_path)
+>         else:
+>           image_path = sh.output(Path("../source1import_episodic/" + _image_path).as_posix())
+>           if image_path.exists():
+>             print("          createMask: " + vmt_path_local + "   using texture file from EPISODIC: " + _image_path)
+>           else:
+>             image_path = sh.output(Path("../source1import_ep2/" + _image_path).as_posix())
+>             if image_path.exists():
+>               print("          createMask: " + vmt_path_local + "   using texture file from EP2: " + _image_path)
+>             else:
+>               image_path = sh.output(Path("../source1import_cstrike/" + _image_path).as_posix())
+>               if image_path.exists():
+>                 print("          createMask: " + vmt_path_local + "   using texture file from CSTRIKE: " + _image_path)
+>               else:
+>                 image_path = sh.output(Path("../source1import_dod/" + _image_path).as_posix())
+>                 if image_path.exists():
+>                   print("          createMask: " + vmt_path_local + "   using texture file from DOD: " + _image_path)
+>                 else:
+>                   image_path = sh.output(Path("../source1import_left4dead2/" + _image_path).as_posix())
+>                   if image_path.exists():
+>                     print("          createMask: " + vmt_path_local + "   using texture file from LEFT4DEAD2: " + _image_path)
+>                   else:
+>                     image_path = sh.output(Path("../source1import_portal2/" + _image_path).as_posix())
+>                     if image_path.exists():
+>                       print("          createMask: " + vmt_path_local + "   using texture file from PORTAL2: " + _image_path)
+>       sh.msg(f"createMask{image_path.local.as_posix(), copySub, channel, invert, queue} -> {newMaskPath.local}")
+>     else:
+>       sh.msg(f"createMask{image_path.local.relative_to(materials).as_posix(), copySub, channel, invert, queue} -> {newMaskPath.local}")
+>       
+487,488c565,566
+<     if newMaskPath.exists():
+<         return newMaskPath.local.as_posix()
+---
+> #    if newMaskPath.exists():
+> #        return newMaskPath.local.as_posix()
+493c571
+<         print(f"~ ERROR: Couldn't find requested image ({image_path.local}).\nPlease make sure all textures have been pre-exported.")
+---
+>         ########print(f"~ ERROR: Couldn't find requested image ({image_path.local})")
+516a595,597
+>     
+>     #### sometimes needed see lostcoast models/gibs/combine whatever needs a texture from hl2/models/combine/helicopter and would try to save in that dir in hl2mp (as it should) but 404
+>     Path(newMaskPath.parent).mkdir(parents=True, exist_ok=True)
+520c601
+<     print("+ Saved mask to", newMaskPath.local)
+---
+>     ########print("+ Saved mask to", newMaskPath.local)
+760,761c841,843
+<         vmat.KeyValues['F_SPECULAR_CUBE_MAP'] = 2
+<         vmat.KeyValues['TextureCubeMap'] = default('_cube', '.pfm')#TODO
+---
+>         vmat.KeyValues['F_SPECULAR_CUBE_MAP'] = 1
+>         ####vmat.KeyValues['F_SPECULAR_CUBE_MAP'] = 2
+>         ####vmat.KeyValues['TextureCubeMap'] = default('_cube', '.pfm')#TODO
+1088c1170
+<     '$basealphaenvmapmask':         ('$basetexture',    '$envmapmask',      'A' if STEAMVR else '1-A'),
+---
+>     '$basealphaenvmapmask':         ('$basetexture',    '$envmapmask',      '1-A' if STEAMVR else '1-A'),
+1461c1543
+<             print(f"    + Collected face {face.upper()} for {name}_cube{src_extension}")
+---
+>             ########print(f"    + Collected face {face.upper()} for {name}_cube{src_extension}")
+1505a1588,1589
+>     ########print(vmt_path)
+> 
+1529,1530c1613,1614
+<                 print("Include has unsupported shader.")
+<                 return
+---
+>                 print("Include has unsupported shader: " + vmt.shader)
+>                 #### UUU return
+1545,1546c1629,1630
+<     if not validMaterial:
+<         return
+---
+>     #### UUU if not validMaterial:
+>     ####    return
+1598c1682
+<     print("+ Saved", vmat.path if sh.DEBUG else vmat.path.local.as_posix())
+---
+>     ########print("+ Saved", vmat.path if sh.DEBUG else vmat.path.local.as_posix())
+1600,1602c1684,1686
+<     #if vmat.shader == vr.projected_decals():
+<     #    _ImportVMTtoExtraVMAT(vmt_path, shader=vr.static_overlay(),
+<     #        path=(vmat.path.parent / (vmat.path.stem + '-static' + vmat.path.suffix)))
+---
+>     if vmat.shader == steamvr.projected_decal_modulate():
+>         _ImportVMTtoExtraVMAT(vmt_path, shader="vr_standard",
+>             path=(vmat.path.parent / (vmat.path.stem + '-static' + vmat.path.suffix)))
+diff -r source1import-0.3.12_orig/utils/models_import.py source1import-0.3.12/utils/models_import.py
+7c7
+< from srctools import smd
+---
+> ####from srctools import smd
+45c45
+<     print('Source 2 VMDL Generator!')
+---
+>     #######print('Source 2 VMDL Generator!')
+60c60
+<         print('- Generating VMDL from MDL!')
+---
+>         ########print('- Generating VMDL from MDL!')
+101c101
+<     print('+ Generated', vmdl_path.local)
+---
+>     ########print('+ Generated', vmdl_path.local)
+diff -r source1import-0.3.12_orig/utils/particles_import.py source1import-0.3.12/utils/particles_import.py
+19c19
+<     print("Importing Particles!")
+---
+>     ########print("Importing Particles!")
+1986a1987,1989
+>                     #### revelations thing maybe another
+>                     if (value2 is None):
+>                         break
+2105c2108
+<     print("+ Saved", vpcf.path.local.as_posix())
+---
+>     ########print("+ Saved", vpcf.path.local.as_posix())
+Only in source1import-0.3.12/utils: __pycache__
+diff -r source1import-0.3.12_orig/utils/scenes_import.py source1import-0.3.12/utils/scenes_import.py
+26c26
+<     print("Importing Scenes!")
+---
+>     ########print("Importing Scenes!")
+diff -r source1import-0.3.12_orig/utils/scripts_import.py source1import-0.3.12/utils/scripts_import.py
+25c25
+<     print("Importing Scripts!")
+---
+>     ########print("Importing Scripts!")
+28c28
+<         print("- Soundscapes!") # soundscapes vsc, txt, and manifest...
+---
+>         ########print("- Soundscapes!") # soundscapes vsc, txt, and manifest...
+53c53
+<         print("- Game Sounds!") # game sounds: scripts -> soundevents
+---
+>         ########print("- Game Sounds!") # game sounds: scripts -> soundevents
+63c63
+<         print("- Surfaces!") # surfaces: scripts -> surfaceproperties.vsurf
+---
+>         ########print("- Surfaces!") # surfaces: scripts -> surfaceproperties.vsurf
+78c78
+<         print("- Other scripts!")
+---
+>         ########print("- Other scripts!")
+diff -r source1import-0.3.12_orig/utils/shared/base_utils2.py source1import-0.3.12/utils/shared/base_utils2.py
+239c239
+<             "csgo": eS2Game.cs2,
+---
+>             "csgo_disable": eS2Game.cs2,
+388,392c388,392
+<         print(f'\n- %sSearching for%s %s files...' % (
+<             "Shallow "*(not _recurse()),
+<             " unimported"*(not existing),
+<             f"[ {match} ]" if match else inExt,
+<         ))
+---
+>         ########print(f'\n- %sSearching for%s %s files...' % (
+>         ########    "Shallow "*(not _recurse()),
+>         ########    " unimported"*(not existing),
+>         ########    f"[ {match} ]" if match else inExt,
+>         ########))
+439c439,440
+<     status(f"- skipping [{skip_reason}]: {path.local.as_posix()}")
+---
+>     if skip_reason != 'blacklist' and skip_reason != 'already-exist':
+>         status(f"- skipping [{skip_reason}]: {path.local.as_posix()}")
+diff -r source1import-0.3.12_orig/utils/shared/import_blacklist.json source1import-0.3.12/utils/shared/import_blacklist.json
+3,4c3,4
+<         "/models/weapons/customization/stickers/",
+<         "/models/hybridphysx/",
+---
+> 
+> 
+8c8
+<         "/dev/",
+---
+> 
+34c34
+<         "/hybridphysx/",
+---
+> 
+Only in source1import-0.3.12/utils/shared: __pycache__

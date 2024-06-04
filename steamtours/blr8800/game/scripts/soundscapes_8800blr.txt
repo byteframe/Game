@@ -1,0 +1,65 @@
+"soundscape_8800blr"
+{
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_100dB"
+        "wave"          "sounds/Altibzz.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.45"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/nyc-quiet-commercial-loft-room-tone-light-street-noise-24016.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "1.00"
+        "pitch"         "100"
+        "time"          "20, 50"
+        "soundlevel"    "SNDLVL_80dB"
+        "position"      "random"
+        "rndwave"
+        {
+            "wave"       "sounds/home/ambient_future_vehicle_01.vsnd"
+            "wave"       "sounds/home/ambient_future_vehicle_02.vsnd"
+            "wave"       "sounds/home/ambient_future_vehicle_03.vsnd"
+            "wave"       "sounds/home/ambient_future_vehicle_04.vsnd"
+            "wave"       "sounds/home/ambient_future_vehicle_05.vsnd"
+            "wave"       "sounds/home/ambient_future_vehicle_06.vsnd"
+            "wave"       "sounds/home/ambient_future_vehicle_07.vsnd"
+            "wave"       "sounds/home/ambient_future_vehicle_08.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.30"
+        "pitch"         "100"
+        "time"          "1, 15"
+        "soundlevel"    "SNDLVL_80dB"
+        "position"      "random"
+        "rndwave"
+        {
+            "wave"       "sounds/home/ambient_forest_bird_01.vsnd"
+            "wave"       "sounds/home/ambient_forest_bird_02.vsnd"
+            "wave"       "sounds/home/ambient_forest_bird_03.vsnd"
+            "wave"       "sounds/home/ambient_forest_bird_04.vsnd"
+            "wave"       "sounds/home/ambient_forest_bird_05.vsnd"
+            "wave"       "sounds/home/ambient_forest_bird_06.vsnd"
+            "wave"       "sounds/home/ambient_plains_bird_01.vsnd"
+            "wave"       "sounds/home/ambient_plains_bird_02.vsnd"
+            "wave"       "sounds/home/ambient_plains_bird_03.vsnd"
+            "wave"       "sounds/home/ambient_plains_bird_04.vsnd"
+            "wave"       "sounds/home/ambient_plains_bird_05.vsnd"
+            "wave"       "sounds/home/ambient_plains_bird_06.vsnd"
+            "wave"       "sounds/home/ambient_plains_bird_07.vsnd"
+            "wave"       "sounds/shared/bird_crow_01.vsnd"
+            "wave"       "sounds/shared/bird_crow_02.vsnd"
+            "wave"       "sounds/shared/bird_crow_03.vsnd"
+            "wave"       "sounds/shared/bird_crow_04.vsnd"
+            "wave"       "sounds/shared/bird_crow_05.vsnd"
+        }
+    }
+}

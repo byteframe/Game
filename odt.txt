@@ -1,2 +1,2 @@
-service set-client-fov-tan-angle-multiplier 0.89 0.88
+service set-client-fov-tan-angle-multiplier 0.90 0.90
 exit

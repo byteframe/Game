@@ -1,103 +1,166 @@
-#============================================================================== future
-# scriptable vtf conversions (keep vtfs this time?)
-# steamcmd stuff?
-# new games: begginners guide, etc
-# check for "." in vmat atm?
-# possible rebase python code
-# re attempt to get diff segments from prior scripts
-# always check for ep2 and others for fromearth and other minor dependancies in python script (12_vista_card.vmat)
-# convert all vmts to utf8 instead of clutches
-# model auto black lister
-# ...and/or general cull variable
-# culling:
-#    game only? might be the low hanging fruit scenario, allows content to build the same and I get the space on core
-#    space saving is the main benefit, and presumably this would do checksums instead of just file names
-#    content culling would be next level and might be plausible with proper python dependancy handling
-#============================================================================== old routine
-# + build list of vpk files from valve asset packs and core game content
-# "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\vpk.exe" l XXX.vpk > C:\Users\byteframe\Desktop\XXX_vpk_list.txt
-#------------------------------------------------------------------------------
-# + extract vpk contents (materials/models) to desktop collate under one dir
-# + rename/fix console/background+startup-loading* | vgui/chapters/chapter-* | vgui/backgrounds materials
-# + negate files (see posts)
-# + track pre-processed hl2 diff: { find XXX -type f | while read LINE; do     LINE=${LINE#*/};     if [ -e hl2/"${LINE}" ]; then       echo "${LINE}";     fi;   done } > /mnt/c/Users/byteframe/Desktop/XXX_conflicts_hl2.txt
-# + merge hl2mp and lostcoast into hl2 but do not overwrite anything
-# + convert textures from vtf to tga with vtfedit
-# + stage files in steamtours_addons/content
-# + edit global_vars.txt and convert models for each asset pack
-#------------------------------------------------------------------------------
-# + create convertedBumpmaps.txt in content/steamtours_addons/mod (hl2/portal2/left4dead2) or use hl2 one if building css/dod
-# + run material script (from content mod dir with modname and materials location and end slash supplied, wsl hard codes)
-# + if css/dod: edit gameinfo to point to steamtours_addons/asset_pack_hl2
-# + run appropriate material seds 
-# + build materials (with hand tweaks) then models in asset browser
-#------------------------------------------------------------------------------
-# + record tweaks and bash modifications and negations:
-  # { find asset_pack_XXX/materials/ -name *.vmat | while read LINE; do LINE=${LINE#*/}; diff  empty_steamvrhome/"${LINE}" asset_pack_XXX/"${LINE}" || echo "${LINE}"; done } > /mnt/c/Users/byteframe/Desktop/XXX_materials_diffs.txt
-# + track hl2 diff: { find asset_pack_XXX -type f | while read LINE; do     LINE=${LINE#*/};     if [ -e /mnt/f/MISC/AAA_ASSET_PACKS/content/asset_pack_hl2/"${LINE}" ]; then       echo "${LINE}";     fi;   done } > /mnt/c/Users/byteframe/Desktop/XXX_processed_hl2_conflicts.txt
-# + if css/dod/episodic/ep2: reset gameinfo
-# + if portal2/l4d2/robotrepair: split asset pack
-# + if l4d2 cull non-unique assets: { find asset_pack_left4dead2 -type f | while read LINE; do LINE=${LINE#*/}; if grep -q "${LINE}" /mnt/d/Work/Game/steamtours/asset_packs/vpk_result_*; then echo ${LINE}; fi; done } > /mnt/c/Users/byteframe/Desktop/left4dead2cull.txt`
+#============================================================================== v3 changelog
 
-# ============================================================================== mklink statement printer
+  - new source1import with slimmer initial changes (continues to allow all shaders and correcting cubemap)
+  - more intricate pack suffix/prefix and deletion routine
+  - only run prep phase one in init
+  - logging touchups throughout, dont pause on header, mute utf conversion,
+  - ignore more junk in rysnc call
+  - allowing tool materials now in import_blacklist
+  - set up blend material templates during init
+  - only nag about model insertion (now a parameter) in init phase
+  - hardeneded space fixing and background routines, sparinng "environment maps" folder
+  - ignore cull directory in whitespace fixing
+  - remove vtf case conversion find, move xbox360 sed to asset_pack_pm
+  - use novtf now (tiff/pfm) with subsquent python script modifications
+  - employ 'skip_no_vtf' variable
+  - remove vtf checker bash (vtf deletions now manual)
+  - allow discrete build/import types with itypes/builds variable
+  - more verbose import bash loop
+  - auto blacklist models and other resources that fail to build (so dont remove talk.wav in init)
+  - remove -v from resource compilter call and announce completion line
+  - delete (non culled) sounds upon completion of sounds build and remove empty dir when finished
+  - trim lots of non error output from build logs
+  - dont extract vo vpks and erase dont cull portal 2 vo sounds
+  - removed bash code to check for 4.vfx(fixed) and None and the bit that would do replacements on missing (rt) textures
+  - use option to replace missing textures with default white
+  - ignore material proxies fully now, so not modifying that code
+  - rely on (and fix) extra vmat opportunity on proected decal shader instead of forcing vr standard
+  - invert gloss masks genereted by python for basealphaenvmapmask correcting many materials
+  - check all major valve games for files (hl2>episodic>ep2>cstrike>dod>left4dead2>portal2) when trying to find a file and/or make a mask
+  - untest: recreate masks even if they exist
+  - stronger file mark for created masks ("___")
+  - check vicinity of vmt for missing texture files before searching other games
+  - and do assosicated hardening, flourishing on file finding logic (backslash fix somewhere in there) ++
+  - workaround python assuming csgo is for cs2
+  - silence many instances of benign output from scripts
+  - dont require srctools library in models.py
+  - various touchups and additional file clutches throughout
+  + errata: didnt really skip import stuff like scenes if the dir wasnt empty, so there's alot of empty content/game results (scenes.image mostly)
+  +  for DIR in source1import_*/scenes; do if [ $(ls -l "${DIR}" | wc -l) = 2 ]; then echo ${DIR}; fi; done
 
-cd /mnt/s/
-for DIR in asset_pack_*; do
-  mkdir -p "${GAME}"/${DIR/_/}
-  mkdir ${DIR/_/}
-  echo "\"AddonInfo\"{\"Dependencies\"{}}" > "${GAME}"/${DIR/_/}/addoninfo.txt;
-  echo "mklink /j ${DIR/_/} S:\\${DIR}"
+# ============================================================================== logs
+
+log_backup() {
+  for FILE in source1import_*/source1import_*.txt; do
+    if [[ ${FILE} != *"source1import_name_remap_table.txt" ]]; then
+      cp ${FILE} /home/byteframe/Desktop
+    fi
+  done
+}
+for FILE in source1import_*/source1import_*.txt; do
+  if [[ ${FILE} != *"source1import_name_remap_table.txt" ]]; then
+    cp /home/byteframe/Desktop/$(basename ${FILE}) ${FILE}
+  fi
 done
-echo CD
-echo CD "Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\content\steamtours_addons"
-
-# ============================================================================== vampire material conversion
-
-cd /mnt/s/AAA_DOWNLOAD/Vampire\ The\ Masquerade\ -\ Bloodlines/Patch_Extras/Developer\ Tools/Bloodlines\ SDK/SDKBinaries/tools/Texture\ Utils/
-find /mnt/c/Users/byteframe/Desktop/materials/ -name *.tth | while read FILE; do
-  if [ ! -e "${FILE/.tth/.vtf}" ]; then 
-    cp "${FILE}" .
-    if [ -e "${FILE/.tth/.ttz}" ]; then
-      cp "${FILE/.tth/.ttz}" .
-    fi
-    ./TexConvert.exe "$(basename "${FILE}")" -tovtf
-    rm "$(basename "${FILE}")"
-    if [ -e "${FILE/.tth/.ttz}" ]; then
-      rm "$(basename "${FILE/.tth/.ttz}")"
-    fi
-    mv -v "$(basename "${FILE/.tth/.vtf}")" $(dirname "${FILE}")
+for FILE in source1import_*/source1import_*.txt; do
+  if [[ ${FILE} != *"source1import_name_remap_table.txt" ]]; then
+    sed -i -e '/^$/N;/^\n$/D' "${FILE}"
   fi
 done
 
-# ============================================================================== find some manual tweaks
+# ============================================================================== check asset bins
 
-find . -name *.vmat | while read FILE; do
-  grep -PH "  Texture" "${FILE}"
-  grep -PH "  \/\/Texture" "${FILE}"
-  grep -PH "^Texture" "${FILE}"
-  grep -PH "\t\/\/Texture" "${FILE}"
-done
-for DIR in asset_pack_*; do
-  find ${DIR} -name *.neg
-done
-
-# ============================================================================== find various material errors
-
-for DIR in asset_pack_*; do find ${DIR} -name *.vmat -exec grep -H "\.vmt\.tga\"" {} \;; done
-for DIR in asset_pack_*; do find ${DIR}/ -name *.vmat -exec grep -H "models.tga" {} \;; done
-for DIR in asset_pack_*; do find ${DIR}/ -name *.vmat -exec grep -H "\".\"" {} \;; done
-
-# ============================================================================== find double texture references
-
-for DIR in OOO_asset_pack_* asset_pack_*; do
-  find ${DIR} -name "*.vmat" | while read LINE; do
-    if [ $(grep \/TextureTranslucency "${LINE}" | wc -l) == '2' ]; then echo ${LINE}; fi;
-    if [ $(grep \/TextureReflectance "${LINE}" | wc -l) == '2' ]; then echo ${LINE}; fi;
-    if [ $(grep \/TextureSelfIllumMask "${LINE}" | wc -l) == '2' ]; then echo ${LINE}; fi;
-  done
+cd "${G}"
+for DIR in source1import_*; do
+  if [ -e ${DIR}/tools_thumbnail_cache.bin ]; then
+    rm -v ${DIR}/tools_thumbnail_cache.bin
+  fi
+  if [ ! -e ${DIR}/tools_asset_info.bin ]; then
+    echo ${DIR} has no asset info
+  fi
 done
 
-# =============================================================================== alternative invocations
+# ============================================================================== delete vtf
+
+cd "${C}"
+for DIR in source1import_*/materials; do
+  if [[ ${DIR} != source1import_hl2* ]] && [[ ${DIR} != source1import_hl1* ]] && [[ ${DIR} != source1import_lostcoast* ]] && [[ ${DIR} != source1import_tf* ]] && [[ ${DIR} != source1import_hl2mp* ]] && [[ ${DIR} != source1import_episodic/* ]] && [[ ${DIR} != source1import_ep2* ]] && [[ ${DIR} != source1import_dod* ]] && [[ ${DIR} != source1import_cstrike* ]]; then
+    for FILE in $(find ${DIR} -iname "*.VTF"); do
+      if [ -e "${FILE/.vtf/.tiff}" ] || [ -e "${FILE/.vtf/.pfm}" ]; then
+        echo rm -vf "${FILE}"
+      fi
+    done
+  fi
+done
+
+# ============================================================================== mklink
+
+echo "CD"
+echo "CD Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\content\steamtours_addons"
+cd /mnt/d/Source
+for DIR in *; do
+  mkdir ${DIR}
+  echo "mklink /j ${DIR} D:\\Source\\${DIR}"
+done
+
+# ============================================================================== check materials (https://paste.ee/p/oJ7bJ)
+
+for FILE in /mnt/g/assetpackv3rclogs/*; do
+  echo "${FILE}"
+  FILE2="${FILE/assetpackv3rclogs/assetpackv2logs}"
+  grep "Total import" "${FILE2/source1import_/asset_pack_}"
+  grep "Total import" "${FILE}"
+  FILE3=$(basename ${FILE})
+  grep "Total import" "${C}/$(echo ${FILE3} | sed -e s:.txt::)/${FILE3}"
+  echo
+done
+for DIR in source1import_*/materials; do
+  find ${DIR} -name *.vmat -exec grep  -H "\/\/" {} \
+                           -exec grep  -H "\.vmt\.tga\"" {} \
+                           -exec grep  -H "models.tga" {} \
+                           -exec grep  -H "\"None\"" {} \
+                           -exec grep  -H "4.vfx" {} \
+                           -exec grep -PH "  Texture" "${FILE}" {} \
+                           -exec grep -PH "  \/\/Texture" "${FILE}" {} \
+                           -exec grep -PH "^Texture" "${FILE}" {} \
+                           -exec grep -PH "\t\/\/Texture" "${FILE}" {} \
+                           -exec grep  -H "\".\"" {} \;
+done
+
+# ============================================================================== vampire
+
+cd /mnt/s/SteamLibrary/steamapps/common/Vampire\ The\ Masquerade\ -\ Bloodlines/Patch_Extras/Developer\ Tools/Bloodlines\ SDK/SDKBinaries/tools/Texture\ Utils/
+WIN_PREFIX1="C:\\\\Users\\byteframe\\Desktop\\vampire\\materials"
+find /mnt/c/Users/byteframe/Desktop/vampire/materials/ -name "*.tth" | while read FILE; do
+  FILE_SHORT0="${FILE:49}"
+  FILE_SHORT1="${FILE_SHORT0/.tth/.ttz}"
+  FILE_NAME="$(basename ${FILE_SHORT0})"
+  DIR="$(dirname ${FILE_SHORT0})"
+  echo "copy \"${WIN_PREFIX1}\\${FILE_SHORT0//\//\\}\" ."
+  echo "copy \"${WIN_PREFIX1}\\${FILE_SHORT1//\//\\}\" ."
+  echo "TexConvert.exe \"${FILE_NAME}\" -tovtf"
+  echo move "\"${FILE_NAME/.tth/.vtf}\" \"${WIN_PREFIX1}\\${DIR//\//\\}\""
+  echo del "\"${FILE_NAME}\""
+  echo del "\"${FILE_NAME/.tth/.ttz}\""
+  echo
+done > convert.bat
+
+#============================================================================== v0 routines
+
++ build list of vpk files from valve asset packs and core game content
+  "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\vpk.exe" l XXX.vpk > C:\Users\byteframe\Desktop\XXX_vpk_list.txt
+#------------------------------------------------------------------------------
++ extract vpk contents (materials/models) to desktop collate under one dir
++ rename/fix console/background+startup-loading* | vgui/chapters/chapter-* | vgui/backgrounds materials
++ negate files (see posts)
++ track pre-processed hl2 diff: { find XXX -type f | while read LINE; do     LINE=${LINE#*/};     if [ -e hl2/"${LINE}" ]; then       echo "${LINE}";     fi;   done } > /mnt/c/Users/byteframe/Desktop/XXX_conflicts_hl2.txt
++ merge hl2mp and lostcoast into hl2 but do not overwrite anything
++ convert textures from vtf to tga with vtfedit
++ stage files in steamtours_addons/content
++ edit global_vars.txt and convert models for each asset pack
+#------------------------------------------------------------------------------
++ create convertedBumpmaps.txt in content/steamtours_addons/mod (hl2/portal2/left4dead2) or use hl2 one if building css/dod
++ run material script (from content mod dir with modname and materials location and end slash supplied, wsl hard codes)
++ if css/dod: edit gameinfo to point to steamtours_addons/asset_pack_hl2
++ run appropriate material seds 
++ build materials (with hand tweaks) then models in asset browser
+#------------------------------------------------------------------------------
++ record tweaks and bash modifications and negations:
+  { find asset_pack_XXX/materials/ -name *.vmat | while read LINE; do LINE=${LINE#*/}; diff  empty_steamvrhome/"${LINE}" asset_pack_XXX/"${LINE}" || echo "${LINE}"; done } > /mnt/c/Users/byteframe/Desktop/XXX_materials_diffs.txt
++ track hl2 diff: { find asset_pack_XXX -type f | while read LINE; do     LINE=${LINE#*/};     if [ -e /mnt/f/MISC/AAA_ASSET_PACKS/content/asset_pack_hl2/"${LINE}" ]; then       echo "${LINE}";     fi;   done } > /mnt/c/Users/byteframe/Desktop/XXX_processed_hl2_conflicts.txt
++ if css/dod/episodic/ep2: reset gameinfo
++ if portal2/l4d2/robotrepair: split asset pack
++ if l4d2 cull non-unique assets: { find asset_pack_left4dead2 -type f | while read LINE; do LINE=${LINE#*/}; if grep -q "${LINE}" /mnt/d/Work/Game/steamtours/asset_packs/vpk_result_*; then echo ${LINE}; fi; done } > /mnt/c/Users/byteframe/Desktop/left4dead2cull.txt
 
 # create source2 files (WSL)
 python /mnt/d/Work/Game/steamtours/asset_packs/scripts/mdl_to_vmdl.py ${DIR/\//}
@@ -115,8 +178,7 @@ C:\Users\byteframe\AppData\Local\Programs\Python\Python310\python.exe s:\source1
 /mnt/c/Users/byteframe/AppData/Local/Programs/Python/Python310/python.exe D:\\Work\\Game\\steamtours\\asset_packs\\scripts\\vmt_to_vmat.py ${DIR/\//}
 /mnt/c/Users/byteframe/AppData/Local/Programs/Python/Python310/python.exe S:\\source1import\\utils\\particles_import.py -i S:\\${DIR/\//} -e S:\\${DIR/\//}
 
-# ============================================================================== VTF2TGA routine
-
+# vtf2tga
 cat "${CONTENT}"/../../game/steamtours/gameinfo.gi | grep asset_pack
 SDK=/mnt/s/source1import/utils/shared/bin/vtf2tga/2013
 SDK=/mnt/s/source1import/utils/shared/bin/vtf2tga/csgo
@@ -128,55 +190,13 @@ if [ ! -z ${VTF2TGA} ]; then
   done
 else
 
-# ============================================================================== old post-diff routine
+#============================================================================== v0 release notes
 
-generate_all_diffs()
-{
-  cd "${CONTENT}"
-  for DIR in asset_pack*; do
-    header ${DIR}
-    find ${DIR}/ -name *.vmat -exec grep -H "//Texture" {} \;
-  done
-}
+V0_RELEASE_NOTES=$(cat << EOF
 
-# ============================================================================== blend templates
-
-cd "${C}"
-for I in {1..9}; do
-  cp /mnt/d/Work/Game/steamtours/asset_packs/blend_template.vmat  "${C}"/ambientcg/materials/blend-ambientcg-01.vmat
-  for DIR in asset_pack_*; do
-    cp /mnt/d/Work/Game/steamtours/asset_packs/blend_template.vmat  "${C}"/${DIR}/materials/blend-${DIR:11}-01.vmat
-  done
-done
-
-find . -maxdepth 2 -path "*asset_pack*" -and -name *thumbnail*
-
-# ============================================================================== pbrmaker preamble
-
-PROJECT=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/byteframe13
-if [ -z ${3} ]; then
-	echo "not enough input"
-	exit 1
-fi
-NAME=${3}
-if [[ ${1} == *sharetextures* ]]; then
-  NAME=${NAME}_ST
-fi
-echo "${PROJECT}"/materials/${2}/${NAME}
-if [ ! -d "${PROJECT}"/materials/${2}/${NAME} ]; then
-	mkdir -p "${PROJECT}"/materials/${2}/${NAME}
-	wget "${1}" -O "${NAME}".zip
-	unzip -q -j "${NAME}".zip -x "*.usd*" "*_PREVIEW*" -d "${PROJECT}"/materials/${2}/${NAME}
-	rm "${NAME}".zip
-fi
-cd "${PROJECT}"/materials/${2}/${NAME}
-================================================================================  hl2
 Here are all the materials and models from Half-Life 2 (and assets from HL2:DM, and Lost Coast that didn't conflict overlaid on top) converted into the Source 2 format for use in your VR environments! I used https://github.com/Rectus/source2utils (with modifications of my own to the vmt script for blend materials iirc), and https://www.tophattwaffle.com/downloads/vtfedit/ to convert vtf files to tga.
-
 There are also Day of Defeat: Source, and Counter-Strike: Source asset packs available! They were built with a set of the hl2 materials (as things like models and blend materials might reference a basic hl2 material). Furthermore, each game had various materials that were the same path and name as hl2 variants, but was different content (they were replaced). Originally, a copy (and resulting compilation and space-saving cull thereof) of the hl2 materials would accompany these asset packs, but recent versions of these asset packs are safely built with the hl2 materials segregated. This means that, unlike version 1, these asset packs will have their uniquely modified versions of materials retained, and as much space is saved as possible. These games (as well as TF2) shipped with a set of the hl2 assets, and so various map recreation projects will still need to also require the Half-Life-2 Asset Pack. See changenotes for the version 1 release blurb.
-
 UPDATE: addoninfo.txt order of dependancies is followed here. If you include multiple packs, there might be various name conflicts, hopefully just between files identical, but sometimes not. The asset will be selected from the first addon it is found in as listed in your addoninfo.txt Also, the official Valve destinations/packs also tend to use alot of upscaled source 1 assets and/or filenames. The asset browser for your addon may (I'm not sure) only see one file. This shouldn't be a problem for most map makers, but is something to be aware of. 
-
 To prevent cross contamination with default Source 2 base textures and tool resources, the following files were culled prior to building. Alot of the Source 2 special textures seem to have been renamed/moved to avoid this, but not all.
 
 materials/
@@ -228,7 +248,6 @@ ADDON: asset_pack_hl2
 TOTAL: 4486 vmat_c files, 2286 vmdl_c files
 ================================================================================  cstrike
 Here are all the materials and models from Counter-Strike: Source converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on these asset packs. Most importantly, a few models/materials will fail out as red outlines unless you subscribe to and include the Half-Life 2 pack.
-
 Like the HL2 pack, certain tool/developer assets were not included, either because they were a duplicate, or seemed otherwise dubious to include. They include the following:
 
 -- materials/dev/upscale
@@ -247,7 +266,6 @@ ADDON: asset_pack_cstrike
 TOTAL: 3608 vmat_c files, 1407 vmdl_c files
 ================================================================================  dod
 Here are all the materials and models from Day of Defeat: Source converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on these asset packs. Most importantly, a few models/materials will fail out as red outlines unless you subscribe to and include the Half-Life 2 pack.
-
 Like the HL2 pack, certain tool/developer assets were not included, either because they were a duplicate, or seemed otherwise dubious to include. They include the following:
 
 -- materials/dev/*
@@ -262,9 +280,7 @@ ADDON: asset_pack_dod
 TOTAL: 1394 vmat_c files, 818 vmdl_c files
 ================================================================================  portal2
 ERRATA: This asset pack contains Source 1 tool textures that don't properly function in Source 2. This addon cannot be updated to correct this or assigned a lower priority in the dependancy list, so if you need to use a Source 2 tool texture, it must be extracted from core.vpk and put into your addon's game directory.
-
 Here are all the materials from Portal 2 converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on these asset packs. Unlike other Valve titles, Portal 2 did not rely on a complete set of hl2 assets to function and uses comparatively fewer of those assets. I would have included the models in one download but it was too big for the VPK builder and it runs out of memory and crashes.
-
 Observe the following material changes here: https://paste.ee/p/bDiH2
 
 A list of all pre-processed content files shared by the hl2 asset pack can be found here: https://paste.ee/p/51sHs
@@ -278,7 +294,6 @@ ADDON: asset_pack_portal2_models
 TOTAL: 2175 vmdl_c files
 ================================================================================  left4dead2
 Here are all the materials (sans model files) from Left 4 Dead 2 converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2104098750 for more information on the Left 4 Dead 2 asset packs.
-
 Like the HL2 pack, certain tool/developer assets were not included, either because they were a duplicate, or seemed otherwise dubious to include. They include the following:
 
 materials/
@@ -309,9 +324,7 @@ ADDON: asset_pack_left4dead2_materials
 TOTAL: 2522 vmat_c files
 
 Here are all the models (with material files) from Left 4 Dead 2 converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on these asset packs.
-
 I would have included the materials in one download but this was too big for the VPK builder and it runs out of memory and crashes. This was the case with Portal 2. Unlike that game, L4D2 used many props and assets from prior Valve titles, like CSS and Half-Life 2. In trying to get the VPK build to finish, the materials for model files were put into this pack, but it was still not enough, so all compiled files from L4D2 that were found in any other asset pack was culled for release. Please include those other packs to fix a few missing textures, or to have access to all assets that were found in the Left 4 Dead game. Still, the Left 4 Dead variant of the file that I culled might have been newer, or had more material features, which is unfortunate, but likely marginal.
-
 I could not get the following models to compile, including all the survivors. I have trouble with these character models!
 
 -- c1_chargerexit\doors_glass_5
@@ -359,9 +372,7 @@ ADDON: asset_pack_left4dead2_models
 TOTAL: 4379 vmdl_c files, 2632 vmat_c
 ================================================================================  se1
 Here are all the materials and models from Sin Episodes Emergence converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on these asset packs. In the case of this game, I did not (unlike cstrike/dod) build the mod referencing of a set of hl2 files, so, like Portal 2, the Sin Episodes pack contains various duplications of Half Life 2 content that shipped with the game. Culling the handfuls of cardboard boxes, etc, might have been desirable, but I don't have the ability (source files) or want to properly check against the base half life 2 game files. Also, Sin isn't really a addon(vpk wise) to Half-Life 2 like css/dod, came out way before Steam Pipe and Source 2013, is not a Valve game etc, so it might be proper to just ship all the files verbatim like here. This is all more of a personal note.
-
 In any event, the amount of duplicated content seems quite small, everything builds (except the eyeballs and skys of course.) I used the default script converter refraction maximum of 0.050, instead of lowering it, as I want a bit more shininess in the map I'm working on.  I'm unsure at this point if the scripts I ran were the same ones from last time, or even if any improvements to them are available. I didn't have to do anything to get the (likely hl2) blend materials to work, and overall my procedure was honed and I built the pack in a night, I hope I didn't make a mistake. Some characters didn't build until typos were fixed, and some quick bash/sed fixed the missing files. The missing files seem to be endless amounts of alpha masks, and I presume this is junk output from the material converter script, and there are plenty of transparent materials properly converted. Finger's crossed.
-
 The only content culled from release was the following debug/dev files:
 
 -- materials/debug/
@@ -380,9 +391,7 @@ ADDON: asset_pack_se1
 TOTAL: 1104 vmdl_c files, 2713 vmat_c
 ================================================================================ se1 (new)
 Here are all the materials and models from Sin Episodes Emergence converted into the Source 2 format for use in your VR environments! Please see the hl2 submission at https://steamcommunity.com/sharedfiles/filedetails/?id=2094270469 for more information on (older) asset packs.
-
 This is a reupload of the Sin pack, using newer methodologies. See change notes for the original release blurb. My prior asset packs (hl2/css/dod/l4d2/p2) cannot be updated for some reason, likely because I shouldn't be uploading them, but I will fix what I can on what is present. These earlier uploads are still generally fine, however.
-
 This and the later hl2 episode packs were assembled using more streamlined script code with better logging, more aggressive file culling, a particle conversion step, and includes many enhancements to the material script to find missing textures. The default refraction index is set to 0.0050, and missing reflection maps were replaced with normals if available.
 
 [url=https://paste.ee/p/iyZGJ]code[/url], [url=https://paste.ee/p/xs1lH]extract[/url], [url=https://paste.ee/p/MVGua]whitespace[/url], [url=https://paste.ee/p/OTIYH]models[/url], [url=https://paste.ee/p/INATt]materials[/url], [url=https://paste.ee/p/DQ1SC]cull[/url], [url=https://paste.ee/p/c6XtB]diff[/url],
@@ -393,9 +402,7 @@ DEPS: asset_pack_hl2*, asset_pack_cstrike, asset_pack_dod
 FILES: 973 vmdl_c, 2292 vmat_c
 ================================================================================ RobotRepair
 Here is the ancillary portion of the Robot Repair asset pack containing models and materials and particles from The Lab experience, not segmented by Valve in the 'aperture' folder. The pack was seperated so it could be published as it was too large otherwise. See https://steamcommunity.com/sharedfiles/filedetails/?id=2727305630 for the other workshop item. These two packs don't strictly require one another, and also, some missing materials might be filled in if you use other Portal asset packs. Unlike my other asset packs, I did not convert any Source 1 content, as Robot Repair is a Source 2 engine game. The compiled map even loads in Steam VR, but naturally, everything is broken. 
-
 This game (and the SteamVR performance test) had contained prior collections of test files, leaked content, and the like, but today is an assemblage of three collections of assets. Everything in the 'aperture' folder (found in the other workshop item) seems to be the new Portal themed content made for this experience (initially shown at GDC 2015). The second pool of content was called 'portal_2_imported', and is Valve having converted a small portion of Portal 2 Source 1 files, likely better than I could. (It is unknown if this content was enhanced in any way). Finally the 'vr' portion contained some various little bits left over from early Valve VR work, like controller models. See the SteamDB article data mining the SteamVR performance test for all the other juicy leaks since removed from public downloads.
-
 For so few models/materials, this is a fairly large download, and you might consider using the Portal 2 asset packs to save space/bandwidth. Just about every piece of real content is included, save for close to 700 megabytes of high resolution dota 2 character skins that not come with any model files. Finally, the following debug/dev content was removed: 
 
 -- models/dev
@@ -414,7 +421,6 @@ ADDON: asset_pack_robotrepair_aperture
 TOTAL: 284 vmat_c files, 133 vmdl_c files
 ================================================================================ episodic
 Here are all the materials and models from Half-Life 2: Episode 1 converted into the Source 2 format for use in your VR environments! Please see https://steamcommunity.com/sharedfiles/itemedittext/?id=2737660237 for more information on these Half-Life Episode asset packs. I'm still working on the third one. Most importantly, you'll likely want to include the Half-Life 2 pack to satisfy some material dependencies.
-
 Like the HL2 pack, certain tool/developer assets were not included, either because they were a duplicate, or seemed otherwise dubious to include. They include the following:
 
 -- materials/dev/dev_monitor_simple
@@ -426,7 +432,6 @@ ADDON: asset_pack_episodic
 TOTAL: 292 vmat_c files, 124 vmdl_c files
 ================================================================================ episodic (new)
 Here are all the materials, models, and particles from Half-Life 2: Episode 1 converted into the Source 2 format for use in your VR environments! Please see the Sin submission at https://steamcommunity.com/sharedfiles/filedetails/?id=2726156711 for more information on this generation of asset packs.
-
 This is a reupload of the original submission as it was remade using more recent methodologies. See change notes for the original release blurb. 
 
 [url=https://paste.ee/p/iyZGJ]code[/url], [url=https://paste.ee/p/UlktB]extract[/url], [url=https://paste.ee/p/23TGE]models[/url], [url=https://paste.ee/p/xxJ2D]materials[/url], [url=https://paste.ee/p/FNvGO]particles[/url], [url=https://paste.ee/p/Jt6Hh]cull[/url], [url=https://paste.ee/p/eR4rn]diff[/url],
@@ -474,3 +479,6 @@ VPK: ep2_pak_dir.vpk+ep2
 DEPS: asset_pack_hl2*, asset_pack_episodic*
 FILES: 809 vmdl_c, 1135 vmat_c, 621 vpcf_c
 ================================================================================
+
+EOF
+)

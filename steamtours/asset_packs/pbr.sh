@@ -1,21 +1,19 @@
-# https://www.artstation.com/lebedevartem
-PACK=lebedevartem
+# select addon (lebedevartem,sharetextures_extra,sharetextures,freepbr,ambientcg)
+if [ -z ${1} ]; then
+  echo "no arguments"
+  exit 1
+fi
+PACK=${1}
 
-# https://www.sharetextures.com
-PACK=sharetextures_extra
-PACK=sharetextures
+# ensure materials change directory
+C=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons
+cd "${C}"/${PACK}/materials || exit 1
 
-# https://freepbr.com (metals/heavily-rusted-metal)
-PACK=freepbr
-
-# https://ambientcg.com (Tatomi006)
-#PACK=ambientcg
-
-# ensure materials directory
-STEAMAPPS=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common
-CONTENT="${STEAMAPPS}"/SteamVR/tools/steamvr_environments/content/steamtours_addons
-G="${STEAMAPPS}"/SteamVR/tools/steamvr_environments/game/steamtours_addons
-cd "${CONTENT}"/${PACK}/materials || exit 1
+# extract zip files (ensure clean filenames)
+for FILE in $(find . -name "*.zip"); do
+  mkdir -p ${FILE/.zip/}
+  unzip -j -x ${FILE} -d ${FILE/.zip/}
+done
 
 # prune models and other cruft
 find . -name "*.ini" -or -name "*.txt" -or -name "*.zip" -or -name "*.usda" -or -name "*.usdc" -or -name "*.mtlx" -or -name "*NormalDX.*" -or -iname "*_preview.*" | while read LINE; do rm -v ${LINE}; done
@@ -37,7 +35,7 @@ find . -type d -name "*_bl"     | while read FILE; do mv -v "${FILE}" "${FILE//_
 # empty directories
 find . -type d -empty
 
-# define base material data
+# define base material file
 OVERWRITE=no
 MATERIAL=$(cat << EOF
 Layer0
@@ -101,13 +99,17 @@ function create_material()
 {
   # sift through texture files
   VMAT=${1/*\//}
-  cd "${CONTENT}"/${PACK}/materials/${1}
+  cd "${C}"/${PACK}/materials/${1}
   if [ "${OVERWRITE}" == yes ] || [ ! -e ../${VMAT}.vmat ]; then
     unset COLOR AO GLOSS REFLECTANCE METAL NORMAL SELFILLUM OPACITY
     for FILE in *.*; do
+
+      # skip height maps
       if [[ ${FILE} != h.* ]] && [[ ${FILE} != H.* ]] \
       && [[ ${FILE} != *height* ]] && [[ ${FILE} != *Height* ]] && [[ ${FILE} != *__inverted* ]] \
       && [[ ${FILE} != *_*isplacement* ]]; then
+
+        # gather pbr
         if [[ ${FILE} == d.* ]] || [[ ${FILE} == D.* ]] \
         || [[ ${FILE} == *lbedo* ]] || [[ ${FILE} == *olor.* ]] || [[ ${FILE} == *alb.* ]] || [[ ${FILE} == *base*olor* ]] \
         || [[ ${FILE} == *diffuse* ]] || [[ ${FILE} == *Diffuse* ]]; then
@@ -133,6 +135,7 @@ function create_material()
           || [[ ${FILE} == *oughn*ess* ]] || [[ ${FILE} == *rough.* ]] || [[ ${FILE} == *-rough*.* ]]; then
           GLOSS=${FILE/.png/__inverted.png}
           GLOSS=${GLOSS/.tif/__inverted.tif}
+          GLOSS=${GLOSS/.tiff/__inverted.tiff}
           GLOSS=${GLOSS/.jpg/__inverted.jpg}
           ffmpeg -hide_banner -y -loglevel error -i ${FILE} -vf negate ${GLOSS}
 
@@ -209,10 +212,10 @@ function create_material()
 }
 
 # traverse two-level directory structure
-cd "${CONTENT}"/${PACK}/materials
+cd "${C}"/${PACK}/materials
 find . -mindepth 1 -type d | while read LINE; do create_material ${LINE}; done
 
-# delete certain material files
+# errata: delete certain material files
 function delete_selective()
 {
   PACK=lebedevartem

@@ -25,7 +25,7 @@ namespace OculusKiller
                     {
                         Process odtProcess = new Process();
                         odtProcess.StartInfo.FileName = "C:\\Program Files\\Oculus\\Support\\oculus-diagnostics\\OculusDebugToolCLI.exe";
-                        odtProcess.StartInfo.Arguments = "-f C:\\Users\\byteframe\\Downloads\\odt.txt";
+                        odtProcess.StartInfo.Arguments = "-f C:\\Users\\byteframe\\odt.txt";
                         odtProcess.Start();
                         
                         Process vrStartupProcess = Process.Start(vrStartupPath);

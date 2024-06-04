@@ -48,3 +48,42 @@ axios.get('https://www.sharetextures.com/textures/').then((res) => (
           : get_texture(t+1))())))()))
 
 // finish with manual removal of empty dirs and zip files
+/*
+old_pbr_unziping() {
+  PROJECT=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/byteframe13
+  if [ -z ${3} ]; then
+    echo "not enough input"
+    exit 1
+  fi
+  NAME=${3}
+  if [[ ${1} == *sharetextures* ]]; then
+    NAME=${NAME}_ST
+  fi
+  echo "${PROJECT}"/materials/${2}/${NAME}
+  if [ ! -d "${PROJECT}"/materials/${2}/${NAME} ]; then
+    mkdir -p "${PROJECT}"/materials/${2}/${NAME}
+    wget "${1}" -O "${NAME}".zip
+    unzip -q -j "${NAME}".zip -x "*.usd*" "*_PREVIEW*" -d "${PROJECT}"/materials/${2}/${NAME}
+    rm "${NAME}".zip
+  fi
+  cd "${PROJECT}"/materials/${2}/${NAME}
+}
+*/
+
+      
+      
+///////////////////////
+
+//freepbr has to go through each link to get the correct file/dir name to know whether or not to download it, at best could have ti stop shot once it finds one? backinf off for now
+      
+      
+(get_page1 = (offset = 1) =>
+  axios.get('https://freepbr.com/latest-pbr-texture-uploads-2/?product-page=' + offset).then((res) => (
+    data = '',
+    Object.keys(res.data).forEach((d) => data += res.data[d]),
+    matches = data.match(/href="https:\/\/freepbr.com\/materials\/[a-zA-Z0-9-]*\/"/g),
+    (matches == null) ?
+      console.log('done')
+    :(matches.filter((e, i) => i % 2 == 1 && !e.includes('download-all')).forEach((e) => console.log(e)),
+      setTimeout(get_page123, 2000, offset+180)))).catch((error) => console.error(error)))();
+      

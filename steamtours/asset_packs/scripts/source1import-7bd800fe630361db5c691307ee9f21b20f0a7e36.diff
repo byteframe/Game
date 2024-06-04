@@ -1,6 +1,4 @@
 diff --git a/utils/materials_import.py b/utils/materials_import.py
-old mode 100644
-new mode 100755
 index 90669c2..d55633b
 --- a/utils/materials_import.py
 +++ b/utils/materials_import.py
@@ -218,9 +216,10 @@ index 90669c2..d55633b
          vmat.KeyValues.update(kvalues)
  
      if SIMPLE_SHADER_WHERE_POSSIBLE:
-diff --git a/utils/models_import.py b/utils/models_import.py
-old mode 100644
-new mode 100755
+
+
+
+
 diff --git a/utils/particles_import.py b/utils/particles_import.py
 old mode 100644
 new mode 100755
@@ -237,9 +236,10 @@ index 4e46f09..e92b9ea
                      value2 = kv3.resource(Path(vpcf.path.local.parent / (value2  + '.vpcf')))
                  elif isinstance(subkey, (minof, maxof)):
                      bMin = isinstance(subkey, minof)
-diff --git a/utils/shared/base_utils2.py b/utils/shared/base_utils2.py
-old mode 100644
-new mode 100755
+
+
+
+
 diff --git a/utils/shared/import_blacklist.json b/utils/shared/import_blacklist.json
 old mode 100644
 new mode 100755
@@ -275,6 +275,10 @@ index 05e225c..bd98ef8
          "/editor/",
          "/player/custom_player/animset",
          "/props_wasteland/bridge_railing.mdl"
+
+
+
+
 diff --git a/utils/shared/material_proxies.py b/utils/shared/material_proxies.py
 old mode 100644
 new mode 100755

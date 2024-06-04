@@ -464,6 +464,8 @@ PRE_IMPORT_FIXES() {
 MAKE_ASSET_PACK "${S}/Portal Stories Mel/portal_stories" asset_pack_portal2 "pak01_dir.vpk"
 ##------------------------------------------------------------------------------ aperturetag
 MAKE_ASSET_PACK "${S}/Aperture Tag/aperturetag" asset_pack_portal2 "pak01_dir.vpk"
+##------------------------------------------------------------------------------ treason
+MAKE_ASSET_PACK "${D}/Treason/treason" asset_pack_hl2
 ##------------------------------------------------------------------------------ EXPERIMENTAL: VAMPIRE XXX ttz/h smd+qc files erased, still version 2
 MODELS="character/monster/animalism_beastform/animalism_beastform_mdl character/shared/male/allsequences_mdl character/shared/male/npc_allsequences_mdl character/shared/male/pcidles_allsequences_mdl character/shared/female/npc_allsequences_mdl character/shared/female/pcidles_allsequences_mdl character/shared/female/allsequences_mdl"
 MAKE_ASSET_PACK "${S}/Vampire The Masquerade - Bloodlines/vampire" none

@@ -1,3 +1,4 @@
+*-6x.tiff
 *.vpk
 *.vphys_c
 *.vmdl_c
@@ -6,11 +7,13 @@
 *.vmesh_c
 *.vmorf_c
 *.vsnd_c
+*.vpcf_c
 *.vseq_c
 *.vsndevts_c
 *.vtex_c
 *.vxml_c
 *.mp3
+*.los
 *.ain
 *.vagrp_c
 demoheader.tmp
