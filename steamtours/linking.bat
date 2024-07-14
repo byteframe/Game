@@ -392,3 +392,12 @@ mklink /j aperture V:\robotrepair\aperture
 mklink /j materials V:\robotrepair\materials
 mklink /j models V:\robotrepair\models
 mklink /j particles V:\robotrepair\particles
+
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir brazzers
+cd brazzers
+mklink tools_asset_info.bin V:\brazzers\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin.bin V:\brazzers\tools_thumbnail_cache.bin
+mklink addoninfo.txt V:\brazzers\addoninfo.txt
+mklink /j materials V:\brazzers\materials
+mklink /j models V:\brazzers\models
