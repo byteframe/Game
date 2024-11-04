@@ -369,12 +369,11 @@ mklink /j scripts V:\c17_alleyway\scripts
 mklink /j soundevents V:\c17_alleyway\soundevents
 mklink /j sounds V:\c17_alleyway\sounds
 
-cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+cd "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons"
 mkdir driftwood_htc
 cd driftwood_htc
 mklink readonly_tools_asset_info.bin V:\driftwood_htc\readonly_tools_asset_info.bin
 mklink addoninfo.txt V:\driftwood_htc\addoninfo.txt
-mklink /j maps V:\driftwood_htc\maps
 mklink /j materials V:\driftwood_htc\materials
 mklink /j models V:\driftwood_htc\models
 mklink /j panorama V:\driftwood_htc\panorama
@@ -401,3 +400,12 @@ mklink tools_thumbnail_cache.bin.bin V:\brazzers\tools_thumbnail_cache.bin
 mklink addoninfo.txt V:\brazzers\addoninfo.txt
 mklink /j materials V:\brazzers\materials
 mklink /j models V:\brazzers\models
+
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir baddragon
+cd baddragon
+mklink tools_asset_info.bin V:\baddragon\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin.bin V:\baddragon\tools_thumbnail_cache.bin
+mklink addoninfo.txt V:\baddragon\addoninfo.txt
+mklink /j materials V:\baddragon\materials
+mklink /j models V:\baddragon\models

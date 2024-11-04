@@ -1,11 +1,26 @@
-// paid 5 dollars to get texture master sets, downloaded all date folders with google drive in side quest client
-// unziped with windows explorer
-// removed preview images: find . -maxdepth 2 -type f -exec rm {} \;
-// removed 1k: find . -type d -name "1K-*" -exec rm -fr {} \;
-// removed 4k: find . -type d -name "4K-*" -exec rm -fr {} \;
-
-// prep the following code by making asset_pack_sharetextures/materials/
-
+// freepbr: https://freepbr.com/product/pea-gravel-pbr/
+fs = require('fs'),
+axios = require('axios'),
+(get_page = (offset = 0, h = 'https://ambientcg.com/list?type=Material,Atlas,Decal&sort=Latest&offset=' + offset + '&limit=180') =>
+  axios.get(h).then((res) => (
+    console.log(h),
+    data = '',
+    Object.keys(res.data).forEach((d) => data += res.data[d]),
+    matches = data.match(/\/view\?id=[A-Za-z0-9\_\-\+\=]+\"/g),
+    (matches == null) ?
+      console.log('done')
+    :(matches.map((e) => e.slice(9, -1)).forEach((match) =>
+      (!fs.existsSync('/mnt/d/Source/ambientcg/materials/' + match) && !fs.existsSync('/mnt/d/Source/ambientcg/materials/' + match + "_2K-PNG.zip")) && 
+        console.log("wget https://ambientcg.com/get?file=" + match + "_2K-PNG.zip -O" + " " + match + "_2K-PNG.zip")),
+      setTimeout(get_page, 2000, offset+180)))).catch((error) => console.error(error)))();
+      
+      
+      
+      //////////////////////////////////////////////////////////////////////////////// <<< then need to do a backup soon (I might be able to skip whole dirs if there is nothing modifieor I might try on srouce1import folders to just sync the modified vmats)
+      
+      
+      
+      
 fs = require('fs'),
 adm_zip = require('adm-zip'),
 download = require('download'),
@@ -48,6 +63,20 @@ axios.get('https://www.sharetextures.com/textures/').then((res) => (
           : get_texture(t+1))())))()))
 
 // finish with manual removal of empty dirs and zip files
+// prep the following code by making asset_pack_sharetextures/materials/
+
+/*
+pbr future:
+  upgrade/add resolution for ambientcg
+  want a blend maker function
+  
+asset pack future (post byteframe13):
+  fuck the logging?
+  find more ways to simplify,
+  use crowbar to extract all model source? (whoa)
+  improve texture quality with that whatever thing?
+  still dubious on slipstream culling
+*/
 /*
 old_pbr_unziping() {
   PROJECT=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/byteframe13
@@ -68,22 +97,17 @@ old_pbr_unziping() {
   fi
   cd "${PROJECT}"/materials/${2}/${NAME}
 }
+
+models/props_xen/nihil_chamber/nihil_pipeclamp_001a.vmdl
+models/props_xen/instances/c4a3b2/c4a3b2_machine_scar006.vmdl
+models/props_interloper/b_power_console_large_45.vmdl
+models/props_biotec/biotec_culture_tank.vmdl
 */
 
       
       
-///////////////////////
-
-//freepbr has to go through each link to get the correct file/dir name to know whether or not to download it, at best could have ti stop shot once it finds one? backinf off for now
       
       
-(get_page1 = (offset = 1) =>
-  axios.get('https://freepbr.com/latest-pbr-texture-uploads-2/?product-page=' + offset).then((res) => (
-    data = '',
-    Object.keys(res.data).forEach((d) => data += res.data[d]),
-    matches = data.match(/href="https:\/\/freepbr.com\/materials\/[a-zA-Z0-9-]*\/"/g),
-    (matches == null) ?
-      console.log('done')
-    :(matches.filter((e, i) => i % 2 == 1 && !e.includes('download-all')).forEach((e) => console.log(e)),
-      setTimeout(get_page123, 2000, offset+180)))).catch((error) => console.error(error)))();
+      
+      
       
