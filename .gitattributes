@@ -1,2 +1,5 @@
 steamtours/byteframe11-Jaded_Jail/content/maps/original_byteframe11.vmap filter=lfs diff=lfs merge=lfs -text
 steamtours/byteframe13-Xenian_Xenology/content/maps/prefabs/section_b_percent.vmap filter=lfs diff=lfs merge=lfs -text
+steamtours/byteframe13-Xenian_Xenology/content/maps/prefabs/section_a_exclamation.vmap filter=lfs diff=lfs merge=lfs -text
+steamtours/byteframe13-Xenian_Xenology/content/maps/prefabs/section_a_peso.vmap filter=lfs diff=lfs merge=lfs -text
+steamtours/byteframe13-Xenian_Xenology/content/maps/prefabs/section_b_6.vmap filter=lfs diff=lfs merge=lfs -text
