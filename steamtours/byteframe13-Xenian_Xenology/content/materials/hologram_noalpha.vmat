@@ -1,0 +1,30 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Self Illum ----
+	F_SELF_ILLUM 1
+
+	//---- Color ----
+	g_vColorTint "[0.796079 0.796079 0.796079 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.050 0.050]"
+	TextureColor "materials/holographic_base_color_psd_byteframe.png"
+
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	TextureGlossiness "materials/default/default_gloss.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/default/default_normal.tga"
+
+	//---- Self Illum ----
+	g_flSelfIllumScale "4.000"
+	g_vSelfIllumScrollSpeed "[0.100 0.050]"
+	g_vSelfIllumTint "[0.796079 0.796079 0.796079 1.000000]"
+	TextureSelfIllumMask "materials/holographic_base_selfillum_psd_byteframe.png"
+}

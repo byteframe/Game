@@ -1,0 +1,479 @@
+
+C:\Users\byteframe\Desktop>REM 9 for $reasons
+
+C:\Users\byteframe\Desktop>"C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\resourcecompiler.exe" -fshallow -maxtextureres 256 -dxlevel 110 -unbufferedio -noassert -i "c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/byteframe4/maps/byteframe4.vmap"  -world -bakelighting -lightmapMaxResolution 4096 -vrad3 -lightmapDoWeld -lightmapVRadQuality 2 -lightmapLocalCompile -lightmapCompressionDisabled 0 -phys -vis -retail  -breakpad  -nompi  -nop4 -outroot "C:\Users\BYTEFR~1\AppData\Local\Temp\valve\hammermapbuild\game"
+Using breakpad crash handler
+Setting breakpad minidump AppID = 250820
+Forcing breakpad minidump interfaces to load
+Looking up breakpad interfaces from steamclient
+Calling BreakpadMiniDumpSystemInit
+Looking up breakpad interfaces from steamclient
+Calling BreakpadMiniDumpSystemInit
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561197961017729 [API loaded yes]
+Steam_SetMinidumpSteamID:  Setting Steam ID:  76561197961017729
+WARNING: No 'models_ModelDocGameData' FGD was specified in the 'ModelDoc' section of gameinfo.gi.
+- steamtours_addons\byteframe4\maps\byteframe4.vmap
+Initializing script VM...
+...done
+Loading scripted entity classes...
+...done
+Error loading resource file "models/props_junk/watermelon01_chunk01a.vmdl_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "models/props_junk/watermelon01_chunk01b.vmdl_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "models/props_junk/watermelon01_chunk01c.vmdl_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "models/props_junk/watermelon01_chunk02a.vmdl_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "models/props_junk/watermelon01_chunk02c.vmdl_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "models/props_junk/watermelon01_chunk02b.vmdl_c" (Error: ERROR_FILEOPEN)
+Building map "maps\byteframe4"...
+
+
+... Building 'world'
+
+Ray Tracing Environment
+Building ray trace environment...
+Wrote C:\Users\BYTEFR~1\AppData\Local\Temp\steamtours_addons\byteframe4\maps\byteframe4.rte
+Wrote C:\Users\BYTEFR~1\AppData\Local\Temp\steamtours_addons\byteframe4\maps\byteframe4.viscfg
+Done (2.37 seconds)
+  +- steamtours_addons\byteframe4\maps\byteframe4\world_visibility.vvis
+Building map visibility
+
+Loading kd-trees
+Successfully read C:\Users\BYTEFR~1\AppData\Local\Temp\steamtours_addons\byteframe4\maps\byteframe4.rte
+Successfully unserialized ray tracing environment.
+Convert RTE with 48356 triangles in 0.56s
+
+Building view cells
+Loaded 0 LOS hints from c:\program files (x86)\steam\steamapps\common\steamvr\tools\steamvr_environments\game\steamtours_addons\byteframe4\maps\byteframe4.los! (0.0 seconds)
+Loaded 0 LOS hints from c:\program files (x86)\steam\steamapps\common\steamvr\tools\steamvr_environments\content\steamtours_addons\byteframe4\maps\byteframe4.los! (0.0 seconds)
+Wrote vis resource 391 bytes bytes
+Visibility complete in 0.59s.
+
+Creating World
+
+Bake Lighting
+Build: pc64 Jan  4 2021 11:41:02
+Texture materials/metal/ibeam002_color_psd_43a9e4ce.vtex_c doesn't have mipmaps down to 32, loaded 4x64
+Texture materials/models/third_party/props/toys/quivr_quiver_with_arrows_shaft_color_psd_c770314e.vtex_c doesn't have mipmaps down to 32, loaded 4x64
+CPathTraceSceneInfoBase - Loading light cookie flashlight:0
+CPathTraceSceneInfoBase - Loading light cookie spotlight4:4
+CPathTraceSceneInfoBase - Loading light cookie spotlight5:5
+Light Importance Tree... [0....1....2....3....4....5....6....7....8....9....] Done (6.48 seconds)
+Texture materials/metal/ibeam002_color_psd_43a9e4ce.vtex_c doesn't have mipmaps down to 32, loaded 4x64
+Texture materials/models/third_party/props/toys/quivr_quiver_with_arrows_shaft_color_psd_c770314e.vtex_c doesn't have mipmaps down to 32, loaded 4x64
+CPathTraceSceneInfoBase - Loading light cookie flashlight:0
+CPathTraceSceneInfoBase - Loading light cookie spotlight4:4
+CPathTraceSceneInfoBase - Loading light cookie spotlight5:5
+Preprocessing 458 meshes and computing charts [0....1....2....3....4....5....6....7....8....9....] Done (5.37 seconds)
+Packing 50182 UV charts onto atlas...
+  Pass 1 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (2.94 seconds) - (0.636950)
+  Pass 2 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (2.08 seconds) + (0.318475)
+  Pass 3 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (3.65 seconds) + (0.477713)
+  Pass 4 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (3.92 seconds) + (0.557331)
+  Pass 5 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (2.38 seconds) - (0.597141)
+  Pass 6 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (4.43 seconds) + (0.577236)
+  Pass 7 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (4.24 seconds) + (0.587188)
+  Pass 8 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (4.26 seconds) + (0.592165)
+Mesh with material materials/nature/forest_gravel_01.vmat is extremely large in lightmap (12.2%)
+Mesh with material materials/wood/wood004.vmat is extremely large in lightmap (18.0%)
+Mesh with material materials/misc/carpet001_beige.vmat is extremely large in lightmap (13.6%)
+Mesh with material materials/concrete/concretefloor003.vmat is extremely large in lightmap (18.6%)
+==== Baking 4096 x 4096 lightmap ====
+SetupTexels   [0....1....2....3....4....5....6....7....8....9....] Done (0.80 seconds)
+VRAD3 (local) [0....1....2....3....4....5....6....7....8....9....] Done (12460.56 seconds)
+VRAD3 Combine
+  VRAD3 - Distributed Lighting Tool
+  Copyright (c) Valve Corporation, All rights reserved.
+  Build: pc64 Jan  4 2021 11:40:39
+  WD: C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons\byteframe4\_vrad3
+  Command: vrad3.exe -script script.vrad3 -entrypoint lm_combine -threads 6 -indir results/outputs -noassert
+  Num Threads: 6
+  Lightmap: 4096x4096 in 16 1024x1024 blocks
+  Loading lightmap_packing_geometry.dat... Done (0.02 seconds)
+  Writing normal.exr... (0.3s).
+  Writing tangent.exr... (0.3s).
+  Writing sh_irradiance_noisy.exr... (0.2s).
+  Writing lightmap_noisy.exr... (0.3s).
+  Writing ao_noisy.exr... (0.4s).
+  Removing fireflies... found 104898 fireflies in 0.4s
+  OIDN Filter (lg) ao [0....1....2....3....4....5....6....7....8....9....] Done (13.27 seconds)
+  OIDN Filter (sm) ao [0....1....2....3....4....5....6....7....8....9....] Done (2.15 seconds)
+  OIDN Filter (lg) irradiance [0....1....2....3....4....5....6....7....8....9....] Done (13.42 seconds)
+  OIDN Filter (sm) irradiance [0....1....2....3....4....5....6....7....8....9....] Done (1.01 seconds)
+  OIDN Filter (lg) sh radiance c0+ [0....1....2....3....4....5....6....7....8....9....] Done (13.18 seconds)
+  OIDN Filter (sm) sh radiance c0+ [0....1....2....3....4....5....6....7....8....9....] Done (1.08 seconds)
+  OIDN Filter (lg) sh radiance c1+ [0....1....2....3....4....5....6....7....8....9....] Done (10.40 seconds)
+  OIDN Filter (sm) sh radiance c1+ [0....1....2....3....4....5....6....7....8....9....] Done (0.99 seconds)
+  OIDN Filter (lg) sh radiance c1- [0....1....2....3....4....5....6....7....8....9....] Done (10.29 seconds)
+  OIDN Filter (sm) sh radiance c1- [0....1....2....3....4....5....6....7....8....9....] Done (1.01 seconds)
+  OIDN Filter (lg) sh radiance c2+ [0....1....2....3....4....5....6....7....8....9....] Done (10.42 seconds)
+  OIDN Filter (sm) sh radiance c2+ [0....1....2....3....4....5....6....7....8....9....] Done (0.97 seconds)
+  OIDN Filter (lg) sh radiance c2- [0....1....2....3....4....5....6....7....8....9....] Done (10.19 seconds)
+  OIDN Filter (sm) sh radiance c2- [0....1....2....3....4....5....6....7....8....9....] Done (0.98 seconds)
+  OIDN Filter (lg) sh radiance c3+ [0....1....2....3....4....5....6....7....8....9....] Done (10.46 seconds)
+  OIDN Filter (sm) sh radiance c3+ [0....1....2....3....4....5....6....7....8....9....] Done (0.97 seconds)
+  OIDN Filter (lg) sh radiance c3- [0....1....2....3....4....5....6....7....8....9....] Done (13.24 seconds)
+  OIDN Filter (sm) sh radiance c3- [0....1....2....3....4....5....6....7....8....9....] Done (1.09 seconds)
+  Dilating lighting over invalid regions...
+  Writing direct_light_indices.exr... (0.2s).
+  Writing direct_light_scalars.exr... (0.3s).
+  Writing lightmap.exr... (0.2s).
+  Writing ao.exr... (0.2s).
+  Writing shradiance_r.exr... (0.3s).
+  Writing shradiance_g.exr... (0.3s).
+  Writing shradiance_b.exr... (0.4s).
+  Writing sh_irradiance.exr... (0.4s).
+  Wrote lightmap_luxel_result_info.dat.
+  Writing lightmap_chart_color.exr... (0.6s).
+  Total Time: 123.5 seconds
+(124.08 seconds)
+ProcessReceivedLightingPackets [0....1....2....3....4....5....6....7....8....9....] Done (35.68 seconds)
+ResolveLightIndexAssignment [0....1....2....3....4....5....6....7....8....9....] Done (8.26 seconds)
+AmeliorateBlockCompressionArtefacts [0....1....2....3....4....5....6....7....8....9....] Done (0.09 seconds)
+Fixing Seams
+Weld Unique Vertices [0....1....2....3....4....5....6....7....8....9....] Done (1.11 seconds)
+Build Adjacency      [0....1....2....3....4....5....6....7....8....9....] Done (0.20 seconds)
+Edge Equations       [0....1....2....3....4....5....6....7....8....9....] Done (0.24 seconds)
+Solving Equations    [ irradiance directional_irradiance ] (9.72 seconds)
+Lightmapping Total Time : (12680.10 seconds)
+Compressing Lightmaps...
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\irradiance.vtex
+       Compressing 4096x4096x1 texture to BC6H: 10132ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\directional_irradiance.vtex
+       Compressing 4096x4096x1 texture to BC7: 5829ms
+==== Light Probes ====
+Voxelize... [0....1....2....3....4....5....6....7....8....9....] Done (0.07 seconds)
+VRAD3 (local) [0....1....2....3....4....5....6....7....8....9....] Done (3.85 seconds)
+VRAD3 Combine...
+  VRAD3 - Distributed Lighting Tool
+  Copyright (c) Valve Corporation, All rights reserved.
+  Build: pc64 Jan  4 2021 11:40:39
+  WD: C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons\byteframe4\_vrad3
+  Command: vrad3.exe -script lpv.vrad3 -entrypoint lpv_finish_all -threads 6 -indir results/outputs -noassert
+  Num Threads: 6
+  Loading scene_info.dat... Done (0.04 seconds)
+  Unserializing scene_info.dat... Done (0.14 seconds)
+  LPV Median Filter Indirect (3x3)... Done (0.00 seconds)
+  LPV Resolve... Done (0.00 seconds)
+  Wrote lpv_1_ambientcube.exr.
+  Wrote lpv_1_dli.tga.
+  Wrote lpv_1_dls.tga.
+  LPV Median Filter Indirect (3x3)... Done (0.00 seconds)
+  LPV Resolve... Done (0.00 seconds)
+  Wrote lpv_2_ambientcube.exr.
+  Wrote lpv_2_dli.tga.
+  Wrote lpv_2_dls.tga.
+  LPV Median Filter Indirect (3x3)... Done (0.00 seconds)
+  LPV Resolve... Done (0.00 seconds)
+  Wrote lpv_3_ambientcube.exr.
+  Wrote lpv_3_dli.tga.
+  Wrote lpv_3_dls.tga.
+  LPV Median Filter Indirect (3x3)... Done (0.00 seconds)
+  LPV Resolve... Done (0.00 seconds)
+  Wrote lpv_4_ambientcube.exr.
+  Wrote lpv_4_dli.tga.
+  Wrote lpv_4_dls.tga.
+  LPV Median Filter Indirect (3x3)... Done (0.00 seconds)
+  LPV Resolve... Done (0.00 seconds)
+  Wrote lpv_5_ambientcube.exr.
+  Wrote lpv_5_dli.tga.
+  Wrote lpv_5_dls.tga.
+  LPV Median Filter Indirect (3x3)... Done (0.00 seconds)
+  LPV Resolve... Done (0.00 seconds)
+  Wrote lpv_6_ambientcube.exr.
+  Wrote lpv_6_dli.tga.
+  Wrote lpv_6_dls.tga.
+  Total Time: 0.3 seconds
+(0.35 seconds)
+Texture materials/metal/ibeam002_color_psd_43a9e4ce.vtex_c doesn't have mipmaps down to 32, loaded 4x64
+Texture materials/models/third_party/props/toys/quivr_quiver_with_arrows_shaft_color_psd_c770314e.vtex_c doesn't have mipmaps down to 32, loaded 4x64
+CPathTraceSceneInfoBase - Loading light cookie flashlight:0
+CPathTraceSceneInfoBase - Loading light cookie spotlight4:4
+CPathTraceSceneInfoBase - Loading light cookie spotlight5:5
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_1.vtex
+       Compressing 16x16x48 texture to DXT5: 85ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_1_dli.vtex
+       Compressing 16x16x8 texture to RGBA8888: 0ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_1_dls.vtex
+       Compressing 16x16x8 texture to BC7: 8ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_2.vtex
+       Compressing 8x12x24 texture to DXT5: 13ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_2_dli.vtex
+       Compressing 8x12x4 texture to RGBA8888: 0ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_2_dls.vtex
+       Compressing 8x12x4 texture to BC7: 2ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_3.vtex
+       Compressing 8x8x24 texture to DXT5: 8ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_3_dli.vtex
+       Compressing 8x8x4 texture to RGBA8888: 0ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_3_dls.vtex
+       Compressing 8x8x4 texture to BC7: 2ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_4.vtex
+       Compressing 4x8x24 texture to DXT5: 8ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_4_dli.vtex
+       Compressing 4x8x4 texture to RGBA8888: 0ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_4_dls.vtex
+       Compressing 4x8x4 texture to BC7: 2ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_5.vtex
+       Compressing 8x8x24 texture to DXT5: 8ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_5_dli.vtex
+       Compressing 8x8x4 texture to RGBA8888: 0ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_5_dls.vtex
+       Compressing 8x8x4 texture to BC7: 2ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_6.vtex
+       Compressing 8x8x24 texture to DXT5: 8ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_6_dli.vtex
+       Compressing 8x8x4 texture to RGBA8888: 0ms
+  +- steamtours_addons\byteframe4\maps\byteframe4\lightmaps\env_light_probe_volume_6_dls.vtex
+       Compressing 8x8x4 texture to BC7: 2ms
+Light Probes Total Time : (0 hrs 0 mins 7 seconds)
+Baked Lighting Total Time : (3 hrs 31 mins 58 seconds)
+Generate Overlay Meshes...[0....1....2....3....4....5....6....7....8....9....] Done (0.30 seconds)
+Creating 1 world nodes  Splitting geometry along render clusters...[0....1....2....3....4....5....6....7....8....9....] Done (0.05 seconds)
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000.vwnod
+  +- steamtours_addons\byteframe4\maps\byteframe4\entities\default_ents.vents
+Initializing script VM...
+...done
+Loading scripted entity classes...
+...done
+  +- steamtours_addons\byteframe4\maps\byteframe4\world.vwrld
+Created 1 world nodes
+WARNING: No 'models_ModelDocGameData' FGD was specified in the 'ModelDoc' section of gameinfo.gi.
+  +- steamtours_addons\byteframe4\maps\byteframe4\entities\unnamed_1568.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\entities\unnamed_1568.vphys
+  +- steamtours_addons\byteframe4\maps\byteframe4\entities\unnamed_1822.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\entities\unnamed_1822.vphys
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_nzp.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_nzp.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm00_lp01.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm00_lp01.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm00_lp05.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm00_lp05.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm00_lp06.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm00_lp06.vmesh
+Bailing out of OnBlockForQuery after 0.250 seconds
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00_nzp.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00_nzp.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm03_lp00.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm03_lp00.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm03_lp03.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm03_lp03.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm04_lp00.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm04_lp00.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm04_lp00_nzp.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm04_lp00_nzp.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm04_lp04.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm04_lp04.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb0_mesh_base_cm05_lp00.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb0_mesh_base_cm05_lp00.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm05_lp00.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm05_lp00.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm05_lp05.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm05_lp05.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm06_lp00.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm06_lp00.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_blocklight.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_blocklight.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse3.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse3.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse4.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse4.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse5.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse5.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse6.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse6.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse7.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse7.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse8.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse8.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse9.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse9.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse10.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse10.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse11.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse11.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse12.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse12.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse13.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse13.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse14.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse14.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse15.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse15.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse16.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse16.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse17.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse17.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse18.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse18.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse19.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse19.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse20.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse20.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse21.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse21.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse22.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse22.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse23.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse23.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse24.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse24.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse25.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse25.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse26.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse26.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse27.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse27.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse28.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse28.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse29.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse29.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse30.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse30.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse31.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse31.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse32.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse32.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse33.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse33.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse34.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse34.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse35.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse35.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse36.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse36.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse37.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse37.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse38.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse38.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse39.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse39.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse40.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse40.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse41.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse41.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse42.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse42.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse43.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse43.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse44.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse44.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse45.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse45.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse46.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse46.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse47.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse47.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse48.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse48.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse49.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse49.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse50.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse50.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse51.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse51.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse52.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse52.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse53.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse53.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse54.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse54.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse55.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse55.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse56.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse56.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse57.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse57.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse58.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse58.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse59.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse59.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse60.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse60.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse61.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse61.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse62.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse62.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse63.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse63.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse64.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse64.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse65.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse65.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse66.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse66.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse67.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse67.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse68.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse68.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse69.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse69.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse70.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse70.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse71.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse71.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse72.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse72.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse73.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse73.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse74.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse74.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse75.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse75.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model0.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model0_0.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model0_1.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model0_2.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model1.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model1_0.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model1_1.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model2.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model2_0.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model2_1.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model3.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model3_0.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model3_1.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model3_2.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model4.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model4_0.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model4_1.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model4_2.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model5.vmdl
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model5_0.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model5_1.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model5_2.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000_lr0_b0_im1_cb1_mesh_model5_3.vmesh
+  +- steamtours_addons\byteframe4\maps\byteframe4\worldnodes\node000.vrman
+
+
+... Building 'phys'
+  +- steamtours_addons\byteframe4\maps\byteframe4\world_physics.vphys
+  +- steamtours_addons\byteframe4\maps\byteframe4\world_physics.vrman
+
+
+... Building 'vis'
+  +- steamtours_addons\byteframe4\maps\byteframe4\world.vrman
+--> Map build finished.
+Pack byteframe4.vpk (c:\users\bytefr~1\appdata\local\temp\valve\hammermapbuild\game\steamtours_addons\byteframe4\maps\byteframe4.vpk):
+Writing... Done.
+     0/   1 (elapsed 12757.884):  c:\program files (x86)\steam\steamapps\common\steamvr\tools\steamvr_environments\content\steamtours_addons\byteframe4\maps\byteframe4.vmap
+Compile of 1 file(s) matching nonrecursive specification "c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/byteframe4/maps/byteframe4.vmap" took 12757.890 seconds
+-----------------------------------------------------------------
+ OK: 248 compiled, 0 failed, 0 skipped, 212m:39s
+-----------------------------------------------------------------
+Leaking 2 elements
+Leaking 10 elements

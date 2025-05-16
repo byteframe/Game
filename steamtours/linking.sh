@@ -1,4 +1,8 @@
+#!/bin/sh
+# this makes game directories anew and suggests dos linking commands if the game backup was lost
+
 cd /mnt/d/Source
+
 for DIR in *; do
   mkdir -p "${G}"/${DIR}
   mkdir -p /mnt/v/${DIR}/materials

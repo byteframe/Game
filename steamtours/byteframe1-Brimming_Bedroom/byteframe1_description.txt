@@ -1,0 +1,32 @@
+This came out really good, and lines up with my room quite well! I made the whole thing without building it, because I was pretty sure about the dimensions after mocking it up constantly in my first addon, and I some dimensions are a bit off, if I didn't put in all the props before realizing it I could really nail it, but its honestly uncanny how weird it is to have a VR version of my VR room, with different, but the same looks of having tons of colorful toys all around. Also, apparently, when you teleport ingame it changes your how VR position, not your player position, so as soon as you do that, the room isnt in sync with your playspace anyway. This sucks, but I just have to realize that teleporting is now longer required because I know I can walk to the edge of the environment! You get it, right?
+
+As for the geometry Using edgeloops for everything is still the way to go, I have to assume, but it might be more proper (if I was doing multiple rooms) to make the door and window frame/trim seperate brushes? Then I'd have to see if merging them with the other brush is a good idea, and how it messes with the quads. I suppose if I was making them as seperate brushes it would be dumb to merge them with the room brush. The other alternative is to make each room with the 4 edge looped holes as a template brush in itself and merge at hallways. Blah blah. Actually adding a door entity that moves and that would be necessary to really understand the proper method. BLAH BLAH.
+
+New things learned include soundscapes, panoroma steamvr panels, and ambient light baking.
+
+The soundscapes thing confused me, I was having trouble with it, but I missed a line from the tutorial, and got confused about the correct entity property to change. It's all good now, and soundscapes add alot to your environment. Blah blah, one thing I couldn't figure out was how to reload the soundscapes in the map. There's a console command for this, but I've yet to figure out HOW to run commands with VConsole and all that.
+
+The panels are a pain in the ass, and I don't suppose I could add the one that hooks into the Big Picture mode, like you can spawn inside Destinations. After sorting out length/width and the DPI values, the community_home/item ones I've attached to TV props look excellent, although they are not the right proportions, but this is only really noticeable in the screenshot listing page (theres supposed to be 6 rows of 10). Also each community_item panel is seperate, so if you examine a screenshot on one it shows on all of them. Not ideal, but it also looks cool ingame.
+
+Lightbaking and including all the ambient light in your scene really changes how it looks, and it takes a while, but it's clearly important. Why can't we resize the cubemap entities? I suppose because your too keep them close to your light sources and it would be a waste of time to generate all that faint distant ambient light? I've got alot to learn about lighting.
+
+Overall, this took about 2.5 nights of work. Had a blast. This is where I'm going with the VR baloney.
+
+[[ Appendix 1 ]]
+
+I also played around with Source 1 Hammer for various games. It's a real chore to figure out all the different SDK provisions and distributions, engine branches, and the history of all this, and at this point, it turns out they're all just shipped with each game. First off, the 'Source SDK' app on steam is old, and doesn't support the 2013 branch. although it ships with some interesting map sources!
+
+So I made a box room with hammer (version 8357) in hl2. I also recompiled the sourcesdk version of the dod_flash map with Day of Defeat Source and that was also version 8357. I took a hl2mp sourcesdk map and recompiled it for hl2 and hl2mp. Just joshin around. I did the same thing with the portal source sdk map.
+
+I'm still confused a bit. If you want to make a map for GameX you you would use the tools provided by default with the game, but what if I want to make a 'Source Mod' today? It seems you download either the SP or MP 2013 base/runtime application, which itself also ships with tools. Different versions of the tools, mind you, and I'm not sure why they are seperated between multiplayer and singleplayer.
+
+I might have to make a level in 2013SP and try to build it in HL2 and/or vice versa, just to ease my confusion. I don't think I'll ever make a real Source/Hl2 map, just because my muscle memory in the editor would go haywire, but lordy am I tempted. Blah blah. Still though, if you want to become a Source 1 modder, you first have to read the wiki for a day like I did and fiqure out the differant versions of source, and which of the endless copies of the tools you are meant to use. blah BLAH omg shut up.
+
+Hammer1 Versions:
+
+v5845 = 2009_MP_dods (from SourceSDK package)
+v6157 = Portal (shipped with game)
+v6412 = 2013_SP
+v6585 = Source Filmmaker
+v8357 = 2013_MP, 2013_DODS
+v8372 = HL2 + LostCoast (2013 branch I suppose and shipped with game)

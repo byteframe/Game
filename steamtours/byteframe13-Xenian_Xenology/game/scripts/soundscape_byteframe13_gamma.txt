@@ -1,0 +1,116 @@
+"soundscape_byteframe13_gamma"
+{
+    "playlooping"
+    {
+        "volume"        "0.3"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/gamma.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.9"
+        "pitch"         "100"
+        "origin"        "-590, 901, 100"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/ambient/cap_2_boiler_rough1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "origin"        "-565, 1489, 106"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/ac_vent3.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.2"
+        "pitch"         "100"
+        "origin"        "-551, 1099, 0"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/ambient/electric/amb_electric_transformer_box_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.5"
+        "pitch"         "100"
+        "origin"        "-857, 2064, 131"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/cap_3_inside_radar1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.75"
+        "pitch"         "100"
+        "origin"        "-848, 1728, 150"
+        "soundlevel"    "SNDLVL_70dB"
+        "wave"          "sounds/ambient/interior/amb_nice_basement_lp_01_l.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "origin"        "-466, 1720, 47"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/waterfeature.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.66"
+        "pitch"         "100"
+        "time"          "0.50, 1.85"
+        "soundlevel"    "SNDLVL_60dB"
+        "origin"        "-481, 1776, 240"
+        "rndwave"
+        {
+            "wave"          "sounds/home/ambient_cave_drip_01.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_02.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_03.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_04.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_05.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_06.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_07.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "0.5"
+        "pitch"         "100"
+        "origin"        "-637, 2024, 128"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_ac_condenser_lp_02.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.175"
+        "pitch"         "100"
+        "origin"        "-444, 1566, 179"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_electric_buzz_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "origin"        "-174, 2278, 77.3521"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambience/truck_interior_pointsource_telemetry_lp_03.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.6"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_60dB"
+        "origin"        "-552, 2212, 112"
+        "wave"          "sounds/ambience/cave_ambience_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.2"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_50dB"
+        "origin"        "-454, 1144, 84"
+        "wave"          "sounds/ambient/electric/amb_electronic_tv_screen_static_lp_02.vsnd"
+    }
+}

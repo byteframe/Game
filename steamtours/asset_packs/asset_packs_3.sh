@@ -1,5 +1,6 @@
 #!/bin/sh
 S=/mnt/s/SteamLibrary/steamapps/common
+L=/mnt/l/SteamLibrary/steamapps/common
 D=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common
 C=${D}/SteamVR/tools/steamvr_environments/content/steamtours_addons
 G=${D}/SteamVR/tools/steamvr_environments/game/steamtours_addons
@@ -15,7 +16,10 @@ header() {
 }
 extract_vpk() {
   header ${A}" | VPK: ${1}"
-  if ! ~/.local/bin/vpk -re "(models|materials|particles|sound|scripts|scenes|surfaces)/.*" -x "${C}"/${A} "${1}"; then
+  if ~ grep -q "exit 1" ~/.local/share/pipx/venvs/vpk/lib/python3.12/site-packages/vpk/cli.py; then
+    echo -e "error in: vpk binary unmodified\n"
+    read PAUSE
+  elif ! ~/.local/bin/vpk -re "(models|materials|particles|sound|scripts|scenes|surfaces)/.*" -x "${C}"/${A} "${1}"; then
     echo -e "error in: ${1}, must extract manually\n"
     read PAUSE
   fi
@@ -388,3 +392,5 @@ PRE_IMPORT_FIXES() {
 MAKE_ASSET_PACK "${D}/Half-Life 2/hl1" "hl1_pak_dir.vpk"
 ##------------------------------------------------------------------------------ hl1_hd
 MAKE_ASSET_PACK "${D}/Half-Life 2/hl1_hd" "hl1_hd_pak_dir.vpk"
+##------------------------------------------------------------------------------ snowdrop_escape
+MAKE_ASSET_PACK "${L}/Snowdrop Escape/snowdrop_escape" "sde_materials_dir.vpk" "sde_models_dir.vpk"

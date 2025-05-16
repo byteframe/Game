@@ -1,0 +1,60 @@
+"soundscape_byteframe13_zeta"
+{
+    "playlooping"
+    {
+        "volume"        "0.325"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/zeta.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/ambient/ac_vent1.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "2.2"
+        "pitch"         "100"
+        "time"          "1.50, 2.3"
+        "soundlevel"    "SNDLVL_60dB"
+        "origin"        "-680, 3537, -5"
+        "rndwave"
+        {
+            "wave"          "sounds/bot_mechanic_vox_01.vsnd"
+            "wave"          "sounds/bot_mechanic_vox_02.vsnd"
+            "wave"          "sounds/bot_chef_vox_wipe_01.vsnd"
+            "wave"          "sounds/bot_chef_vox_wipe_02.vsnd"
+            "wave"          "sounds/bot_gardening_vox_pause.vsnd"
+            "wave"          "sounds/bot_gardening_vox_pre.vsnd"
+            "wave"          "sounds/bot_gardening_vox_song.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "0.475"
+        "pitch"         "100"
+        "origin"        "-688, 2434, 137"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/electric/amb_electric_buzz_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "origin"        "-688, 2434, 137"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/cap_3_inside_tape_machine1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "origin"        "-382, 2451, 71"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/cap_3_inside_tape_machine3.vsnd"
+    }
+
+}

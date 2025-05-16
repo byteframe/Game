@@ -1,0 +1,10 @@
+<root>
+	<script>
+    (() =>
+      CustomNetTables.GetTableValue("teleport", "enable") == undefined &&
+        SteamUGC.GetUserItemVote("923652778", r => ( $.Msg(r),
+          GameEvents.SendCustomGameEventToServer("teleport_event", { "key1" : r.voted_up == "1" ? "AlphaFromBeta" : "AlphaFromNone" } ))))();
+	</script>
+  <ClientUIDialogPanel class="InWorldInfoPanel"></ClientUIDialogPanel>
+</root>
+

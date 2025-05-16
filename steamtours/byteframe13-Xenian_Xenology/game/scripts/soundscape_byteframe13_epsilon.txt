@@ -1,0 +1,230 @@
+"soundscape_byteframe13_epsilon"
+{
+    "playlooping"
+    {
+        "volume"        "0.225"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/epsilon.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.35"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/ambience/cave_ambience_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.23"
+        "pitch"         "100"
+        "origin"        "-480, 950, 169"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_electric_buzz_lp_01.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.8"
+        "pitch"         "100"
+        "time"          "3.25"
+        "soundlevel"    "SNDLVL_50dB"
+        "origin"        "-103, 2273, 34"
+        "rndwave"
+        {
+            "wave"          "sounds/props/tf2_sentry1/sentry_scan.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "0.3"
+        "pitch"         "100"
+        "origin"        "480, 950, 169"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_electric_buzz_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.6"
+        "pitch"         "100"
+        "origin"        "0, 1288, -22"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/water_burstpipe_loop.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.1"
+        "pitch"         "100"
+        "origin"        "-3, 1522, -21"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/ambience/water_shore_lp_01.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "time"          "1, 4"
+        "soundlevel"    "SNDLVL_65dB"
+        "origin"        "-3, 1522, -21"
+        "rndwave"
+        {
+            "wave"          "sounds/water/subtle_movement_01.vsnd"
+            "wave"          "sounds/water/subtle_movement_02.vsnd"
+            "wave"          "sounds/water/subtle_movement_03.vsnd"
+            "wave"          "sounds/water/subtle_movement_04.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "time"          "1, 4"
+        "soundlevel"    "SNDLVL_NONE"
+        "origin"        "879, 2062, 134"
+        "rndwave"
+        {
+            "wave"          "sounds/home/ambient_cave_drip_01.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_02.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_03.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_04.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_05.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_06.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_07.vsnd"
+            "wave"          "sounds/ambience/cave_drip_one_shot_01.vsnd"
+            "wave"          "sounds/ambience/cave_drip_one_shot_02.vsnd"
+            "wave"          "sounds/ambience/cave_drip_one_shot_03.vsnd"
+            "wave"          "sounds/ambience/cave_drip_one_shot_04.vsnd"
+            "wave"          "sounds/ambience/cave_drip_one_shot_05.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "1.25"
+        "pitch"         "100"
+        "origin"        "223, 1927, 79"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/fly_swarm_loop.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.5"
+        "pitch"         "100"
+        "time"          "6, 6"
+        "soundlevel"    "SNDLVL_45dB"
+        "origin"        "-44, 2298, 66"
+        "rndwave"
+        {
+            "wave"      "sounds/tools/sfm/beep.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "origin"        "-9, 2256, 166"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/perimeter_electric_fence1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "5"
+        "pitch"         "100"
+        "origin"        "385, 1427, 32"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/ambience/truck_interior_pointsource_telemetry_lp_02.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.55"
+        "pitch"         "100"
+        "origin"        "241, 1109, 31"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/electric/amb_em_humbuzz_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "origin"        "-419, 2048, 63"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_ac_condenser_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "origin"        "484, 962, 69"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_ac_condenser_lp_02.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.3"
+        "pitch"         "100"
+        "origin"        "202, 1257, 31"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_ac_condenser_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.5"
+        "pitch"         "100"
+        "origin"        "-218, 1071, 31"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/ambient/interior/amb_int_computer_room_lp_02_rs.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.55"
+        "pitch"         "100"
+        "time"          "1, 3"
+        "soundlevel"    "SNDLVL_50dB"
+        "origin"        "-44, 2298, 66"
+        "rndwave"
+        {
+            "wave"          "sounds/ambient/electric_fence_spark_small_01.vsnd"
+            "wave"          "sounds/ambient/electric_fence_spark_small_02.vsnd"
+            "wave"          "sounds/ambient/electric_fence_spark_small_03.vsnd"
+            "wave"          "sounds/ambient/electric_fence_spark_small_04.vsnd"
+            "wave"          "sounds/ambient/electric_fence_spark_small_05.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "time"          "4, 9"
+        "soundlevel"    "SNDLVL_55dB"
+        "origin"        "-370, 1430, 32"
+        "rndwave"
+        {
+            "wave"          "sounds/props/salien/pickup_01.vsnd"
+            "wave"          "sounds/props/salien/pickup_02.vsnd"
+            "wave"          "sounds/props/salien/pickup_03.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "time"          "1, 4"
+        "soundlevel"    "SNDLVL_50dB"
+        "origin"        "-370, 1430, 32"
+        "rndwave"
+        {
+            "wave"          "sounds/fish_flap/fish_flap_01.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_02.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_03.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_04.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_05.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_06.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_07.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_08.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_09.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_10.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_11.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_12.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_13.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_14.vsnd"
+        }
+    }
+}

@@ -1,0 +1,220 @@
+"soundscape_byteframe13_eta"
+{
+    "playlooping"
+    {
+        "volume"        "0.15"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/eta.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.25"
+        "pitch"         "100"
+        "origin"        "-82, 3144, 18"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/windmill_mechanism_loop.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.9"
+        "pitch"         "100"
+        "origin"        "-2, 3584, 189"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/ambient/cap_2_boiler_rough1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.9"
+        "pitch"         "100"
+        "origin"        "-262, 2335, 59"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/ambient/cap_2_boiler_rough1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.175"
+        "pitch"         "100"
+        "origin"        "304, 3350, 119"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_electric_buzz_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.175"
+        "pitch"         "100"
+        "origin"        "214, 2244, 109"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_electric_buzz_lp_02.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.175"
+        "pitch"         "100"
+        "origin"        "-291, 3322, 81"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_electric_buzz_lp_03.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.1"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/ambience/cave_ambience_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/ambient/cap_3_vista_tone_drips.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "origin"        "0, 2427, 111"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/ambient/ac_vent1.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.66"
+        "pitch"         "100"
+        "time"          "1, 3"
+        "soundlevel"    "SNDLVL_75dB"
+        "origin"        "0, 2911, 154"
+        "rndwave"
+        {
+            "wave"          "sounds/home/ambient_cave_drip_01.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_02.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_03.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_04.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_05.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_06.vsnd"
+            "wave"          "sounds/home/ambient_cave_drip_07.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.15"
+        "pitch"         "100"
+        "time"          "60,90"
+        "soundlevel"    "SNDLVL_NONE"
+        "rndwave"
+        {
+            "wave"          "sounds/music/places/c17/citadel_ops.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.5"
+        "pitch"         "100"
+        "time"          "6, 12"
+        "soundlevel"    "SNDLVL_60dB"
+        "origin"        "0, 2743, 175"
+        "rndwave"
+        {
+            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam1.vsnd"
+            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam2.vsnd"
+            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam3.vsnd"
+            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam4.vsnd"
+            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam5.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "1.4"
+        "pitch"         "100"
+        "origin"        "-114, 2394, 61"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/fly_swarm_loop.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.2"
+        "pitch"         "100"
+        "origin"        "183, 2788, 87"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/electric/amb_electronic_tv_screen_static_lp_02.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "6"
+        "pitch"         "100"
+        "origin"        "0, 3800, 8"
+        "soundlevel"    "SNDLVL_65dB"
+        "wave"          "sounds/home/music_layer_loop.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.035"
+        "pitch"         "100"
+        "origin"        "287, 3117, 50"
+        "time"          "0.1"
+        "soundlevel"    "SNDLVL_55dB"
+        "rndwave"
+        {
+          "wave"          "sounds/cassette/cassette_insert_01.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.65"
+        "pitch"         "100"
+        "time"          "8,24"
+        "soundlevel"    "SNDLVL_60dB"
+        "origin"        "-15, 3687, 8"
+        "rndwave"
+        {
+            "wave"          "sounds/bot_mechanic_vox_01.vsnd"
+            "wave"          "sounds/bot_mechanic_vox_02.vsnd"
+            "wave"          "sounds/bot_chef_vox_wipe_01.vsnd"
+            "wave"          "sounds/bot_chef_vox_wipe_02.vsnd"
+            "wave"          "sounds/bot_gardening_vox_pause.vsnd"
+            "wave"          "sounds/bot_gardening_vox_pre.vsnd"
+            "wave"          "sounds/bot_gardening_vox_song.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "origin"        "-342, 2834, 39"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/radio_country.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "time"          "9,12"
+        "soundlevel"    "SNDLVL_55dB"
+        "origin"        "-132, 2914, 172"
+        "rndwave"
+        {
+            "wave"          "sounds/alien_monster_eat_01.vsnd"
+            "wave"          "sounds/alien_monster_eat_02.vsnd"
+            "wave"          "sounds/alien_monster_eat_03.vsnd"
+            "wave"          "sounds/alien_monster_eat_04.vsnd"
+            "wave"          "sounds/alien_monster_eat_05.vsnd"
+            "wave"          "sounds/alien_monster_eat_06.vsnd"
+            "wave"          "sounds/alien_monster_eat_07.vsnd"
+
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.5"
+        "pitch"         "100"
+        "time"          "12,14"
+        "soundlevel"    "SNDLVL_55dB"
+        "origin"        "-132, 2914, 172"
+        "rndwave"
+        {
+            "wave"          "sounds/ambient_mp3/crocs_hiss4.vsnd"
+            "wave"          "sounds/ambient_mp3/crocs_hiss3.vsnd"
+            "wave"          "sounds/ambient_mp3/crocs_hiss2.vsnd"
+        }
+    }
+}

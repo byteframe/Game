@@ -1,12 +1,5 @@
-
-REM for DIR in *; do echo mklink /j ${DIR} \"d:\source\\${DIR}\"; done
-pause
-
 cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\content\steamtours_addons
-mklink /j ambientcg "d:source\ambientcg"
-mklink /j freepbr "d:source\freepbr"
-mklink /j hhp227 "d:source\hhp227"
-mklink /j holodexxx "d:source\holodexxx"
+
 mklink /j source1import_ageofchivalry "d:source\source1import_ageofchivalry"
 mklink /j source1import_aperturetag "d:source\source1import_aperturetag"
 mklink /j source1import_berimbau "d:source\source1import_berimbau"
@@ -64,7 +57,7 @@ mklink /j source1import_vampire "d:source\source1import_vampire"
 mklink /j source1import_wilson_chronicles "d:source\source1import_wilson_chronicles"
 mklink /j source1import_zenozoik "d:source\source1import_zenozoik"
 mklink /j source1import_zps "d:source\source1import_zps"
-mklink /j veiviev "d:source\veiviev"
+
 mklink /j blr8800 "d:\Work\Game\steamtours\blr8800\content"
 mklink /j thelab_atlas_balloon_room "d:\Work\Game\steamtours\thelab_atlas_balloon_room\content"
 mklink /j thelab_cindercone "d:\Work\Game\steamtours\thelab_cindercone\content"
@@ -85,6 +78,7 @@ mklink /j byteframe9 "d:\Work\Game\steamtours\byteframe9-Secluded_Sward\content"
 mklink /j byteframe10 "d:\Work\Game\steamtours\byteframe10-Enchanter's_Edifice\content"
 mklink /j byteframe11 "d:\Work\Game\steamtours\byteframe11-Jaded_Jail\content"
 mklink /j byteframe12 "d:\Work\Game\steamtours\byteframe12-Trashy_Turnstyle\content"
+mklink /j byteframe13 "d:\Work\Game\steamtours\byteframe13-Xenian_Xenology\content"
 
 cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
 mkdir blr8800
@@ -346,6 +340,36 @@ mklink tools_asset_info.bin D:\Work\Game\steamtours\byteframe12-Trashy_Turnstyle
 mklink demoheader.tmp D:\Work\Game\steamtours\byteframe12-Trashy_Turnstyle\game\demoheader.tmp
 
 cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir byteframe13
+cd byteframe13
+mklink addoninfo.txt D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\addoninfo.txt
+mklink /j materials D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\materials
+mklink /j soundevents D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\soundevents
+mklink /j maps D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps
+mklink /j scripts D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\scripts
+mklink /j sounds D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\sounds
+mklink /j panorama D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\panorama
+mklink tools_thumbnail_cache.bin D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\tools_thumbnail_cache.bin
+mklink tools_asset_info.bin D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\tools_asset_info.bin
+mklink demoheader.tmp D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\demoheader.tmp
+
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir byteframe13_maps
+cd byteframe13_maps
+mkdir maps
+cd maps
+mklink byteframe13_gamma.los D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_gamma.los
+mklink byteframe13_gamma.vpk D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_gamma.vpk
+mklink byteframe13_iota.los D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_iota.los
+mklink byteframe13_iota.vpk D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_iota.vpk
+mklink byteframe13_kappa.los D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_kappa.los
+mklink byteframe13_kappa.vpk D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_kappa.vpk
+mklink byteframe13_theta.los D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_theta.los
+mklink byteframe13_theta.vpk D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_theta.vpk
+mklink byteframe13_zeta.los D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_zeta.los
+mklink byteframe13_zeta.vpk D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps\byteframe13_zeta.vpk
+
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
 mkdir russells_lab
 cd russells_lab
 mklink readonly_tools_asset_info.bin V:\russells_lab\readonly_tools_asset_info.bin
@@ -386,26 +410,65 @@ cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environme
 mkdir robotrepair
 cd robotrepair
 mklink readonly_tools_asset_info.bin V:\robotrepair\readonly_tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\robotrepair\tools_thumbnail_cache.bin
 mklink addoninfo.txt V:\robotrepair\addoninfo.txt
 mklink /j aperture V:\robotrepair\aperture
 mklink /j materials V:\robotrepair\materials
 mklink /j models V:\robotrepair\models
 mklink /j particles V:\robotrepair\particles
+mklink /j maps V:\robotrepair\maps
+mklink /j shaders V:\robotrepair\shaders
+mklink /j sounds V:\robotrepair\sounds
+mklink /j soundevents V:\robotrepair\soundevents
+mklink /j scripts V:\robotrepair\scripts
+
+mklink /j ambientcg "d:source\ambientcg"
+mklink /j lewd "d:\source\lewd"
+mklink /j freepbr "d:source\freepbr"
+mklink /j scans "d:source\scans"
+mklink /j props "d:source\scans"
 
 cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
-mkdir brazzers
-cd brazzers
-mklink tools_asset_info.bin V:\brazzers\tools_asset_info.bin
-mklink tools_thumbnail_cache.bin.bin V:\brazzers\tools_thumbnail_cache.bin
-mklink addoninfo.txt V:\brazzers\addoninfo.txt
-mklink /j materials V:\brazzers\materials
-mklink /j models V:\brazzers\models
+mkdir lewd
+cd lewd
+mklink tools_asset_info.bin V:\lewd\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\lewd\tools_thumbnail_cache.bin
+mklink addoninfo.txt V:\lewd\addoninfo.txt
+mklink /j materials V:\lewd\materials
+mklink /j models V:\lewd\models
 
 cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
-mkdir baddragon
-cd baddragon
-mklink tools_asset_info.bin V:\baddragon\tools_asset_info.bin
-mklink tools_thumbnail_cache.bin.bin V:\baddragon\tools_thumbnail_cache.bin
-mklink addoninfo.txt V:\baddragon\addoninfo.txt
-mklink /j materials V:\baddragon\materials
-mklink /j models V:\baddragon\models
+mkdir scans
+cd scans
+mklink tools_asset_info.bin V:\scans\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\scans\tools_thumbnail_cache.bin
+mklink addoninfo.txt V:\scans\addoninfo.txt
+mklink /j materials V:\scans\materials
+mklink /j models V:\scans\models
+
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir ambientcg
+cd ambientcg
+mklink tools_asset_info.bin V:\ambientcg\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\ambientcg\tools_thumbnail_cache.bin
+mklink addoninfo.txt V:\ambientcg\addoninfo.txt
+mklink /j materials V:\ambientcg\materials
+mklink /j models V:\ambientcg\models
+
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir freepbr
+cd freepbr
+mklink tools_asset_info.bin V:\freepbr\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\freepbr\tools_thumbnail_cache.bin
+mklink addoninfo.txt V:\freepbr\addoninfo.txt
+mklink /j materials V:\freepbr\materials
+mklink /j models V:\freepbr\models
+
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir props
+cd props
+mklink tools_asset_info.bin V:\props\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\props\tools_thumbnail_cache.bin
+mklink addoninfo.txt V:\props\addoninfo.txt
+mklink /j materials V:\props\materials
+mklink /j models V:\props\models

@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\resourcecompiler.exe" -nominidumps -pauseiferrors -v -i %1

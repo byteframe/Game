@@ -1,0 +1,14 @@
+soundscapes_manifest
+{
+	"file"		"scripts/soundscape_byteframe13_alpha.txt"
+	"file"		"scripts/soundscape_byteframe13_beta.txt"
+	"file"		"scripts/soundscape_byteframe13_gamma.txt"
+	"file"		"scripts/soundscape_byteframe13_delta.txt"
+	"file"		"scripts/soundscape_byteframe13_epsilon.txt"
+	"file"		"scripts/soundscape_byteframe13_zeta.txt"
+	"file"		"scripts/soundscape_byteframe13_eta.txt"
+	"file"		"scripts/soundscape_byteframe13_theta.txt"
+	"file"		"scripts/soundscape_byteframe13_kappa.txt"
+	"file"		"scripts/soundscape_byteframe13_iota.txt"
+	"file"		"scripts/soundscapes_valve.txt"
+}

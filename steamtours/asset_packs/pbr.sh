@@ -1,4 +1,4 @@
-# select addon (lebedevartem,sharetextures_extra,sharetextures,freepbr,ambientcg)
+# select addon (lebedevartem,sharetextures_extra,sharetextures,freepbr(micarta-knife-handle-pbr),ambientcg)
 if [ -z ${1} ]; then
   echo "no arguments"
   exit 1

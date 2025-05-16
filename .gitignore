@@ -23,3 +23,5 @@ tools_thumbnail_cache.bin
 **/_vrad3
 steamtours/thelab_*/content/materials/models/thelab/*.png
 steamtours/thelab_*/content/models/thelab/*.dmx
+steamtours/asset_packs/scripts/source1import-0.3.12
+steamtours/asset_packs/scripts/no_vtf-4.2.0

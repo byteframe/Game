@@ -9,7 +9,7 @@ Layer0
 	F_BLEND_NORMALS 1
 
 	//---- Lighting ----
-	F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
+	////F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
 
 	//---- Specular ----
 	F_SPECULAR 1
@@ -20,14 +20,14 @@ Layer0
 	g_vTexCoordOffset "[0.000 0.000]"
 	g_vTexCoordScale "[1.000 1.000]"
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
-	////TextureColor "materials/___COLOR___"
+	TextureColor ___COLOR0___
 
 	//---- Cube Map ----
 	g_flCubeMapBlur "0.000"
 	g_flCubeMapBrightness "1.000"
   
 	//---- Normal Map ----
-	////TextureNormal "materials/___NORMAL___"
+	TextureNormal ___NORMAL0___
   
 	//---- Lighting ----
 	g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
@@ -36,8 +36,8 @@ Layer0
 	g_flDirectionalLightmapStrength "1.000"
 	g_flMetalness "0.000"
 	g_vReflectanceRange "[0.000 1.000]"
-	////TextureAmbientOcclusion "materials/___AO___"
-	////TextureGlossiness "materials/___GLOSS___"
+	////TextureAmbientOcclusion
+	TextureGlossiness ___GLOSS0___
 	TextureLayerReflectance "materials/default/default_refl.tga"
 
 	//---- Layer 1 ----
@@ -48,9 +48,9 @@ Layer0
 	g_flLayer1Max "1.000"
 	g_vLayer1BorderColor "[1.000000 1.000000 1.000000 0.000000]"
 	g_vLayer1Scale "[1.000 1.000]"
-	////TextureLayer1Color "materials/___COLOR1___"
-	////TextureLayer1Glossiness "materials/___GLOSS1___"
-	////TextureLayer1Normal "materials/___NORMAL1___"
+	TextureLayer1Color ___COLOR1___
+	TextureLayer1Glossiness ___GLOSS1___
+	TextureLayer1Normal ___NORMAL1___
 	TextureLayer1Reflectance "materials/default/default_refl.tga"
 	////TextureLayer1RevealMask "materials/___HEIGHT1___"
 
@@ -61,10 +61,10 @@ Layer0
 	g_flLayer2BorderStrength "0.500"
 	g_flLayer2Max "1.000"
 	g_vLayer2BorderColor "[1.000000 1.000000 1.000000 0.000000]"
-	g_vLayer2Scale "[1.5 1.5]"
-	////TextureLayer2Color "materials/___COLOR2___"
-	////TextureLayer2Glossiness "materials/___GLOSS2___"
-	////TextureLayer2Normal "materials/___NORMAL2___"
+	g_vLayer2Scale "[1.000 1.000]"
+	TextureLayer2Color ___COLOR2___
+	TextureLayer2Glossiness ___GLOSS2___
+	TextureLayer2Normal ___NORMAL2___
 	TextureLayer2Reflectance "materials/default/default_refl.tga"
 	////TextureLayer2RevealMask "materials/___HEIGHT2___"
 }

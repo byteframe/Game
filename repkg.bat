@@ -1,0 +1,3 @@
+L:\\steamcmd\\steamcmd.exe +login USERNAME +workshop_download_item 431960 %~1 +quit
+C:\\Users\\byteframe\\Downloads\\RePKG.exe extract -o     l:\\steamcmd\steamapps\workshop\content\431960\%~1 l:\\steamcmd\steamapps\workshop\content\431960\%~1\scene.pkg
+C:\\Users\\byteframe\\Downloads\\RePKG.exe extract -t -o  l:\\\steamcmd\steamapps\workshop\content\431960\%~1 l:\\steamcmd\steamapps\workshop\content\431960\%~1\materials\

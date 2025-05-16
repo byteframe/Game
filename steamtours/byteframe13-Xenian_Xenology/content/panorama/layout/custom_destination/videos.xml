@@ -1,0 +1,15 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/base_styles.vcss_c" />
+    <include src="s2r://panorama/styles/youtube_player.vcss_c" />
+  </styles>
+  <script> 
+    OnLoad = () =>
+      $("#Browser").SetURL("https://steamcommunity.com/sharedfiles/youtube/PLL1y_Uc2Gw/?autoplay=0"); 
+  </script>
+  <ClientUIDialogPanel>
+    <Panel class="Container" onload="OnLoad()" style="opacity-mask: url('file://{images}/custom_destination/video_short_opacity.tga');">
+      <HTML id="Browser" embedded="true" />
+    </Panel>
+  </ClientUIDialogPanel>
+</root>

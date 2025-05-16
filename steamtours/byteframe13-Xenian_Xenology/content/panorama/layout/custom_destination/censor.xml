@@ -1,0 +1,10 @@
+<root>
+	<script>
+    (() =>
+      CustomNetTables.GetTableValue("censor", "enable") == undefined && 
+        SteamUGC.GetUserItemVote("923650498", r => ( $.Msg(r),
+          GameEvents.SendCustomGameEventToServer("censor_event", { "key1" : r.voted_up == "1" ? "Enable" : "Disable" } ))))();
+	</script>
+  <ClientUIDialogPanel class="InWorldInfoPanel"></ClientUIDialogPanel>
+</root>
+

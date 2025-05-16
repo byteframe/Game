@@ -1,0 +1,13 @@
+That's the same atrocious aftershave you wore in court. I smell dogs, and pine, and oil behind that shaving lotion. It's something a child would select isn't it? Is there a child in your life, Will?
+
+Ok finished my level with the hla environment assets. Hey look it's a Hannibal SteamVR memory palace. I finished it in about a week, but I had the wall template half sorted out from some practice before. Not bad, but I wasted alot of time doing stuff that didn't work out. The fireplace in particular is a failure.
+
+Learned that Shift+C brings up the physics diddler, and I was able to place physics props much better now. I tried to have the first few rows of each bookshelf be full of physics props but it was all fubar when I turned the simulation on, and many objects causes problems, the books mainly. So the shelves are all static.
+
+Placed my first handful of material overlays. On the glass, you see? They have large bounds when viewed as editor objects, but once I sorted it out I had them facing on side of the glass one way and vice versa. Looks fine. Oh wait, no the physics props render on top. Damnit. I quess I'll have to delete a bunch, and move them to the side.
+
+I spent most of my time trying to use the new lightmapping system, but I didn't work for me. It would often fail with 'invalid triables' or out of memory errors, and would often crash my steam and vr. I hope my computer is ok. Tried various transformations of the lightmap bias block, but it would either crash, or fail on anything but 512x512 'fast quality'. I managed a 1024 Standard build a few times, but it looked weird and I couldn't iterate on it. So I went back to vertex lighting. I had to delete and add my lights again at the point to make it not show up all screwed up and dark in-game.
+
+Having edge looped geometry is nice for arranging the larger surfaces that get subdivided, and the effort to get more square-ish transitions, but they seem to darken more at the edge of actual mesh geometry more than the subdivided polygons. It looks bad but I'll just keep it as is for posterity. Overall lighting looks ok, and better than I could manage with the new system, but I did have high hopes of it just being a button push and getting good lighting. Oh well.
+
+So this is Hannibal cell Season 3 in Steam Tours, but after the Combine invaded and lots of time past and his teeth went. Because of the bug I can't see a dentist.

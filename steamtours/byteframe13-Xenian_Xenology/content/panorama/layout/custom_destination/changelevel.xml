@@ -1,0 +1,14 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/base_styles.css" />
+		<include src="file://{resources}/styles/info_panels.css" />
+	</styles>
+  <script>
+    OnChangelevelButton = () => GameEvents.SendCustomGameEventToServer("changelevel_event", { "key1" : "changelevel" });
+  </script>
+	<ClientUIDialogPanel>
+    <Button onactivate="OnChangelevelButton()" class="DestinationButton" style="width: 100%; height: 100%; margin: 20px; ">
+      <Label text="⬆️" />
+    </Button>
+	</ClientUIDialogPanel>
+</root> 

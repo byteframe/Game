@@ -1,0 +1,83 @@
+"soundscape_byteframe13_beta"
+{
+    "playlooping"
+    {
+        "volume"        "0.15"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/beta.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "origin"        "0, 114, 0"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/waterfeature.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "origin"        "246, 508, 79"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/water_burstpipe_loop.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.1"
+        "pitch"         "100"
+        "origin"        "131, 500, -40"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/fly_swarm_loop.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.0"
+        "pitch"         "100"
+        "origin"        "87, 908, -41"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambience/generator_truckexterior_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.15"
+        "pitch"         "100"
+        "origin"        "0, 588, 153"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/cap_2_boiler_rough1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.25"
+        "pitch"         "100"
+        "origin"        "59, 205, -18"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/bbq_sizzle_loop.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "time"          "0.25, 1.5"
+        "soundlevel"    "SNDLVL_45dB"
+        "origin"        "0, 1054, 44"
+        "rndwave"
+        {
+            "wave"          "sounds/fish_flap/fish_flap_01.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_02.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_03.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_04.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_05.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_06.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_07.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_08.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_09.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_10.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_11.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_12.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_13.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_14.vsnd"
+        }
+    }
+}

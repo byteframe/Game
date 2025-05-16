@@ -1,0 +1,41 @@
+<root>
+  <script>
+    files = [
+      [ "LUZ1E Leisure System Mix (2020)", "3USvXAKYn7E", 4002 ],
+      [ "DJ MELL G ⧸ September 29 ⧸ 4pm-5pm", "H95wq0-tOnY", 7612 ],
+      [ "Modern Electro Ghetto Tech Mix", "kdlCCPWerL0", 11203 ],
+      [ "JUICY GANG - Viikatory B2B Newinfluenzer HÖR - Nov 22 ⧸ 2022", "KTAFcpbImHY", 14626 ],
+      [ "Mechatronica - Shedbug ⧸ October 22 ⧸ 8pm-9pm", "0wEK8yFPhVI", 18036 ],
+      [ "DJ Mell G Live From Power Life in Ukraine Charity Stream", "ZImTAplRTG4", 21385 ],
+      [ "JUICY GANG - DJ MELL G HÖR - Aug 23 ⧸ 2022", "ol9zYl0hZ4M", 24702 ],
+      [ "Alienata HÖR - Mar 8 ⧸ 2022", "wCkLlW7cOsk", 28011 ],
+      [ "OXI Invites - Cyan85 ⧸ April 3 ⧸ 7pm-8pm", "HL1h4DbA92Q", 31315 ],
+      [ "Luz1e HÖR - May 31 ⧸ 2022", "xownFi4Q918", 34588 ],
+      [ "Cyan85 HÖR - Feb 2 ⧸ 2023", "RGthaGWy8sE", 37842 ],
+      [ "JUICY GANG - DJ MELL G HÖR - Feb 22 ⧸ 2022", "6qzUoeG1HVk", 41087 ],
+      [ "JUICY GANG - DJ MELL G HÖR - Mar 28 ⧸ 2023", "yD3BNSDaPo8", 44330 ],
+      [ "AIAIAI - Luz1e B2B Solid Blake HÖR - May 8 ⧸ 2022", "idXNfIO3i9s", 47793 ],
+      [ "Borshch Magazine - Helena Hauff ⧸ December 30 ⧸ 6pm-7pm", "C44XpjGO38A", 51372 ],
+      [ "Mind Controlled Rectifier - Cyan 85 ⧸ August 25 ⧸ 5pm-6pm", "1Tflr-WPhhA", 54691 ],
+      [ "Midnight Shift X Voitax - Cyan85 ⧸ December 14 ⧸ 3pm-4pm", "BpHmqio5r7w", 58201 ],
+      [ "Jensen Interceptor 100% Chrome mix", "3OiPU4bekpw", 61931 ],
+      [ "The Crave Festival - DJ MELL G HÖR - Jun 3 ⧸ 2023", "9o6NGOwJ8Z4", 67182 ],
+      [ "Modern Electro Ghetto Tech Mix pt. 2", "lM9pblEtM2I", 70018 ],
+      [ "Helena Hauff BBC Guest Mix 2023", "PJG9gnkYkzA", 71639 ],
+      [ "Quest - Cyan85 B2B DJ MELL G ⧸ November 26 ⧸ 4pm-5pm", "-ABWo6TQ7eQ", 74956 ],
+      [ "DJ Mell G Boiler Room： Sydney", "SElXUJe_ai4", 78441 ],
+      [ "HÖR x Bau Mich Auf - DJ Stingray 313 HÖR - Aug 19 ⧸ 2022", "782sSMwrunE", 84320 ],
+      [ "Helena Hauff - Essential Mix of the Year - Essential Mix (320k HQ) - 12⧸30⧸2017", "qEsWePrJZsY", 91497 ] ],
+    OnLoad = () =>
+      (update = (i = 6, d = ((_d = new Date()) => _d.getUTCHours() * 3600 + _d.getUTCMinutes() * 60 + _d.getUTCSeconds())(), h = '', _h = files.find(e => d < e[2])) => (
+        h != _h && (
+          $("#Browser").SetURL("https://steamcommunity.com/sharedfiles/youtube/" + _h[1] + "/?autoplay=1"),
+          $.Schedule(i/2, () => $("#Browser").RunJavascript("seekToTime(" + +((_h[2]-d)+(i/2+1)) + ", true);"))),
+        $.Schedule(i, () => update(i, undefined, _h))))(); 
+  </script>
+  <ClientUIDialogPanel>
+    <Panel onload="OnLoad()">
+      <HTML id="Browser" embedded="true" />
+    </Panel>
+  </ClientUIDialogPanel>
+</root>

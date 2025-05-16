@@ -1,0 +1,411 @@
+I bought 64 gigabytes (wow!) of RAM (randumb access mummery), which is like a kind of food for your computer, and now vrad3 doesnt crash when building 8k lightmaps. Other than 2 junk and 2 fully outdoor environments, I remastered the rest, again.
+This isn't (intended to be) self promotion nor do I recommend you actually boot these up in your goggles (though they do look better and if you had to pick one it would be #9), but just some kind of self reward system to cap off what amounted to being much more work than I thought, and of course, reapplying new skills (lighting, texturing, etc) to old releases is very satisifying.
+It takes like 18 hours to build each map (though you can more or less do two at a time) and I thought that would be fine and I would just hit a button on each, but of course I wanted to do more rehabs and wasn't disciplined enough to check every little thing before building, so I wasted alot of build time. I certainly got my fill of the '3d or media asset takes forever to render and you have to adjust your whole work/mindspace to deal with it' aspect of digital media production just before everything starts using raytracing hardware. CS2 vrad does this I'm told. Still, I could have been much more diligent and avoid many, many wasted full 8k final builds. I've learned I don't have to upgrade my CPU cooler though, so that's positive.
+I also did my best to codify all the things I learned from the steamvr lightmapper into an expansion of the lighting wiki article. The instructional tone clashes somewhat with the more technical breakdown of the original contents, and it was written by someone whose basically never touched the HLA tools, but I think it's still very useful as there are alot of caveats using vrad3.
+https://developer.valvesoftware.com/wiki/SteamVR/Environments/Adding_Lighting#Lightmapping
+I'm too lazy (atm) to actually make new screenshots, not that you could tell from most of them the difference between 4k and 8k, but I think it is worth it. I might have missed by chance by updating the submissions to get proper before/after, shucks. Anyway, a lot of really minute shadow detail does show up in the higher resolution and it seems like indrect and AO all gets nicer. Switching some lights to fully baked will also help performance.  I think it was worth it because I really like the look of nice lightmaps both for VR experiences and in regular games  -- incidentally, the original Rage now works on Steam Deck. Thanks for reading!
+
+================================================================================ #X
+ERRATA: turret volume should be raised all around, #3 doesnt seem to have fortune bug
+================================================================================ #1
+rebuild lightmaps with 8k resolution
+reapplied and scaled down plaster+carpet textures
+deinstance frames for wood texturing and soft lines (and fix bottom of door frame)
+hide steamvr dome prop on the wall
+correct steamvr panel plasment
+revamp lighting in closet and bevel wall edges
+bake green light under desk
+animate bird
+turn off biasing
+================================================================================ #2
+yellow plaster scale down
+prop fiddling,
+convert laser pistol to tool
+fix top of window frames
+fixed some living room props not touching floor
+fixed another bird painting
+overlap main window cube maps on height
+rebuild lightmaps with 8k resolution
+removed last hidden teleport entity fixing inability to for the user to teleport
+heavily reworked all geometry, splits and texutring to fix remaining errors with added curves and increased polygon counts throughout
+baked and relight kitchen area, losing spooky flicker
+further reduce outside black mesh and remove more trees
+set ambient boosts 1.5 on pool lights, 1.25 on upper passageway
+moderate prop shuffling, reductions, and color grading
+aggressive campaign to rebias everything
+ERRATA=(bad texturing at pool wall inset), busted fallout particle, broken steamvr panel(s)
+================================================================================ #4
+softed glass aluminum
+heavy bias tuning
+sun was set to baked in vmap but not in release
+cubemaps unfurled for reflections on glass
+more reflective glass for house
+revert to blocklight on back of house
+rebuild lightmaps with 8k resolution
+baked (turning off flicker) and fixed angle of garden light
+backside blocklight>concrete retextur with biasing to -8),
+new concrete roof texture now biased
+grass displacement, down scale, and bias -3>-4,
+reduce water particles,
+removed ambient_color = "35 35 48 255" on directional,
+other minor bias adjusts
+new geo rework on bar table
+shrunk all shelve objects and other minor prop fiddling
+softeded red valve
+bulged brown beams
+adjusted beveling and split at top window outsides
+moved some props out of of the way inside to avoid some weird shadowing 
+ERRATA=water particle could be smaller, cubemap overlap for glass, fully baked sun removes too much character but it could be done if wood floor still pops, no fortune particle
+================================================================================ #5
+rebuild lightmaps with 8k resolution
+turned off bathroom flicker and bake light
+fix some outside blocklights
+adjust position of hanging weed near bathroom door 
+higher stalagtite res
+minor prop fiddling
+adjust reach of lightmap space mesh to include marble window sill
+brighter sun 0.8 to 1.2 and tint adjustment
+ERRATA=hanging prop still broken, and might need to double check adjacent wall heights (leak) and/or nearest (in height) blocklight strip, busted fortune particle, broken vr panels
+================================================================================ #8
+rebuild lightmaps with 8k resolution
+redo kitchen scene texturing and texutring,
+ensure+sweeten lighting now baked and
+reconfigure directional and like priority
+trimmed selection sets
+added critters
+meaningful and fixed biasing collates
+large campaign to buldg and curve window frames,
+cut outside dust particles and terrain subd in half
+missing flower pot now upscaled
+deinstance and merge walls for seamless retexturing,
+moderate prop fiddling and grading
+(re?)added steamvr tv panels in bar tvs
+added new flower pot mesh and hover junkers statue at red curve
+added more music (HIA)
+ERRATA=ceiling should be split for cubemaps, scale down plaster
+================================================================================ #9
+fix bird painting z fighting with the wall fml twice
+scale down new grass thing a bit
+increased voluem of turret sound event to 0.3
+smootherpuddle displacement
+rebuild lightmaps with 8k resolution
+enabled rocking critter,
+fixed gap in terrarium window side curve
+rehabbed all window frames and glass ensuring proper reflection/lighting origina assingments
+widened and simplified window beams to floor at concrete ingress in computer entrance
+reverted to dual cubemaps in computer hall
+rescaled cubemaps to present correctly in player visible glass reflections
+soft-harded gold beams and beveled metal beams in cave
+softened concrete at inside windows and outside bevel as well as brick+concrete top ribs
+minor prop fiddling with some added bushes
+disabled cubemap render on splotchy water pool
+added additional displacement mesh using translucent foliage materials for ground detail
+ripped new portugese_laurel texture to disable wind
+beveled and retextured concrete flower beds
+increased volume of music to 0.2>>0.8
+ERRATA: z-fighting on laurel bush ground mesh
+================================================================================ #10
+rebuild lightmaps with 8k resolution
+scaled down plaster
+softed gold edges on railing
+biasing adjustments and corrections
+adjusted moon tint
+spreaded outside trees and other minor prop fiddling
+now with symlinks all set im trying some kinda of seperate baked build here and fully testing vrad3 on the symlinks
+================================================================================ #11
+rebuild lightmaps with 8k resolution
+changed indirect light multiplier on dark side from 0.8 to 1.2
+used darker material under grate
+safe now static prop
+connected (hastily) lines on either side of book shelve
+removed soft normal line at wall>trim intersection
+bias now -1 on floor faces
+fix some marked texture errors and reapplied with scale down
+================================================================================ #12
+ERRATA: insane flickering. Cant I change some property on the light? maybe it doesnt do this shining on non props, missing texture at drink cups
+
+
+
+
+
+Hi all, I'm working on a big SteamVR project, I hope I can complete it sometime this decade (and might try to form a collection of shots and post those here soon), but in the meantime I took a break to 'relight' and then 'remaster' my current crop of steam environments, (around a dozen). https://steamcommunity.com/id/byteframe/myworkshopfiles/?p=3
+
+Here are the change notes collated into one paste:  https://paste.ee/p/npDwv  Soonish, these updated vmaps and such will be in my github, alongside with the original versions.
+
+Originally, it was going to be a quick and dirty switch from the old vertex lighting system (all my lights were dynamic and expensive, and tons of surfaces were subdivided simply to increase light-triangle density, yeesh) to a fully baked setup with lightmaps. I was set to complete it all in a week or so. If that was a simple change I might not have gone as far as I did making modifications, but I kept learning new things, and snags and complications that forced me work around them in particular ways. Originally I was intent on not doing much work beyond just 'converting' the lighting, but overtime, I eventually went whole hog on just about everything: relighting, total geometry reworks, advanced texture applications/projections, prop distribution, critters, music, beveling and edge normals, etc etc. I didn't go crazy with overlays because the standard crop of steamvr assets doesn't include many. Other than a few additions, I stayed within the current arrangement of asset pack dependencies.
+
+The limitations of this engine (steamvr is old) were front and center, but I like having that clear set of constraints when I'm making something, and working around that. For instance, did you know that baked lights in SteamVR don't have a specular component? You probably did know that, because you read the wiki, but I learned the hard way that my reading comprehension is low. I also learned that foliage props don't cast shadows, or rather, is it props with translucent materials maybe? Furthermore, materials that use the $treesway parameter, will go wild if you attempt to bake lighting on them, so you have to disable it on those props. Turns out you need a thousand gigabytes of ram to build an 8k lightmap, so I had to then do 4k builds with aggressive biasing, another thing I had to learn. Mat_luxels doesn't work so you have to check lightmap density after it's all built. etc etc. One positive note, is that you can build maps outside of hammer with a batch file that calls resourcecompiler (then you move the VPK from your temp folder to the game), so I was able to interate fairly quickly and keep the lightmapper fed. (my room is warm)
+
+There's probably some other weird issues and inconsistencies I could warn mappers about, but generally, the rule of thumb is that everything you see in the editor is being presented in it's fully 'dynamic' form, and you have to use the RT lighting previews to find problems with shadows, etc. I would try to match the before and after by, say, disabling specular rendering on the baked lights, so what I was seeing in the editor would be closer to what would result. On the plus side, 'Fast' builds of even 4k can be pumped out quickly enough, and then you can more easily see distribution of luxels. At the end of the day I was dealing with the age old gamedev problem of which lights are important and which aren't. I kept the environment/suns per pixel, so all the foliage would cast shadows, but internal lights were mostly baked (so no specular, limited shadowing etc) save for various times when I didn't want to break some showpiece area, or it was wise to fill a whole space with just one per pixel light that would do alot of work.
+
+I wasn't really too keen on doing 'before and after' screenshots (lazy), so I'm sorry I don't have much for you to look at here. (Maybe I'll be forced to wrap up a bunch of content into a portfolio some day, but I doubt that). I was generally pleased with the visual upgrades I was forging in the editor. These maps still don't look spectacular in the headset (especially with the Quest 2 on a midrange graphics card), and overall, my work is still 'bad', but I really learned alot about lighting and the final stages of beautification. It's hard to tell because of perf inconsistency (my computer sucks) but I'd like to think each level is raising at least one auto fidelity level along with looking better. The only one that is mostly the same and still runs bad is level 3, the others all recieved quite the sprucing up. My best one still is #9.
+
+I want to try porting one of these levels to Alyx, as it features a more robust lighting and material system that won't hamper me like on SteamVR, so I could learn alot, but I don't plan to release them there. Before that though, since I finally finished this month or so of 'old work' I can finally allow myself to play Bonelab.
+
+edit: screw it, I made a demo reel (might as well): https://twitter.com/byteframe/status/1590430049832165376 I'm sorry it's on twitter.
+
+--------------------------------------------------------------------------------
+01------------------------------------------------------------------------------ byteframe1 (2 baked point lights, 2 dynamic point lights) || NOVIS, NOPHYSICS
+--------------------------------------------------------------------------------
+music tracks added to soundscape: gosub...
+changed closet light direct light to baked (no specular)
+triple shadow resolution of main light and softened/peached, adjusted closet to taste as well
+curtailed blinker lights (disabling specular, angle, range, indirect) under bed and at sentry (the latter now hidden)
+added light map volume (no importance volume was present)
+moderate prop fiddlings with an emphasis on reducing color contrast (the attribute)
+fixed missing hand model in closet
+resized cubemap volumes and added one for closet (now extracted)
+changed color of closet lamp so light shining through it isn't red
+removed subd, then fully reworked geometry (68000 to 1200 triangles)
+used soft normals on a ceiling to wall smoothness bevel and in some slant lines in the ceiling
+instanced, improved and synchronized look (woody) of door and window frames
+scaled down textures for detail and changed closet wall to olive
+simple light bias adjustments with selection sets
+--------------------------------------------------------------------------------
+02------------------------------------------------------------------------------ byteframe2 (1 dynamic point light, 13 baked point lights) || NOPHYSICS
+--------------------------------------------------------------------------------
+music tracks added to soundscape: metamatics-mind mushing git (#6,2,5)
+added tf2 asset pack dependancy (clash with steamtours on bathroom sink model)
+building map with full visibility solve
+remove small light effect setups (under bed, and pool candles)
+set all lights to baked, (except for main room), losing many flickers
+adjust light colors (etc) to be less ugly and vomit colored
+replaced light importance volume with lightmap volume
+removed subdivision on house meshes, reduced on outer terrain
+dissolved superflous lines per house segments
+later, reworked entire geometry solving many problems and improving sections (stairs, etc) making it fully edge-loop compatible per initial design
+beveled/softened wall corners where possible
+remade outdoors into a much simpler black mesh with very few remaining foliage props
+reform subdivision and displacement on pool rock
+extended pool area loft and made wall extrusion for tf2 tank prop
+greatly reduce the number of props and rearrange for better visual clarity
+set tentacles, birds, and other critters to dynamic and animated and adjust their placement for effect
+reapplied textures for consistency and resolution, changing concrete on wall supports
+fixed swaying folliage props (due to lighting issues with $treesway) by setting most of them to dynamic (later changed to static with BakeLighting=off)
+disabled teleport mesh to allow free player movement
+ERRATA: weird window shell mesh, and seal critter isn't animating
+--------------------------------------------------------------------------------
+03------------------------------------------------------------------------------ byteframe3 (1 dynamic sun) || NOVIS, NOPHYSICS
+--------------------------------------------------------------------------------
+music track added to soundscape: motion control - digits 3 (biosphere remix)
+reduced yellowness of environmental light
+fully split up ground mesh for cubemaps
+remove unused addon dependancy
+--------------------------------------------------------------------------------
+04------------------------------------------------------------------------------ byteframe4 (1 dynamic sun, 1 dynamic flicker, 11 baked point lights) || NOVIS
+--------------------------------------------------------------------------------
+music tracks added to soundscape: exaltics (various)
+fully reworked geometry with some structured terminations at rock moat to concrete interactions, with also some overzealous quad work on the left side
+simplify assembly of garden and other meshes
+add another pane to glass panes in house with silver inside trim and made skylights better
+bevel-devolve-inset on edges of house mesh with soft normals
+moderate instancing (bench supports, flower pots beams, some glass)
+use soft normals on beams and various insets/bevels
+centered cubemaps, hide one for pool, and lowered cubemap on roof a touch
+rebase map contents to origin and adjust soundscape
+removed subdivision on all surfaces and repaint on mesh as needed
+increase prominese of rocks, tuft, grass and screw it take alot more liberties with foliage
+collected offending folliage props (seemingly everything this time) to not BakeLighting instead of setting them as dynamic
+changed two picture frames to prop static so they dont clip with geometry
+reapply and change some textures
+disable shadows on fly infested right side light prop
+various other prop fiddlings mostly for positioning and brightness but some nice fixes like string lights
+juiced moonlight color/brightness
+swapped and repositioned insect particle effects for lighting and effect
+set all point lights to baked (no specular), save for showpiece at vine hedge, negating some minor flickers
+turn off physics on many props for their shadow castings
+remade ugly plant bowl, pimp cone planter, and increase fidelity of other such mesh props
+thickened and flourished non-house glass panes
+bolster lighting for comfort
+fully bevels wood floors and went for a double bevel on concrete
+adjust lightmap bias (with prejudgicez) and record with selection sets
+added dog snoring to the soundscape (woof)
+ERRATA: (marked) line skew (just that one?) is likely the result of getting cheeky on the left side, I'd need to loop the 2 doubles and find something on the right to do with them, (had to revert a day of failed line ups, I think its done)
+        (marked) wasnt brave enough to attempt a 2 light at the time of this build on right side fly showcase
+				(unbuilt) nudged wood steps over (seems like an old bug, yeesh)
+				(unbuilt) underside faces present in green flower pot, atm
+				tone touch fog a touch?
+--------------------------------------------------------------------------------
+05------------------------------------------------------------------------------ byteframe 5 (1 dynamic sun, 1 flicker, 14 baked point lights) || NOPHYSICS, NOVIS
+--------------------------------------------------------------------------------
+music tracks added to soundscape: Ruxpin Avalon #3,8,9,13
+make door handle animate along with door in office
+rebase map contents to align with origin and adjusted soundscape
+resized and retextured style of marble floor
+small ammounts of prop adjustments and flourishment
+ensured alignment of mesh segments with decent amounts of general optimisation
+improve look and layout of aquarium, stairs, touch up usual custom meshes, untangle central mesh, add more texture detail to pillars, etc
+change to lightmapvolume and hide importance
+set all lights to baked (no specular) (except for bathroom strobe), losing stove and campfire flicker
+add trick skylight into central area and try to angle sun for more flood with more skybox tint (etc?) for a look of dusk time
+collect props with disabled shadows that wont bake (are are unwanted to)
+adjust lights and assosicated props to be more diffuse, warm, showcasey etc
+align many textures against a common plane for easy and improved retexturing
+redo and embelish outdoor area and smooth displacement interactions
+interconncet, repaint and displace cave area
+removed unneccessary subdivision for lighting (not much this time, and was used mostly on important faces) and whole of chimney, door stops
+disolved superflous lines mainly from the grid for vertex lighting
+made roof solid and thickened faces in vestibule (and safety extension) and bathroom with light_block tool material
+fixed that missing hand model (again)in bathroom
+instanced pillars, wall meshes, etc
+used soft normals on poles and various other places, bevel glass panes with aluminum
+deleted random stray meshes not junked including a copy of fireplace rail
+redo fire exstinguisher cabinet prop to mesh conversion
+move playerstart into vestibule
+applied block light tool texture to non visible faces facing the outside of the map
+remade fireplace (including unncessary double sided glasse panes), splitting into 3 topologies
+reworked curved window section with assosicate fixups to pillars and hidden inner faces
+heavily reworked office wall opening curve
+split a small number of inside wall segments in half per cubemaps
+corrected glass railing inside being transparent
+fix missing faces on vr panel mesh conversion and reapply releavant metal texture
+adjust lightmap bias and with best effort attempts to record with selection sets (reduce center mass)
+gave critters and other dynamic objects life and added avians near outside
+added outside brick material where needed and continued to tuck away visible ceiling faces from the player
+remade office curve to be 16 steps
+ERRATA: light can leak under/around wall meshed, but only does so inside once'
+        double lamps only using one light
+				office bookshelve not against the wall
+--------------------------------------------------------------------------------
+06------------------------------------------------------------------------------ byteframe6 (1 dynamic sun) || NOVIS
+--------------------------------------------------------------------------------
+music tracks added to soundscape: Biosphere Cirque #2-6
+change to lightmapvolume and hide importance
+unsubbed non ground meshes
+remake platform mesh
+reduced elevator trigger volume size and set DelayBeforeReset from 1 to 10
+fixed roof leafyplantcluster01 from swaying and adjust size/placement of grass
+--------------------------------------------------------------------------------
+07------------------------------------------------------------------------------ byteframe 7 (no lights) || NOLIGHTS, NOPHYSICS, NOVIS
+--------------------------------------------------------------------------------
+music tracks added to soundscape: The Ace of Clubs (various) (Luke Vibert)
+fixed hand model again
+change watermelons to static props
+remove errant soundscape entity pointing to nothing
+correct elevator time from '5s' to '10'
+--------------------------------------------------------------------------------
+08------------------------------------------------------------------------------ byteframe8=(1 dynamic sun, 14 baked points lights) || NOPHYSICS, NOVIS
+--------------------------------------------------------------------------------
+music track added to soundscape (Higher Intelligence Agency - EZ Wider)
+reapply textures with some scale downs and improvements
+centered all cubemaps
+smoothed normals of bar table and window black metal
+adjusted kitchen lighting for contrast
+adding punchout for light in middle barrier
+set indoor lights to baked (no specular) losing almost nonvisible kitchen flicker {*}
+positioned enviornmental light for flood in main rooms, and adjust for 'rising dawn'
+change spotlights to use 4 smaller lights with flashlight cookie
+change to lightmapvolume and hide importance
+moved junk selection sets away
+fiddle with playerstart
+removed all none earth/paint subdivision
+dissolved superflous lines (only the floor was grid based) fixing many broken lines and stray faces
+painted non visible faces of building hull with blocklight tool texture
+reorganize floor and wall mesh segments to fix many errors and play to cubemaps
+squish wall lines at floor and ceiling
+making floor thick seems to stop light coming from under wall meshes (instead, wall meshes should have BL bottoms)
+remade roof now thick with blocklight, segmented, on the indside, with 1 inch extension, and also curl around the building more to avoid being seen by the player
+moderate amount of instancing for house mesh components
+heavy ammounts of (mostly 'lossless') mesh work, cleanup, organization and some rearchitechturing
+enough of a full rework on booth frame mesh to be worthy of note (and window metal)
+delete other side of windows seemingly not hit by sun, also seperate by 2 inches in front where it is
+removed cubemap in sitting area and by exit door
+reapplied fairly small set of map textures, with wood trim peel similar to #10
+fix swaying with space farm weeds in main living wall
+adjust lightmap bias and with best effort attempts to record with selection sets (not much and ceiling is default) *
+imported 2 new destinations tools from #9
+bevel concrete window openings and diner arch
+--------------------------------------------------------------------------------
+09------------------------------------------------------------------------------ byteframe9=(1 dynamic sun, 7 baked points lights) || NOVIS *LATEST PREFABS*
+--------------------------------------------------------------------------------
+music track added to soundscape (Spacetime Contiuum, Low Frequency Inversion Field)
+added candy emporium and winter peak asset pack dependancies (below steamvr tours) (clash with steamtours on refirdigerator model)
+remove unneccessary subd mostly used on large faces
+move hidden junk meshes aside and prune sets
+moderate dissolving of lines, not generally the result of vertex lighting concerns
+add blocklight hull to outside portions of house meshes and some inner surfaces as well
+adding or ensured building thickness where it was in inapprproriately double sided
+ensured windows were split on each side, and attempted to get them attached to their relevant cubemap
+fix water puddle texture scaling, and waterfall marble, and do general reapplications of all other materials
+heavy mesh reworking and organization through concrete structure with adjusted splits for cubemaps and optimization (same with sidewalk)
+hefty amount of instancing on fences, poles, glass, etc, (and flower pots) with attendent optmizations
+use only one cubemap for whole of computer area and also remove cubemap in glass walkway, and use just one larger cubemap for outside
+import/collate latest improved mesh prefabs and increase poly count on both flower pots
+embellish ground displacement (one higher level of subd) and add inset moat around concrete
+replace solar panel railings with tf2 electric fence and add+rearrangment large skybox props
+softened edge normals on valvo and beams, sidewalk, and more
+with/after some neccessary adjustments (near securtity room at the end mainly), apply a beveling stratedgy to the building meshes
+changed chrome texture on pagado to black metal
+make more objects physics props (typically that start being lit from the sun)
+add lots of silly animated birds on the outside
+hefty prop flourisng (with two new packs) and include desintations tools objects from #8 (including making the airbursh and color dealie)
+set indoor lights to baked (no specular), use the 4x setup from #8 in bedroom, hide importance entity, and add lightmap volume (specifically tailored to hug the indoors)
+apply light bias stratedgy that is stingy with the central outdoor, marked in sets
+imported portal 2 trigger turret setup from #4
+add light flares in appropriate places
+used same ceiling height setup in both red buildings
+ERRATA: rocking critter has no default animations
+        couldn't merge larger meshes, so missing bevel @ 2.83's on the inside (was able to do curved sections) (gave up but otherwise geo looks tight) see also edge straights
+--------------------------------------------------------------------------------
+10------------------------------------------------------------------------------ byteframe10=(1 dynamic sun, 8 baked points lights) || NOPHYSICS, NOVIS
+--------------------------------------------------------------------------------
+removed tp marker at ladder to enable free teleporting
+increase size of skylight opening to juice specular from moon and set a more appropriate nightime tint (version 3)
+remove vrad2 subd (on brick texture), but not much else
+set indoor lights to baked, hide importance entity, and add lightmap volume
+adjust appearance of lights to be less harsh and more warm indoors
+large amounts of (easy) mesh optimization and unnccessary line removal (mostly used to build my original creation of the mesh, that 4x grid system I used on bookshelves throughout)
+use blocklight texture on existing house mesh hulls and for non visible surfaces inbetween meshes on the indoors
+instanced the majority of house mesh pieces
+adjust position of barrier prop atop ladder
+increase sound volume of aria to 2.5 from 0.8
+reapply various textures with some scaling adjustments, use of projection etc and use edge normals as neccessary
+hide all but one of my unique wood pilons on the lower floor and instanced/rotate the survivor
+fully seperate tile mesh portions of lower floor
+add blocklight texture to top of stone tile mesh but otherwise keep that untouched.
+dissolved lines from grid and those originally added for texturing in bottom marble tile section
+removed faces at door that used the invisible tool texture (for whatever reason)
+fixed incorrect gloss map in stucco1 material
+apply edge normals to smooth out pillars
+fixed usual suspects for plant sway and try to re-embellish living wall to work deal with lighting there
+adjust lightmap bias and with best effort attempts to record with selection sets
+--------------------------------------------------------------------------------
+11------------------------------------------------------------------------------ byteframe11=(2 dynamic point lights) || NOVIS
+--------------------------------------------------------------------------------
+reapply textures with edge normals on the first faces of the bronze/gold steming from wall (didn't instance for best wrap)
+change wood and bronze texture
+adjust light position/angle and radius to avoid surface overlap
+lower light brightness on dark side and add warmth tinge to both
+movde (then deleted) junk including delete two old lightmap boxes
+add lightmap volume {*}
+remove lighting subd used on the main faces of wall meshes as well as ceiling and floor
+disolved superflous lines used for lighting or leftovers
+set decals to only apply to window meshes
+rework geometry by removing non visible faces and merging vertices for trapazoidal corner quads instead of the prior square structure (real good now)
+fully stich glass pain, and split into two instances
+split floor and ceiling and adjust scaling
+instanced the floor grate model props (unknown if this helps)
+set high up plant props to not fake lighting because sway
+adjust lightmap bias and with best effort attempts to record with selection sets (mostly ceiling)
+--------------------------------------------------------------------------------
+12------------------------------------------------------------------------------ byteframe12=(1 dynamic sun + 1 baked point light) || NOVIS
+--------------------------------------------------------------------------------
+un-override tools/blocklight material (export as is from core.vpk) because my published access packs have clashing tools materials in them (broken, bad, noooo, what to do?)
+remove slipstreamed contents from robot repair and rely on those published asset packs
+set sun to dynamic and mute color slightly (shouldn't have been baked, like the showcase flicker in train, though that remains baked)
+fix dirt overlay trashing a car prop
+remove lighting subd and lines on concrete structures or other unccessary features
+lower subd level on outer terrain one level and in flower pots
+use block light texture on non-visible ground and building faces
+simplify beveling on building structures to avoid scaffolding lines
+general mesh work for some hidden faces and combinations
+instance dod pillars and stucco wall segments
+soft edge loops on house mega bevel
+hide importance volume and add lightmap block inset 64 units from the edge of the map and as high as the building
+set animated combine soldier far away to be static
+hug central ground displacement around buildings
+adjust roof to avoid minor leaks around the edges
+do some mild texture reapplication and fix ups
+retextured outside glass panes
+adjust lightmap bias (nbd for this map tho) and with best effort attempts to record with selection sets
+added tf2 large beam trim around central house

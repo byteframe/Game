@@ -1,0 +1,135 @@
+"soundscape_byteframe13_alpha"
+{
+    "playlooping"
+    {
+        "volume"        "0.2"
+        "pitch"         "50"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/alpha.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.55"
+        "pitch"         "100"
+        "time"          "0, 1.5"
+        "soundlevel"    "SNDLVL_50dB"
+        "origin"        "-2, -264, -89"
+        "rndwave"
+        {
+            "wave"          "sounds/alien_monster_eat_01.vsnd"
+            "wave"          "sounds/alien_monster_eat_02.vsnd"
+            "wave"          "sounds/alien_monster_eat_03.vsnd"
+            "wave"          "sounds/alien_monster_eat_04.vsnd"
+            "wave"          "sounds/alien_monster_eat_05.vsnd"
+            "wave"          "sounds/alien_monster_eat_06.vsnd"
+            "wave"          "sounds/alien_monster_eat_07.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.85"
+        "pitch"         "100"
+        "time"          "0.25, 1.5"
+        "soundlevel"    "SNDLVL_45dB"
+        "origin"        "-287, 642, 11"
+        "rndwave"
+        {
+            "wave"          "sounds/chicken_cluck_01.vsnd"
+            "wave"          "sounds/chicken_cluck_02.vsnd"
+            "wave"          "sounds/chicken_cluck_03.vsnd"
+            "wave"          "sounds/chicken_cluck_04.vsnd"
+            "wave"          "sounds/chicken_cluck_05.vsnd"
+            "wave"          "sounds/chicken_cluck_06.vsnd"
+            "wave"          "sounds/chicken_cluck_07.vsnd"
+            "wave"          "sounds/chicken_flap_01.vsnd"
+            "wave"          "sounds/chicken_flap_02.vsnd"
+            "wave"          "sounds/chicken_flap_03.vsnd"
+            "wave"          "sounds/chicken_flap_04.vsnd"
+            "wave"          "sounds/chicken_flap_05.vsnd"
+            "wave"          "sounds/chicken_struggle_start.vsnd"
+            "wave"          "sounds/chicken_flap_call_01.vsnd"
+            "wave"          "sounds/chicken_flap_call_02.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "1.75"
+        "pitch"         "100"
+        "origin"        "-429, 643, 45"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/log_fire_close.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.75"
+        "pitch"         "100"
+        "origin"        "-473, 573, 120"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/ambient/ac_vent1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "5.0"
+        "pitch"         "100"
+        "origin"        "-206, 50, 1"
+        "soundlevel"    "SNDLVL_45dB"
+        "wave"          "sounds/ambient/cap_3_inside_computer_bank1.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "time"          "0.25, 1.5"
+        "soundlevel"    "SNDLVL_45dB"
+        "origin"        "-447, 357, 38"
+        "rndwave"
+        {
+            "wave"          "sounds/fish_flap/fish_flap_01.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_02.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_03.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_04.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_05.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_06.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_07.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_08.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_09.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_10.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_11.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_12.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_13.vsnd"
+            "wave"          "sounds/fish_flap/fish_flap_14.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "5.0"
+        "pitch"         "100"
+        "origin"        "206, 50, 1"
+        "soundlevel"    "SNDLVL_45dB"
+        "wave"          "sounds/ambient/cap_3_inside_telephone_bank1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.5"
+        "pitch"         "100"
+        "origin"        "0, 16, 0"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/waterfeature.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "origin"        "-590, 901, 64"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/ambient/cap_2_boiler_rough1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "origin"        "376, 371, 100"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/ambient/cap_2_boiler_rough1.vsnd"
+    }
+}
