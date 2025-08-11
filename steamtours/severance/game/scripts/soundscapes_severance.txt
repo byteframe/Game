@@ -1,0 +1,18 @@
+"soundscape_severance"
+{
+    "playlooping"
+    {
+        "volume"        "1.0"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_None"
+        "wave"          "after_hours_bjghb3oefjy.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.4"
+        "pitch"         "100"
+        "origin"        "64, 290, 0"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/waterfeature.vsnd"
+    }
+}

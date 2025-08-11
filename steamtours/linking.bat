@@ -1,3 +1,5 @@
+exit /b
+
 cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\content\steamtours_addons
 
 mklink /j source1import_ageofchivalry "d:source\source1import_ageofchivalry"
@@ -349,6 +351,7 @@ mklink /j maps D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\maps
 mklink /j scripts D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\scripts
 mklink /j sounds D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\sounds
 mklink /j panorama D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\panorama
+mklink /j resourcemanifests D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\resourcemanifests
 mklink tools_thumbnail_cache.bin D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\tools_thumbnail_cache.bin
 mklink tools_asset_info.bin D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\tools_asset_info.bin
 mklink demoheader.tmp D:\Work\Game\steamtours\byteframe13-Xenian_Xenology\game\demoheader.tmp
@@ -397,7 +400,6 @@ cd "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environm
 mkdir driftwood_htc
 cd driftwood_htc
 mklink readonly_tools_asset_info.bin V:\driftwood_htc\readonly_tools_asset_info.bin
-mklink addoninfo.txt V:\driftwood_htc\addoninfo.txt
 mklink /j materials V:\driftwood_htc\materials
 mklink /j models V:\driftwood_htc\models
 mklink /j panorama V:\driftwood_htc\panorama
@@ -411,7 +413,6 @@ mkdir robotrepair
 cd robotrepair
 mklink readonly_tools_asset_info.bin V:\robotrepair\readonly_tools_asset_info.bin
 mklink tools_thumbnail_cache.bin V:\robotrepair\tools_thumbnail_cache.bin
-mklink addoninfo.txt V:\robotrepair\addoninfo.txt
 mklink /j aperture V:\robotrepair\aperture
 mklink /j materials V:\robotrepair\materials
 mklink /j models V:\robotrepair\models
@@ -422,53 +423,148 @@ mklink /j sounds V:\robotrepair\sounds
 mklink /j soundevents V:\robotrepair\soundevents
 mklink /j scripts V:\robotrepair\scripts
 
-mklink /j ambientcg "d:source\ambientcg"
 mklink /j lewd "d:\source\lewd"
-mklink /j freepbr "d:source\freepbr"
-mklink /j scans "d:source\scans"
-mklink /j props "d:source\scans"
-
 cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
 mkdir lewd
 cd lewd
 mklink tools_asset_info.bin V:\lewd\tools_asset_info.bin
 mklink tools_thumbnail_cache.bin V:\lewd\tools_thumbnail_cache.bin
-mklink addoninfo.txt V:\lewd\addoninfo.txt
 mklink /j materials V:\lewd\materials
 mklink /j models V:\lewd\models
 
+mklink /j scans "d:source\scans"
 cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
 mkdir scans
 cd scans
 mklink tools_asset_info.bin V:\scans\tools_asset_info.bin
 mklink tools_thumbnail_cache.bin V:\scans\tools_thumbnail_cache.bin
-mklink addoninfo.txt V:\scans\addoninfo.txt
 mklink /j materials V:\scans\materials
 mklink /j models V:\scans\models
 
-cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
-mkdir ambientcg
-cd ambientcg
-mklink tools_asset_info.bin V:\ambientcg\tools_asset_info.bin
-mklink tools_thumbnail_cache.bin V:\ambientcg\tools_thumbnail_cache.bin
-mklink addoninfo.txt V:\ambientcg\addoninfo.txt
-mklink /j materials V:\ambientcg\materials
-mklink /j models V:\ambientcg\models
-
-cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
-mkdir freepbr
-cd freepbr
-mklink tools_asset_info.bin V:\freepbr\tools_asset_info.bin
-mklink tools_thumbnail_cache.bin V:\freepbr\tools_thumbnail_cache.bin
-mklink addoninfo.txt V:\freepbr\addoninfo.txt
-mklink /j materials V:\freepbr\materials
-mklink /j models V:\freepbr\models
-
+mklink /j props "d:source\props"
 cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
 mkdir props
 cd props
 mklink tools_asset_info.bin V:\props\tools_asset_info.bin
 mklink tools_thumbnail_cache.bin V:\props\tools_thumbnail_cache.bin
-mklink addoninfo.txt V:\props\addoninfo.txt
 mklink /j materials V:\props\materials
 mklink /j models V:\props\models
+
+mklink /j ambientcg "s:\ambientcg"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir ambientcg
+cd ambientcg
+mklink tools_asset_info.bin V:\ambientcg\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\ambientcg\tools_thumbnail_cache.bin
+mklink /j materials V:\ambientcg\materials
+
+mklink /j polyhaven "s:\polyhaven"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir polyhaven
+cd polyhaven
+mklink tools_asset_info.bin V:\polyhaven\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\polyhaven\tools_thumbnail_cache.bin
+mklink /j materials V:\polyhaven\materials
+
+mklink /j freepbr "d:\source\freepbr"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir freepbr
+cd freepbr
+mklink tools_asset_info.bin V:\freepbr\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\freepbr\tools_thumbnail_cache.bin
+mklink /j materials V:\freepbr\materials
+
+mklink /j lebedevartem "d:\source\lebedevartem"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir lebedevartem
+cd lebedevartem
+mklink tools_asset_info.bin V:\lebedevartem\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\lebedevartem\tools_thumbnail_cache.bin
+mklink /j materials V:\lebedevartem\materials
+
+mklink /j texturecan "s:\texturecan"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir texturecan
+cd texturecan
+mklink tools_asset_info.bin L:\texturecan\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin L:\texturecan\tools_thumbnail_cache.bin
+mklink /j materials L:\texturecan\materials
+
+mklink /j school_props "d:\source\school_props"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir school_props
+cd school_props
+mklink tools_asset_info.bin V:\school_props\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\school_props\tools_thumbnail_cache.bin
+mklink /j materials V:\school_props\materials
+mklink /j models V:\school_props\models
+mklink /j particles V:\school_props\particles
+
+mklink /j themask_scenebuild_megapack "d:\source\themask_scenebuild_megapack"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir themask_scenebuild_megapack
+cd themask_scenebuild_megapack
+mklink tools_asset_info.bin L:\themask_scenebuild_megapack\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin L:\themask_scenebuild_megapack\tools_thumbnail_cache.bin
+mklink /j materials L:\themask_scenebuild_megapack\materials
+mklink /j models L:\themask_scenebuild_megapack\models
+
+mklink /j sbmp "D:\source\sbmp"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir sbmp
+cd sbmp
+mklink tools_asset_info.bin L:\sbmp\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin L:\sbmp\tools_thumbnail_cache.bin
+mklink /j materials L:\sbmp\materials
+mklink /j models L:\sbmp\models
+
+mklink /j hlvr "S:\hlvr"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir hlvr
+cd hlvr
+mklink tools_asset_info.bin L:\hlvr\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin L:\hlvr\tools_thumbnail_cache.bin
+mklink /j aperture L:\hlvr\aperture
+mklink /j dev L:\hlvr\dev
+mklink /j internationalstage L:\hlvr\internationalstage
+mklink /j materials L:\hlvr\materials
+mklink /j models L:\hlvr\models
+mklink /j particle L:\hlvr\particle
+mklink /j particles L:\hlvr\particles
+mklink /j scenes L:\hlvr\scenes
+mklink /j soundevents L:\hlvr\soundevents
+mklink /j soundstacks L:\hlvr\soundstacks
+
+mklink /j polyhaven "s:\polyhaven_models"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir polyhaven_models
+cd polyhaven_models
+mklink tools_asset_info.bin L:\polyhaven_models\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin L:\polyhaven_models\tools_thumbnail_cache.bin
+mklink /j materials L:\polyhaven_models\materials
+mklink /j models L:\polyhaven_models\models
+
+mklink /j afrika_quarry_assets "D:\source\afrika_quarry_assets"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir afrika_quarry_assets
+cd afrika_quarry_assets
+mklink tools_asset_info.bin V:\afrika_quarry_assets\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin V:\afrika_quarry_assets\tools_thumbnail_cache.bin
+mklink /j materials V:\afrika_quarry_assets\materials
+mklink /j models V:\afrika_quarry_assets\models
+
+mklink /j severance "D:\Work\Game\steamtours\severance\content"
+cd C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons
+mkdir severance
+cd severance
+mklink tools_asset_info.bin D:\Work\Game\steamtours\severance\game\tools_asset_info.bin
+mklink tools_thumbnail_cache.bin D:\Work\Game\steamtours\severance\game\tools_thumbnail_cache.bin
+mklink /j maps D:\Work\Game\steamtours\severance\game\maps
+mklink /j materials D:\Work\Game\steamtours\severance\game\materials
+mklink /j models D:\Work\Game\steamtours\severance\game\models
+mklink /j scripts D:\Work\Game\steamtours\severance\game\scripts
+mklink /j soundevents D:\Work\Game\steamtours\severance\game\soundevents
+mklink /j sounds D:\Work\Game\steamtours\severance\game\sounds
+mklink addoninfo.txt D:\Work\Game\steamtours\severance\game\addoninfo.txt
+mklink dev_addoninfo.txt D:\Work\Game\steamtours\severance\game\dev_addoninfo.txt
+mklink demoheader.tmp D:\Work\Game\steamtours\severance\game\demoheader.tmp

@@ -3,23 +3,20 @@ if [ -z "${C}" ]; then
   exit 0
 fi
 cd "${C}"
-if [ -z "${1}" ]; then
-  A=zzz_test
-else
-  A=${1}
-fi
+ADDON=zzz_test
+[ ! -z "${1}" ] && ADDON=${1}
 
-"${W}"/no_vtf-4.2.0/no_vtf.exe --ldr-format "tiff|tiff" --hdr-format pfm ${A}/materials/
-touch "${A}"/gameinfo.txt
+"${W}"/no_vtf-5.1.1/no_vtf.exe --ldr-format "tiff|tiff" --hdr-format pfm ${ADDON}/materials/
+touch "${ADDON}"/gameinfo.txt
 
 TYPE=materials
-python "${W}"/source1import-0.3.12/utils/${TYPE}_import.py -i "${C}"/${A} -e "${C}"/${A}
-"${G}"/../bin/win64/resourcecompiler.exe -nominidumps -r -i "C:/Program Files (x86)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/${A}/${TYPE}/*"
+python "${W}"/source1import-0.3.12/utils/${TYPE}_import.py -i "${C}"/${ADDON} -e "${C}"/${ADDON}
+"${G}"/../bin/win64/resourcecompiler.exe -nominidumps -r -i "C:/Program Files (x86)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/${ADDON}/${TYPE}/*"
 
 TYPE=models
-python "${W}"/source1import-0.3.12/utils/${TYPE}_import.py -i "${C}"/${A} -e "${C}"/${A}
-"${G}"/../bin/win64/resourcecompiler.exe -nominidumps -r -i "C:/Program Files (x86)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/${A}/${TYPE}/*"
+python "${W}"/source1import-0.3.12/utils/${TYPE}_import.py -i "${C}"/${ADDON} -e "${C}"/${ADDON}
+"${G}"/../bin/win64/resourcecompiler.exe -nominidumps -r -i "C:/Program Files (x86)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/${ADDON}/${TYPE}/*"
 
 TYPE=particles
-python "${W}"/source1import-0.3.12/utils/${TYPE}_import.py -i "${C}"/${A} -e "${C}"/${A}
-"${G}"/../bin/win64/resourcecompiler.exe -nominidumps -r -i "C:/Program Files (x86)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/${A}/${TYPE}/*"
+python "${W}"/source1import-0.3.12/utils/${TYPE}_import.py -i "${C}"/${ADDON} -e "${C}"/${ADDON}
+"${G}"/../bin/win64/resourcecompiler.exe -nominidumps -r -i "C:/Program Files (x86)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/${ADDON}/${TYPE}/*"

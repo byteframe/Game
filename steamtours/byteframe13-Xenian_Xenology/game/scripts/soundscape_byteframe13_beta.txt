@@ -31,6 +31,20 @@
         "soundlevel"    "SNDLVL_50dB"
         "wave"          "sounds/fly_swarm_loop.vsnd"
     }
+    "playrandom"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "time"          "4, 9"
+        "soundlevel"    "SNDLVL_55dB"
+        "origin"        "-223, 182, -51"
+        "rndwave"
+        {
+            "wave"          "sounds/props/salien/pickup_01.vsnd"
+            "wave"          "sounds/props/salien/pickup_02.vsnd"
+            "wave"          "sounds/props/salien/pickup_03.vsnd"
+        }
+    }
     "playlooping"
     {
         "volume"        "1.0"

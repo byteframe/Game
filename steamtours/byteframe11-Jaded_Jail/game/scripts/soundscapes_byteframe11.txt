@@ -8,4 +8,12 @@
         "soundlevel"    "SNDLVL_145dB"
         "wave"          "sounds/OyBgx8TwB3Q.vsnd"
     }
+    "playlooping"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "origin"        "42, -241.5, 80"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/ac_vent1.vsnd"
+    }
 }

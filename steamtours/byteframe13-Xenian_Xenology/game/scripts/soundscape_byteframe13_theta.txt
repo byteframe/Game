@@ -197,7 +197,7 @@
     {
         "volume"        "1.25"
         "pitch"         "100"
-        "origin"        "650, 2414, 0"
+        "origin"        "650, 2533, 0"
         "soundlevel"    "SNDLVL_55dB"
         "wave"          "sounds/radio_cajun.vsnd"
     }

@@ -1,0 +1,771 @@
+WARNING: No 'models_ModelDocGameData' FGD was specified in the 'ModelDoc' section of gameinfo.gi.
+Found 1 file(s) matching nonrecursive specification "c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles.vmap"
+c:\program files (x86)\steam\steamapps\common\steamvr\tools\steamvr_environments\content\steamtours_addons\severance\maps\z_wiles.vmap:
+Initializing script VM...
+...done
+Loading scripted entity classes...
+...done
+Error loading resource file "models/industrial/materials/microphone_active.vmat_c" (Error: ERROR_FILEOPEN)
+ - Next resource references external resource 5FBB9B78639FEB1F (_bakeresourcecache/maps/z_wiles_baked/env_cubemap_2137.vtex)
+ - Next resource references external resource 0BDA4EB46A724E16 (_bakeresourcecache/maps/z_wiles_baked/env_light_probe_volume_2137.vtex)
+ - Next resource references external resource 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+ - Next resource references external resource 62365F51442F538A (materials/plastic013b.vmat)
+ - Next resource references external resource FF7D84F44A4B07B9 (materials/dev/primary_black.vmat)
+ - Next resource references external resource 3C3EB9175BF3C31B (materials/plastic/plastic_006.vmat)
+ - Next resource references external resource 74CFACE3BFBA032D (models/props/office_leather_chair_flannigan_531bff2f2f884547b941cde26e7d3270.vmdl)
+ - Next resource references external resource 98F3A55FD3F3E212 (materials/carpet014.vmat)
+ - Next resource references external resource 35392723E879A361 (materials/fabric019.vmat)
+ - Next resource references external resource E4CC5FFC8800C470 (materials/metal/metal_006.vmat)
+ - Next resource references external resource 8285C614AD55AD64 (materials/metal/paint_002.vmat)
+ - Next resource references external resource BC7D89D74615B404 (materials/metal055a.vmat)
+ - Next resource references external resource 3B9859E82CACD16A (materials/models/props_items/plate_01_aluminium_001.vmat)
+ - Next resource references external resource E2115437E73FC6AE (materials/metal011.vmat)
+ - Next resource references external resource 52178367E9A521E1 (materials/metal010.vmat)
+ - Next resource references external resource 8B0480138F15778B (materials/tools/toolsblocklight.vmat)
+ - Next resource references external resource 2B1AB87C66283E2F (materials/metal/silver_001.vmat)
+ - Next resource references external resource 0C51E6E041911F31 (materials/metal/dark_metal_scratched001.vmat)
+ - Next resource references external resource CF1022154A4DC6EA (materials/metal/black_silver_001.vmat)
+ - Next resource references external resource F00882C4805679D7 (materials/wood026.vmat)
+ - Next resource references external resource DBBABB0347178CAE (models/props/interior_deco/tabletop_pen03.vmdl)
+ - Next resource references external resource B3F9DEFAD88C8110 (materials/metal/metal_beam001.vmat)
+ - Next resource references external resource 063A30649AB1C2D4 (materials/page13.vmat)
+ - Next resource references external resource E346A3AB5BE6A530 (materials/metal/chrome_002.vmat)
+ - Next resource references external resource 896FA595C336A261 (materials/misc/carpet001_blue.vmat)
+ - Next resource references external resource 9B6CB3A0C09A9D27 (materials/page14.vmat)
+ - Next resource references external resource 0875AC23556FB85B (materials/cloth/cloth_001.vmat)
+ - Next resource references external resource 59EED402B11EBE60 (materials/dev/primary_white_emissive.vmat)
+ - Next resource references external resource 8381567926D057A8 (particles/atmospherics/plasterfx_combined.vpcf)
+ - Next resource references external resource EC8AC4B6AF269CFF (materials/water/pavilion_water002.vmat)
+ - Next resource references external resource 83C5AA6A57CE510F (particles/candyshop/env/fx_env_radiator_steam_01_c_water.vpcf)
+ - Next resource references external resource 53BBA8D6350FED1D (models/props/water_cooler_12_mb_fea47b4738774f238b2914b8852c7bb1.vmdl)
+ - Next resource references external resource 17B9F6F5473FB1D5 (models/props/interior_deco/tabletop_papercup.vmdl)
+ - Next resource references external resource 407AA13DFA219C9D (particles/candyshop/env/fx_env_waterdrip_01.vpcf)
+ - Next resource references external resource 8200D24C5E0F0AA7 (materials/glass/glass_002.vmat)
+ - Next resource references external resource 14A35E310E2085AE (models/props/interior_deco/tabletop_papercup_broken.vmdl)
+ - Next resource references external resource 50F3576FFCBD3889 (materials/lumonrecyles.vmat)
+ - Next resource references external resource 4F99F7E5F328A0BB (materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_illum.vmat)
+ - Next resource references external resource 350E64EFB037A7B8 (models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vmdl)
+ - Next resource references external resource FB2031270DAB2FBB (models/polyhaven/desk_lamp_arm_01.vmdl)
+ - Next resource references external resource A453EC317D0E4F4E (models/props/interior_deco/tabletop_pen01.vmdl)
+ - Next resource references external resource 20063576DBF1CF49 (materials/page3.vmat)
+ - Next resource references external resource A93A2B64740DE1EA (materials/page2.vmat)
+ - Next resource references external resource F8EBB5D30A67D01B (_bakeresourcecache/maps/z_wiles_baked/env_cubemap_2933.vtex)
+ - Next resource references external resource 569A4889E747A392 (_bakeresourcecache/maps/z_wiles_baked/env_light_probe_volume_2933.vtex)
+ - Next resource references external resource AD79CD8F36BD4478 (materials/metal/metal_scratched002_beige.vmat)
+ - Next resource references external resource B0030D43AA46E75E (aperture/models/materials/cabinet_dials_col.vmat)
+ - Next resource references external resource E166A36E909D37BA (materials/metal/brass_001.vmat)
+ - Next resource references external resource 0FC526B885093C06 (models/industrial/basestation_microphone001.vmdl)
+ - Next resource references external resource 41EC5A1FFD6E5AF8 (materials/wood016.vmat)
+Building map "maps\z_wiles"...
+
+
+... Building 'world'
+
+Ray Tracing Environment
+Building ray trace environment...
+Wrote C:\Users\BYTEFR~1\AppData\Local\Temp\steamtours_addons\severance\maps\z_wiles.rte
+Wrote C:\Users\BYTEFR~1\AppData\Local\Temp\steamtours_addons\severance\maps\z_wiles.viscfg
+Done (0.17 seconds)                    
+ - Next resource references external resource 1CDD601EB548545C (maps/z_wiles/world_visibility.vvis)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/world_visibility.vvis:
+Building map visibility
+
+Loading kd-trees
+Successfully read C:\Users\BYTEFR~1\AppData\Local\Temp\steamtours_addons\severance\maps\z_wiles.rte
+Successfully unserialized ray tracing environment.
+Convert RTE with 86635 triangles in 0.10s
+
+Building view cells
+Loaded 0 LOS hints from c:\program files (x86)\steam\steamapps\common\steamvr\tools\steamvr_environments\game\steamtours_addons\severance\maps\z_wiles.los! (0.0 seconds)
+Loaded 0 LOS hints from c:\program files (x86)\steam\steamapps\common\steamvr\tools\steamvr_environments\content\steamtours_addons\severance\maps\z_wiles.los! (0.0 seconds)
+Wrote vis resource 391 bytes bytes
+Visibility complete in 0.10s.
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\world_visibility.vvis_c
+
+Creating World
+
+Bake Lighting
+Build: pc64 Jan  4 2021 11:41:02
+CPathTraceSceneInfoBase - Loading light cookie spotlight2:2
+Light Importance Tree... [0....1....2....3....4....5....6....7....8....9....] Done (0.71 seconds)
+WARNING! No lightmap resolution volumes set for this geometry!
+Whilst we still can process lightmaps for this map, texel resolution of the lightmap will be sub-optimal.
+Please add a mesh enclosing the player navigable space with toolslightmapres.vmat applied to it.
+CPathTraceSceneInfoBase - Loading light cookie spotlight2:2
+Preprocessing 53 meshes and computing charts [0....1....2....3....4....5....6....7....8....9....] Done (1.47 seconds)
+Packing 11271 UV charts onto atlas...
+  Pass 1 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (4.41 seconds) + (7.231086)
+  Pass 2 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (5.24 seconds) - (10.846628)
+  Pass 3 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (4.21 seconds) - (9.038857)
+  Pass 4 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (6.90 seconds) + (8.134971)
+  Pass 5 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (8.17 seconds) + (8.586913)
+  Pass 6 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (7.48 seconds) + (8.812884)
+  Pass 7 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (8.30 seconds) + (8.925870)
+  Pass 8 of 8 ->[0....1....2....3....4....5....6....7....8....9....] Done (3.62 seconds) - (8.982363)
+Mesh with material materials/plastic013b.vmat is extremely large in lightmap (10.1%)
+Mesh with material materials/carpet014.vmat is extremely large in lightmap (10.0%)
+==== Baking 8192 x 8192 lightmap ====
+SetupTexels   [0....1....2....3....4....5....6....7....8....9....] Done (2.11 seconds)
+VRAD3 (local) [0....1....2....3....4....5....6....7....8....9....] Done (8909.56 seconds)
+VRAD3 Combine
+  VRAD3 - Distributed Lighting Tool
+  Copyright (c) Valve Corporation, All rights reserved.
+  Build: pc64 Jan  4 2021 11:40:39
+  WD: C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons\severance\_vrad3
+  Command: vrad3.exe -script script.vrad3 -entrypoint lm_combine -threads 6 -indir results/outputs -noassert 
+  Num Threads: 6
+  Lightmap: 8192x8192 in 16 2048x2048 blocks
+  Loading lightmap_packing_geometry.dat... Done (0.00 seconds)
+  Writing normal.exr... (1.2s).
+  Writing tangent.exr... (1.1s).
+  Writing sh_irradiance_noisy.exr... (1.3s).
+  Writing lightmap_noisy.exr... (1.4s).
+  Writing ao_noisy.exr... (1.4s).
+  Removing fireflies... found 33408 fireflies in 0.8s
+  OIDN Filter (lg) ao [0....1....2....3....4....5....6....7....8....9....] Done (39.86 seconds)
+  OIDN Filter (sm) ao [0....1....2....3....4....5....6....7....8....9....] Done (0.49 seconds)
+  OIDN Filter (lg) irradiance [0....1....2....3....4....5....6....7....8....9....] Done (39.64 seconds)
+  OIDN Filter (sm) irradiance [0....1....2....3....4....5....6....7....8....9....] Done (0.45 seconds)
+  OIDN Filter (lg) sh radiance c0+ [0....1....2....3....4....5....6....7....8....9....] Done (40.00 seconds)
+  OIDN Filter (sm) sh radiance c0+ [0....1....2....3....4....5....6....7....8....9....] Done (0.48 seconds)
+  OIDN Filter (lg) sh radiance c1+ [0....1....2....3....4....5....6....7....8....9....] Done (40.20 seconds)
+  OIDN Filter (sm) sh radiance c1+ [0....1....2....3....4....5....6....7....8....9....] Done (0.46 seconds)
+  OIDN Filter (lg) sh radiance c1- [0....1....2....3....4....5....6....7....8....9....] Done (39.78 seconds)
+  OIDN Filter (sm) sh radiance c1- [0....1....2....3....4....5....6....7....8....9....] Done (0.45 seconds)
+  OIDN Filter (lg) sh radiance c2+ [0....1....2....3....4....5....6....7....8....9....] Done (39.74 seconds)
+  OIDN Filter (sm) sh radiance c2+ [0....1....2....3....4....5....6....7....8....9....] Done (0.45 seconds)
+  OIDN Filter (lg) sh radiance c2- [0....1....2....3....4....5....6....7....8....9....] Done (39.87 seconds)
+  OIDN Filter (sm) sh radiance c2- [0....1....2....3....4....5....6....7....8....9....] Done (0.49 seconds)
+  OIDN Filter (lg) sh radiance c3+ [0....1....2....3....4....5....6....7....8....9....] Done (40.25 seconds)
+  OIDN Filter (sm) sh radiance c3+ [0....1....2....3....4....5....6....7....8....9....] Done (0.48 seconds)
+  OIDN Filter (lg) sh radiance c3- [0....1....2....3....4....5....6....7....8....9....] Done (39.83 seconds)
+  OIDN Filter (sm) sh radiance c3- [0....1....2....3....4....5....6....7....8....9....] Done (0.45 seconds)
+  Dilating lighting over invalid regions...
+  Writing direct_light_indices.exr... (1.1s).
+  Writing direct_light_scalars.exr... (1.0s).
+  Writing lightmap.exr... (1.4s).
+  Writing ao.exr... (1.4s).
+  Writing shradiance_r.exr... (1.1s).
+  Writing shradiance_g.exr... (1.1s).
+  Writing shradiance_b.exr... (1.1s).
+  Writing sh_irradiance.exr... (1.4s).
+  Wrote lightmap_luxel_result_info.dat.
+  Writing lightmap_chart_color.exr... (1.1s).
+  Total Time: 390.5 seconds
+(391.25 seconds)
+ProcessReceivedLightingPackets [0....1....2....3....4....5....6....7....8....9....] Done (101.68 seconds)
+ResolveLightIndexAssignment [0....1....2....3....4....5....6....7....8....9....] Done (14.38 seconds)
+AmeliorateBlockCompressionArtefacts [0....1....2....3....4....5....6....7....8....9....] Done (0.15 seconds)
+Fixing Seams
+Weld Unique Vertices [0....1....2....3....4....5....6....7....8....9....] Done (0.06 seconds)
+Build Adjacency      [0....1....2....3....4....5....6....7....8....9....] Done (0.01 seconds)
+Edge Equations       [0....1....2....3....4....5....6....7....8....9....] Done (0.04 seconds)
+Solving Equations    [ irradiance directional_irradiance ] (3.14 seconds)
+Lightmapping Total Time : (9481.49 seconds)
+Compressing Lightmaps...
+ - Next resource references external resource 22A05C3B0F5C9365 (maps/z_wiles/lightmaps/irradiance.vtex)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/lightmaps/irradiance.vtex:
+       Compressing 8192x8192x1 texture to BC6H: 28207ms
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\lightmaps\irradiance.vtex_c
+ - Next resource references external resource F1FE2651AA6EFD80 (maps/z_wiles/lightmaps/directional_irradiance.vtex)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/lightmaps/directional_irradiance.vtex:
+       Compressing 8192x8192x1 texture to BC7: 22487ms
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\lightmaps\directional_irradiance.vtex_c
+==== Light Probes ====
+Voxelize... [0....1....2....3....4....5....6....7....8....9....] Done (0.01 seconds)
+VRAD3 (local) [0....1....2....3....4....5....6....7....8....9....] Done (2.79 seconds)
+VRAD3 Combine...
+  VRAD3 - Distributed Lighting Tool
+  Copyright (c) Valve Corporation, All rights reserved.
+  Build: pc64 Jan  4 2021 11:40:39
+  WD: C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\steamtours_addons\severance\_vrad3
+  Command: vrad3.exe -script lpv.vrad3 -entrypoint lpv_finish_all -threads 6 -indir results/outputs -noassert 
+  Num Threads: 6
+  Loading scene_info.dat... Done (0.00 seconds)
+  Unserializing scene_info.dat... Done (0.02 seconds)
+  LPV Median Filter Indirect (3x3)... Done (0.00 seconds)
+  LPV Resolve... Done (0.01 seconds)
+  Wrote lpv_1_ambientcube.exr.
+  Wrote lpv_1_dli.tga.
+  Wrote lpv_1_dls.tga.
+  LPV Median Filter Indirect (3x3)... Done (0.00 seconds)
+  LPV Resolve... Done (0.00 seconds)
+  Wrote lpv_2_ambientcube.exr.
+  Wrote lpv_2_dli.tga.
+  Wrote lpv_2_dls.tga.
+  Total Time: 0.1 seconds
+(0.20 seconds)
+CPathTraceSceneInfoBase - Loading light cookie spotlight2:2
+ - Next resource references external resource ECEE3BA799228770 (maps/z_wiles/lightmaps/env_light_probe_volume_1.vtex)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/lightmaps/env_light_probe_volume_1.vtex:
+       Compressing 24x32x72 texture to DXT5: 82ms
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\lightmaps\env_light_probe_volume_1.vtex_c
+ - Next resource references external resource 3B9E5E80587672BA (maps/z_wiles/lightmaps/env_light_probe_volume_1_dli.vtex)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/lightmaps/env_light_probe_volume_1_dli.vtex:
+       Compressing 24x32x12 texture to RGBA8888: 0ms
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\lightmaps\env_light_probe_volume_1_dli.vtex_c
+ - Next resource references external resource 5666C3E1C004293F (maps/z_wiles/lightmaps/env_light_probe_volume_1_dls.vtex)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/lightmaps/env_light_probe_volume_1_dls.vtex:
+       Compressing 24x32x12 texture to BC7: 8ms
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\lightmaps\env_light_probe_volume_1_dls.vtex_c
+ - Next resource references external resource 277A88681F1C91AD (maps/z_wiles/lightmaps/env_light_probe_volume_2.vtex)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/lightmaps/env_light_probe_volume_2.vtex:
+       Compressing 16x12x72 texture to DXT5: 31ms
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\lightmaps\env_light_probe_volume_2.vtex_c
+ - Next resource references external resource 16CB1B025DF49ABC (maps/z_wiles/lightmaps/env_light_probe_volume_2_dli.vtex)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/lightmaps/env_light_probe_volume_2_dli.vtex:
+       Compressing 16x12x12 texture to RGBA8888: 0ms
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\lightmaps\env_light_probe_volume_2_dli.vtex_c
+ - Next resource references external resource B7746C418C3FF58F (maps/z_wiles/lightmaps/env_light_probe_volume_2_dls.vtex)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/lightmaps/env_light_probe_volume_2_dls.vtex:
+       Compressing 16x12x12 texture to BC7: 5ms
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\lightmaps\env_light_probe_volume_2_dls.vtex_c
+Light Probes Total Time : (0 hrs 0 mins 4 seconds)
+Baked Lighting Total Time : (2 hrs 39 mins 6 seconds)
+Generate Overlay Meshes...[0....1....2....3....4....5....6....7....8....9....] Done (0.00 seconds)
+Creating 1 world nodes  Splitting geometry along render clusters...[0....1....2....3....4....5....6....7....8....9....] Done (0.01 seconds)
+ - Next resource references external resource 84D3AAB1FA3C505D (maps/z_wiles/worldnodes/node000.vwnod)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000.vwnod:
+ - Next resource references external resource 19E78EE05DAF4560 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base.vmdl)
+ - Next resource references external resource B742D0AE03559A35 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmdl)
+ - Next resource references external resource 529379C570C72D26 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmdl)
+ - Next resource references external resource B9C5B1561484B0BC (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmdl)
+ - Next resource references external resource EEF8E2AB4A4A467E (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmdl)
+ - Next resource references external resource CF998FE7D0CDD694 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmdl)
+ - Next resource references external resource C81C6702FE56D445 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmdl)
+ - Next resource references external resource 873872CA0A906790 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_blocklight.vmdl)
+ - Next resource references external resource 42165FB2A20E69E9 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmdl)
+ - Next resource references external resource 3E23EA569B177D81 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmdl)
+ - Next resource references external resource C60504454AB57A95 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmdl)
+ - Next resource references external resource A56CAD4414508272 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmdl)
+ - Next resource references external resource E5B1C545D90855EA (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_model0.vmdl)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000.vwnod_c
+ - Next resource references external resource 080F99830014CCCC (maps/z_wiles/entities/default_ents.vents)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/entities/default_ents.vents:
+Initializing script VM...
+...done
+Loading scripted entity classes...
+...done
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\entities\default_ents.vents_c
+ - Next resource references external resource 6DEFB1E489354A3A (maps/z_wiles/world.vwrld)
+Handling Dependency: c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles/world.vwrld:
+ - Next resource references external resource 22A05C3B0F5C9365 (maps/z_wiles/lightmaps/irradiance.vtex)
+ - Next resource references external resource F1FE2651AA6EFD80 (maps/z_wiles/lightmaps/directional_irradiance.vtex)
+ - Next resource references external resource 080F99830014CCCC (maps/z_wiles/entities/default_ents.vents)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\world.vwrld_c
+Created 1 world nodes
+ - Next resource references external resource 9C417EB8301A0ED4 (maps/z_wiles/entities/unnamed_4966.vmdl)
+WARNING: No 'models_ModelDocGameData' FGD was specified in the 'ModelDoc' section of gameinfo.gi.
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/entities/unnamed_4966.vmdl:
+ - Next resource references external resource FF035D26AF5A3C49 (maps/z_wiles/entities/unnamed_4966.vmesh)
+ - Next resource references external resource FF035D26AF5A3C49 (maps/z_wiles/entities/unnamed_4966.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/entities/unnamed_4966.vmesh:
+ - Next resource references external resource 8285C614AD55AD64 (materials/metal/paint_002.vmat)
+ - Next resource references external resource BC7D89D74615B404 (materials/metal055a.vmat)
+ - Next resource references external resource 3B9859E82CACD16A (materials/models/props_items/plate_01_aluminium_001.vmat)
+ - Next resource references external resource 35392723E879A361 (materials/fabric019.vmat)
+ - Next resource references external resource 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+ - Next resource references external resource E2115437E73FC6AE (materials/metal011.vmat)
+ - Next resource references external resource 52178367E9A521E1 (materials/metal010.vmat)
+ - Next resource references external resource 8B0480138F15778B (materials/tools/toolsblocklight.vmat)
+ - Next resource references external resource 2B1AB87C66283E2F (materials/metal/silver_001.vmat)
+ - Next resource references external resource 0C51E6E041911F31 (materials/metal/dark_metal_scratched001.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\entities\unnamed_4966.vmesh_c
+ - Next resource references external resource 7110F4399C17D65D (maps/z_wiles/entities/unnamed_4966.vphys)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/entities/unnamed_4966.vphys:
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+Shape  has no parent and is not skinned
+Cannot determine shape bone name.
+Physics can simulate such collision, but game may not be able to render it.
+This model has only one transform and collision compiler treats it as a joint. If this prop is rigid and static and doesn't need animation, you probably meant to set ignoreSkeleton to true on it.
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\entities\unnamed_4966.vphys_c
+ - Next resource references external resource 7110F4399C17D65D (maps/z_wiles/entities/unnamed_4966.vphys)
+ - Next resource references external resource FF035D26AF5A3C49 (maps/z_wiles/entities/unnamed_4966.vmesh)
+ - Next resource references external resource 7110F4399C17D65D (maps/z_wiles/entities/unnamed_4966.vphys)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\entities\unnamed_4966.vmdl_c
+ - Next resource references external resource 19E78EE05DAF4560 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base.vmdl:
+ - Next resource references external resource C867B42CF3B72E56 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base.vmesh)
+ - Next resource references external resource C867B42CF3B72E56 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base.vmesh:
+ - Next resource references external resource 49FC4563198D9FA3 (materials/models/polyhaven/desk_lamp_arm_01_light.vmat)
+ - Next resource references external resource FF7D84F44A4B07B9 (materials/dev/primary_black.vmat)
+ - Next resource references external resource B0030D43AA46E75E (aperture/models/materials/cabinet_dials_col.vmat)
+ - Next resource references external resource A93A2B64740DE1EA (materials/page2.vmat)
+ - Next resource references external resource 20063576DBF1CF49 (materials/page3.vmat)
+ - Next resource references external resource 8285C614AD55AD64 (materials/metal/paint_002.vmat)
+ - Next resource references external resource 9B6CB3A0C09A9D27 (materials/page14.vmat)
+ - Next resource references external resource 063A30649AB1C2D4 (materials/page13.vmat)
+ - Next resource references external resource E4CC5FFC8800C470 (materials/metal/metal_006.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base.vmesh_c
+ - Next resource references external resource C867B42CF3B72E56 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base.vmdl_c
+ - Next resource references external resource B742D0AE03559A35 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmdl:
+ - Next resource references external resource B6640CAECD34DF8F (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmesh)
+ - Next resource references external resource B6640CAECD34DF8F (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmesh:
+ - Next resource references external resource B3F9DEFAD88C8110 (materials/metal/metal_beam001.vmat)
+ - Next resource references external resource F00882C4805679D7 (materials/wood026.vmat)
+ - Next resource references external resource 62365F51442F538A (materials/plastic013b.vmat)
+ - Next resource references external resource 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+ - Next resource references external resource 0875AC23556FB85B (materials/cloth/cloth_001.vmat)
+ - Next resource references external resource 896FA595C336A261 (materials/misc/carpet001_blue.vmat)
+ - Next resource references external resource E346A3AB5BE6A530 (materials/metal/chrome_002.vmat)
+ - Next resource references external resource 98F3A55FD3F3E212 (materials/carpet014.vmat)
+ - Next resource references external resource 98F3A55FD3F3E212 (materials/carpet014.vmat)
+ - Next resource references external resource 98F3A55FD3F3E212 (materials/carpet014.vmat)
+ - Next resource references external resource 3C3EB9175BF3C31B (materials/plastic/plastic_006.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmesh_c
+ - Next resource references external resource B6640CAECD34DF8F (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmdl_c
+ - Next resource references external resource 529379C570C72D26 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmdl:
+ - Next resource references external resource 703268680125781A (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmesh)
+ - Next resource references external resource 703268680125781A (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmesh:
+ - Next resource references external resource 35392723E879A361 (materials/fabric019.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmesh_c
+ - Next resource references external resource 703268680125781A (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmdl_c
+ - Next resource references external resource B9C5B1561484B0BC (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmdl:
+ - Next resource references external resource 8D714847AB509FDE (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmesh)
+ - Next resource references external resource 8D714847AB509FDE (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmesh:
+ - Next resource references external resource 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+ - Next resource references external resource 41EC5A1FFD6E5AF8 (materials/wood016.vmat)
+ - Next resource references external resource CF1022154A4DC6EA (materials/metal/black_silver_001.vmat)
+ - Next resource references external resource 62365F51442F538A (materials/plastic013b.vmat)
+ - Next resource references external resource 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+ - Next resource references external resource 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmesh_c
+ - Next resource references external resource 8D714847AB509FDE (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmdl_c
+ - Next resource references external resource EEF8E2AB4A4A467E (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmdl:
+ - Next resource references external resource 6E61759176C3338F (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmesh)
+ - Next resource references external resource 6E61759176C3338F (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmesh:
+ - Next resource references external resource 50F3576FFCBD3889 (materials/lumonrecyles.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmesh_c
+ - Next resource references external resource 6E61759176C3338F (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmdl_c
+ - Next resource references external resource CF998FE7D0CDD694 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmdl:
+ - Next resource references external resource 10C87B99B73A9E8E (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmesh)
+ - Next resource references external resource 10C87B99B73A9E8E (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmesh:
+ - Next resource references external resource E2115437E73FC6AE (materials/metal011.vmat)
+ - Next resource references external resource 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+ - Next resource references external resource BC7D89D74615B404 (materials/metal055a.vmat)
+ - Next resource references external resource E166A36E909D37BA (materials/metal/brass_001.vmat)
+ - Next resource references external resource 52178367E9A521E1 (materials/metal010.vmat)
+ - Next resource references external resource BC7D89D74615B404 (materials/metal055a.vmat)
+ - Next resource references external resource 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+ - Next resource references external resource AD79CD8F36BD4478 (materials/metal/metal_scratched002_beige.vmat)
+ - Next resource references external resource 62365F51442F538A (materials/plastic013b.vmat)
+ - Next resource references external resource 0875AC23556FB85B (materials/cloth/cloth_001.vmat)
+ - Next resource references external resource 896FA595C336A261 (materials/misc/carpet001_blue.vmat)
+ - Next resource references external resource E346A3AB5BE6A530 (materials/metal/chrome_002.vmat)
+ - Next resource references external resource 4F99F7E5F328A0BB (materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_illum.vmat)
+ - Next resource references external resource 52178367E9A521E1 (materials/metal010.vmat)
+ - Next resource references external resource 2B1AB87C66283E2F (materials/metal/silver_001.vmat)
+ - Next resource references external resource DE81DAE303995547 (materials/models/props/interior_deco/tabletop_props_03.vmat)
+ - Next resource references external resource 46648C689A95E66F (materials/models/polyhaven/desk_lamp_arm_01.vmat)
+ - Next resource references external resource 1BAFBFA39C6D112E (materials/models/props/water_cooler_12_mb_fea47b4738774f238b2914b8852c7bb1_02.vmat)
+ - Next resource references external resource 78312681D6FA0C76 (materials/models/props/water_cooler_12_mb_fea47b4738774f238b2914b8852c7bb1_01.vmat)
+ - Next resource references external resource 0646B78FC9EA6511 (models/industrial/materials/microphone.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmesh_c
+ - Next resource references external resource 10C87B99B73A9E8E (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmdl_c
+ - Next resource references external resource C81C6702FE56D445 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmdl:
+ - Next resource references external resource 690954156C02AF87 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmesh)
+ - Next resource references external resource 690954156C02AF87 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmesh:
+ - Next resource references external resource 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmesh_c
+ - Next resource references external resource 690954156C02AF87 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmdl_c
+ - Next resource references external resource 873872CA0A906790 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_blocklight.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_blocklight.vmdl:
+ - Next resource references external resource C46B547B83D0C594 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_blocklight.vmesh)
+ - Next resource references external resource C46B547B83D0C594 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_blocklight.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_blocklight.vmesh:
+ - Next resource references external resource 8B0480138F15778B (materials/tools/toolsblocklight.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_blocklight.vmesh_c
+ - Next resource references external resource C46B547B83D0C594 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_blocklight.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_blocklight.vmdl_c
+ - Next resource references external resource 42165FB2A20E69E9 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmdl:
+ - Next resource references external resource 98289CE4EBA62EC1 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmesh)
+ - Next resource references external resource 98289CE4EBA62EC1 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmesh:
+ - Next resource references external resource 604D4E188259AFE7 (materials/models/props/water_cooler_12_mb_fea47b4738774f238b2914b8852c7bb1_03.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmesh_c
+ - Next resource references external resource 98289CE4EBA62EC1 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmdl_c
+ - Next resource references external resource 3E23EA569B177D81 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmdl:
+ - Next resource references external resource B63E0D45E295DA54 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmesh)
+ - Next resource references external resource B63E0D45E295DA54 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmesh:
+ - Next resource references external resource 8200D24C5E0F0AA7 (materials/glass/glass_002.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmesh_c
+ - Next resource references external resource B63E0D45E295DA54 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmdl_c
+ - Next resource references external resource C60504454AB57A95 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmdl:
+ - Next resource references external resource 76F826F92BFB3CC2 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmesh)
+ - Next resource references external resource 76F826F92BFB3CC2 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmesh:
+ - Next resource references external resource EC8AC4B6AF269CFF (materials/water/pavilion_water002.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmesh_c
+ - Next resource references external resource 76F826F92BFB3CC2 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmdl_c
+ - Next resource references external resource A56CAD4414508272 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmdl:
+ - Next resource references external resource 469EE9093E971D53 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmesh)
+ - Next resource references external resource 469EE9093E971D53 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmesh:
+ - Next resource references external resource 59EED402B11EBE60 (materials/dev/primary_white_emissive.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmesh_c
+ - Next resource references external resource 469EE9093E971D53 (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmdl_c
+ - Next resource references external resource E5B1C545D90855EA (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_model0.vmdl)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_model0.vmdl:
+ - Next resource references external resource 202B30147E0C52DC (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_model0_0.vmesh)
+ - Next resource references external resource 202B30147E0C52DC (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_model0_0.vmesh)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_model0_0.vmesh:
+ - Next resource references external resource 20B4CF02F79CF1BA (materials/models/slasherin/last_year/props/mi_monitor_01a.vmat)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_model0_0.vmesh_c
+ - Next resource references external resource 202B30147E0C52DC (maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_model0_0.vmesh)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000_lr0_b0_im1_cb1_mesh_model0.vmdl_c
+ - Next resource references external resource 539C6494A54B0E15 (maps/z_wiles/worldnodes/node000.vrman)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/worldnodes/node000.vrman:
+ - Next resource references external resource 84D3AAB1FA3C505D (maps/z_wiles/worldnodes/node000.vwnod)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\worldnodes\node000.vrman_c
+
+
+... Building 'phys'
+ - Next resource references external resource 18785D64F1550F85 (maps/z_wiles/world_physics.vphys)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/world_physics.vphys:
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\world_physics.vphys_c
+ - Next resource references external resource C8B4D5C970F0F7C6 (maps/z_wiles/world_physics.vrman)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/world_physics.vrman:
+ - Next resource references external resource 18785D64F1550F85 (maps/z_wiles/world_physics.vphys)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\world_physics.vrman_c
+
+
+... Building 'vis'
+ - Next resource references external resource 218B82B86BB15D8E (maps/z_wiles/world.vrman)
+Handling Dependency: c:/users/bytefr~1/appdata/local/temp/valve/rc_mapbld_17952/content/steamtours_addons/severance/maps/z_wiles/world.vrman:
+ - Next resource references external resource 6DEFB1E489354A3A (maps/z_wiles/world.vwrld)
+ - Next resource references external resource C8B4D5C970F0F7C6 (maps/z_wiles/world_physics.vrman)
+ - Next resource references external resource 1CDD601EB548545C (maps/z_wiles/world_visibility.vvis)
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles\world.vrman_c
+--> Map build finished.
+ - Wrote to: c:\users\bytefr~1\appdata\local\temp\valve\rc_vpk_17952\game\steamtours_addons\severance\maps\z_wiles.vmap_c
+Pack z_wiles.vpk (c:\users\bytefr~1\appdata\local\temp\valve\hammermapbuild\game\steamtours_addons\severance\maps\z_wiles.vpk):
+ ->  0.0MB maps/z_wiles/world_visibility.vvis_c
+ -> 64.0MB maps/z_wiles/lightmaps/irradiance.vtex_c
+ -> 64.0MB maps/z_wiles/lightmaps/directional_irradiance.vtex_c
+ ->  0.1MB maps/z_wiles/lightmaps/env_light_probe_volume_1.vtex_c
+ ->  0.0MB maps/z_wiles/lightmaps/env_light_probe_volume_1_dli.vtex_c
+ ->  0.0MB maps/z_wiles/lightmaps/env_light_probe_volume_1_dls.vtex_c
+ ->  0.1MB maps/z_wiles/lightmaps/env_light_probe_volume_1_octree.dat
+ ->  0.0MB maps/z_wiles/lightmaps/env_light_probe_volume_2.vtex_c
+ ->  0.0MB maps/z_wiles/lightmaps/env_light_probe_volume_2_dli.vtex_c
+ ->  0.0MB maps/z_wiles/lightmaps/env_light_probe_volume_2_dls.vtex_c
+ ->  0.0MB maps/z_wiles/lightmaps/env_light_probe_volume_2_octree.dat
+ ->  0.0MB maps/z_wiles/worldnodes/node000.vwnod_c
+ ->  0.0MB maps/z_wiles/entities/default_ents.vents_c
+ ->  0.0MB maps/z_wiles/world.vwrld_c
+ ->  0.2MB maps/z_wiles/entities/unnamed_4966.vmesh_c
+ ->  0.0MB maps/z_wiles/entities/unnamed_4966.vphys_c
+ ->  0.0MB maps/z_wiles/entities/unnamed_4966.vmdl_c
+ ->  0.6MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base.vmdl_c
+ ->  1.2MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00.vmdl_c
+ ->  1.5MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp00_nzp.vmdl_c
+ ->  0.5MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm01_lp01.vmdl_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_base_cm02_lp00.vmdl_c
+ ->  4.1MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp00.vmdl_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_base_cm02_lp02.vmdl_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_blocklight.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_blocklight.vmdl_c
+ ->  0.1MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse0.vmdl_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse1.vmdl_c
+ ->  0.1MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_nocollapse2.vmdl_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb0_mesh_nocollapse3.vmdl_c
+ ->  0.1MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_model0_0.vmesh_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000_lr0_b0_im1_cb1_mesh_model0.vmdl_c
+ ->  0.0MB maps/z_wiles/worldnodes/node000.vrman_c
+ ->  2.2MB maps/z_wiles/world_physics.vphys_c
+ ->  0.0MB maps/z_wiles/world_physics.vrman_c
+ ->  0.0MB maps/z_wiles/world.vrman_c
+ ->  0.0MB maps/z_wiles.vmap_c
+Writing... Done.
+     0/   1 (elapsed 9553.456):  c:\program files (x86)\steam\steamapps\common\steamvr\tools\steamvr_environments\content\steamtours_addons\severance\maps\z_wiles.vmap
+Compile of 1 file(s) matching nonrecursive specification "c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/severance/maps/z_wiles.vmap" took 9553.456 seconds
+-----------------------------------------------------------------
+ OK: 46 compiled, 0 failed, 0 skipped, 159m:13s
+-----------------------------------------------------------------
+Leaking 2 elements
+Leaking 10 elements

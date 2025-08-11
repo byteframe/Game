@@ -1,22 +1,30 @@
-# select addon (lebedevartem,sharetextures_extra,sharetextures,freepbr(micarta-knife-handle-pbr),ambientcg)
+# select addon (lebedevartem, sharetextures, freepbr(fancy-scaled-gold-pbr), ambientcg, polyhaven, polyhaven-models, texturecan(653/650))
 if [ -z ${1} ]; then
   echo "no arguments"
   exit 1
 fi
 PACK=${1}
+if [ -z "${C}" ]; then
+  echo "missing environmental variables"
+  exit 0
+fi
 
 # ensure materials change directory
-C=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons
-cd "${C}"/${PACK}/materials || exit 1
+if [ ${PACK} = polyhaven_models ]; then
+  PREFIX="models/polyhaven/"
+  ROOT="${C}"/${PACK}/materials/models/polyhaven
+else
+  ROOT="${C}"/${PACK}/materials
+fi
+cd "${ROOT}" || exit 1
 
 # extract zip files (ensure clean filenames)
 for FILE in $(find . -name "*.zip"); do
-  mkdir -p ${FILE/.zip/}
-  unzip -j -x ${FILE} -d ${FILE/.zip/}
+  unzip -j ${FILE} -x '__MACOSX/*' -d $(echo ${FILE/.zip/} | sed -e s:_4k_.*::i)  && rm -v ${FILE}
 done
 
 # prune models and other cruft
-find . -name "*.ini" -or -name "*.txt" -or -name "*.zip" -or -name "*.usda" -or -name "*.usdc" -or -name "*.mtlx" -or -name "*NormalDX.*" -or -iname "*_preview.*" | while read LINE; do rm -v ${LINE}; done
+find . -name "*.ini" -or -name "*.txt" -or -name "*.zip" -or -name "*.usda" -or -name "*.usdc" -or -name "*.mtlx" -or -name "*NormalDX.*" -or -name "*normal_directx_.*" -or -iname "*_preview.*" | while read LINE; do rm -v ${LINE}; done
 
 # fix whitespace and dashes
 find . -mindepth 2 -name "*\ *" -type d | while read FILE; do mv -v "${FILE}" "${FILE// /_}"; done
@@ -27,8 +35,14 @@ find . -name "*-_*"  | while read FILE; do mv -v "${FILE}" "${FILE//-_/-}"; done
 find . -name "*_-*"  | while read FILE; do mv -v "${FILE}" "${FILE//_-/-}"; done
 
 # remove directory suffixes
+find . -type d -name "*_8K-JPG" | while read FILE; do mv -v "${FILE}" "${FILE//_8K-JPG/}"; done
+find . -type d -name "*_4K-JPG" | while read FILE; do mv -v "${FILE}" "${FILE//_4K-JPG/}"; done
+find . -type d -name "*_2K-JPG" | while read FILE; do mv -v "${FILE}" "${FILE//_2K-JPG/}"; done
+find . -type d -name "*_8K-PNG" | while read FILE; do mv -v "${FILE}" "${FILE//_8K-PNG/}"; done
+find . -type d -name "*_4K-PNG" | while read FILE; do mv -v "${FILE}" "${FILE//_4K-PNG/}"; done
 find . -type d -name "*_2K-PNG" | while read FILE; do mv -v "${FILE}" "${FILE//_2K-PNG/}"; done
 find . -type d -name "*-2K"     | while read FILE; do mv -v "${FILE}" "${FILE//-2K/}"; done
+find . -type d -name "*-4K"     | while read FILE; do mv -v "${FILE}" "${FILE//-4K/}"; done
 find . -type d -name "*-bl"     | while read FILE; do mv -v "${FILE}" "${FILE//-bl/}"; done
 find . -type d -name "*_bl"     | while read FILE; do mv -v "${FILE}" "${FILE//_bl/}"; done
 
@@ -37,85 +51,34 @@ find . -type d -empty
 
 # define base material file
 OVERWRITE=no
-MATERIAL=$(cat << EOF
-Layer0
-{
-  shader "vr_standard.vfx"
-
-  //---- Lighting ----
-  F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
-
-  //---- Specular ----
-  F_METALNESS_TEXTURE 1
-  F_SPECULAR 1
-  F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
-
-  //---- Translucent ----
-  F_ALPHA_TEST 1
-
-  //---- Self Illum ----
-  F_SELF_ILLUM 1
-
-  //---- Color ----
-  g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-  g_vTexCoordOffset "[0.000 0.000]"
-  g_vTexCoordScale "[1.000 1.000]"
-  g_vTexCoordScrollSpeed "[0.000 0.000]"
-  TextureColor "materials/_COLOR_FILE_"
-
-  //---- Cube Map ----
-  g_flCubeMapBlur "0.000"
-  g_flCubeMapBrightness "1.000"
-
-  //---- Lighting ----
-  g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
-  g_flAmbientOcclusionStrengthDirectSpecular "1.000"
-  g_flDirectionalLightmapMinZ "0.050"
-  g_flDirectionalLightmapStrength "1.000"
-  g_vMetalnessRange "[0.000 1.000]"
-  g_vReflectanceRange "[0.000 1.000]"
-  TextureAmbientOcclusion "materials/_AO_FILE_"
-  TextureGlossiness "materials/_GLOSS_FILE_"
-  TextureMetalness "materials/_METAL_FILE_"
-  TextureReflectance "materials/_REFLECTANCE_FILE_"
-
-  //---- Normal Map ----
-  TextureNormal "materials/_NORMAL_FILE_"
-
-  //---- Self Illum ----
-  g_flSelfIllumScale "1.000"
-  g_vSelfIllumScrollSpeed "[0.000 0.000]"
-  g_vSelfIllumTint "[1.000000 1.000000 1.000000 0.000000]"
-  TextureSelfIllumMask "materials/_SELFILLUM_FILE_"
-
-  //---- Translucent ----
-  g_flAlphaTestReference "0.500"
-  TextureTranslucency "materials/_OPACITY_FILE_"
-}
-EOF
-)
+MATERIAL=$(cat "${X}"/pbr_template.vmat)
 
 function create_material()
 {
   # sift through texture files
+  cd "${ROOT}"/${1}
   VMAT=${1/*\//}
-  cd "${C}"/${PACK}/materials/${1}
-  if [ "${OVERWRITE}" == yes ] || [ ! -e ../${VMAT}.vmat ]; then
-    unset COLOR AO GLOSS REFLECTANCE METAL NORMAL SELFILLUM OPACITY
+  if [ ${OVERWRITE} == yes ] || [ ! -e ../${VMAT}.vmat ]; then
+    unset COLOR AO GLOSS REFLECTANCE METAL NORMAL SELFILLUM ALPHA OPACITY
     for FILE in *.*; do
-
-      # skip height maps
+  
+      # skip height maps and converted roughness maps
       if [[ ${FILE} != h.* ]] && [[ ${FILE} != H.* ]] \
-      && [[ ${FILE} != *height* ]] && [[ ${FILE} != *Height* ]] && [[ ${FILE} != *__inverted* ]] \
-      && [[ ${FILE} != *_*isplacement* ]]; then
-
+      && [[ ${FILE} != *height* ]] && [[ ${FILE} != *Height* ]] \
+      && [[ ${FILE} != *_disp_* ]] && [[ ${FILE} != *_*isplacement* ]] \
+      && [[ ${FILE} != *__inverted* ]]; then
+  
         # gather pbr
         if [[ ${FILE} == d.* ]] || [[ ${FILE} == D.* ]] \
         || [[ ${FILE} == *lbedo* ]] || [[ ${FILE} == *olor.* ]] || [[ ${FILE} == *alb.* ]] || [[ ${FILE} == *base*olor* ]] \
-        || [[ ${FILE} == *diffuse* ]] || [[ ${FILE} == *Diffuse* ]]; then
+        || [[ ${FILE} == *diffuse* ]] || [[ ${FILE} == *Diffuse* ]] || [[ ${FILE} == *_diff_* ]] \
+        || [[ ${FILE} == *_color_* ]] \
+        || [[ ${FILE} == *_col_* ]] && [ ${PACK} != 'polyhaven' ]; then
           COLOR=${FILE}
         elif [[ ${FILE} == n.* ]] || [[ ${FILE} == N.* ]] \
         ||   [[ ${FILE} == *ormal* ]] || [[ ${FILE} == *-norrmal* ]] || [[ ${FILE} == *-norma-ogl* ]] || [[ ${FILE} == *-nmap-ogl* ]] \
+        ||   [[ ${FILE} == *_nor_gl_* ]] \
+        ||   [[ ${FILE} == *_normal_opengl_* ]] \
         ||   [[ ${FILE} == *_NormalGL* ]]; then
           NORMAL=${FILE}
         elif [[ ${FILE} == *mbient* ]] || [[ ${FILE} == *AO* ]] || [[ ${FILE} == *ao* ]] \
@@ -124,117 +87,114 @@ function create_material()
         elif [[ ${FILE} == i.* ]] || [[ ${FILE} == I.* ]] || [[ ${FILE} == e.* ]] \
           || [[ ${FILE} == *_IdMask.* ]] || [[ ${FILE} == *_ID* ]]; then
           SELFILLUM=${FILE}
+        elif [[ ${FILE} == *_alpha_* ]] || [[ ${FILE} == *_opacity_* ]]; then
+          ALPHA=${FILE}
         elif [[ ${FILE} == *_Opacity.* ]] || [[ ${FILE} == *_opacity.* ]]; then
           OPACITY=${FILE}
-        elif [[ ${FILE} == *specular.* ]] || [[ ${FILE} == *Specular.* ]] \
+        elif [[ ${FILE} == *specular.* ]] || [[ ${FILE} == *Specular.* ]] || [[ ${FILE} == *_spec_* ]] \
           || [[ ${FILE} == *specularLevel.* ]]; then
           REFLECTANCE=${FILE}
-
+  
         # invert roughness with ffmpeg for use as gloss map
         elif [[ ${FILE} == r.* ]] || [[ ${FILE} == R.* ]] \
-          || [[ ${FILE} == *oughn*ess* ]] || [[ ${FILE} == *rough.* ]] || [[ ${FILE} == *-rough*.* ]]; then
+          || [[ ${FILE} == *oughn*ess* ]] || [[ ${FILE} == *rough.* ]] || [[ ${FILE} == *-rough*.* ]] || [[ ${FILE} == *_rough_* ]]; then
           GLOSS=${FILE/.png/__inverted.png}
           GLOSS=${GLOSS/.tif/__inverted.tif}
           GLOSS=${GLOSS/.tiff/__inverted.tiff}
           GLOSS=${GLOSS/.jpg/__inverted.jpg}
-          ffmpeg -hide_banner -y -loglevel error -i ${FILE} -vf negate ${GLOSS}
-
+          if [ ! -e ${GLOSS} ]; then
+            ffmpeg -hide_banner -y -nostats -loglevel 0 -i ${FILE} -vf negate ${GLOSS} < /dev/null
+          fi
+  
         # or use gloss map if already present
         elif [[ ${FILE} == *_*lossiness* ]] || [[ ${FILE} == *_Gloss.* ]]; then
           GLOSS=${FILE}
           
         # find other maps first to reduce chance of mistaking the metal map
-        elif [[ ${FILE} == m.* ]] || [[ ${FILE} == M.* ]] \
+        elif [[ ${FILE} == m.* ]] || [[ ${FILE} == M.* ]] || [[ ${FILE} == *_metal_4k* ]] \
           || [[ ${FILE} == *etal*ness* ]] || [[ ${FILE} == *etal*ic* ]] || [[ ${FILE} == *metal.* ]]; then
           METAL=${FILE}
         elif [[ ${FILE} != *.vmat ]]; then
-          echo "UNKNOWN MATERIAL FILE TYPE: ${FILE} // COLOR: ${COLOR}"
+          echo "UNKNOWN MATERIAL FILE TYPE: ${FILE} // ${VMAT}"
         fi
       fi
     done
-
+  
     # (re)write material file and compile
-    if [ -z ${COLOR} ]; then
-      echo "MISSING: color -- ${1}"
+    if [ -z ${COLOR} ] && [ ${PACK} != 'polyhaven' ]; then
+      echo "MISSING: color -- Skipping ${1}"
     else
-      echo "writing: ${VMAT}.vmat"
-      echo -e "${MATERIAL}" > ../${VMAT}.vmat
-      sed -i -e s:_COLOR_FILE_:${1}/${COLOR}: ../${VMAT}.vmat
-      if [ -z ${NORMAL} ]; then
-        echo "MISSING: normal -- ${1}"
-        sed -i -e s:_NORMAL_FILE_:default/default_normal.tga: ../${VMAT}.vmat
-      else
-        sed -i -e s:_NORMAL_FILE_:${1}/${NORMAL}: ../${VMAT}.vmat
+      if [ -z ${COLOR} ]; then
+        COLOR=$(ls -1 *_col*)
       fi
-      if [ -z ${METAL} ]; then
-        echo "MISSING: metal -- ${1}"
-        sed -i -e /TextureMetalness/d -e /F_METALNESS_TEXTURE/d ../${VMAT}.vmat
-        sed -i -e 's/g_vMetalnessRange "\[0.000 1.000\]"/g_flMetalness "0.000"/' ../${VMAT}.vmat
-      else
-        sed -i -e s:_METAL_FILE_:${1}/${METAL}: ../${VMAT}.vmat
-      fi
-      if [ -z ${AO} ]; then
-        echo "MISSING: ao -- ${1}"
-        sed -i -e /TextureAmbientOcclusion/d ../${VMAT}.vmat
-        sed -i -e /F_INDIRECT_TEXTURES/d ../${VMAT}.vmat
-        sed -i -e /g_flAmbientOcclusionStrengthDirectDiffuse/d ../${VMAT}.vmat
-        sed -i -e /g_flAmbientOcclusionStrengthDirectSpecular/d ../${VMAT}.vmat
-      else
-        sed -i -e s:_AO_FILE_:${1}/${AO}: ../${VMAT}.vmat
-      fi
-      if [ -z ${GLOSS} ]; then
-        echo "MISSING: gloss -- ${1}"
-        sed -i -e s:_GLOSS_FILE_:default/default_gloss.tga: ../${VMAT}.vmat
-      else
-        sed -i -e s:_GLOSS_FILE_:${1}/${GLOSS}: ../${VMAT}.vmat
-      fi
-      if [ -z ${REFLECTANCE} ]; then
-        echo "MISSING: reflectance -- ${1}"
-        sed -i -e s:_REFLECTANCE_FILE_:default/default_refl.tga: ../${VMAT}.vmat
-      else
-        sed -i -e s:_REFLECTANCE_FILE_:${1}/${REFLECTANCE}: ../${VMAT}.vmat
-      fi
-      if [ -z ${SELFILLUM} ]; then
-        sed -i -e /F_SELF_ILLUM/d ../${VMAT}.vmat
-        sed -i -e /SelfIllum/d ../${VMAT}.vmat
-      else
-        echo "FOUND: selfillum -- ${1}"
-        sed -i -e s:_SELFILLUM_FILE_:${1}/${SELFILLUM}: ../${VMAT}.vmat
-      fi
-      if [ -z ${OPACITY} ]; then
-        sed -i -e /F_ALPHA_TEST/d -e /g_flAlphaTestReference/d -e /TextureTranslucency/d ../${VMAT}.vmat
-      else
-        echo "FOUND: opacity -- ${1}"
-        sed -i -e s:_OPACITY_FILE_:${1}/${OPACITY}: ../${VMAT}.vmat
-      fi
+      VMAT_ORIG=${VMAT}
+      for COLOR_FILE in ${COLOR}; do
+        if [ $(echo ${COLOR} | wc -w) != 1 ]; then
+          VMAT=${VMAT_ORIG}_$(echo ${COLOR_FILE} | grep -iEo col[l]?[_]?[0-9]+)
+        fi
+        echo "writing: ${VMAT}.vmat"
+        echo -e "${MATERIAL}" > ../${VMAT}.vmat
+        sed -i -e s:_COLOR_FILE_:${PREFIX}${1}/${COLOR_FILE}: ../${VMAT}.vmat
+        if [ -z ${NORMAL} ]; then
+          echo "MISSING: normal -- ${1}"
+          sed -i -e s:_NORMAL_FILE_:default/default_normal.tga: ../${VMAT}.vmat
+        else
+          sed -i -e s:_NORMAL_FILE_:${PREFIX}${1}/${NORMAL}: ../${VMAT}.vmat
+        fi
+        if [ -z ${METAL} ]; then
+          sed -i -e /TextureMetalness/d -e /F_METALNESS_TEXTURE/d ../${VMAT}.vmat
+          sed -i -e 's/g_vMetalnessRange "\[0.000 1.000\]"/g_flMetalness "0.000"/' ../${VMAT}.vmat
+        else
+          sed -i -e s:_METAL_FILE_:${PREFIX}${1}/${METAL}: ../${VMAT}.vmat
+        fi
+        if [ -z ${AO} ]; then
+          sed -i -e /TextureAmbientOcclusion/d ../${VMAT}.vmat
+          sed -i -e /F_INDIRECT_TEXTURES/d ../${VMAT}.vmat
+          sed -i -e /g_flAmbientOcclusionStrengthDirectDiffuse/d ../${VMAT}.vmat
+          sed -i -e /g_flAmbientOcclusionStrengthDirectSpecular/d ../${VMAT}.vmat
+        else
+          sed -i -e s:_AO_FILE_:${PREFIX}${1}/${AO}: ../${VMAT}.vmat
+        fi
+        if [ -z ${GLOSS} ]; then
+          sed -i -e s:_GLOSS_FILE_:default/default_gloss.tga: ../${VMAT}.vmat
+        else
+          sed -i -e s:_GLOSS_FILE_:${PREFIX}${1}/${GLOSS}: ../${VMAT}.vmat
+        fi
+        if [ -z ${REFLECTANCE} ]; then
+          sed -i -e s:_REFLECTANCE_FILE_:default/default_refl.tga: ../${VMAT}.vmat
+        else
+          sed -i -e s:_REFLECTANCE_FILE_:${PREFIX}${1}/${REFLECTANCE}: ../${VMAT}.vmat
+        fi
+        if [ -z ${SELFILLUM} ]; then
+          sed -i -e /F_SELF_ILLUM/d ../${VMAT}.vmat
+          sed -i -e /SelfIllum/d ../${VMAT}.vmat
+        else
+          sed -i -e s:_SELFILLUM_FILE_:${PREFIX}${1}/${SELFILLUM}: ../${VMAT}.vmat
+        fi
+        if [ -z ${ALPHA} ]; then
+          sed -i -e /F_ALPHA_TEST/d -e /g_flAlphaTestReference/d ../${VMAT}.vmat
+        else
+          sed -i -e /F_TRANSLUCENT/d -e /g_flOpacityScale/d -e s:_TRANS_FILE_:${PREFIX}${1}/${ALPHA}: ../${VMAT}.vmat
+        fi
+        if [ -z ${OPACITY} ]; then
+          sed -i -e /F_TRANSLUCENT/d -e /g_flOpacityScale/d  ../${VMAT}.vmat
+        else
+          sed -i -e /F_ALPHA_TEST/d -e /g_flAlphaTestReference/d -e s:_TRANS_FILE_:${PREFIX}${1}/${OPACITY}: ../${VMAT}.vmat
+        fi
+        if [ -z ${ALPHA} ] && [ -z ${OPACITY} ]; then
+          sed -i -e /TextureTranslucency/d ../${VMAT}.vmat
+        fi
+      done
     fi
+  else
+    echo "skipping: ${VMAT}.vmat"
   fi
 }
 
 # traverse two-level directory structure
-cd "${C}"/${PACK}/materials
-find . -mindepth 1 -type d | while read LINE; do create_material ${LINE}; done
-
-# errata: delete certain material files
-function delete_selective()
-{
-  PACK=lebedevartem
-  PACK=ambientcg
-  cd /mnt/s/${PACK}/materials/
-  for DIR1 in *; do
-    cd /mnt/s/${PACK}/materials/${DIR1}
-    for DIR2 in *; do
-      if [[ ${DIR2} != *.vmat ]]; then
-        cd /mnt/s/${PACK}/materials/${DIR2}
-        if [ -e /mnt/s/${PACK}/materials/${DIR2}/*_ID* ] \
-        || [ -e /mnt/s/${PACK}/materials/${DIR2}/*_IdMask* ] \
-        || [ -e /mnt/s/asset_pack_lebedevartem/materials/${DIR2}/i.* ] \
-        || [ -e /mnt/s/asset_pack_lebedevartem/materials/${DIR2}/e.* ] \
-        || [ -e /mnt/s/asset_pack_lebedevartem/materials/${DIR2}/I.* ] \
-        || [ -e /mnt/s/asset_pack_ambientcg/materials/${DIR2}/*_Opacity.* ]; then
-          echo rm -v ../${VMAT}.vmat
-        fi
-      fi
-    done
-  done
-}
+cd "${ROOT}"
+ls -d * | while read DIR; do
+  if [ -d "${ROOT}"/${DIR} ]; then
+    create_material ${DIR}
+  fi
+done

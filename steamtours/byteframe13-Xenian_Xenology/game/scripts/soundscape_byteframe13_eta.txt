@@ -9,7 +9,7 @@
     }
     "playlooping"
     {
-        "volume"        "1.25"
+        "volume"        "1.60"
         "pitch"         "100"
         "origin"        "-82, 3144, 18"
         "soundlevel"    "SNDLVL_60dB"
@@ -79,10 +79,10 @@
     }
     "playrandom"
     {
-        "volume"        "0.66"
+        "volume"        "0.5"
         "pitch"         "100"
         "time"          "1, 3"
-        "soundlevel"    "SNDLVL_75dB"
+        "soundlevel"    "SNDLVL_60dB"
         "origin"        "0, 2911, 154"
         "rndwave"
         {
@@ -106,22 +106,6 @@
             "wave"          "sounds/music/places/c17/citadel_ops.vsnd"
         }
     }
-    "playrandom"
-    {
-        "volume"        "0.5"
-        "pitch"         "100"
-        "time"          "6, 12"
-        "soundlevel"    "SNDLVL_60dB"
-        "origin"        "0, 2743, 175"
-        "rndwave"
-        {
-            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam1.vsnd"
-            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam2.vsnd"
-            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam3.vsnd"
-            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam4.vsnd"
-            "wave"          "sounds/props/tf2_sentry1/sentry_upgrading_steam5.vsnd"
-        }
-    }
     "playlooping"
     {
         "volume"        "1.4"
@@ -140,7 +124,7 @@
     }
     "playlooping"
     {
-        "volume"        "6"
+        "volume"        "9"
         "pitch"         "100"
         "origin"        "0, 3800, 8"
         "soundlevel"    "SNDLVL_65dB"
@@ -158,27 +142,9 @@
           "wave"          "sounds/cassette/cassette_insert_01.vsnd"
         }
     }
-    "playrandom"
-    {
-        "volume"        "0.65"
-        "pitch"         "100"
-        "time"          "8,24"
-        "soundlevel"    "SNDLVL_60dB"
-        "origin"        "-15, 3687, 8"
-        "rndwave"
-        {
-            "wave"          "sounds/bot_mechanic_vox_01.vsnd"
-            "wave"          "sounds/bot_mechanic_vox_02.vsnd"
-            "wave"          "sounds/bot_chef_vox_wipe_01.vsnd"
-            "wave"          "sounds/bot_chef_vox_wipe_02.vsnd"
-            "wave"          "sounds/bot_gardening_vox_pause.vsnd"
-            "wave"          "sounds/bot_gardening_vox_pre.vsnd"
-            "wave"          "sounds/bot_gardening_vox_song.vsnd"
-        }
-    }
     "playlooping"
     {
-        "volume"        "0.4"
+        "volume"        "0.75"
         "pitch"         "100"
         "origin"        "-342, 2834, 39"
         "soundlevel"    "SNDLVL_55dB"

@@ -322,7 +322,7 @@ MAKE_ASSET_PACK "${S}/infra/infra" "pak01_dir.vpk" "pak02_dir.vpk"
 PRE_IMPORT_FIXES() {
   convert_to_utf8 ${1}/materials/models/props_foliage/vines_001.vmt
 }
-MAKE_ASSET_PACK "${S}/Counter-Strike Global Offensive/csgo" "pak01_dir.vpk"
+MAKE_ASSET_PACK "${L}/Counter-Strike Global Offensive/csgo" "pak01_dir.vpk"
 ##------------------------------------------------------------------------------ bms
 PRE_IMPORT_FIXES() {
   convert_to_utf8 ${1}/materials/models/xenians/houndeye/houndeye.vmt
@@ -338,7 +338,7 @@ PRE_IMPORT_FIXES() {
 MAKE_ASSET_PACK "${S}/Nuclear Dawn/nucleardawn" "pak01_dir.vpk"
 ##------------------------------------------------------------------------------ ship
 MAKE_ASSET_PACK "${S}/The Ship Single Player/ship" "../vpks/depot_2402_dir_BROKEN.vpk" "../vpks/depot_2405_dir.vpk"
-##------------------------------------------------------------------------------ brainbread2w
+##------------------------------------------------------------------------------ brainbread2
 MAKE_ASSET_PACK "${S}/brainbread2/brainbread2" "../base/bb2_game_dir_BROKEN.vpk" "../base/misc_game_dir.vpk"
 ##------------------------------------------------------------------------------ empires - (locks on surfaceproperties conversion)
 MAKE_ASSET_PACK "${S}/Empires/empires" "materials_dir.vpk" "materials_legacy_dir.vpk" "models_dir.vpk" "models_legacy_dir.vpk" "scripts_dir.vpk"
@@ -353,7 +353,7 @@ MAKE_ASSET_PACK "${S}/Team Fortress 2/tf" "tf2_sound_misc_dir.vpk" "tf2_misc_dir
 PRE_IMPORT_FIXES() {
   mv -v ${1}/particles/ti_explodefx_props.pcf ${1}/_cull
 }
-MAKE_ASSET_PACK "${S}/TacticalIntervention/tacint" "data_001_dir.vpk"
+MAKE_ASSET_PACK "${S}/TacticalIntervention/tacint" "___VPK/data_001_dir.vpk"
 ##------------------------------------------------------------------------------ zenozoik
 MAKE_ASSET_PACK "${S}/ZenoClash/zenozoik" "_MANUAL_INSERTION_.vpk"
 ##------------------------------------------------------------------------------ swarm
@@ -364,7 +364,7 @@ PRE_IMPORT_FIXES() {
 }
 MAKE_ASSET_PACK "${S}/Postal III/p3" "_MANUAL_INSERTION_.vpk"
 ##------------------------------------------------------------------------------ r1 - (https://github.com/harmonytf/HarmonyVPKTool/releases/ use mdl 49 on decompile)
-MAKE_ASSET_PACK "/mnt/g/r1" "_MANUAL_INSERTION_.vpk"
+MAKE_ASSET_PACK "${S}/r1" "_MANUAL_INSERTION_.vpk"
 ##------------------------------------------------------------------------------ hfs - (https://github.com/yretenai/HFSExtract/releases/tag/0.2.1
 PRE_IMPORT_FIXES() {
   mv ${1}/scripts/game_sounds* ${1}/_cull
@@ -377,20 +377,20 @@ PRE_IMPORT_FIXES() {
   rm -fr ${1}/materials/models/rear
   find ${1}/materials/ -name *.vmt | while read FILE; do convert_to_utf8 ${FILE}; done
 }
-MAKE_ASSET_PACK "/mnt/g/hfs"
+MAKE_ASSET_PACK "${S}/hfs"
 ##------------------------------------------------------------------------------ vampire (sdk for tth and model conversion)
 PRE_IMPORT_FIXES() {
   mv ${1}/materials/skybox/hav* ${1}/_cull
 }
-MAKE_ASSET_PACK "/mnt/g/vampire" "_MANUAL_INSERTION_.vpk"
+MAKE_ASSET_PACK "${S}/vampire" "_MANUAL_INSERTION_.vpk"
 ##------------------------------------------------------------------------------ EXPERIMENTAL: cm2013
-MAKE_ASSET_PACK "/mnt/g/cm2013"
+MAKE_ASSET_PACK "${S}/cm2013"
 ##------------------------------------------------------------------------------ hl1
 PRE_IMPORT_FIXES() {
   mv ${1}/materials/skybox/xen9* ${1}/_cull
 }
-MAKE_ASSET_PACK "${D}/Half-Life 2/hl1" "hl1_pak_dir.vpk"
+MAKE_ASSET_PACK "${S}/Half-Life 2/hl1" "hl1_pak_dir.vpk"
 ##------------------------------------------------------------------------------ hl1_hd
-MAKE_ASSET_PACK "${D}/Half-Life 2/hl1_hd" "hl1_hd_pak_dir.vpk"
+MAKE_ASSET_PACK "${S}/Half-Life 2/hl1_hd" "hl1_hd_pak_dir.vpk"
 ##------------------------------------------------------------------------------ snowdrop_escape
-MAKE_ASSET_PACK "${L}/Snowdrop Escape/snowdrop_escape" "sde_materials_dir.vpk" "sde_models_dir.vpk"
+MAKE_ASSET_PACK "${S}/Snowdrop Escape/snowdrop_escape" "sde_materials_dir.vpk" "sde_models_dir.vpk"

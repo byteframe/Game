@@ -57,7 +57,7 @@
     }
     "playrandom"
     {
-        "volume"        "0.25"
+        "volume"        "0.10"
         "pitch"         "100"
         "time"          "9,17"
         "soundlevel"    "SNDLVL_NONE"

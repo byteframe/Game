@@ -1,0 +1,19 @@
+"AddonInfo"
+{
+	"Dependencies"
+	{
+		"1"		"steamvr_home"
+		"2"		"hlvr"
+		"3"		"ambientcg"
+		"5"		"polyhaven"
+		"6"		"texturecan"
+		"7"		"polyhaven_models"
+		"8"		"robotrepair"
+		"9"		"props"
+		"10"	"1449922161"
+		"11"	"1546534740"
+		"11"	"sbmp"
+		"12"	"school_props"
+		"13"	"themask_scenebuild_megapack"
+	}
+}

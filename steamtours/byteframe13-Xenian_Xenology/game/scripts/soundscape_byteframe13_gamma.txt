@@ -113,4 +113,12 @@
         "origin"        "-454, 1144, 84"
         "wave"          "sounds/ambient/electric/amb_electronic_tv_screen_static_lp_02.vsnd"
     }
+    "playlooping"
+    {
+        "volume"        "1.5"
+        "pitch"         "100"
+        "origin"        "-452, 1226, 65"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/third_party/neko_purr_lp.vsnd"
+    }
 }

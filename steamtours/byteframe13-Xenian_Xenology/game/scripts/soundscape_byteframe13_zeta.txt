@@ -2,7 +2,7 @@
 {
     "playlooping"
     {
-        "volume"        "0.325"
+        "volume"        "0.375"
         "pitch"         "100"
         "soundlevel"    "SNDLVL_NONE"
         "wave"          "sounds/zeta.vsnd"
@@ -16,10 +16,10 @@
     }
     "playrandom"
     {
-        "volume"        "2.2"
+        "volume"        "1.125"
         "pitch"         "100"
         "time"          "1.50, 2.3"
-        "soundlevel"    "SNDLVL_60dB"
+        "soundlevel"    "SNDLVL_55dB"
         "origin"        "-680, 3537, -5"
         "rndwave"
         {
@@ -50,10 +50,10 @@
     }
     "playlooping"
     {
-        "volume"        "1"
+        "volume"        "0.8"
         "pitch"         "100"
         "origin"        "-382, 2451, 71"
-        "soundlevel"    "SNDLVL_55dB"
+        "soundlevel"    "SNDLVL_50dB"
         "wave"          "sounds/ambient/cap_3_inside_tape_machine3.vsnd"
     }
 

@@ -122,21 +122,6 @@ for DIR in *; do
   fi
 done
 
-# backup to desktop
-function backup()
-{
-  cd "${C}"/${MOD}/materials/models
-  for DIR in *; do
-    mkdir -p /mnt/c/Users/byteframe/Desktop/${DIR}_vmat_backup
-    find ${DIR} -name "*.vmat" -exec cp {} /mnt/c/Users/byteframe/Desktop/${DIR}_vmat_backup \;
-  done
-  cd "${C}"/${MOD}/models
-  for DIR in *; do
-    mkdir -p /mnt/c/Users/byteframe/Desktop/${DIR}_vmdl_backup
-    find ${DIR} -name "*.vmdl" -exec cp {} /mnt/c/Users/byteframe/Desktop/${DIR}_vmdl_backup \;
-  done
-}
-
 # take modified hammer properties and apply to vmdl
 function alter_vmdl()
 {
@@ -148,5 +133,133 @@ function alter_vmdl()
       -e "s:m_flQCScale = .*:m_flQCScale = $(echo ${LINE} | awk '{print $4}'):" \
       -e "s:m_vOrigin = .*:m_vOrigin = \[ $(echo ${LINE} | awk '{print $1}'), $(echo ${LINE} | awk '{print $2}'), -$(echo ${LINE} | awk '{print $3}') \]:" \
       $(echo ${LINE} | awk '{print $7}')
+  done
+}
+
+# finds a roughness map and makes an inverted copy and modify the material
+function roughness_to_gloss()
+{
+  find . -name *.vmat -exec grep -H Roughness {} \; | while read LINE; do
+    LINEA=(${LINE//\"/})
+    VMAT="${LINEA[0]:2:(-1)}"
+    if [[ "${LINE}" == *".png"* ]]; then
+      GLOSS="${LINEA[2]/.png/__inverted.png}"
+      ffmpeg -hide_banner -y -nostats -loglevel 0 -i "${LINEA[2]}" -vf negate "${GLOSS}" < /dev/null
+      sed -i -e "s:\"${LINEA[1]}\"\s*\"${LINEA[2]}\":\"$(echo ${LINEA[1]} | sed -e "s:Roughness:Glossiness:")\" \"${GLOSS}\":" "${VMAT}"
+    else
+      ROUGHA=($(echo ${LINE/*\[/} | sed -e "s:\]::" -e "s:\"::"))
+      sed -i -e "s:${LINEA[1]}.*:$(echo ${LINEA[1]} | sed -e "s:Roughness:Glossiness:")\" \"[$(bc <<< ${ROUGHA[0]}-1.000 | sed -e s:-:0:) $(bc <<< ${ROUGHA[1]}-1.000 | sed -e s:-:0:) $(bc <<< ${ROUGHA[2]}-1.000 | sed -e s:-:0:)]\":" "${VMAT}"
+    fi
+  done
+}
+
+# update vmat_c timestamps
+function touch_vmatc()
+{
+  for FILE in *.vmat_c; do
+    touch "${C}"/${1}/materials/${FILE/_c} -r ${FILE}
+  done
+}
+
+# modify reluctance values
+function reflectance_change()
+{
+  find . -type f -name "*.vmat" | while read FILE; do
+    if ! grep -q g_vReflectanceRange ${FILE}; then
+      sed -i -e 's:\.vfx":\.vfx"\n\tg_vReflectanceRange "[0.000 0.050]":' ${FILE}
+    elif echo ${FILE} | grep -qi metal_disabled; then
+      sed -i -e '/g_vReflectanceRange/c\  g_vReflectanceRange "[0.500 0.750]"' ${FILE}
+    else
+      sed -i -e '/g_vReflectanceRange/c\  g_vReflectanceRange "[0.000 0.050]"' ${FILE}
+    fi
+  done
+}
+function reflectance_reset()
+{
+  ADDON=${1}
+  if [ ! -z ${1} ] && [ -d "${C}"/${ADDON} ]; then
+    cd "${C}"/${ADDON}
+    if [ ${ADDON} != hlvr ]; then
+      find . -type f -name "*.vmat" -exec sed -i -e '/g_vReflectanceRange/c\  g_vReflectanceRange "[0.000 1.000]"' {} \;
+    else
+      find . -type f -name "*.vmat" -exec sed -i -e 's:g_vReflectanceRange "\[0.000 0.050\]":g_vReflectanceRange "[0.000 1.000]":' {} \;
+    fi
+    "${G}"/../bin/win64/resourcecompiler.exe -nominidumps -r -i "C:/Program Files (x86)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/${ADDON}/${TYPE}/*"
+    ( cd "${G}"/../bin/win64 ; ./steamtourscfg.exe -addon ${ADDON} -retail -useappid SteamVRAppID -vconport 29009 -disable_qaccessible -nominidumps -dev -developer +sv_cheats 1 -novr)
+  fi
+}
+
+# replace missing transparency maps with the color (incorrect)
+function replace_trans_with_color()
+{
+  find . -name "*.vmat" | while read VMAT; do
+    grep -o "materials/.*\.png" ${VMAT} | while read FILE; do
+      if [ ! -e "${FILE}" ] && [[ "${FILE}" != *"_rough.png" ]] && [[ "${FILE}" != *"_metal.png" ]]; then
+        COLOR=$(echo $(grep "\"TextureColor\"" "${VMAT}" | sed -e "s:\"::g" -e s:TextureColor::))
+        sed -i -e "s:${FILE}:${COLOR}:" "${VMAT}"
+      fi
+    done
+  done
+}
+
+# find materials marked as edited
+function find_edited_materials()
+{
+  for SRC in /mnt/d/Source /mnt/s; do
+    cd "${SRC}"
+    find . -mindepth 1 -maxdepth 1 -type d -not -name "System Volume Information" -not -name "_*" -not -name "\$RECYCLE.BIN" -not -name "*source1import_*" | while read DIR; do
+      find ${DIR} -name "*.vmat" | while read FILE; do
+        if [[ ${DIR} == source1import_* ]]; then
+          grep -H "//" "${FILE}"
+        else
+          grep -H "////" "${FILE}"
+        fi
+      done
+    done
+  done
+}
+
+# sync: modified from list, blend/top level, whole addons excluding source1import
+function backup_modifed_materials()
+{
+  cd /mnt/d/Source
+  for FILE in $(cat /mnt/c/Users/byteframe/Desktop/cp.txt); do
+    cp /mnt/d/Source/"${FILE}" /mnt/t/Source/"${FILE}"
+  done
+  find . -mindepth 1 -maxdepth 1 -type d -not -name "System Volume Information" -not -name "_*" -not -name "\$RECYCLE.BIN" | while read DIR; do
+    cp ${DIR}/materials/*.* /mnt/t/${DIR}/materials
+  done
+}
+
+# quick backup to desktop of vmat/vmdl files
+function desktop_backup_vmat_vmdl()
+{
+  ADDON=${1}
+  cd "${C}"/${ADDON}/materials/models
+  for DIR in *; do
+    mkdir -p /mnt/c/Users/byteframe/Desktop/${DIR}_vmat_backup
+    find ${DIR} -name "*.vmat" -exec cp {} /mnt/c/Users/byteframe/Desktop/${DIR}_vmat_backup \;
+  done
+  cd "${C}"/${ADDON}/models
+  for DIR in *; do
+    mkdir -p /mnt/c/Users/byteframe/Desktop/${DIR}_vmdl_backup
+    find ${DIR} -name "*.vmdl" -exec cp {} /mnt/c/Users/byteframe/Desktop/${DIR}_vmdl_backup \;
+  done
+}
+
+# prints rsync commands for src/dst
+function rsync_addons()
+{
+  N=n
+  SRC=/mnt/v
+  DST=/mnt/x
+  cd "${SRC}"
+  for DIR in $(find . -maxdepth 1 -type d -not -name "System Volume Information" -not -name "_*" -not -name "\$RECYCLE.BIN" -not -name "." -not -name "source1import_*" | sed "s|^\./||"); do
+    if [ ! -d ${DST}/"${DIR}" ]; then
+      echo "ERROR: destination directory not present"
+    else
+      echo -e "\n#---- ${DIR} ----\n"
+      echo rsync --delete --size-only -lruv${N} ${SRC}/"${DIR}"/ ${DST}/"${DIR}"
+    fi
   done
 }

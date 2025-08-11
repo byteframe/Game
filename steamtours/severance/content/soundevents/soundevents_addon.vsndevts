@@ -1,0 +1,27 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+  fridge_open =
+  {
+      type = "destinations.simple_vr"
+      volume = 1.0
+      occlusion_amount = 0.8
+      volume_falloff_min = 20.0
+      volume_falloff_max = 300.0
+      vsnd_files = 
+      [
+          "sounds/fridge/fridge_open_01.vsnd"
+      ]
+  }
+  fridge_close =
+  {
+      type = "destinations.simple_vr"
+      volume = 1.0
+      occlusion_amount = 0.8
+      volume_falloff_min = 20.0
+      volume_falloff_max = 300.0
+      vsnd_files = 
+      [
+          "sounds/fridge/fridge_close_01.vsnd"
+      ]
+  }
+}

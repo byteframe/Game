@@ -1,0 +1,72 @@
+"soundscape_byteframe13_beta"
+{
+    "playlooping"
+    {
+        "volume"        "0.15"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_NONE"
+        "wave"          "sounds/beta.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "origin"        "0, 114, 0"
+        "soundlevel"    "SNDLVL_60dB"
+        "wave"          "sounds/waterfeature.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.75"
+        "pitch"         "100"
+        "origin"        "246, 508, 79"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/water_burstpipe_loop.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.1"
+        "pitch"         "100"
+        "origin"        "131, 500, -40"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/fly_swarm_loop.vsnd"
+    }
+    "playrandom"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "time"          "4, 9"
+        "soundlevel"    "SNDLVL_55dB"
+        "origin"        "-223, 182, -51"
+        "rndwave"
+        {
+            "wave"          "sounds/props/salien/pickup_01.vsnd"
+            "wave"          "sounds/props/salien/pickup_02.vsnd"
+            "wave"          "sounds/props/salien/pickup_03.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "1.0"
+        "pitch"         "100"
+        "origin"        "87, 908, -41"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambience/generator_truckexterior_lp_01.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "0.15"
+        "pitch"         "100"
+        "origin"        "0, 588, 153"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/ambient/cap_2_boiler_rough1.vsnd"
+    }
+    "playlooping"
+    {
+        "volume"        "1.25"
+        "pitch"         "100"
+        "origin"        "59, 205, -18"
+        "soundlevel"    "SNDLVL_55dB"
+        "wave"          "sounds/bbq_sizzle_loop.vsnd"
+    }
+}

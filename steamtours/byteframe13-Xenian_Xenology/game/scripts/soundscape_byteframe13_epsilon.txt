@@ -2,14 +2,14 @@
 {
     "playlooping"
     {
-        "volume"        "0.225"
+        "volume"        "0.3"
         "pitch"         "100"
         "soundlevel"    "SNDLVL_NONE"
         "wave"          "sounds/epsilon.vsnd"
     }
     "playlooping"
     {
-        "volume"        "0.35"
+        "volume"        "0.25"
         "pitch"         "100"
         "soundlevel"    "SNDLVL_NONE"
         "wave"          "sounds/ambience/cave_ambience_lp_01.vsnd"
@@ -31,7 +31,7 @@
         "origin"        "-103, 2273, 34"
         "rndwave"
         {
-            "wave"          "sounds/props/tf2_sentry1/sentry_scan.vsnd"
+            "wave"      "sounds/props/tf2_sentry1/sentry_scan.vsnd"
         }
     }
     "playlooping"
@@ -52,7 +52,7 @@
     }
     "playlooping"
     {
-        "volume"        "1.1"
+        "volume"        "1.0"
         "pitch"         "100"
         "origin"        "-3, 1522, -21"
         "soundlevel"    "SNDLVL_65dB"
@@ -94,6 +94,18 @@
             "wave"          "sounds/ambience/cave_drip_one_shot_03.vsnd"
             "wave"          "sounds/ambience/cave_drip_one_shot_04.vsnd"
             "wave"          "sounds/ambience/cave_drip_one_shot_05.vsnd"
+        }
+    }
+    "playrandom"
+    {
+        "volume"        "0.8"
+        "pitch"         "100"
+        "time"          "3.25"
+        "soundlevel"    "SNDLVL_50dB"
+        "origin"        "-103, 2273, 34"
+        "rndwave"
+        {
+            "wave"      "sounds/props/tf2_sentry1/sentry_scan.vsnd"
         }
     }
     "playlooping"

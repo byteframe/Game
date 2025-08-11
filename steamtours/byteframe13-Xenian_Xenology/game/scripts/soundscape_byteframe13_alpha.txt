@@ -132,4 +132,17 @@
         "soundlevel"    "SNDLVL_60dB"
         "wave"          "sounds/ambient/cap_2_boiler_rough1.vsnd"
     }
+    "playrandom"
+    {
+        "volume"        "0.8"
+        "pitch"         "100"
+        "time"          "3.25"
+        "soundlevel"    "SNDLVL_50dB"
+        "origin"        "-449, 412, 15"
+        "rndwave"
+        {
+            "wave"      "sounds/props/tf2_sentry1/sentry_scan.vsnd"
+        }
+    }
+
 }

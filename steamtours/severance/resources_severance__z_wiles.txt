@@ -1,0 +1,138 @@
+# steamtours | 7A072F410AC8B7C9 (materials/models/props/hats/rubber_001.vmat)
+# ambientcg | 62365F51442F538A (materials/plastic013b.vmat)
+  mkdir -p lumon_industries_wiles/materials ; cp ambientcg/materials/plastic013b.vmat_c lumon_industries_wiles/materials/plastic013b.vmat_c
+  mkdir -p lumon_industries_wiles/materials/plastic013b ; cp ambientcg/materials/plastic013b/plastic013b_4k-png_normalgl_png_e874876a.vtex_c lumon_industries_wiles/materials/plastic013b/plastic013b_4k-png_normalgl_png_e874876a.vtex_c
+  mkdir -p lumon_industries_wiles/materials/plastic013b ; cp ambientcg/materials/plastic013b/plastic013b_4k-png_color_png_7b591fb5.vtex_c lumon_industries_wiles/materials/plastic013b/plastic013b_4k-png_color_png_7b591fb5.vtex_c
+  mkdir -p lumon_industries_wiles/materials/plastic013b ; cp ambientcg/materials/plastic013b/plastic013b_4k-png_color_png_3e20111d.vtex_c lumon_industries_wiles/materials/plastic013b/plastic013b_4k-png_color_png_3e20111d.vtex_c
+# core | FF7D84F44A4B07B9 (materials/dev/primary_black.vmat)
+# 1546534740 | 3C3EB9175BF3C31B (materials/plastic/plastic_006.vmat)
+# severance | 74CFACE3BFBA032D (models/props/office_leather_chair_flannigan_531bff2f2f884547b941cde26e7d3270.vmdl)
+# ambientcg | 98F3A55FD3F3E212 (materials/carpet014.vmat)
+  mkdir -p lumon_industries_wiles/materials ; cp ambientcg/materials/carpet014.vmat_c lumon_industries_wiles/materials/carpet014.vmat_c
+  mkdir -p lumon_industries_wiles/materials/carpet014 ; cp ambientcg/materials/carpet014/carpet014_4k-png_normalgl_png_c85a9f32.vtex_c lumon_industries_wiles/materials/carpet014/carpet014_4k-png_normalgl_png_c85a9f32.vtex_c
+  mkdir -p lumon_industries_wiles/materials/carpet014 ; cp ambientcg/materials/carpet014/carpet014_4k-png_color_png_6c4ec3b1.vtex_c lumon_industries_wiles/materials/carpet014/carpet014_4k-png_color_png_6c4ec3b1.vtex_c
+  mkdir -p lumon_industries_wiles/materials/carpet014 ; cp ambientcg/materials/carpet014/carpet014_4k-png_color_png_6734526a.vtex_c lumon_industries_wiles/materials/carpet014/carpet014_4k-png_color_png_6734526a.vtex_c
+# ambientcg | 35392723E879A361 (materials/fabric019.vmat)
+  mkdir -p lumon_industries_wiles/materials ; cp ambientcg/materials/fabric019.vmat_c lumon_industries_wiles/materials/fabric019.vmat_c
+  mkdir -p lumon_industries_wiles/materials/fabric019 ; cp ambientcg/materials/fabric019/fabric019_4k-png_normalgl_png_a8824919.vtex_c lumon_industries_wiles/materials/fabric019/fabric019_4k-png_normalgl_png_a8824919.vtex_c
+  mkdir -p lumon_industries_wiles/materials/fabric019 ; cp ambientcg/materials/fabric019/fabric019_4k-png_color_png_6054be00.vtex_c lumon_industries_wiles/materials/fabric019/fabric019_4k-png_color_png_6054be00.vtex_c
+  mkdir -p lumon_industries_wiles/materials/fabric019 ; cp ambientcg/materials/fabric019/fabric019_4k-png_color_png_dede39c4.vtex_c lumon_industries_wiles/materials/fabric019/fabric019_4k-png_color_png_dede39c4.vtex_c
+  mkdir -p lumon_industries_wiles/materials/default ; cp ambientcg/materials/default/default_refl_tga_abee3d33.vtex_c lumon_industries_wiles/materials/default/default_refl_tga_abee3d33.vtex_c
+# 1546534740 | E4CC5FFC8800C470 (materials/metal/metal_006.vmat)
+# 1546534740 | 8285C614AD55AD64 (materials/metal/paint_002.vmat)
+# ambientcg | BC7D89D74615B404 (materials/metal055a.vmat)
+  mkdir -p lumon_industries_wiles/materials ; cp ambientcg/materials/metal055a.vmat_c lumon_industries_wiles/materials/metal055a.vmat_c
+  mkdir -p lumon_industries_wiles/materials/metal055a ; cp ambientcg/materials/metal055a/metal055a_4k-png_normalgl_png_c4f242f8.vtex_c lumon_industries_wiles/materials/metal055a/metal055a_4k-png_normalgl_png_c4f242f8.vtex_c
+  mkdir -p lumon_industries_wiles/materials/metal055a ; cp ambientcg/materials/metal055a/metal055a_4k-png_color_png_bb49d89c.vtex_c lumon_industries_wiles/materials/metal055a/metal055a_4k-png_color_png_bb49d89c.vtex_c
+  mkdir -p lumon_industries_wiles/materials/metal055a ; cp ambientcg/materials/metal055a/metal055a_4k-png_metalness_png_3ad1bf50.vtex_c lumon_industries_wiles/materials/metal055a/metal055a_4k-png_metalness_png_3ad1bf50.vtex_c
+# 1546534740 | 3B9859E82CACD16A (materials/models/props_items/plate_01_aluminium_001.vmat)
+# ambientcg | E2115437E73FC6AE (materials/metal011.vmat)
+  mkdir -p lumon_industries_wiles/materials ; cp ambientcg/materials/metal011.vmat_c lumon_industries_wiles/materials/metal011.vmat_c
+  mkdir -p lumon_industries_wiles/materials/metal011 ; cp ambientcg/materials/metal011/metal011_4k-png_normalgl_png_8360b540.vtex_c lumon_industries_wiles/materials/metal011/metal011_4k-png_normalgl_png_8360b540.vtex_c
+  mkdir -p lumon_industries_wiles/materials/metal011 ; cp ambientcg/materials/metal011/metal011_4k-png_color_png_fd58ee90.vtex_c lumon_industries_wiles/materials/metal011/metal011_4k-png_color_png_fd58ee90.vtex_c
+  mkdir -p lumon_industries_wiles/materials/metal011 ; cp ambientcg/materials/metal011/metal011_4k-png_metalness_png_8c9176c9.vtex_c lumon_industries_wiles/materials/metal011/metal011_4k-png_metalness_png_8c9176c9.vtex_c
+# ambientcg | 52178367E9A521E1 (materials/metal010.vmat)
+  mkdir -p lumon_industries_wiles/materials ; cp ambientcg/materials/metal010.vmat_c lumon_industries_wiles/materials/metal010.vmat_c
+  mkdir -p lumon_industries_wiles/materials/metal010 ; cp ambientcg/materials/metal010/metal010_4k-png_normalgl_png_9288f794.vtex_c lumon_industries_wiles/materials/metal010/metal010_4k-png_normalgl_png_9288f794.vtex_c
+  mkdir -p lumon_industries_wiles/materials/metal010 ; cp ambientcg/materials/metal010/metal010_4k-png_color_png_1807fe82.vtex_c lumon_industries_wiles/materials/metal010/metal010_4k-png_color_png_1807fe82.vtex_c
+  mkdir -p lumon_industries_wiles/materials/metal010 ; cp ambientcg/materials/metal010/metal010_4k-png_metalness_png_d8278aad.vtex_c lumon_industries_wiles/materials/metal010/metal010_4k-png_metalness_png_d8278aad.vtex_c
+# core | 8B0480138F15778B (materials/tools/toolsblocklight.vmat)
+# 1546534740 | 2B1AB87C66283E2F (materials/metal/silver_001.vmat)
+# 1449922161 | 0C51E6E041911F31 (materials/metal/dark_metal_scratched001.vmat)
+# 1546534740 | CF1022154A4DC6EA (materials/metal/black_silver_001.vmat)
+# ambientcg | F00882C4805679D7 (materials/wood026.vmat)
+  mkdir -p lumon_industries_wiles/materials ; cp ambientcg/materials/wood026.vmat_c lumon_industries_wiles/materials/wood026.vmat_c
+  mkdir -p lumon_industries_wiles/materials/wood026 ; cp ambientcg/materials/wood026/wood026_4k-png_normalgl_png_ff2c2a06.vtex_c lumon_industries_wiles/materials/wood026/wood026_4k-png_normalgl_png_ff2c2a06.vtex_c
+  mkdir -p lumon_industries_wiles/materials/wood026 ; cp ambientcg/materials/wood026/wood026_4k-png_color_png_be1fcaa5.vtex_c lumon_industries_wiles/materials/wood026/wood026_4k-png_color_png_be1fcaa5.vtex_c
+  mkdir -p lumon_industries_wiles/materials/wood026 ; cp ambientcg/materials/wood026/wood026_4k-png_color_png_f07979fb.vtex_c lumon_industries_wiles/materials/wood026/wood026_4k-png_color_png_f07979fb.vtex_c
+# hlvr | DBBABB0347178CAE (models/props/interior_deco/tabletop_pen03.vmdl)
+  mkdir -p lumon_industries_wiles/models/props/interior_deco ; cp hlvr/models/props/interior_deco/tabletop_pen03.vmdl_c lumon_industries_wiles/models/props/interior_deco/tabletop_pen03.vmdl_c
+#### ERROR: file not found: B3F9DEFAD88C8110 (materials/metal/metal_beam001.vmat)
+# severance | 063A30649AB1C2D4 (materials/page13.vmat)
+# 1546534740 | E346A3AB5BE6A530 (materials/metal/chrome_002.vmat)
+# 1449922161 | 896FA595C336A261 (materials/misc/carpet001_blue.vmat)
+# severance | 9B6CB3A0C09A9D27 (materials/page14.vmat)
+# 1546534740 | 0875AC23556FB85B (materials/cloth/cloth_001.vmat)
+# core | 59EED402B11EBE60 (materials/dev/primary_white_emissive.vmat)
+# robotrepair | 8381567926D057A8 (particles/atmospherics/plasterfx_combined.vpcf)
+  mkdir -p lumon_industries_wiles/particles/atmospherics ; cp robotrepair/particles/atmospherics/plasterfx_combined.vpcf_c lumon_industries_wiles/particles/atmospherics/plasterfx_combined.vpcf_c
+  mkdir -p lumon_industries_wiles/particles/atmospherics ; cp robotrepair/particles/atmospherics/plaster_fx_linger.vpcf_c lumon_industries_wiles/particles/atmospherics/plaster_fx_linger.vpcf_c
+  mkdir -p lumon_industries_wiles/particles/atmospherics ; cp robotrepair/particles/atmospherics/room_atmos_plaster_dropseeds.vpcf_c lumon_industries_wiles/particles/atmospherics/room_atmos_plaster_dropseeds.vpcf_c
+  mkdir -p lumon_industries_wiles/particles/atmospherics ; cp robotrepair/particles/atmospherics/plaster_fx_lingerlight.vpcf_c lumon_industries_wiles/particles/atmospherics/plaster_fx_lingerlight.vpcf_c
+  mkdir -p lumon_industries_wiles/particles/atmospherics ; cp robotrepair/particles/atmospherics/plasterfx_combined.vpcf_c lumon_industries_wiles/particles/atmospherics/plasterfx_combined.vpcf_c
+# 1449922161 | EC8AC4B6AF269CFF (materials/water/pavilion_water002.vmat)
+# 1546534740 | 83C5AA6A57CE510F (particles/candyshop/env/fx_env_radiator_steam_01_c_water.vpcf)
+# severance | 53BBA8D6350FED1D (models/props/water_cooler_12_mb_fea47b4738774f238b2914b8852c7bb1.vmdl)
+# hlvr | 17B9F6F5473FB1D5 (models/props/interior_deco/tabletop_papercup.vmdl)
+  mkdir -p lumon_industries_wiles/models/props/interior_deco ; cp hlvr/models/props/interior_deco/tabletop_papercup.vmdl_c lumon_industries_wiles/models/props/interior_deco/tabletop_papercup.vmdl_c
+# 1546534740 | 407AA13DFA219C9D (particles/candyshop/env/fx_env_waterdrip_01.vpcf)
+# 1546534740 | 8200D24C5E0F0AA7 (materials/glass/glass_002.vmat)
+# hlvr | 14A35E310E2085AE (models/props/interior_deco/tabletop_papercup_broken.vmdl)
+  mkdir -p lumon_industries_wiles/models/props/interior_deco ; cp hlvr/models/props/interior_deco/tabletop_papercup_broken.vmdl_c lumon_industries_wiles/models/props/interior_deco/tabletop_papercup_broken.vmdl_c
+# severance | 50F3576FFCBD3889 (materials/lumonrecyles.vmat)
+# hlvr | 4F99F7E5F328A0BB (materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_illum.vmat)
+  mkdir -p lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001 ; cp hlvr/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_illum.vmat_c lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_illum.vmat_c
+  mkdir -p lumon_industries_wiles/materials/default ; cp hlvr/materials/default/default_ao_tga_38a5993c.vtex_c lumon_industries_wiles/materials/default/default_ao_tga_38a5993c.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001 ; cp hlvr/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_normal_png_ab0ea630.vtex_c lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_normal_png_ab0ea630.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001 ; cp hlvr/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_color_png_47da2103.vtex_c lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_color_png_47da2103.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001 ; cp hlvr/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_29d1be89_metal_png_2c68ebc2.vtex_c lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_29d1be89_metal_png_2c68ebc2.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001 ; cp hlvr/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_selfillum_png_49574dbf.vtex_c lumon_industries_wiles/materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_selfillum_png_49574dbf.vtex_c
+# props | 350E64EFB037A7B8 (models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vmdl)
+  mkdir -p lumon_industries_wiles/models/slasherin/last_year/props/retro-pack ; cp props/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vmdl_c lumon_industries_wiles/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vmdl_c
+  mkdir -p lumon_industries_wiles/models/slasherin/last_year/props/retro-pack ; cp props/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vphys_c lumon_industries_wiles/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vphys_c
+  mkdir -p lumon_industries_wiles/models/slasherin/last_year/props/retro-pack ; cp props/models/slasherin/last_year/props/retro-pack/sm_monitor_01a_bg_sm_monitor_01a_lod0.vmesh_c lumon_industries_wiles/models/slasherin/last_year/props/retro-pack/sm_monitor_01a_bg_sm_monitor_01a_lod0.vmesh_c
+  mkdir -p lumon_industries_wiles/models/slasherin/last_year/props/retro-pack ; cp props/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vagrp_c lumon_industries_wiles/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vagrp_c
+  mkdir -p lumon_industries_wiles/models/slasherin/last_year/props/retro-pack ; cp props/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vseq_c lumon_industries_wiles/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vseq_c
+  mkdir -p lumon_industries_wiles/models/slasherin/last_year/props/retro-pack ; cp props/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vanim_c lumon_industries_wiles/models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vanim_c
+# polyhaven_models | FB2031270DAB2FBB (models/polyhaven/desk_lamp_arm_01.vmdl)
+  mkdir -p lumon_industries_wiles/models/polyhaven ; cp polyhaven_models/models/polyhaven/desk_lamp_arm_01.vmdl_c lumon_industries_wiles/models/polyhaven/desk_lamp_arm_01.vmdl_c
+  mkdir -p lumon_industries_wiles/models/polyhaven ; cp polyhaven_models/models/polyhaven/desk_lamp_arm_01.vmesh_c lumon_industries_wiles/models/polyhaven/desk_lamp_arm_01.vmesh_c
+# hlvr | A453EC317D0E4F4E (models/props/interior_deco/tabletop_pen01.vmdl)
+  mkdir -p lumon_industries_wiles/models/props/interior_deco ; cp hlvr/models/props/interior_deco/tabletop_pen01.vmdl_c lumon_industries_wiles/models/props/interior_deco/tabletop_pen01.vmdl_c
+# severance | 20063576DBF1CF49 (materials/page3.vmat)
+# severance | A93A2B64740DE1EA (materials/page2.vmat)
+# 1449922161 | AD79CD8F36BD4478 (materials/metal/metal_scratched002_beige.vmat)
+# robotrepair | B0030D43AA46E75E (aperture/models/materials/cabinet_dials_col.vmat)
+  mkdir -p lumon_industries_wiles/aperture/models/materials ; cp robotrepair/aperture/models/materials/cabinet_dials_col.vmat_c lumon_industries_wiles/aperture/models/materials/cabinet_dials_col.vmat_c
+  mkdir -p lumon_industries_wiles/aperture/models/materials ; cp robotrepair/aperture/models/materials/cabinet_dials_col_tga_1fbe5890.vtex_c lumon_industries_wiles/aperture/models/materials/cabinet_dials_col_tga_1fbe5890.vtex_c
+  mkdir -p lumon_industries_wiles/materials/default ; cp robotrepair/materials/default/default_normal_tga_9204755b.vtex_c lumon_industries_wiles/materials/default/default_normal_tga_9204755b.vtex_c
+  mkdir -p lumon_industries_wiles/aperture/models/materials ; cp robotrepair/aperture/models/materials/cabinet_dials_illlum_psd_782375c3.vtex_c lumon_industries_wiles/aperture/models/materials/cabinet_dials_illlum_psd_782375c3.vtex_c
+# 1546534740 | E166A36E909D37BA (materials/metal/brass_001.vmat)
+# hlvr | 0FC526B885093C06 (models/industrial/basestation_microphone001.vmdl)
+  mkdir -p lumon_industries_wiles/models/industrial ; cp hlvr/models/industrial/basestation_microphone001.vmdl_c lumon_industries_wiles/models/industrial/basestation_microphone001.vmdl_c
+# ambientcg | 41EC5A1FFD6E5AF8 (materials/wood016.vmat)
+  mkdir -p lumon_industries_wiles/materials ; cp ambientcg/materials/wood016.vmat_c lumon_industries_wiles/materials/wood016.vmat_c
+  mkdir -p lumon_industries_wiles/materials/wood016 ; cp ambientcg/materials/wood016/wood016_4k-png_normalgl_png_cb472a29.vtex_c lumon_industries_wiles/materials/wood016/wood016_4k-png_normalgl_png_cb472a29.vtex_c
+  mkdir -p lumon_industries_wiles/materials/wood016 ; cp ambientcg/materials/wood016/wood016_4k-png_color_png_ff0820d4.vtex_c lumon_industries_wiles/materials/wood016/wood016_4k-png_color_png_ff0820d4.vtex_c
+  mkdir -p lumon_industries_wiles/materials/wood016 ; cp ambientcg/materials/wood016/wood016_4k-png_color_png_167ee386.vtex_c lumon_industries_wiles/materials/wood016/wood016_4k-png_color_png_167ee386.vtex_c
+# polyhaven_models | 49FC4563198D9FA3 (materials/models/polyhaven/desk_lamp_arm_01_light.vmat)
+  mkdir -p lumon_industries_wiles/materials/models/polyhaven ; cp polyhaven_models/materials/models/polyhaven/desk_lamp_arm_01_light.vmat_c lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01_light.vmat_c
+  mkdir -p lumon_industries_wiles/materials/default ; cp polyhaven_models/materials/default/default_color_tga_47b1af3d.vtex_c lumon_industries_wiles/materials/default/default_color_tga_47b1af3d.vtex_c
+  mkdir -p lumon_industries_wiles/materials/default ; cp polyhaven_models/materials/default/default_normal_tga_9204755b.vtex_c lumon_industries_wiles/materials/default/default_normal_tga_9204755b.vtex_c
+  mkdir -p lumon_industries_wiles/materials/dev ; cp polyhaven_models/materials/dev/primary_white_color_tga_3aa3dd22.vtex_c lumon_industries_wiles/materials/dev/primary_white_color_tga_3aa3dd22.vtex_c
+# hlvr | DE81DAE303995547 (materials/models/props/interior_deco/tabletop_props_03.vmat)
+  mkdir -p lumon_industries_wiles/materials/models/props/interior_deco ; cp hlvr/materials/models/props/interior_deco/tabletop_props_03.vmat_c lumon_industries_wiles/materials/models/props/interior_deco/tabletop_props_03.vmat_c
+  mkdir -p lumon_industries_wiles/materials/models/props/interior_deco ; cp hlvr/materials/models/props/interior_deco/tabletop_props_03_ao_png_2d83f144.vtex_c lumon_industries_wiles/materials/models/props/interior_deco/tabletop_props_03_ao_png_2d83f144.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/props/interior_deco ; cp hlvr/materials/models/props/interior_deco/tabletop_props_03_normal_png_29defad9.vtex_c lumon_industries_wiles/materials/models/props/interior_deco/tabletop_props_03_normal_png_29defad9.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/props/interior_deco ; cp hlvr/materials/models/props/interior_deco/tabletop_props_03_color_png_2bd21cb0.vtex_c lumon_industries_wiles/materials/models/props/interior_deco/tabletop_props_03_color_png_2bd21cb0.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/props/interior_deco ; cp hlvr/materials/models/props/interior_deco/tabletop_props_03_cca581ae_metal_png_234fa532.vtex_c lumon_industries_wiles/materials/models/props/interior_deco/tabletop_props_03_cca581ae_metal_png_234fa532.vtex_c
+# polyhaven_models | 46648C689A95E66F (materials/models/polyhaven/desk_lamp_arm_01.vmat)
+  mkdir -p lumon_industries_wiles/materials/models/polyhaven ; cp polyhaven_models/materials/models/polyhaven/desk_lamp_arm_01.vmat_c lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01.vmat_c
+  mkdir -p lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01 ; cp polyhaven_models/materials/models/polyhaven/desk_lamp_arm_01/desk_lamp_arm_01_ao_4k_png_4b036d05.vtex_c lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01/desk_lamp_arm_01_ao_4k_png_4b036d05.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01 ; cp polyhaven_models/materials/models/polyhaven/desk_lamp_arm_01/desk_lamp_arm_01_nor_gl_4k_png_5b8026ae.vtex_c lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01/desk_lamp_arm_01_nor_gl_4k_png_5b8026ae.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01 ; cp polyhaven_models/materials/models/polyhaven/desk_lamp_arm_01/desk_lamp_arm_01_diff_4k__byteframe1_png_c87f41ff.vtex_c lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01/desk_lamp_arm_01_diff_4k__byteframe1_png_c87f41ff.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01 ; cp polyhaven_models/materials/models/polyhaven/desk_lamp_arm_01/desk_lamp_arm_01_metal_4k_png_612137a1.vtex_c lumon_industries_wiles/materials/models/polyhaven/desk_lamp_arm_01/desk_lamp_arm_01_metal_4k_png_612137a1.vtex_c
+# severance | 1BAFBFA39C6D112E (materials/models/props/water_cooler_12_mb_fea47b4738774f238b2914b8852c7bb1_02.vmat)
+# severance | 78312681D6FA0C76 (materials/models/props/water_cooler_12_mb_fea47b4738774f238b2914b8852c7bb1_01.vmat)
+# hlvr | 0646B78FC9EA6511 (models/industrial/materials/microphone.vmat)
+  mkdir -p lumon_industries_wiles/models/industrial/materials ; cp hlvr/models/industrial/materials/microphone.vmat_c lumon_industries_wiles/models/industrial/materials/microphone.vmat_c
+  mkdir -p lumon_industries_wiles/models/industrial/materials ; cp hlvr/models/industrial/materials/microphone_ao_png_59fbb79f.vtex_c lumon_industries_wiles/models/industrial/materials/microphone_ao_png_59fbb79f.vtex_c
+  mkdir -p lumon_industries_wiles/models/industrial/materials ; cp hlvr/models/industrial/materials/microphone_normal_png_731214bb.vtex_c lumon_industries_wiles/models/industrial/materials/microphone_normal_png_731214bb.vtex_c
+  mkdir -p lumon_industries_wiles/models/industrial/materials ; cp hlvr/models/industrial/materials/microphone_color_png_f1550eca.vtex_c lumon_industries_wiles/models/industrial/materials/microphone_color_png_f1550eca.vtex_c
+  mkdir -p lumon_industries_wiles/models/industrial/materials ; cp hlvr/models/industrial/materials/microphone_dfa1e9c4_metal_png_647479cd.vtex_c lumon_industries_wiles/models/industrial/materials/microphone_dfa1e9c4_metal_png_647479cd.vtex_c
+# severance | 604D4E188259AFE7 (materials/models/props/water_cooler_12_mb_fea47b4738774f238b2914b8852c7bb1_03.vmat)
+# props | 20B4CF02F79CF1BA (materials/models/slasherin/last_year/props/mi_monitor_01a.vmat)
+  mkdir -p lumon_industries_wiles/materials/models/slasherin/last_year/props ; cp props/materials/models/slasherin/last_year/props/mi_monitor_01a.vmat_c lumon_industries_wiles/materials/models/slasherin/last_year/props/mi_monitor_01a.vmat_c
+  mkdir -p lumon_industries_wiles/materials/models/slasherin/last_year/props ; cp props/materials/models/slasherin/last_year/props/tx_monitor_01a_nrm_tiff_8837215c.vtex_c lumon_industries_wiles/materials/models/slasherin/last_year/props/tx_monitor_01a_nrm_tiff_8837215c.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/slasherin/last_year/props ; cp props/materials/models/slasherin/last_year/props/tx_monitor_01a_alb_tiff_2de7b151.vtex_c lumon_industries_wiles/materials/models/slasherin/last_year/props/tx_monitor_01a_alb_tiff_2de7b151.vtex_c
+  mkdir -p lumon_industries_wiles/materials/models/slasherin/last_year/props ; cp props/materials/models/slasherin/last_year/props/tx_monitor_01a_alb_tiff_b3038481.vtex_c lumon_industries_wiles/materials/models/slasherin/last_year/props/tx_monitor_01a_alb_tiff_b3038481.vtex_c

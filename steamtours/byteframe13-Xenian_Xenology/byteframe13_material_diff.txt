@@ -1,0 +1,406 @@
+        //TextureNormal "materials/models/shared/normal_flat_noalpha.tiff"
+        //section ampersand F_SELF_ILLUM        "1"
+        //TextureSelfIllumMask  "[1.000000 1.000000 1.000000 1.000000]"
+        //TextureSpecularExponent       "materials/models/masks/ryoku_kabuki/ryoku_kabuki_exp.tiff"
+D://Source/source1import_berimbau/materials/models/masks/ryoku_kabuki/ryoku_kabuki.vmat
+        //TextureGlossiness     "materials/models/props_tutorial/shoji_screen_spec_normal___a_gloss.tiff" >> TextureGlossiness  "[0.000000 0.000000 0.000000 0.000000]" \n TextureReflectance   "[0.000000 0.000000 0.000000 0.000000]"
+        // section a b l F_RENDER_BACKFACES     "1"
+D://Source/source1import_berimbau/materials/models/props_tutorial/shoji_screen_1.vmat
+  //sectionhashtv
+  g_vTexCoordScrollSpeed "[0.1 0.0]"
+D://Source/source1import_berimbau/materials/neon/district_ticker.vmat
+        //sectionb6F_UNLIT      "1"
+D://Source/source1import_bms/materials/models/props_am/am_babyframe.vmat
+        //section 1 m eh F_SELF_ILLUM   "1"
+        //TextureSelfIllumMask  "[1.000000 1.000000 1.000000 1.000000]"
+D://Source/source1import_bms/materials/models/props_blackmesa/wallcomputer.vmat
+        //caretF_SELF_ILLUM     "1"
+D://Source/source1import_bms/materials/models/props_xen/foliage/devils_puffball.vmat
+        //caret F_SELF_ILLUM    "1"
+D://Source/source1import_bms/materials/models/props_xen/foliage/xen_fleshyflowerstalk.vmat
+        //sectionb5nah F_SELF_ILLUM     "1"
+        //TextureSelfIllumMask  "[1.000000 1.000000 1.000000 1.000000]"
+D://Source/source1import_bms/materials/models/props_xen/interloper/factory_monitor_base.vmat
+  //caret
+D://Source/source1import_bms/materials/models/props_xen/interloper/vat.vmat
+        // //"
+        // Flesh Interior Pass"
+D://Source/source1import_cm2013/materials/models/realkendra2_interior/body_domina.vmat
+        // //"
+        // Flesh Interior Pass"
+D://Source/source1import_cm2013/materials/models/realkendra2_interior/body_fishnet.vmat
+        // //"
+// Flesh Interior Pass"
+D://Source/source1import_cm2013/materials/models/realkendra2_interior/body_trench.vmat
+        // //"
+// Flesh Interior Pass"
+D://Source/source1import_cm2013/materials/models/realkendra2_interior/body_trenchb.vmat
+        // //"
+// Flesh Interior Pass"
+D://Source/source1import_cm2013/materials/models/realkendra2_interior/body_trenchs.vmat
+        // //"
+// Flesh Interior Pass"
+D://Source/source1import_cm2013/materials/models/realkendra2_interior/body_trench_sentry.vmat
+        // //"
+// Flesh Interior Pass"
+D://Source/source1import_cm2013/materials/models/realkendra2_interior/body_trench_sentryb.vmat
+        //seciontampersand F_RENDER_BACKFACES   "1"
+D://Source/source1import_cm2013/materials/models/z-o-m-b-i-e/stalker/prop/prop_antena_pipes.vmat
+        //section1 F_SPECULAR   "1"
+D://Source/source1import_contagion/materials/models/props_harvest/circuitbreaker_case.vmat
+        //section 4 left TextureGlossiness      "materials/models/props_harvest/showercurtain_01_norm___a_gloss.tiff"
+D://Source/source1import_contagion/materials/models/props_harvest/showercurtain_01_fabric.vmat
+        //TextureGlossiness     "materials/models/props_rpd/shelf02_normal___a_gloss.tiff"
+D://Source/source1import_contagion/materials/models/props_rpd/shelf02_sheet.vmat
+        //sectionb5g_vSelfIllumTint     "[0.400000 0.400000 0.400000 1.000000]"
+D://Source/source1import_contagion/materials/models/props_rpd/vendingmachine01_diff.vmat
+  //section a b l
+        //TextureGlossiness     "materials/models/props_train_station/station_poster01a_norm___a_gloss.tiff"
+        //F_RENDER_BACKFACES    "1"
+D://Source/source1import_contagion/materials/models/props_train_station/station_poster01c_diff.vmat
+  //sectionbampersand
+D://Source/source1import_csgo/materials/anubis/models/foliage/acacia.vmat
+grep: source1import_csgo/materials/environment: No such file or directory
+grep: maps/pipemetal001a.vmat: No such file or directory
+grep: source1import_csgo/materials/environment: No such file or directory
+grep: maps/pipemetal004a.vmat: No such file or directory
+grep: source1import_csgo/materials/environment: No such file or directory
+grep: maps/pipemetal004b.vmat: No such file or directory
+grep: source1import_csgo/materials/environment: No such file or directory
+grep: maps/pipeset_metal.vmat: No such file or directory
+        //meh F_UNLIT   "1"
+        //F_ADDITIVE_BLEND      "1"
+        //F_DETAIL_TEXTURE      "1"
+        //TextureDetail "materials/models/inventory_items/music_kit/mp3_screen_detail.tiff"
+        //g_flDetailBlendFactor "0.600000"
+        //F_TRANSLUCENT "1"
+        //TextureTranslucency   "[1.000000 1.000000 1.000000 1.000000]"
+D://Source/source1import_csgo/materials/models/inventory_items/music_kit/freakydna_01/mp3_screen.vmat
+  //section peso
+D://Source/source1import_csgo/materials/models/props/coop_cementplant/phoenix/phoenix_flag_color.vmat
+        //percent
+D://Source/source1import_csgo/materials/models/props/de_dust/hr_dust/dust_lights/dust_ornate_lanterns_01.vmat
+  //section ampersand
+D://Source/source1import_csgo/materials/models/props/gg_tibet/flags_01.vmat
+grep: source1import_cstrike/materials/environment: No such file or directory
+grep: maps/pipemetal001a.vmat: No such file or directory
+grep: source1import_cstrike/materials/environment: No such file or directory
+grep: maps/pipemetal004a.vmat: No such file or directory
+grep: source1import_cstrike/materials/environment: No such file or directory
+grep: maps/pipemetal004b.vmat: No such file or directory
+grep: source1import_cstrike/materials/environment: No such file or directory
+grep: maps/pipeset_metal.vmat: No such file or directory
+grep: source1import_dab/materials/environment: No such file or directory
+grep: maps/PipeMetal004b.vmat: No such file or directory
+    //sectionb5
+D://Source/source1import_dystopia/materials/posters/billboard_hazmat01.vmat
+        // added selfillum sectionb5
+D://Source/source1import_estrangedact1/materials/models/anicator/modern_monitor01_screen4.vmat
+        //sectionPERCENT F_RENDER_BACKFACES     "1"
+D://Source/source1import_eye/materials/models/props_cave/tombstone_02.vmat
+        //F_RENDER_BACKFACES    "1"
+    //section3right
+D://Source/source1import_eye/materials/models/props_monolith/sphere_screen_04.vmat
+        //F_RENDER_BACKFACES    "1"
+  //section3right
+D://Source/source1import_eye/materials/models/props_techno/monitor_screen_yellow_txt_01.vmat
+  //seciton 6
+D://Source/source1import_fromearth/materials/models/aliens/worker_metal.vmat
+        //sectionampersand TextureGlossiness    "materials/models/props/masses/skeeball_nor___a_gloss.tiff"
+        //TextureGlossiness     "[ 0.5 0.5 0.5 0.0 ]"
+D://Source/source1import_frontend/materials/models/props/masses/skeeball.vmat
+   //section!
+        //g_vSelfIllumTint "[0.5 0.5 0.5 0.000000]"
+D://Source/source1import_gstringv2/materials/composite/mix3.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/composite/template23.vmat
+  //section 6 posters
+D://Source/source1import_gstringv2/materials/composite/tokyoish.vmat
+  //section 6 posters
+D://Source/source1import_gstringv2/materials/composite/tokyoish2.vmat
+  //section 6 posters
+  //section 6 posters
+D://Source/source1import_gstringv2/materials/composite/tokyoish3.vmat
+        //section4lright
+  //F_TRANSLUCENT       "1"
+        //TextureTranslucency   "materials/decals/extra/streetart2___a_trans.tiff"
+        //F_OVERLAY     "1"
+D://Source/source1import_gstringv2/materials/decals/extra/streetart2.vmat
+  //section 6 posters
+D://Source/source1import_gstringv2/materials/decals/random/chinese_random4.vmat
+  //section4left
+D://Source/source1import_gstringv2/materials/decals/random/wtf.vmat
+        //section! F_RENDER_BACKFACES   "1"
+        //g_vSelfIllumTint "[0.5 0.5 0.5 0.000000]"
+D://Source/source1import_gstringv2/materials/models/bigadd/bigadd.vmat
+        //section! F_RENDER_BACKFACES   "1"
+        //g_vSelfIllumTint "[0.5 0.5 0.5 0.000000]"
+D://Source/source1import_gstringv2/materials/models/bigadd/bigadd1.vmat
+        //section! F_RENDER_BACKFACES   "1"
+        //g_vSelfIllumTint "[0.5 0.5 0.5 0.000000]"
+D://Source/source1import_gstringv2/materials/models/bigadd/bigadd2.vmat
+        //section! F_RENDER_BACKFACES   "1"
+        //g_vSelfIllumTint "[0.5 0.5 0.5 0.000000]"
+D://Source/source1import_gstringv2/materials/models/bigadd/bigadd3.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/models/bigboard/bigboard3.vmat
+        //section1 backlight F_RENDER_BACKFACES "1"
+D://Source/source1import_gstringv2/materials/models/props_mech/control_panel.vmat
+        //section6 TextureGlossiness    "materials/models/vending/vending_add1___l_gloss.tiff"
+D://Source/source1import_gstringv2/materials/models/vending/vending_add1.vmat
+        //section6 TextureGlossiness    "materials/models/vending/vending_add_n___a_gloss.tiff"
+D://Source/source1import_gstringv2/materials/models/vending/vending_add2.vmat
+        // added selfillum sectionb5
+D://Source/source1import_gstringv2/materials/props/poppe1.vmat
+        // added selfillum sectionb5
+D://Source/source1import_gstringv2/materials/props/poppe7.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/props/poppe_gient_parts.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/props/poppe_gient_parts2.vmat
+  //section tidle
+D://Source/source1import_gstringv2/materials/story/china12.vmat
+        //section4right F_RENDER_BACKFACES      "1"
+        //F_ADDITIVE_BLEND      "1"
+        //F_TRANSLUCENT "1"
+        //TextureTranslucency   "[1.000000 1.000000 1.000000 1.000000]"
+D://Source/source1import_gstringv2/materials/story/hoload_dog4_vert.vmat
+        //hash F_TRANSLUCENT    "1"
+D://Source/source1import_gstringv2/materials/story/itc_ani3.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/itc_ar11.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/itc_ar20.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/itc_ar21.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/itc_ar24.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/itc_ar25.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/itc_ar27.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/itc_ar28.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/itc_ar7.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/itc_ar9.vmat
+        //SECTIONB6DONTNEEDITF_TRANSLUCENT      "1"
+        //SECTIONB6DONTNEEDITTextureTranslucency        "materials/story/itc_art3___a_trans.tiff"
+D://Source/source1import_gstringv2/materials/story/itc_art3.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/japdo.vmat
+        //section4lrightF_TRANSLUCENT   "1"
+        //TextureTranslucency   "materials/story/kyutt___a_trans.tiff"
+        //F_OVERLAY     "1"
+D://Source/source1import_gstringv2/materials/story/kyutt.vmat
+        //section4lright F_TRANSLUCENT  "1"
+        //TextureTranslucency   "materials/story/kyutt2___a_trans.tiff"
+        //F_OVERLAY     "1"
+D://Source/source1import_gstringv2/materials/story/kyutt2.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/manga1.vmat
+  //section6kitchen
+D://Source/source1import_gstringv2/materials/story/manga1_anim.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/manga2.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/multi_cup_jap.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/potyos_picsa1.vmat
+  // ++ g_vTexCoordScrollSpeed "[0.000 0.050]"
+D://Source/source1import_gstringv2/materials/story/staypositive3.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/tokyopost.vmat
+  // section6screens
+D://Source/source1import_gstringv2/materials/story/tokyopost2.vmat
+  //section 6 posters
+D://Source/source1import_gstringv2/materials/story/tokyopost3.vmat
+        //section4lrightF_TRANSLUCENT   "1"
+        //TextureTranslucency   "materials/story/youth___a_trans.tiff"
+        //F_OVERLAY     "1"
+D://Source/source1import_gstringv2/materials/story/youth.vmat
+        //section4lrightF_TRANSLUCENT   "1"
+        //TextureTranslucency   "materials/story/youth2___a_trans.tiff"
+        //F_OVERLAY     "1"
+D://Source/source1import_gstringv2/materials/story/youth2.vmat
+        //section4lrightF_TRANSLUCENT   "1"
+        //TextureTranslucency   "materials/story/youth3___a_trans.tiff"
+        //F_OVERLAY     "1"
+        //---- Self Illum ----
+D://Source/source1import_gstringv2/materials/story/youth3.vmat
+        //sectionampersand F_SPECULAR_CUBE_MAP  "1"
+        //sectionampersand F_SPECULAR   "1"
+D://Source/source1import_hfs/materials/models/objects/winter/wood_bookshelve_a.vmat
+        //ampersandwut F_ALPHA_TEST     "1"
+        //ampersandwut F_TRANSLUCENT    "0"
+D://Source/source1import_hfs/materials/models/objects/winter/wood_bookshelve_b.vmat
+        //badHairfix F_RENDER_BACKFACES "1"
+        //badHairfix F_ALPHA_TEST       "1"
+D://Source/source1import_hfs/materials/models/pet/arcana/pet_arcana_bathrobe_hair.vmat
+        //badHairfix F_RENDER_BACKFACES "1"
+        //badHairfix F_TRANSLUCENT      "1"
+D://Source/source1import_hfs/materials/models/pet/arcana/pet_arcana_bathrobe_hair_scalp.vmat
+  //section b cheap ceiling
+        //F_SPECULAR_CUBE_MAP   "1"
+        //F_SPECULAR    "1"
+D://Source/source1import_hl2/materials/metal/citadel_metalwall072a.vmat
+  //section b cheap cieling
+        //F_SPECULAR_CUBE_MAP   "1"
+        //F_SPECULAR    "1"
+D://Source/source1import_hl2/materials/metal/citadel_metalwall091a_cheap.vmat
+        //section ampersand F_RENDER_BACKFACES  "1"
+D://Source/source1import_infra/materials/models/props_machinery/hydro_generator_001.vmat
+        //sectionamperansadTextureGlossiness    "materials/models/props_machinery/slot_machine_001_normal___a_gloss.tiff"
+D://Source/source1import_infra/materials/models/props_machinery/slot_machine_001.vmat
+        //sectionampersandweirdpropF_TRANSLUCENT        "1"
+D://Source/source1import_left4dead2/materials/models/props_street/police_barricade.vmat
+        //TextureGlossiness     "materials/interior/intmat_c5_wall_04_nrm___a_gloss.tiff"
+D://Source/source1import_mindlock/materials/interior/intmat_c5_wall_04.vmat
+        //sectioncleft TextureGlossiness        "materials/interior/intmat_c6_floor_01_nrm___a_gloss.tiff"
+D://Source/source1import_mindlock/materials/interior/intmat_c6_floor_01.vmat
+        //section tidle F_RENDER_BACKFACES      "1"
+D://Source/source1import_mm/materials/cloth/l02_flag_01.vmat
+        //section tidle F_RENDER_BACKFACES      "1"
+D://Source/source1import_mm/materials/cloth/l02_flag_02.vmat
+        //sectionb5F_SPECULAR   "1"
+D://Source/source1import_mm/materials/models/mn_furnitures/mn_books01.vmat
+// THIS FILE IS AUTO-GENERATED
+        //---- Color ----
+        //---- Lighting ----
+        //---- Normal Map ----
+D://Source/source1import_mm/materials/models/npc_servant_specter/eyeball_l.vmat
+// THIS FILE IS AUTO-GENERATED
+        //---- Color ----
+        //---- Lighting ----
+        //---- Normal Map ----
+D://Source/source1import_mm/materials/models/npc_servant_specter/eyeball_r.vmat
+  //section 1 ceiling
+        //F_SPECULAR_CUBE_MAP   "1"
+        //F_SPECULAR    "1"
+D://Source/source1import_neotokyosource/materials/ceiling/CeilingPipeTech_sg.vmat
+  //section b right tv
+D://Source/source1import_neotokyosource/materials/decals/graff/decal_cat_tail_lg.vmat
+  //SECTION B6
+D://Source/source1import_neotokyosource/materials/decals/signs/decal_porn_ads3.vmat
+        //F_SPECULAR_CUBE_MAP   "1"
+        //section4right F_SPECULAR      "1"
+D://Source/source1import_neotokyosource/materials/metal/Metal14b_sg.vmat
+  //sectionb5
+D://Source/source1import_neotokyosource/materials/models/props_building/jumbotron2_sign_mat1e_ani.vmat
+        //F_SELF_ILLUM  "1"
+D://Source/source1import_neotokyosource/materials/models/props_building/sign_drink.vmat
+        //sectionb6shinyindark F_SPECULAR_CUBE_MAP      "1"
+        //sectionb6shinyindark F_SPECULAR       "1"
+D://Source/source1import_neotokyosource/materials/models/props_office/magazine_rack.vmat
+        // added selfillum sectionb5
+D://Source/source1import_neotokyosource/materials/models/props_street/signstretche.vmat
+  // section a bottom left turn down self illum by half
+D://Source/source1import_neotokyosource/materials/models/props_street/sign_sexc.vmat
+  //section d right self illum
+D://Source/source1import_neotokyosource/materials/models/props_street/sign_sexd.vmat
+        // added selfillum sectionb5
+D://Source/source1import_neotokyosource/materials/signs/billboard_deoderant.vmat
+        //sectionpesoF_SELF_ILLUM       "1"
+D://Source/source1import_neotokyosource/materials/signs/go1.vmat
+  //sectionb5
+D://Source/source1import_neotokyosource/materials/signs/neon8.vmat
+        // added selfillum sectionb5
+D://Source/source1import_neotokyosource/materials/signs/Signage03.vmat
+  //scetion5b wut
+        //F_SELF_ILLUM  "1"
+        //TextureSelfIllumMask  "[1.000000 1.000000 1.000000 1.000000]"
+D://Source/source1import_nmrih/materials/models/weapons/tool_welder/w_tool_welder_d.vmat
+        //F_SELF_ILLUM  "1"
+D://Source/source1import_nucleardawn/materials/jap1_furniture/fur_jap1_adboard/fur_jap1_adboard1.vmat
+        //F_SELF_ILLUM  "1"
+D://Source/source1import_nucleardawn/materials/jap1_furniture/fur_jap1_adboard/fur_jap1_adboard2.vmat
+  //section 4 left
+        //F_TRANSLUCENT "1"
+        //TextureTranslucency   "materials/maps/nd_japan/jp_adverts/tokyo_holo_04___a_trans.tiff"
+        //F_RENDER_BACKFACES    "1"
+D://Source/source1import_nucleardawn/materials/maps/nd_japan/jp_adverts/tokyo_holo_04.vmat
+        //section b 6 F_RENDER_BACKFACES        "1"
+D://Source/source1import_nucleardawn/materials/models/props/faction_flags/ct_flag01.vmat
+        g_flOpacityScale        "0.6//.835"
+D://Source/source1import_p3/materials/effects/gasoline_splash.vmat
+//"
+D://Source/source1import_p3/materials/Particles/Flame/Gasoline_Flame_04/Gasoline_Burst_Flame.vmat
+  //sectionb5
+D://Source/source1import_portal2/materials/models/props_office/lab_display_standup.vmat
+        //sectionb5nah TextureGlossiness        "materials/models/props_office/potato_trophy___a_gloss.tiff"
+        //F_SPECULAR_CUBE_MAP   "1"
+        //F_SPECULAR    "1"
+D://Source/source1import_portal2/materials/models/props_office/potato_trophy.vmat
+        //sectionpeso F_VERTEX_COLOR    "1"
+D://Source/source1import_r1/materials/models/foliage/tree_cherry_blossom_leaves_small_01.vmat
+        //sectionpeso F_VERTEX_COLOR    "1"
+D://Source/source1import_r1/materials/models/foliage/tree_cherry_blossom_trunk_01.vmat
+        //SECTIONCRIGHT F_TRANSLUCENT   "1"
+D://Source/source1import_r1/materials/models/lamps/stop_sign_glass.vmat
+        //section bhashF_ALPHA_TEST     "1"
+D://Source/source1import_r1/materials/models/world/utility/utility_wires_black_white01.vmat
+        //section ac delinate F_SPECULAR        "1"
+D://Source/source1import_r1/materials/world/doors/door_hangar_panel_lrg_imc_01.vmat
+        //section exclamation F_RENDER_BACKFACES        "1"
+D://Source/source1import_se1/materials/models/u4lab/se1_pipe_grate_01.vmat
+        //F_OVERLAY     "1"
+  //sectioncleft
+D://Source/source1import_ship/materials/env/misc/decal_pinup_black.vmat
+        //section g fix though bug in s1i F_VERTEX_COLOR        "1"
+D://Source/source1import_snowdrop_escape/materials/se_decals/sovok_oldposter_07_dirt.vmat
+        //section percent F_ALPHA_TEST  "1"
+        //F_VERTEX_COLOR        "1"
+D://Source/source1import_snowdrop_escape/materials/se_decals/sovok_otk_alt_5.vmat
+        //section percent F_ALPHA_TEST  "1"
+D://Source/source1import_snowdrop_escape/materials/se_decals/sovok_otk_alt_8.vmat
+        //F_SELF_ILLUM  "1"
+D://Source/source1import_swarm/materials/models/aliens/biomass/biomass.vmat
+        //TextureGlossiness     "materials/models/props/furniture/desks/laboratorydesk01___a-1_gloss.tiff"
+D://Source/source1import_swarm/materials/models/props/furniture/desks/laboratorydesk01.vmat
+  //section4right
+D://Source/source1import_tacint/materials/models/effects/urban_puddle01a.vmat
+        //section4right F_RENDER_BACKFACES      "1"
+D://Source/source1import_tacint/materials/models/props_wall_mounted/calendars-1.vmat
+        //ampersand F_VERTEX_COLOR      "1"
+D://Source/source1import_tf/materials/effects/workshop/popcorn.vmat
+        //section abl F_SELF_ILLUM      "1"
+D://Source/source1import_tf/materials/models/props_halloween/hwn_spellbook_magazine.vmat
+        //section cright F_RENDER_BACKFACES     "1"
+D://Source/source1import_tf/materials/models/props_manor/portrait_01.vmat
+        //iota F_RENDER_BACKFACES       "1"
+D://Source/source1import_thestanleyparable/materials/models/props/de_vertigo/scaffoldinggrate.vmat
+        //---- Self Illum ----
+  //sectionhashtv
+D://Source/source1import_thestanleyparable/materials/models/props/lab_monitor/lab_monitor_screen_slow.vmat
+        //seciontampersand F_SPECULAR   "1"
+D://Source/source1import_vampire/materials/decals/pictures/parkposter02.vmat
+        //F_SPECULAR_CUBE_MAP   "1"
+        //F_SPECULAR    "1"
+        //section abottomleft TextureGlossiness "materials/models/scenery/misc/posters/vvposter_ref.tiff"
+        //F_RENDER_BACKFACES    "1"
+D://Source/source1import_vampire/materials/models/scenery/misc/pinupposter/pinup.vmat
+        //section 1 F_RENDER_BACKFACES  "1"
+D://Source/source1import_vampire/materials/models/scenery/misc/posters/damselposter.vmat
+        //section b left F_RENDER_BACKFACES     "1"
+D://Source/source1import_vampire/materials/models/scenery/misc/posters/poster3a.vmat
+        //TextureGlossiness     "materials/models/scenery/structural/beachhouse/mirror_ref.tiff"
+D://Source/source1import_vampire/materials/models/scenery/structural/beachhouse/mirror.vmat
+        //sectioncleft F_SELF_ILLUM     "1"
+        //sectioncleft TextureSelfIllumMask     "[1.000000 1.000000 1.000000 1.000000]"
+D://Source/source1import_wilson_chronicles/materials/models/props/de_prodigy/wall_console2.vmat
+  //sectionb5
+D://Source/source1import_zps/materials/deadcity/misc/posters/foothigh.vmat
+  //section peso
+D://Source/source1import_zps/materials/deadcity/misc/signs/moongraf.vmat
+        //F_SPECULAR_CUBE_MAP   "1"
+        //F_SPECULAR    "1"
+D://Source/source1import_zps/materials/models/propper/neighboursrework/woodshelf_1/cabinfever_woodground03.vmat
+  //sectionhashtv
+D://Source/source1import_zps/materials/models/zomboeing/monitor02_screen04.vmat
+        //sectionb5F_RENDER_BACKFACES   "1"
+D://Source/source1import_zps/materials/models/zp_props/mall_props/can_3_diff.vmat
+        //F_RENDER_BACKFACES    "1"
+        //sectioneleft bug likelyF_TRANSLUCENT  "1"
+        //TextureTranslucency   "[1.000000 1.000000 1.000000 1.000000]"
+D://Source/source1import_zps/materials/models/zp_props/parkbench_diff.vmat

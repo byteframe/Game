@@ -40,10 +40,10 @@
     }
     "playlooping"
     {
-        "volume"        "4.0"
+        "volume"        "42.0"
         "origin"      "-76, -150, 188"
         "pitch"         "100"
-        "soundlevel"    "SNDLVL_100dB"
+        "soundlevel"    "SNDLVL_55dB"
         "wave"          "sounds/aria.vsnd"
     }
     "playrandom"

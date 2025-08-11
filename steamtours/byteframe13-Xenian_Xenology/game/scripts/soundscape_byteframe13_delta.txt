@@ -81,6 +81,30 @@
             "wave"          "sounds/home/ambient_cave_drip_07.vsnd"
         }
     }
+    "playrandom"
+    {
+        "volume"        "0.5"
+        "pitch"         "100"
+        "time"          "3, 5"
+        "soundlevel"    "SNDLVL_60"
+        "origin"        "485, 1799, 344"
+        "rndwave"
+        {
+            "wave"          "sounds/ambience/cave_drip_one_shot_01.vsnd"
+            "wave"          "sounds/ambience/cave_drip_one_shot_02.vsnd"
+            "wave"          "sounds/ambience/cave_drip_one_shot_03.vsnd"
+            "wave"          "sounds/ambience/cave_drip_one_shot_04.vsnd"
+            "wave"          "sounds/ambience/cave_drip_one_shot_05.vsnd"
+        }
+    }
+    "playlooping"
+    {
+        "volume"        "1"
+        "pitch"         "100"
+        "origin"        "550, 1692, 105"
+        "soundlevel"    "SNDLVL_50dB"
+        "wave"          "sounds/waterfeature.vsnd"
+    }
     "playlooping"
     {
         "volume"        "1.5"
@@ -105,5 +129,4 @@
         "soundlevel"    "SNDLVL_55dB"
         "wave"          "sounds/third_party/neko_purr_lp.vsnd"
     }
-    
 }

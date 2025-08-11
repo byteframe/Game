@@ -2,6 +2,7 @@ soundscapes_manifest
 {
 	"file"		"scripts/soundscape_byteframe13_alpha.txt"
 	"file"		"scripts/soundscape_byteframe13_beta.txt"
+	"file"		"scripts/soundscape_byteframe13_beta_alt.txt"
 	"file"		"scripts/soundscape_byteframe13_gamma.txt"
 	"file"		"scripts/soundscape_byteframe13_delta.txt"
 	"file"		"scripts/soundscape_byteframe13_epsilon.txt"

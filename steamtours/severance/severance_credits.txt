@@ -1,0 +1,65 @@
+"After Hours" Theodore Shapiro -- https://www.youtube.com/watch?v=BjGHb3oEfjY
+"Office Workplace Guidelines Fanmade" -- https://content.severance.wiki/_media/workplace_guidelines_fanmade.pdf
+"Office leather chair Flannigan" -- https://sketchfab.com/3d-models/office-leather-chair-flannigan-531bff2f2f884547b941cde26e7d3270
+"Water Cooler_12_MB" -- https://sketchfab.com/3d-models/water-cooler-12-mb-fea47b4738774f238b2914b8852c7bb1
+
+"ambientCG - Free Textures, HDRIs and Models" -- https://ambientcg.com/
+================================================================================
+    materials/plastic013b.vmat
+    materials/carpet014.vmat
+    materials/fabric019.vmat
+    materials/metal055a.vmat
+    materials/metal011.vmat
+    materials/metal010.vmat
+    materials/wood026.vmat
+    materials/wood016.vmat
+
+"The Lab: Robot Repair" -- https://store.steampowered.com/app/450390/The_Lab/
+================================================================================
+    particles/atmospherics/plasterfx_combined.vpcf
+    particles/atmospherics/plaster_fx_linger.vpcf
+    particles/atmospherics/room_atmos_plaster_dropseeds.vpcf
+    particles/atmospherics/plaster_fx_lingerlight.vpcf
+    particles/atmospherics/plasterfx_combined.vpcf
+    aperture/models/materials/cabinet_dials_col.vmat
+
+"Half-Life: Alyx" -- https://store.steampowered.com/app/546560/HalfLife_Alyx/
+================================================================================
+    materials/models/props/interior_deco/tabletop_props_03.vmat
+    models/industrial/materials/microphone.vmat
+    models/industrial/basestation_microphone001.vmdl
+    models/props/interior_deco/tabletop_pen01.vmdl
+    models/props/interior_deco/tabletop_pen03.vmdl
+    models/props/interior_deco/tabletop_papercup.vmdl
+    models/props/interior_deco/tabletop_papercup_broken.vmdl
+    materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_illum.vmat
+
+"Models • Poly Haven" -- https://polyhaven.com/models
+================================================================================
+    models/polyhaven/desk_lamp_arm_01.vmdl
+
+"Retro Pack - Last Year" -- https://steamcommunity.com/sharedfiles/filedetails/?id=1969499354
+================================================================================
+    models/slasherin/last_year/props/retro-pack/sm_monitor_01a.vmdl
+
+"Asset Pack: Summit Pavilion Remix" -- https://steamcommunity.com/workshop/filedetails/?id=1449922161
+================================================================================
+    materials/metal/dark_metal_scratched001.vmat
+    materials/misc/carpet001_blue.vmat
+    materials/water/pavilion_water002.vmat
+    materials/metal/metal_scratched002_beige.vmat
+
+"Asset Pack: Candy Emporium" -- https://steamcommunity.com/workshop/filedetails/?id=1546534740
+================================================================================
+    materials/plastic/plastic_006.vmat
+    materials/metal/metal_006.vmat
+    materials/metal/paint_002.vmat
+    materials/models/props_items/plate_01_aluminium_001.vmat
+    materials/metal/silver_001.vmat
+    materials/metal/black_silver_001.vmat
+    materials/metal/chrome_002.vmat
+    materials/cloth/cloth_001.vmat
+    particles/candyshop/env/fx_env_radiator_steam_01_c_water.vpcf
+    particles/candyshop/env/fx_env_waterdrip_01.vpcf
+    materials/glass/glass_002.vmat
+    materials/metal/brass_001.vmat

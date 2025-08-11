@@ -1,0 +1,34 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Specular ----
+	F_METALNESS_TEXTURE 1
+	F_SPECULAR 1
+	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/models/props/water-cooler-12-mb-fea47b4738774f238b2914b8852c7bb1_02_basecolor.png"
+
+	//---- Cube Map ----
+	g_flCubeMapBlur "0.000"
+	g_flCubeMapBrightness "1.000"
+
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_vMetalnessRange "[0.000 1.000]"
+	g_vReflectanceRange "[0.000 1.000]"
+	TextureGlossiness "materials/models/props/water-cooler-12-mb-fea47b4738774f238b2914b8852c7bb1_01_roughness__inverted.png"
+	TextureMetalness "materials/default/default_metal.tga"
+	TextureReflectance "materials/default/default_refl.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/models/props/water-cooler-12-mb-fea47b4738774f238b2914b8852c7bb1_02_normal.png"
+}

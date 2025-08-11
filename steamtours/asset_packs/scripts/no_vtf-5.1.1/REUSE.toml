@@ -1,0 +1,85 @@
+version = 1
+
+SPDX-PackageName = "no_vtf"
+SPDX-PackageSupplier = "b5327157 <b5327157@protonmail.com>"
+SPDX-PackageDownloadLocation = "https://git.sr.ht/~b5327157/no_vtf"
+
+[[annotations]]
+path = ["**/*.pyd", "**/python3*.dll"]
+SPDX-FileCopyrightText = "2001-2023 Python Software Foundation, 2000 BeOpen.com, 1995-2000 Corporation for National Research Initiatives, 1991-1995 Stichting Mathematisch Centrum"
+SPDX-License-Identifier = "LicenseRef-Python"
+
+[[annotations]]
+path = ["**/libcrypto-*.dll", "**/libssl-*.dll"]
+SPDX-FileCopyrightText = "OpenSSL authors"
+SPDX-License-Identifier = "OpenSSL"
+
+[[annotations]]
+path = "**/libffi-*.dll"
+SPDX-FileCopyrightText = "1996-2022 Anthony Green, Red Hat, Inc and others"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "**/click-*.dist-info/**"
+SPDX-FileCopyrightText = "Pallets"
+SPDX-License-Identifier = "BSD-3-Clause"
+
+[[annotations]]
+path = "**/grapheme/**"
+SPDX-FileCopyrightText = "Alvin Lindstam"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "**/imageio/resources/freeimage/**"
+SPDX-FileCopyrightText = "FreeImage"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = ["**/numpy/**", "**/numpy-*.dist-info/**"]
+SPDX-FileCopyrightText = "NumPy Developers AND 1992-2013 The University of Tennessee and The University of Tennessee Research Foundation, 2000-2013 The University of California Berkeley, 2006-2013 The University of Colorado Denver AND Ryan Juckett AND 2010 - 2019 ridiculous_fish, <libdivide@ridiculousfish.com>, 2016 - 2019 Kim Walisch, <kim.walisch@gmail.com>"
+SPDX-License-Identifier = "BSD-3-Clause AND BSD-3-Clause AND MIT AND Zlib"
+
+[[annotations]]
+path = ["**/numpy.libs/libopenblas64_*.dll", "**/numpy.libs/libscipy_openblas64_*.dll"]
+SPDX-FileCopyrightText = "2011-2014, The OpenBLAS Project"
+SPDX-License-Identifier = "BSD-3-Clause"
+
+[[annotations]]
+path = "**/numpy.libs/msvcp140-*.dll"
+SPDX-FileCopyrightText = "Microsoft Corporation"
+SPDX-License-Identifier = "LicenseRef-mlt031619"
+
+[[annotations]]
+path = "**/PIL/**"
+SPDX-FileCopyrightText = "Jeffrey A. Clark (Alex)"
+SPDX-License-Identifier = "MIT-CMU"
+
+[[annotations]]
+path = "**/setuptools/_vendor/importlib_metadata-*/**"
+SPDX-FileCopyrightText = "Jason R. Coombs"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = "**/setuptools/_vendor/wheel-*/**"
+SPDX-FileCopyrightText = "Daniel Holth <dholth@fastmail.fm> and contributors"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "**/base_library.zip"
+SPDX-FileCopyrightText = "2001-2023 Python Software Foundation, 2000 BeOpen.com, 1995-2000 Corporation for National Research Initiatives, 1991-1995 Stichting Mathematisch Centrum"
+SPDX-License-Identifier = "LicenseRef-Python"
+
+[[annotations]]
+path = "**/VCRUNTIME140.dll"
+SPDX-FileCopyrightText = "Microsoft Corporation"
+SPDX-License-Identifier = "LicenseRef-mlt687465"
+
+[[annotations]]
+path = "**/VCRUNTIME140_1.dll"
+SPDX-FileCopyrightText = "Microsoft Corporation"
+SPDX-License-Identifier = "LicenseRef-mlt031619"
+
+[[annotations]]
+path = "no_vtf.exe"
+SPDX-FileCopyrightText = "b5327157 <b5327157@protonmail.com>"
+SPDX-License-Identifier = "LicenseRef-no-vtf"
