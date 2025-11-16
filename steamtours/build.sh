@@ -4,11 +4,11 @@ if [ -z "${C}" ]; then
   echo "missing environmental variables"
   exit 0
 fi
-ADDON=byteframe13
+ADDON=byteframe14
 [ ! -z ${1} ] && ADDON=${1}
-QUALITY=2
+QUALITY=1
 [ ! -z ${2} ] && QUALITY=${2}
-RESOLUTION=8192
+RESOLUTION=4096
 [ ! -z ${3} ] && RESOLUTION=${3}
 MAP=${ADDON}
 [ ! -z ${4} ] && MAP=${4}
@@ -26,8 +26,18 @@ if [ ${ADDON} = 'byteframe13' ]; then
   done
   unset RC_VRAD
   sleep 30
+elif [ ${ADDON} = 'zzz_test' ]; then
+  for FILE in prefabs/prefab_section_*.vmap; do
+    if [ ! -e "${G}"/${ADDON}/maps/${FILE/vmap/txt} ]; then
+      "${G}"/../bin/win64/resourcecompiler.exe ${RC_INIT} \
+        -i "c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/${ADDON}/maps/${FILE}" \
+        -world ${RC_VRAD} ${RC_EXIT} | tee "${G}"/${ADDON}/maps/${FILE/vmap/txt}
+    fi
+  done
+  unset RC_VRAD
+  sleep 30
 fi
-if [ ! -e "${G}"/${ADDON}/maps/${MAP}.vpk ]; then
+if [ ! -e "${G}"/${ADDON}/maps/${MAP}.vpk ] && [ -e ${MAP}.vmap ]; then
   "${G}"/../bin/win64/resourcecompiler.exe ${RC_INIT} \
     -i "c:/program files (x86)/steam/steamapps/common/steamvr/tools/steamvr_environments/content/steamtours_addons/${ADDON}/maps/${MAP}.vmap" \
     -world ${RC_VRAD} ${RC_EXIT} | tee "${G}"/${ADDON}/maps/${MAP}.txt

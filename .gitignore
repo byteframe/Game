@@ -13,8 +13,13 @@
 *.vtex_c
 *.vxml_c
 *.mp3
+*.wav
 *.los
 *.ain
+*.vagrp_c
+*.mdl
+*.vvd
+*.vtx
 *.vagrp_c
 demoheader.tmp
 tools_asset_info.bin
@@ -24,4 +29,10 @@ tools_thumbnail_cache.bin
 steamtours/thelab_*/content/materials/models/thelab/*.png
 steamtours/thelab_*/content/models/thelab/*.dmx
 steamtours/asset_packs/scripts/source1import-0.3.12
-steamtours/asset_packs/scripts/no_vtf-4.2.0
+steamtours/*/content/models/props
+steamtours/*/content/materials/models/props
+steamtours/*/content/materials/*/*.png
+steamtours/*/content/materials/*/*.jpg
+steamtours/*/content/materials/*/*.psd
+steamtours/*/content/materials/*/*.tiff
+steamtours/byteframe11-Jaded_Jail/content/maps/original_byteframe11.vmap

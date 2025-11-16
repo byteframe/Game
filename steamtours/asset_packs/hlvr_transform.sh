@@ -1,3 +1,6 @@
+#find . -name "*.vmat.backup" | while read FILE; do sed -i -e $'s/\r$//' -e 's:\\:/:g' ${FILE}; done
+#find . -name "*.vmdl" | while read FILE; do sed -i -e $'s/\r$//' -e 's:\\:/:g' ${FILE}; done
+#find . -name "*.vmdl" -exec cp {} {}.backup \;
 clear
 OVERWRITE=yes
 find . -type f -name "*.vmat.backup" | while read VMAT_BACKUP; do
@@ -36,10 +39,10 @@ find . -type f -name "*.vmat.backup" | while read VMAT_BACKUP; do
       -e 's:g_flMetalnessA:g_flMetalness:' \
       -e 's:"TextureRoughness"\s*"materials/default/default_[a-zA-Z0-9]*_rough.png":"TextureGlossiness"\t"materials/default/default_gloss.tga":' \
         > ${VMAT}
-    grep 'Roughness"' ${VMAT} | while read LINE; do
+    grep 'TextureRoughness' ${VMAT} | while read LINE; do
       ROUGH=$(echo ${LINE} | awk '{$1=""; print $0}' | sed -e 's:"::g' -e 's:\[::' -e 's:\]::' | xargs)
       GLOSS=${ROUGH/./__inverted.}
-      if ! echo ${LINE} | grep -q .png; then
+      if ! echo ${LINE} | grep -E "(png|tga|jpg)"; then
         GLOSS="["$(echo $(bc <<< $(echo ${ROUGH} | awk '{print $1}')-1.000 | sed -e s:-:0:) $(bc <<< $(echo ${ROUGH} | awk '{print $2}')-1.000 | sed -e s:-:0:) $(bc <<< $(echo ${ROUGH} | awk '{print $3}')-1.000 | sed -e s:-:0:) 0.000000)"]"
       elif [ -e ${ROUGH} ] && [ ! -e ${GLOSS} ]; then
         ffmpeg -hide_banner -y -nostats -loglevel 0 -i ${ROUGH} -vf negate ${GLOSS} < /dev/null
@@ -57,7 +60,7 @@ find . -type f -name "*.vmat.backup" | while read VMAT_BACKUP; do
     if grep -q F_SPECULAR ${VMAT} && ! grep -q F_SPECULAR_CUBE_MAP ${VMAT}; then
       sed -i -e 's:"F_SPECULAR"\t"1":"F_SPECULAR"\t"1"\n\t"F_SPECULAR_CUBE_MAP"\t"1":' ${VMAT}
     fi
-    cat ${VMAT} | grep ".*.png" | while read LINE; do
+    cat ${VMAT} | grep -E ".*.(png|tga|jpg)" | while read LINE; do
       FILE=$(echo ${LINE} | awk '{print $2}' | sed -e 's:"::g')
       if [ ! -e ${FILE} ]; then
         echo 'missing texture: ' + ${LINE}

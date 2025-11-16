@@ -1,0 +1,331 @@
+Configuring a Client with Advanced Graphics
+
+1. Install Wine.
+2. Wine "Setup.exe" on a standard Unreal CD, or Unreal Gold, and install the game without DirectX or UnrealED.
+3. If you aren't running Gold; Wine "UnrealPatch226Final.exe" to update the game .
+4. Download "OpenGlDrv2.1.0.7.zip", and follow the directions in "opengl.install.txt"...
+ 
+    FOR UNREAL GOLD ONLY (Unreal226f below)
+      1. Delete Unreal.ini in Unreal/System folder
+      2. Extract all files into Unreal/System
+      3. Set in Advanced Options / Drivers / GameRenderDevice / Opengl Support
+      4. Set Advanced Options / Rendering / OpenGL Support/ for your system
+      5. For OpenGL : Check your desktop color depth ! In most cases OpenGL will use the desktop color depth by default, so you should choose 32 bpp for best results !
+
+    FOR UNREAL 226F
+      1. Delete Unreal.ini in Unreal/System folder
+      2. Simply replace the OpenGL.dll in your system directory. DON'T REPLACE THE OTHER FILES !
+      3. Set in Advanced Options / Drivers / GameRenderDevice / Opengl Support
+      4. Set Advanced Options / Rendering / OpenGL Support/ for your system
+      5. For OpenGL : Check your desktop color depth ! In most cases OpenGL will use the desktop color depth by default, so you should choose 32 bpp for best results !
+
+5. Run the game, "Unreal.exe", and set the 3D device to OpenGL via the Unreal Gold window that will pop up, or by using
+   the 'preferences' console command for 226f. This will create a new "Unreal.ini" that was deleted in Step 4.
+6. In the new "Unreal.ini" replace the '[OpenGLDrv.OpenGLRenderDevice]' with this, (listed in "opengl.install.txt")
+
+    [OpenGLDrv.OpenGLRenderDevice]
+    Translucency=True
+    VolumetricLighting=True
+    ShinySurfaces=True
+    Coronas=True
+    HighDetailActors=True
+    DetailTextures=True
+    GammaOffset=0.000000
+    LODBias=0.000000
+    MaxLogTextureSize=8
+    MinLogTextureSize=1
+    MaxLogVOverU=8
+    MaxLogUOverV=8
+    MaxAnisotropy=3
+    MaxTMUnits=3
+    RefreshRate=0
+    DetailMax=3
+    UseFisheye=False
+    NoFiltering=False
+    DisableSpecialDT=False
+    UseFilterSGIS=True
+    Use4444Textures=False
+    UseTNT=False
+    UseS3TC=True
+    UseVertexSpecular=True
+    AlwaysMipmap=False
+    UseAlphaPalette=True
+    UsePalette=True
+    UseTrilinear=True
+    UseMultitexture=True
+    ShareLists=False
+    DoPrecache=True
+
+    These settings will confiqure the OpenGL driver for just about the best possible graphics, but "opengl.install.txt", lists some of
+    the options you can configure. Many of the options in this OpenGL driver are similar to other OpenGL drivers, including the (arguably useless)
+    one provided by Unreal upon installation/updating.
+
+7. To prevent the game from crashing when you do certain things like starting a bot-match, make sure 'winecfg' has msvcrt.dll
+   downloaded from the link below, set in as a native DLL for "Unreal.exe".
+
+8. Create a startup script for launching the game. Mine is as follows...
+
+    #!/bin/sh
+    nvidia-settings -l
+    nvidia-settings --assign LogAnisoAppControlled=0
+    nvidia-settings --assign FSAAAppControlled=0
+    nvidia-settings --assign FSAA=5
+    nvidia-settings --assign LogAniso=4
+    gnome-session-properties
+    killall gnome-panel
+    cd /home/byteframe/.wine/drive_c/UnrealGold/System
+    WINEDEBUG="-all" wine Unreal.exe "$@"
+    gnome-panel &
+    
+    The 'nvidia-settings' commands are useful for making my 6800 GT use AA, and AF. The gnome commands are included so I can hide the gnome-panel which
+    currently is 'shown above' the full screen game. gnome-session-properties launches and app that allows me to set the 'mode' of gnome-panel, from
+    'restart' (which will just restart the panel after I kill it) to normal, so when I do kill it, it stays 'down' until the last command runs it again.
+    I had to do the same thing with Call of Duty, but it doesn't have to do that anymore, so I imagine that Wine will be updated soon to work over the
+    gnome-panel in ALL situations; not just World War II shooters, but Unreal ones as well.
+    
+OPTIONAL: Enabling mega cool S3TC support provided by this 3rd party OpenGL driver, and NVIDIA Cards (see the screen shots)
+
+1. Make a temporary directory, and copy all the files from the "Textures" directory into it, from the second Unreal Tournament CD.
+2. Extract "S3TCext.exe" from "OpenGlDrv2.1.0.7.zip" into that directory.
+3. Wine "S3TCext.exe", from a terminal, within that directory. You might need to kill of Wine or the terminal, when it finishes.
+4. A new directory is made within the directory you created, and it contains the, converted files. Copy all of those into the
+   "Textures' directory in your game directory. Be sure to replace any of the files. The step must be followed correctly, or the game
+   won't start up, because there are still some files you need that don't get converted.
+5. If you set it to 'False', make sure 'UseS3TC=True' in Unreal.ini.
+
+   
+Notes
+
+* Some miscellaneous versions of the game, such as the 3dfx, or Creative bundle-pack, might not work properly.
+  Try to find a "standard" US Unreal disc, or just go with Gold. A UK one might work as well.
+* OldUnreal has recently published a "MultiMedia" patch that enhances both the OpenGL, as well as the audio
+  drivers. I've yet to test how these work with Wine.
+* If the 'black tree masking bug' is driving you nuts, "opengl.install.txt" explains a quick hack around it.
+
+Files
+
+226 Patch: UnrealPatch226Final.exe
+    http://www.oldunreal.com/patch/UnrealPatch226Final.exe
+OpenGL Driver: OpenGlDrv2.1.0.7.zip
+    http://www.oldunreal.com/patch/OpenGlDrv2.1.0.7.zip
+Msvcrt.dll: msvcrt.zip
+    http://www.dll-files.com/dllindex/dll-files.shtml?msvcrt
+
+Links
+
+OldUnreal Linux Forum
+    http://www.oldunreal.com/cgi-bin/yabb/YaBB.pl?board=Linux
+    
+
+
+
+osting a dedicated server with UCC
+
+1. Install Wine.
+2. Wine "Setup.exe" on a standard Unreal CD, and install the game without DirectX or UnrealED.
+3. Wine "unrealpatch225f.exe/UnrealPatch224v.exe" to update the game.
+4. Create start-up scripts for different game types, mods, etc...
+
+Here is an example of a script for my coop game server using the jCoop mod...
+   
+#!/bin/sh
+clear
+cd ~/.wine/drive_c/Unreal/System
+WINEDEBUG=-all wine UCC.exe server vortex2.unr?game=Unreali.coopgame?difficulty=4 LOG=server.log INI=server.ini &
+
+The suppressing of wine debug messages is important if you intend to keep your x-term open, so you can keep an eye on the non-interactive messages from UCC. Of course the & keeps the process running even if you logout of the server box through ssh, etc. 
+
+UCC is used for compiling UnrealScript objects, but with the 'server' option, it works great as a dedicated server. Next, you need to choose the starting map name, and supply options such as the game type, (and then an option to THAT game type in this case) with '?'s. After you finish supplying the initial map, game type, and game options, you will probably want to choose a filename for the log file (which logs everything that it spits out on screen). In my experience it's best to copy Unreal.log, renaming it to "badAssDeathmatchServer.log", or a reasonable facsimile. Also, vitally important is where you supply it with an INI file. An Unreal INI file is basically a configuration file for the game. It contains all the information read for the server name, game settings, maximum players, etc, etc. You'll want to copy Unreal.ini, giving it a name like "deathMatchServer.ini", and edit it accordingly.
+
+Information on server hosting with UCC, (most notably modifying an INI), is beyond the scope of this HOW TO (as you can tell by my half-assed pathetic attempt in the above two paragraphs, however, I will do my best to provide some useful links below.
+
+Notes
+
+* Depending on how well wine can run without X at a specific time, you might still need X for 
+  the installation of the game, as well as the patch.
+* Some miscellaneous versions of the game, such as the 3dfx, or Creative bundle-pack, might not work properly.
+  Try to find a "standard" US Unreal disc. A UK one might work as well.
+
+Files
+
+224 Patch: UnrealPatch224v.exe
+    http://www.oldunreal.com/patch/UnrealPatch224v.exe
+225 Patch: unrealpatch225f.exe 
+    http://www.oldunreal.com/patch/unrealpatch225f.exe
+
+Links
+
+OldUnreal Linux Forum
+    http://www.oldunreal.com/cgi-bin/yabb/YaBB.pl?board=Linux
+UnrealSP Coop Server Guide
+    http://www.unrealsp.org/community/serverguide.html
+Unreal Admin Page Unreal1
+    http://www.planetunreal.com/TheAdminPage/UnrealMain.htm
+    
+    
+    
+Description
+
+Recommended for dedicated server hosting
+
+224 may perform better, and 225f would then be recommended for UnrealED although it currently doesn't work under wine. A bug exists in the Unreal netcode, and was never fixed which will crash a 226b/gold client when it tries to connect to a server running 226f (and vice versa). Yet 224/225 are free of this bug, and are appropriate because the bulk of the changes in the 226x versions are client side improvements.
+
+What works
+
+    * Single Player
+    * Multi Player
+    * Dedicated server hosting with UCC.exe
+    * Software renderer
+    * All community mods, skins, and maps
+
+What Doesn't
+
+    * UnrealED
+    * Systray icon for dedicated hosting with Unreal.exe
+
+What wasn't tested
+
+    * OpenGL or Direct3D drivers provided by either version
+    * Miscellaneous 3D drivers: Glide, PowerVR, etc
+
+Note: It is recommended that you play the game with 226f/226b using one of the third party OpenGL drivers listed in the HOWTO, which is why I didn't bother testing the Direct3D or OpenGL drivers in this particular version. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Configuring a Client with Advanced Graphics
+
+1. Install Wine.
+2. Wine "Setup.exe" on a standard Unreal CD, or Unreal Gold, and install the game without DirectX or UnrealED.
+3. If you aren't running Gold; Wine "UnrealPatch226Final.exe" to update the game .
+4. Download "OpenGlDrv2.1.0.7.zip", and follow the directions in "opengl.install.txt"...
+ 
+    FOR UNREAL GOLD ONLY (Unreal226f below)
+      1. Delete Unreal.ini in Unreal/System folder
+      2. Extract all files into Unreal/System
+      3. Set in Advanced Options / Drivers / GameRenderDevice / Opengl Support
+      4. Set Advanced Options / Rendering / OpenGL Support/ for your system
+      5. For OpenGL : Check your desktop color depth ! In most cases OpenGL will use the desktop color depth by default, so you should choose 32 bpp for best results !
+
+    FOR UNREAL 226F
+      1. Delete Unreal.ini in Unreal/System folder
+      2. Simply replace the OpenGL.dll in your system directory. DON'T REPLACE THE OTHER FILES !
+      3. Set in Advanced Options / Drivers / GameRenderDevice / Opengl Support
+      4. Set Advanced Options / Rendering / OpenGL Support/ for your system
+      5. For OpenGL : Check your desktop color depth ! In most cases OpenGL will use the desktop color depth by default, so you should choose 32 bpp for best results !
+
+5. Run the game, "Unreal.exe", and set the 3D device to OpenGL via the Unreal Gold window that will pop up, or by using
+   the 'preferences' console command for 226f. This will create a new "Unreal.ini" that was deleted in Step 4.
+6. In the new "Unreal.ini" replace the '[OpenGLDrv.OpenGLRenderDevice]' with this, (listed in "opengl.install.txt")
+
+    [OpenGLDrv.OpenGLRenderDevice]
+    Translucency=True
+    VolumetricLighting=True
+    ShinySurfaces=True
+    Coronas=True
+    HighDetailActors=True
+    DetailTextures=True
+    GammaOffset=0.000000
+    LODBias=0.000000
+    MaxLogTextureSize=8
+    MinLogTextureSize=1
+    MaxLogVOverU=8
+    MaxLogUOverV=8
+    MaxAnisotropy=3
+    MaxTMUnits=3
+    RefreshRate=0
+    DetailMax=3
+    UseFisheye=False
+    NoFiltering=False
+    DisableSpecialDT=False
+    UseFilterSGIS=True
+    Use4444Textures=False
+    UseTNT=False
+    UseS3TC=True
+    UseVertexSpecular=True
+    AlwaysMipmap=False
+    UseAlphaPalette=True
+    UsePalette=True
+    UseTrilinear=True
+    UseMultitexture=True
+    ShareLists=False
+    DoPrecache=True
+
+    These settings will confiqure the OpenGL driver for just about the best possible graphics, but "opengl.install.txt", lists some of
+    the options you can configure. Many of the options in this OpenGL driver are similar to other OpenGL drivers, including the (arguably useless)
+    one provided by Unreal upon installation/updating.
+
+7. Create a startup script for launching the game. Mine is as follows...
+
+    #!/bin/sh
+    nvidia-settings -l
+    nvidia-settings --assign LogAnisoAppControlled=0
+    nvidia-settings --assign FSAAAppControlled=0
+    nvidia-settings --assign FSAA=5
+    nvidia-settings --assign LogAniso=4
+    gnome-session-properties
+    killall gnome-panel
+    cd /home/byteframe/.wine/drive_c/UnrealGold/System
+    WINEDEBUG="-all" wine Unreal.exe "$@"
+    gnome-panel &
+    
+    The 'nvidia-settings' commands are useful for making my 6800 GT use AA, and AF. The gnome commands are included so I can hide the gnome-panel which
+    currently is 'shown above' the full screen game. gnome-session-properties launches and app that allows me to set the 'mode' of gnome-panel, from
+    'restart' (which will just restart the panel after I kill it) to normal, so when I do kill it, it stays 'down' until the last command runs it again.
+    I had to do the same thing with Call of Duty, but it doesn't have to do that anymore, so I imagine that Wine will be updated soon to work over the
+    gnome-panel in ALL situations; not just World War II shooters, but Unreal ones as well.
+    
+OPTIONAL: Enabling mega cool S3TC support provided by this 3rd party OpenGL driver, and NVIDIA Cards (see the screen shots)
+
+1. Make a temporary directory, and copy all the files from the "Textures" directory into it, from the second Unreal Tournament CD.
+2. Extract "S3TCext.exe" from "OpenGlDrv2.1.0.7.zip" into that directory.
+3. Wine "S3TCext.exe", from a terminal, within that directory. You might need to kill of Wine or the terminal, when it finishes.
+4. A new directory is made within the directory you created, and it contains the, converted files. Copy all of those into the
+   "Textures' directory in your game directory. Be sure to replace any of the files. The step must be followed correctly, or the game
+   won't start up, because there are still some files you need that don't get converted.
+5. If you set it to 'False', make sure 'UseS3TC=True' in Unreal.ini.
+
+   
+Notes
+
+* Some miscellaneous versions of the game, such as the 3dfx, or Creative bundle-pack, might not work properly.
+  Try to find a "standard" US Unreal disc, or just go with Gold. A UK one might work as well.
+* OldUnreal has recently published a "MultiMedia" patch that enhances both the OpenGL, as well as the audio
+  drivers. I've yet to test how these work with Wine.
+* If the 'black tree masking bug' is driving you nuts, "opengl.install.txt" explains a quick hack around it.
+
+Files
+
+226 Patch: UnrealPatch226Final.exe
+    http://www.oldunreal.com/patch/UnrealPatch226Final.exe
+OpenGL Driver: OpenGlDrv2.1.0.7.zip
+    http://www.oldunreal.com/patch/OpenGlDrv2.1.0.7.zip
+
+Links
+
+OldUnreal Linux Forum
+    http://www.oldunreal.com/cgi-bin/yabb/YaBB.pl?board=Linux
+    
+

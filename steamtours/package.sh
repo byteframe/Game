@@ -3,9 +3,9 @@
 if [ -z "${G}" ]; then
   echo "FAIL: no environment!"
 else
-  ADDON=byteframe13
+  ADDON=byteframe14
   [ ! -z ${1} ] && ADDON=${1}
-  MAP=byteframe13
+  MAP=${ADDON}
   [ ! -z ${2} ] && MAP=${2}
   DESTINATION=${ADDON}
   [ ! -z ${3} ] && DESTINATION=${3}
@@ -47,20 +47,26 @@ else
       if [[ ${FILES[${PACK}]} == */${FILE1}_c* ]]; then
         FOUND=yes
         echo "# ${PACK} | ${LINE}"
-        if [ ${PACK} != "steamtours" ] && [ ${PACK} != "core" ] && [ ${PACK} != "steamvr_home" ] \
-        && [ ${PACK} != "russells_lab" ] && [ ${PACK} != "c17_alleyway" ] && [ ${PACK} != "driftwood_htc" ] \
-        && [ ${PACK} != ${ADDON} ] \
-        && ! [[ ${PACK} =~ ^[0-9]+ ]]; then
-          echo "  mkdir -p ${DESTINATION}/$(dirname ${FILE1}) ; cp ${PACK}/${FILE1}"_c ${DESTINATION}/${FILE1}_c
-          strings ${PACK}/${FILE1}_c | grep -E "(materials|models|particles)/.*\.(vtex|vpcf|vmesh|vphys|vseq|vagrp|vmorf|vanim)" | awk '!seen[$0]++' | while read FILE2; do
-            FILE2=$(echo ${FILE2} | cut --delimiter " " --fields 1)
-            echo "  mkdir -p ${DESTINATION}/$(dirname ${FILE2}) ; cp ${PACK}/${FILE2}_c" ${DESTINATION}/${FILE2}_c
-            if [ ! -e ${PACK}/${FILE2}_c ]; then
-              echo "#### ERROR: subfile not found: ${PACK}/${FILE2}_c"
+        if [ ${PACK} != steamtours ] && [ ${PACK} != core ] && [ ${PACK} != steamvr_home ] \
+        && [ ${PACK} != russells_lab ] && [ ${PACK} != c17_alleyway ] && [ ${PACK} != driftwood_htc ] \
+        && [ ${PACK} != ${ADDON} ] && ! [[ ${PACK} =~ ^[0-9]+ ]]; then
+          if [[ ${FILE1} == *.vmat ]] && [[ -e "${C}"/${PACK}/${FILE1} ]] ; then
+            echo "  mkdir -p \"\${C}\"/${DESTINATION}/$(dirname ${FILE1}) ; cp \"\${C}\"/${PACK}/${FILE1} \"\${C}\"/${DESTINATION}/${FILE1}"
+            cat "${C}"/${PACK}/${FILE1} | grep -E "\.(png|jpg|tga|exr|tiff)\"" | grep -vE "materials/(default|dev)" | sed -e 's:"::g' -e 's:Texture[a-zA-Z0-9]*::' | while read FILE2; do
+              echo "  mkdir -p \"\${C}\"/${DESTINATION}/$(dirname ${FILE2}) ; cp \"\${C}\"/${PACK}/${FILE2} \"\${C}\"/${DESTINATION}/${FILE2}"
+            done
+          else
+            echo "  mkdir -p ${DESTINATION}/$(dirname ${FILE1}) ; cp ${PACK}/${FILE1}"_c ${DESTINATION}/${FILE1}_c
+            strings ${PACK}/${FILE1}_c | grep -E "(materials|models|particles)/.*\.(vtex|vpcf|vmesh|vphys|vseq|vagrp|vmorf|vanim)" | awk '!seen[$0]++' | while read FILE2; do
+              FILE2=$(echo ${FILE2} | cut --delimiter " " --fields 1)
+              echo "  mkdir -p ${DESTINATION}/$(dirname ${FILE2}) ; cp ${PACK}/${FILE2}_c" ${DESTINATION}/${FILE2}_c
+              if [ ! -e ${PACK}/${FILE2}_c ]; then
+                echo "#### ERROR: subfile not found: ${PACK}/${FILE2}_c"
+              fi
+            done
+            if [[ ${FILE1} ==  *.vmdl ]] && [ -e ${PACK}/${FILE1/vmdl/vanim}_c ]; then
+              echo "  mkdir -p ${DESTINATION}/$(dirname ${FILE1}) ; cp ${PACK}/${FILE1/vmdl/vanim}_c ${DESTINATION}/${FILE1/vmdl/vanim}_c"
             fi
-          done
-          if [[ ${FILE1} ==  *.vmdl ]] && [ -e ${PACK}/${FILE1/vmdl/vanim}_c ]; then
-            echo "  mkdir -p ${DESTINATION}/$(dirname ${FILE1}) ; cp ${PACK}/${FILE1/vmdl/vanim}_c ${DESTINATION}/${FILE1/vmdl/vanim}_c"
           fi
         fi
         break

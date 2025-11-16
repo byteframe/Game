@@ -17,10 +17,6 @@
 "The Lab: Robot Repair" -- https://store.steampowered.com/app/450390/The_Lab/
 ================================================================================
     particles/atmospherics/plasterfx_combined.vpcf
-    particles/atmospherics/plaster_fx_linger.vpcf
-    particles/atmospherics/room_atmos_plaster_dropseeds.vpcf
-    particles/atmospherics/plaster_fx_lingerlight.vpcf
-    particles/atmospherics/plasterfx_combined.vpcf
     aperture/models/materials/cabinet_dials_col.vmat
 
 "Half-Life: Alyx" -- https://store.steampowered.com/app/546560/HalfLife_Alyx/
