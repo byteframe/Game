@@ -38,7 +38,7 @@ Layer0
 	g_vReflectanceRange "[0.000 1.000]"
 	////TextureAmbientOcclusion
 	TextureGlossiness ___GLOSS0___
-	TextureLayerReflectance "materials/default/default_refl.tga"
+	TextureLayerReflectance "materials/___REFL0___"
 
 	//---- Layer 1 ----
 	g_flLayer1BlendSoftness "0.500"
@@ -51,7 +51,7 @@ Layer0
 	TextureLayer1Color ___COLOR1___
 	TextureLayer1Glossiness ___GLOSS1___
 	TextureLayer1Normal ___NORMAL1___
-	TextureLayer1Reflectance "materials/default/default_refl.tga"
+	TextureLayer1Reflectance "materials/___REFL1___"
 	////TextureLayer1RevealMask "materials/___HEIGHT1___"
 
 	//---- Layer 2 ----
@@ -65,6 +65,6 @@ Layer0
 	TextureLayer2Color ___COLOR2___
 	TextureLayer2Glossiness ___GLOSS2___
 	TextureLayer2Normal ___NORMAL2___
-	TextureLayer2Reflectance "materials/default/default_refl.tga"
+	TextureLayer2Reflectance "materials/___REFL2___"
 	////TextureLayer2RevealMask "materials/___HEIGHT2___"
 }

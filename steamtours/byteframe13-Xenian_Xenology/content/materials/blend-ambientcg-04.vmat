@@ -1,0 +1,57 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Blend ----
+	F_BLEND 1 // 2-Layer
+	F_BLEND_NORMALS 1
+
+	//---- Lighting ----
+	F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
+
+	//---- Specular ----
+	F_SPECULAR 1
+	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/Concrete029/Concrete029_4K-PNG_Color.png"
+
+	//---- Cube Map ----
+	g_flCubeMapBlur "0.000"
+	g_flCubeMapBrightness "1.000"
+  
+	//---- Normal Map ----
+	TextureNormal "materials/Concrete029/Concrete029_4K-PNG_NormalGL.png"
+  
+	//---- Lighting ----
+	////g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
+	////g_flAmbientOcclusionStrengthDirectSpecular "1.000"
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_flMetalness "0.000"
+  g_vReflectanceRange "[0.000 1.000]"
+	TextureAmbientOcclusion "materials/Concrete029/Concrete029_4K-PNG_AmbientOcclusion.png"
+	TextureGlossiness "materials/Concrete029/Concrete029_4K-PNG_Roughness__inverted.png"
+	TextureLayerReflectance "materials/default/default_refl.tga"
+
+	//---- Layer 1 ----
+	g_flLayer1BlendSoftness "0.500"
+	g_flLayer1BorderOffset "0.000"
+	g_flLayer1BorderSoftness "0.500"
+	g_flLayer1BorderStrength "0.500"
+	g_flLayer1Max "1.000"
+	//g_vLayer1BorderColor "[1.000000 1.000000 1.000000 0.000000]"
+	g_vLayer1Scale "[1.000 1.000]"
+	TextureLayer1Color "materials/Concrete004/Concrete004_4K-PNG_Color.png"
+	TextureLayer1Glossiness  "materials/Concrete004/Concrete004_4K-PNG_Roughness__inverted.png"
+	TextureLayer1Normal "materials/Concrete004/Concrete004_4K-PNG_NormalGL.png"
+	TextureLayer1Reflectance "materials/default/default_refl.tga"
+	TextureLayer1RevealMask "materials/Concrete004/Concrete004_4K-PNG_Displacement.png"
+
+}

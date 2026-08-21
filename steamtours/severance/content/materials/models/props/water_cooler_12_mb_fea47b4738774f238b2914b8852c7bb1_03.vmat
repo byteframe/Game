@@ -10,7 +10,7 @@ Layer0
 	F_SPECULAR_CUBE_MAP_PROJECTION 1
 
 	//---- Translucent ----
-	F_ADDITIVE_BLEND 1
+	F_GLASS 1
 	F_TRANSLUCENT 1
 
 	//---- Color ----
@@ -27,15 +27,18 @@ Layer0
 	//---- Lighting ----
 	g_flDirectionalLightmapMinZ "0.050"
 	g_flDirectionalLightmapStrength "1.000"
+	g_flGlassFresnelExponent "3.000"
+	g_flGlassFresnelMaxOpacity "0.500"
+	g_flGlassFresnelThickness "0.100"
 	g_flMetalness "0.000"
-	g_vReflectanceRange "[0.500 1.000]"
-	TextureGlossiness "[0.704000 0.704000 0.704000 0.000000]"
-	TextureReflectance "[1.000000 1.000000 1.000000 0.000000]"
+	g_vReflectanceRange "[0.983 1.000]"
+	TextureGlossiness "[0.622000 0.622000 0.622000 0.000000]"
+	TextureReflectance "materials/default/default_refl.tga"
 
 	//---- Normal Map ----
 	TextureNormal "materials/default/default_normal.tga"
 
 	//---- Translucent ----
-	g_flOpacityScale "0.500"
+	g_flOpacityScale "0.450"
 	TextureTranslucency "materials/default/default_trans.tga"
 }

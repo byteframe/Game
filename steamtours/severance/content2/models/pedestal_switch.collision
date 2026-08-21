@@ -1,0 +1,313 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_CollisionAttributes = 
+	{
+		m_CollisionGroup = "default"
+		m_InteractAs = [  ]
+		m_InteractWith = [  ]
+		m_InteractExclude = [  ]
+	}
+	m_DMXReference = ""
+	m_Bodies = 
+	[
+		{
+			m_BindPose = 
+			[
+				0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 1.0,
+			]
+			m_LocalBindPose = 
+			[
+				0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 1.0,
+			]
+			m_Shapes = 
+			[
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ -0.187631, 0.353125, -0.564013 ],
+						[ -0.187631, 0.353125, -0.564013 ],
+					]
+					m_Vertices = 
+					[
+						[ -1.282274, 12.112886, -1.831045 ],
+						[ 9.643631, -0.743639, 9.714876 ],
+						[ -9.886842, -0.587823, 8.641378 ],
+						[ 9.142952, 3.252676, -9.588568 ],
+						[ -9.621233, 1.036282, -9.483368 ],
+						[ -1.638942, 9.360636, 9.652074 ],
+						[ 1.857965, -9.501827, 9.438892 ],
+						[ 10.241221, -6.681736, -1.852517 ],
+						[ 3.499323, -8.529546, -10.0 ],
+						[ 1.135, 9.453682, -10.0 ],
+						[ -10.406129, -5.892067, -4.100914 ],
+						[ 8.013465, 9.409484, -2.836387 ],
+						[ -8.871779, 8.415299, -1.6251 ],
+						[ -8.040999, -5.848526, 9.452632 ],
+						[ -5.815766, -6.933921, -10.0 ],
+						[ 7.157952, 6.1422, 9.498206 ],
+						[ 12.331303, -0.496368, -2.381511 ],
+						[ -11.706191, 3.506927, -2.240861 ],
+						[ -7.082273, 6.542048, 9.374022 ],
+						[ -5.394988, 8.606624, -8.345635 ],
+						[ 8.285973, -5.167978, -9.064062 ],
+						[ -7.286809, -9.646797, -2.898402 ],
+						[ 8.830509, -4.988029, 8.235742 ],
+						[ 6.288097, -10.439557, -1.662432 ],
+						[ 10.505919, 5.3522, 1.079961 ],
+						[ -2.932967, -9.193406, 9.267841 ],
+						[ 2.927255, 9.867743, 6.761802 ],
+						[ -11.900198, -0.988837, -0.479662 ],
+						[ 6.013371, 7.926454, -8.878081 ],
+						[ 3.358751, 11.781945, -2.236872 ],
+						[ 10.778315, 4.510989, -4.58217 ],
+						[ 1.248045, -10.030586, -8.813417 ],
+						[ -8.600353, -4.902227, -9.034215 ],
+						[ -8.421849, 5.074675, -9.108523 ],
+						[ 11.796012, -3.101238, -3.938613 ],
+						[ -3.717228, -11.305778, -0.312465 ],
+						[ 6.704475, -7.673034, -8.800659 ],
+						[ 5.038564, -8.648971, 8.232063 ],
+						[ -6.891456, 10.027669, -2.498503 ],
+						[ -8.508721, 3.751745, 9.747245 ],
+						[ -4.931284, -8.470727, -9.128744 ],
+						[ 8.073049, -3.139818, -10.0 ],
+						[ -8.745414, 3.034999, -10.0 ],
+						[ 8.063736, -9.156081, -3.083237 ],
+						[ -11.438737, 0.996295, -4.994562 ],
+						[ 9.401457, -2.220937, 9.87784 ],
+						[ -2.319542, 9.791022, -8.742053 ],
+						[ 9.360836, 4.700514, 6.665328 ],
+						[ 5.665023, 8.204197, 8.233298 ],
+						[ -10.58463, 5.927514, -3.018026 ],
+						[ -5.690429, -10.110611, -4.877093 ],
+						[ -11.338614, -4.340043, -2.581525 ],
+						[ -3.784512, 8.802556, 9.422258 ],
+						[ 3.518895, 7.773482, 9.905035 ],
+						[ 11.832305, 2.481549, -2.524988 ],
+						[ -5.219373, 10.988334, -1.817441 ],
+						[ 3.352358, -7.992344, 9.922872 ],
+						[ -9.402357, 2.40762, 9.119079 ],
+						[ -2.640291, 11.871563, -2.461309 ],
+						[ -1.401457, -12.01939, -2.72305 ],
+						[ -0.900243, 9.821316, 8.567837 ],
+						[ 0.704986, -12.287506, -3.233088 ],
+					]
+					m_Indices = 
+					[
+						23, 6, 61, 28,
+						3, 9, 29, 11,
+						28, 29, 28, 9,
+						29, 9, 0, 30,
+						3, 28, 30, 28,
+						11, 30, 11, 24,
+						32, 4, 14, 34,
+						3, 16, 35, 25,
+						13, 35, 13, 21,
+						36, 31, 8, 37,
+						6, 23, 40, 32,
+						14, 40, 14, 8,
+						40, 8, 31, 41,
+						20, 36, 41, 36,
+						8, 41, 9, 3,
+						41, 3, 34, 41,
+						34, 20, 42, 9,
+						41, 42, 41, 8,
+						42, 8, 14, 42,
+						14, 4, 43, 36,
+						20, 43, 20, 34,
+						43, 34, 7, 43,
+						7, 22, 43, 22,
+						37, 43, 37, 23,
+						43, 23, 61, 43,
+						61, 31, 43, 31,
+						36, 44, 27, 17,
+						45, 22, 7, 45,
+						7, 34, 45, 34,
+						16, 45, 16, 1,
+						46, 9, 42, 46,
+						42, 33, 46, 33,
+						19, 47, 15, 1,
+						48, 15, 47, 48,
+						47, 24, 48, 24,
+						11, 48, 11, 29,
+						48, 29, 26, 49,
+						33, 42, 49, 42,
+						4, 49, 4, 44,
+						49, 44, 17, 49,
+						12, 38, 49, 38,
+						19, 49, 19, 33,
+						51, 27, 44, 51,
+						44, 4, 51, 4,
+						32, 51, 32, 10,
+						51, 10, 21, 51,
+						21, 13, 51, 13,
+						2, 51, 2, 27,
+						52, 18, 39, 52,
+						39, 5, 53, 5,
+						39, 53, 45, 1,
+						53, 1, 15, 53,
+						15, 48, 54, 30,
+						24, 54, 24, 47,
+						54, 47, 1, 54,
+						1, 16, 54, 16,
+						3, 54, 3, 30,
+						55, 38, 12, 55,
+						12, 18, 55, 18,
+						52, 56, 45, 53,
+						56, 53, 39, 56,
+						39, 13, 56, 13,
+						25, 56, 25, 6,
+						56, 6, 37, 56,
+						37, 22, 56, 22,
+						45, 57, 39, 18,
+						57, 18, 12, 57,
+						12, 49, 57, 49,
+						17, 57, 17, 27,
+						57, 27, 2, 57,
+						2, 13, 57, 13,
+						39, 58, 0, 9,
+						58, 9, 46, 58,
+						46, 19, 58, 19,
+						38, 58, 38, 55,
+						59, 50, 40, 59,
+						40, 31, 59, 31,
+						61, 59, 61, 6,
+						59, 6, 25, 59,
+						25, 35, 59, 35,
+						21, 59, 21, 50,
+						60, 26, 29, 60,
+						29, 0, 60, 0,
+						58, 60, 58, 55,
+						60, 55, 52, 60,
+						52, 5, 60, 5,
+						53, 60, 53, 48,
+						60, 48, 26, 50,
+						21, 10, 50, 10,
+						32, 50, 32, 40,
+					]
+					m_UserFriendlyName = ""
+					m_uuid = "ee00d92a-0957-492e-be2c-640a9cfb9042"
+					m_SurfaceProp = ""
+				},
+			]
+			m_BoneName = ""
+			m_SurfaceProp = "default"
+			__oldschema_object_name = ""
+			m_pParent = ""
+			m_nSerial = 0
+			m_uuid = "e9e3a9d1-090a-4807-a4f9-ccf2f09ae08f"
+			m_bExternalRBrefFlag = false
+			m_nType = "AUTH_PHYS_BODY_DYNAMIC"
+			m_flMass = 0.0
+			m_bOverrideMassCenter = false
+			m_vMassCenterOverride = [ 0.0, 0.0, 0.0 ]
+			m_flInertiaScale = 1.0
+			m_vLinearVelocity = [ 0.0, 0.0, 0.0 ]
+			m_vAngularVelocity = [ 0.0, 0.0, 0.0 ]
+			m_flLinearDamping = 0.0
+			m_flAngularDamping = 0.0
+			m_bUseInCloth = false
+			m_bClothCollisionLayers = 
+			[
+				true, true, true, true,
+				true, true, true, true,
+				true, true, true, true,
+				true, true, true, true,
+			]
+			m_bAlwaysDynamicOnClient = false
+			m_CollisionAttributes = 
+			{
+				m_CollisionGroup = "default"
+				m_InteractAs = [  ]
+				m_InteractWith = [  ]
+				m_InteractExclude = [  ]
+				m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+			}
+			m_flMeshSimplifyMaxError = 0.0
+		},
+	]
+	m_Joints = [  ]
+	m_Fx = 
+	{
+		m_Quads = [  ]
+		m_Rods = [  ]
+		m_SourceEdges = [  ]
+		m_Springs = [  ]
+		m_Constraints = [  ]
+		m_Capsules = [  ]
+		m_Nodes = [  ]
+		m_JiggleBones = [  ]
+		m_CollisionSpheres = [  ]
+		m_CollisionPlanes = [  ]
+		m_PresetNodeBases = [  ]
+		m_TaperedCapsuleRigids = [  ]
+		m_BoxRigids = [  ]
+		m_SphereRigids = [  ]
+		m_CtrlOffsets = [  ]
+		m_FitInfluences = [  ]
+		m_SourceQuads = [  ]
+		m_Ropes = [  ]
+		m_MorphLayers = [  ]
+		m_MorphSetData = [  ]
+		m_ModelVertexSetName = ""
+		m_nExtraIterations = 0
+		m_nExtraGoalIterations = 0
+		m_nExtraPressureIterations = 0
+		m_flGoalStrengthBias = 0.0
+		m_flAdditionalShearStretch = 0.0
+		m_flDefaultSurfaceStretch = 0.0
+		m_flDefaultThreadStretch = 0.0
+		m_flDefaultGravityScale = 1.0
+		m_flDefaultVelAirDrag = 0.0
+		m_flDefaultExpAirDrag = 0.0
+		m_flDefaultVelQuadAirDrag = 0.0
+		m_flDefaultExpQuadAirDrag = 0.0
+		m_flDefaultVelRodAirDrag = 0.0
+		m_flDefaultExpRodAirDrag = 0.0
+		m_flQuadVelocitySmoothRate = 0.0
+		m_flRodVelocitySmoothRate = 0.0
+		m_flInternalPressure = 0.0
+		m_flWindage = 0.0
+		m_flWindDrag = 0.0
+		m_nQuadVelocitySmoothIterations = 0
+		m_nRodVelocitySmoothIterations = 0
+		m_flDefaultGroundFriction = 0.0
+		m_flDefaultWorldCollisionPenetration = 0.0
+		m_flAddWorldCollisionRadius = 2.0
+		m_flLocalForce = 1.0
+		m_flLocalRotation = 0.0
+		m_flVolumetricSolveAmount = 0.0
+		m_flAddCurvature = 0.0
+		m_flQuadBendTolerance = 0.05
+		m_bFollowTheLead = false
+		m_bUsePerNodeLocalForceAndRotation = false
+		m_bUninertialRods = false
+		m_bExplicitMasses = false
+		m_bUnitlessDamping = true
+		m_bMadeInModelDoc = false
+		m_bForceWorldCollisionOnAllNodes = false
+		m_nMergePriority = 0
+		m_bNewStyle = true
+		m_bCanCollideWithWorldMeshes = false
+		m_bCanCollideWithWorldCapsulesAndSpheres = false
+		m_bCanCollideWithWorldHulls = false
+		m_bAddStiffnessRods = true
+		m_bRigidEdgeHinges = false
+		m_bSoftSkinAnimation = false
+		m_bAddBendOnlyRods = false
+		m_bStraightBendRods = false
+		m_bImmovableHint = false
+	}
+}

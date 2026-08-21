@@ -1,6 +1,7 @@
 #!/bin/sh
+source /mnt/d/Work/Game/steamtours/asset_packs/steamtours_environment.sh
 
-##------------------------------------------------------------------------------ changelog
+#------------------------------------------------------------------------------- changelog
 # - new source1import with slimmer initial changes (continues to allow all shaders and correcting cubemap)
 # - more intricate pack suffix/prefix and deletion routine
 # - only run prep phase one in init
@@ -36,18 +37,12 @@
 # - silence many instances of benign output from scripts
 # - dont require srctools library in models.py
 # - various touchups and additional file clutches throughout
+# - cull materials/tools into tools_off
+# - open tools when an addon completes
 # + errata: didnt really skip import stuff like scenes if the dir wasnt empty, so there's alot of empty content/game results (scenes.image mostly)
 # +  for DIR in source1import_*/scenes; do if [ $(ls -l "${DIR}" | wc -l) = 2 ]; then echo ${DIR}; fi; done
-##------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 
-S=/mnt/s/SteamLibrary/steamapps/common
-L=/mnt/l/SteamLibrary/steamapps/common
-D=/mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common
-C=${D}/SteamVR/tools/steamvr_environments/content/steamtours_addons
-G=${D}/SteamVR/tools/steamvr_environments/game/steamtours_addons
-W=/mnt/c/Users/byteframe/Downloads
-X=/mnt/d/Work/Game/steamtours/asset_packs
-N=/mnt/c/Program\ Files/Notepad++/notepad++.exe
 P=source1import_
 B=${1/*\//}
 header() {
@@ -57,8 +52,8 @@ header() {
 }
 extract_vpk() {
   header ${A}" | VPK: ${1}"
-  if ~ grep -q "exit 1" ~/.local/share/pipx/venvs/vpk/lib/python3.12/site-packages/vpk/cli.py; then
-    echo -e "error in: vpk binary unmodified\n"
+  if ! grep -q "exit(1)" ~/.local/share/pipx/venvs/vpk/lib/python3.13/site-packages/vpk/cli.py; then
+    echo -e "error in: vpk binary not installed, or is unmodified\n"
     read PAUSE
   elif ! ~/.local/bin/vpk -re "(models|materials|particles|sound|scripts|scenes|surfaces)/.*" -x "${C}"/${A} "${1}"; then
     echo -e "error in: ${1}, must extract manually\n"
@@ -76,10 +71,12 @@ convert_to_utf8() {
   mv utf8.out ${1}
 }
 delete_vtf() {
-  for DIR in source1import_${1}/materials; do
-    for FILE in $(find ${DIR} -iname "*.VTF"); do
+  for DIR in ${1}/materials; do
+    find ${DIR} -iname "*.VTF" | while read FILE; do
       if [ -e "${FILE/.vtf/.tiff}" ] || [ -e "${FILE/.vtf/.pfm}" ]; then
         echo rm -vf "${FILE}"
+      else
+        echo "remaining vtf file: ${FILE/.vtf/.tiff}"
       fi
     done
   done
@@ -110,11 +107,12 @@ MAKE_ASSET_PACK()
         done
         echo "\"AddonInfo\"{\"Dependencies\"{}}" > "${G}"/${A}/addoninfo.txt
         mv ${A}/sound/* ${A}/sounds 2> /dev/null
-        rm -fr ${A}/sounds/vo ${A}/sounds/commentary ${A}/sounds/music
+        rm -fr ${A}/sounds/vo ${A}/sounds/commentary ${A}/sounds/music ${A}/sounds/voice
         cp "${X}"/default_cube.tga ../core/materials/default
         cp ../core/materials/dev/black_color.tga ${A}/materials/black.tga
         cp ../core/materials/dev/white_color.tga ${A}/materials/white.tga
         mv ${A}/materials/dev/* ${A}/_cull/materials/dev/ 2> /dev/null
+        mv ${A}/materials/tools/ ${A}/materials/tools_off 2> /dev/null
         for FILE in "dev_normal.vtf" "dev_camera_shared.vmt" "null.vtf" "water*" \
         "invisible*" "replay_noise*" "dev_ram_512*" "reflectivity_*.tga" "dev_measuregeneric*.tga" \
         "flat_normal*" "fus_normal*" "flatnormal*" "pom_test*" "dev_com*monitor*" \
@@ -152,9 +150,8 @@ MAKE_ASSET_PACK()
     if [ -z ${INITIALIZE_ONLY} ]; then
       if [ -z ${SKIP_NOVTF} ]; then
         header ${A}" | converting textures..."
-        /mnt/c/Users/byteframe/no_vtf-4.2.0/no_vtf.exe --ldr-format "tiff|tiff" --hdr-format pfm ${A}/materials/
+        "${X}"/scripts/no_vtf-5.1.1/no_vtf.exe --ldr-format "tiff|tiff" --hdr-format pfm ${A}/materials/
       fi
-
       [ -z "${I_TYPES}" ] && I_TYPES="materials models particles scripts scenes"
       if [ "${I_TYPES}" != none ]; then
         for TYPE in ${I_TYPES}; do
@@ -166,12 +163,11 @@ MAKE_ASSET_PACK()
                 echo ${A}": (waiting) retry: ${TYPE}_import... {*}"
                 read PAUSE
               fi
-              python "${W}"/source1import-0.3.12/utils/${TYPE}_import.py -i "${C}"/${A} -e "${C}"/${A} | tee -a ${A}/${A}_import_${TYPE}.log
+              python "${X}"/scripts/source1import-0.3.12/utils/${TYPE}_import.py -i "${C}"/${A} -e "${C}"/${A} | tee -a ${A}/${A}_import_${TYPE}.log
             done
           fi
         done
       fi
-
       [ -z "${B_TYPES}" ] && B_TYPES="sounds soundevents scenes materials particles models"
       if [ "${B_TYPES}" != none ]; then
         for TYPE in ${B_TYPES}; do
@@ -204,6 +200,7 @@ MAKE_ASSET_PACK()
     fi > >(tee -a ${A}/${A}.txt) 2> >(tee -a ${A}/${A}.txt >&2)
     rm -f ${A}/${A}_*_*.log 2> /dev/null
     rmdir ${A}/sound 2> /dev/null
+    load_addon ${A}
   fi
   unset PRE_IMPORT_FIXES
 }
@@ -300,7 +297,6 @@ PRE_IMPORT_FIXES() {
   mv -v ${1}/scripts/game_sounds_reloads.txt ${1}/_cull
 }
 MAKE_ASSET_PACK "${S}/EYE/eye"
-##------------------------------------------------------------------------------ dab
 ##------------------------------------------------------------------------------ ageofchivalry
 MAKE_ASSET_PACK "${S}/Source SDK Base 2007/ageofchivalry"
 ##------------------------------------------------------------------------------ esmod
@@ -413,30 +409,35 @@ PRE_IMPORT_FIXES() {
   mv ${1}/materials/skybox/hav* ${1}/_cull
 }
 MAKE_ASSET_PACK "${S}/vampire" "_MANUAL_INSERTION_.vpk"
-##------------------------------------------------------------------------------ EXPERIMENTAL: cm2013
+##------------------------------------------------------------------------------ cm2013
 MAKE_ASSET_PACK "${S}/cm2013"
 ##------------------------------------------------------------------------------ snowdrop_escape
 MAKE_ASSET_PACK "${S}/Snowdrop Escape/snowdrop_escape" "sde_materials_dir.vpk" "sde_models_dir.vpk"
-##------------------------------------------------------------------------------ retired
-if [ ${RETIRED} = false ]; then
-  MAKE_ASSET_PACK "${S}/Half-Life 2 Deathmatch/hl2mp" "hl2mp_pak_dir.vpk"
-  MAKE_ASSET_PACK "${S}/Aperture Tag/aperturetag" "pak01_dir.vpk"
-  MAKE_ASSET_PACK "${S}/Treason/treason"
-  PRE_IMPORT_FIXES() {
-    rm -f ${1}/sounds/Zenlil_1/iss_sound/tree_group_45/"Pawn44+45_1-2-3-2+-0.wav" ${1}/_cull
-  }
-  MAKE_ASSET_PACK "${S}/Consortium/consortium"
-  PRE_IMPORT_FIXES() {
-    mv -v ${1}/materials/models/stormy/da_floorlight_01_nor.vmt ${1}/_cull
-    for FILE in "weapons/v_models/mossberg590/diffuse.vmt" "shells/12gauge/shell_12gauge.vmt" "weapons/v_models/mossberg590/mossberg590.vmt" "weapons/v_models/mossberg590/shotgun_shell.vmt"; do
-      convert_to_utf8 ${1}/materials/models/${FILE}
-    done
-  }
-  MAKE_ASSET_PACK "${S}/Double Action/dab"
-  MAKE_ASSET_PACK "${S}/brainbread2/brainbread2" "../base/bb2_game_dir_BROKEN.vpk" "../base/misc_game_dir.vpk"
-  PRE_IMPORT_FIXES() {
-    mv ${1}/materials/skybox/xen9* ${1}/_cull
-  }
-  MAKE_ASSET_PACK "${S}/Half-Life 2/hl1" "hl1_pak_dir.vpk"
-  MAKE_ASSET_PACK "${S}/Half-Life 2/hl1_hd" "hl1_hd_pak_dir.vpk"
-fi
+##------------------------------------------------------------------------------ hl1
+PRE_IMPORT_FIXES() {
+  mv ${1}/materials/skybox/xen9* ${1}/_cull
+}
+MAKE_ASSET_PACK "${D}/Half-Life 2/hl1" "hl1_pak_dir.vpk"
+##------------------------------------------------------------------------------ hl1_hd
+MAKE_ASSET_PACK "${D}/Half-Life 2/hl1_hd" "hl1_hd_pak_dir.vpk"
+##------------------------------------------------------------------------------ hl2mp
+MAKE_ASSET_PACK "${D}/Half-Life 2 Deathmatch/hl2mp" "hl2mp_pak_dir.vpk"
+##------------------------------------------------------------------------------ brainbread2
+MAKE_ASSET_PACK "${D}/brainbread2/brainbread2" "../base/bb2_game_dir.vpk" "../base/misc_game_dir.vpk"
+##------------------------------------------------------------------------------ aperturetag
+MAKE_ASSET_PACK "${D}/Aperture Tag/aperturetag" "pak01_dir.vpk"
+##------------------------------------------------------------------------------ treason
+MAKE_ASSET_PACK "${D}/Treason/treason"
+##------------------------------------------------------------------------------ dab
+PRE_IMPORT_FIXES() {
+  mv -v ${1}/materials/models/stormy/da_floorlight_01_nor.vmt ${1}/_cull
+  for FILE in "weapons/v_models/mossberg590/diffuse.vmt" "shells/12gauge/shell_12gauge.vmt" "weapons/v_models/mossberg590/mossberg590.vmt" "weapons/v_models/mossberg590/shotgun_shell.vmt"; do
+    convert_to_utf8 ${1}/materials/models/${FILE}
+  done
+}
+MAKE_ASSET_PACK "${D}/Double Action/dab"
+##------------------------------------------------------------------------------ consortium
+PRE_IMPORT_FIXES() {
+  rm -f ${1}/sounds/Zenlil_1/iss_sound/tree_group_45/"Pawn44+45_1-2-3-2+-0.wav" ${1}/_cull
+}
+MAKE_ASSET_PACK "${D}/Consortium/consortium"

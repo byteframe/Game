@@ -10,7 +10,6 @@ Layer0
 	//---- Specular ----
 	F_METALNESS_TEXTURE 1
 	F_SPECULAR 1
-	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
 
 	//---- Color ----
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
@@ -19,21 +18,17 @@ Layer0
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
 	TextureColor "materials/models/props/office_leather_chair_flannigan_531bff2f2f884547b941cde26e7d3270_basecolor.png"
 
-	//---- Cube Map ----
-	g_flCubeMapBlur "0.000"
-	g_flCubeMapBrightness "1.000"
-
 	//---- Lighting ----
 	g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
 	g_flAmbientOcclusionStrengthDirectSpecular "1.000"
 	g_flDirectionalLightmapMinZ "0.050"
 	g_flDirectionalLightmapStrength "1.000"
 	g_vMetalnessRange "[0.000 1.000]"
-	g_vReflectanceRange "[0.000 1.000]"
+	g_vReflectanceRange "[0.328 1.000]"
 	TextureAmbientOcclusion "materials/models/props/office_leather_chair_flannigan_531bff2f2f884547b941cde26e7d3270_ao.png"
 	TextureGlossiness "materials/models/props/office_leather_chair_flannigan_531bff2f2f884547b941cde26e7d3270_roughness__inverted.png"
 	TextureMetalness "materials/models/props/office_leather_chair_flannigan_531bff2f2f884547b941cde26e7d3270_metalness.png"
-	TextureReflectance "materials/default/default_refl.tga"
+	TextureReflectance "materials/models/props/office_leather_chair_flannigan_531bff2f2f884547b941cde26e7d3270_metalness.png"
 
 	//---- Normal Map ----
 	TextureNormal "materials/models/props/office_leather_chair_flannigan_531bff2f2f884547b941cde26e7d3270_normal.png"

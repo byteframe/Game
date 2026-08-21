@@ -1,0 +1,186 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_CollisionAttributes = 
+	{
+		m_CollisionGroup = "default"
+		m_InteractAs = [  ]
+		m_InteractWith = [  ]
+		m_InteractExclude = [  ]
+	}
+	m_DMXReference = ""
+	m_Bodies = 
+	[
+		{
+			m_BindPose = 
+			[
+				0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 1.0,
+			]
+			m_LocalBindPose = 
+			[
+				0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 1.0,
+			]
+			m_Shapes = 
+			[
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ 0.068653, 0.101496, 0.048946 ],
+						[ 0.068653, 0.101496, 0.048946 ],
+					]
+					m_Vertices = 
+					[
+						[ 0.551523, -0.716328, 0.326355 ],
+						[ 1.226725, 0.564486, 0.058056 ],
+						[ 0.161263, 0.070159, -0.512563 ],
+						[ -0.456061, 0.858313, -0.174661 ],
+						[ -0.644542, -0.651591, -0.03479 ],
+						[ -0.113013, 0.927498, 0.280313 ],
+						[ 1.170635, -0.42088, 0.057 ],
+						[ 0.217477, 0.912043, -0.327453 ],
+						[ -0.697517, -0.426012, 0.275866 ],
+						[ 0.156347, 0.066881, 0.512563 ],
+						[ -0.817658, -0.068116, 0.077715 ],
+					]
+					m_Indices = 
+					[
+						4, 10, 3, 5,
+						3, 10, 6, 2,
+						1, 6, 1, 0,
+						6, 0, 4, 6,
+						4, 2, 7, 3,
+						5, 7, 5, 1,
+						7, 1, 2, 7,
+						2, 3, 8, 4,
+						0, 8, 5, 10,
+						8, 10, 4, 9,
+						8, 0, 9, 0,
+						1, 9, 1, 5,
+						9, 5, 8, 4,
+						3, 2,
+					]
+					m_UserFriendlyName = ""
+					m_uuid = "9c4730c7-71d4-49ae-8b08-44d211f03786"
+					m_SurfaceProp = ""
+				},
+			]
+			m_BoneName = ""
+			m_SurfaceProp = "default"
+			__oldschema_object_name = ""
+			m_pParent = ""
+			m_nSerial = 6
+			m_uuid = "de5bd8ab-dfbc-4853-a679-b0edd517c744"
+			m_bExternalRBrefFlag = false
+			m_nType = "AUTH_PHYS_BODY_DYNAMIC"
+			m_flMass = 0.0
+			m_bOverrideMassCenter = false
+			m_vMassCenterOverride = [ 0.0, 0.0, 0.0 ]
+			m_flInertiaScale = 1.0
+			m_vLinearVelocity = [ 0.0, 0.0, 0.0 ]
+			m_vAngularVelocity = [ 0.0, 0.0, 0.0 ]
+			m_flLinearDamping = 0.0
+			m_flAngularDamping = 0.0
+			m_bUseInCloth = false
+			m_bClothCollisionLayers = 
+			[
+				true, true, true, true,
+				true, true, true, true,
+				true, true, true, true,
+				true, true, true, true,
+			]
+			m_bAlwaysDynamicOnClient = false
+			m_CollisionAttributes = 
+			{
+				m_CollisionGroup = "default"
+				m_InteractAs = [  ]
+				m_InteractWith = [  ]
+				m_InteractExclude = [  ]
+				m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+			}
+			m_flMeshSimplifyMaxError = 0.0
+		},
+	]
+	m_Joints = [  ]
+	m_Fx = 
+	{
+		m_Quads = [  ]
+		m_Rods = [  ]
+		m_SourceEdges = [  ]
+		m_Springs = [  ]
+		m_Constraints = [  ]
+		m_Capsules = [  ]
+		m_Nodes = [  ]
+		m_JiggleBones = [  ]
+		m_CollisionSpheres = [  ]
+		m_CollisionPlanes = [  ]
+		m_PresetNodeBases = [  ]
+		m_TaperedCapsuleRigids = [  ]
+		m_BoxRigids = [  ]
+		m_SphereRigids = [  ]
+		m_CtrlOffsets = [  ]
+		m_FitInfluences = [  ]
+		m_SourceQuads = [  ]
+		m_Ropes = [  ]
+		m_MorphLayers = [  ]
+		m_MorphSetData = [  ]
+		m_ModelVertexSetName = ""
+		m_nExtraIterations = 0
+		m_nExtraGoalIterations = 0
+		m_nExtraPressureIterations = 0
+		m_flGoalStrengthBias = 0.0
+		m_flAdditionalShearStretch = 0.0
+		m_flDefaultSurfaceStretch = 0.0
+		m_flDefaultThreadStretch = 0.0
+		m_flDefaultGravityScale = 1.0
+		m_flDefaultVelAirDrag = 0.0
+		m_flDefaultExpAirDrag = 0.0
+		m_flDefaultVelQuadAirDrag = 0.0
+		m_flDefaultExpQuadAirDrag = 0.0
+		m_flDefaultVelRodAirDrag = 0.0
+		m_flDefaultExpRodAirDrag = 0.0
+		m_flQuadVelocitySmoothRate = 0.0
+		m_flRodVelocitySmoothRate = 0.0
+		m_flInternalPressure = 0.0
+		m_flWindage = 0.0
+		m_flWindDrag = 0.0
+		m_nQuadVelocitySmoothIterations = 0
+		m_nRodVelocitySmoothIterations = 0
+		m_flDefaultGroundFriction = 0.0
+		m_flDefaultWorldCollisionPenetration = 0.0
+		m_flAddWorldCollisionRadius = 2.0
+		m_flLocalForce = 1.0
+		m_flLocalRotation = 0.0
+		m_flVolumetricSolveAmount = 0.0
+		m_flAddCurvature = 0.0
+		m_flQuadBendTolerance = 0.05
+		m_bFollowTheLead = false
+		m_bUsePerNodeLocalForceAndRotation = false
+		m_bUninertialRods = false
+		m_bExplicitMasses = false
+		m_bUnitlessDamping = true
+		m_bMadeInModelDoc = false
+		m_bForceWorldCollisionOnAllNodes = false
+		m_nMergePriority = 0
+		m_bNewStyle = true
+		m_bCanCollideWithWorldMeshes = false
+		m_bCanCollideWithWorldCapsulesAndSpheres = false
+		m_bCanCollideWithWorldHulls = false
+		m_bAddStiffnessRods = true
+		m_bRigidEdgeHinges = false
+		m_bSoftSkinAnimation = false
+		m_bAddBendOnlyRods = false
+		m_bStraightBendRods = false
+		m_bImmovableHint = false
+	}
+}

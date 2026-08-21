@@ -1,0 +1,48 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- 2-Sided Rendering ----
+	F_RENDER_BACKFACES 1
+
+	//---- Lighting ----
+	F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
+
+	//---- Specular ----
+	F_SPECULAR 1
+	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
+
+	//---- Translucent ----
+	F_ALPHA_TEST 1
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/afrika/plants/wk1ncbxja/wk1ncbxja_4k_basecolor.jpg"
+
+	//---- Cube Map ----
+	g_flCubeMapBlur "0.000"
+	g_flCubeMapBrightness "1.000"
+
+	//---- Lighting ----
+	g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
+	g_flAmbientOcclusionStrengthDirectSpecular "1.000"
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_flMetalness "0.000"
+	g_vReflectanceRange "[0.000 0.800]"
+	TextureAmbientOcclusion "materials/default/default_ao.tga"
+	TextureGlossiness "materials/afrika/plants/wk1ncbxja/wk1ncbxja_4k_gloss.jpg"
+	TextureReflectance "materials/default/default_refl.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/afrika/plants/wk1ncbxja/wk1ncbxja_4k_normal.jpg"
+
+	//---- Translucent ----
+	g_flAlphaTestReference "0.500"
+	TextureTranslucency "materials/afrika/plants/wk1ncbxja/wk1ncbxja_4k_opacity.jpg"
+}

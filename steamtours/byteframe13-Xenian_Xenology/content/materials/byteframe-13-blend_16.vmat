@@ -1,0 +1,70 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Blend ----
+	F_BLEND 2 // 3-Layer
+	F_BLEND_NORMALS 1
+
+	//---- Lighting ----
+	F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
+
+	//---- Specular ----
+	F_SPECULAR 1
+	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/rocks/jagged-cliff1/jagged-cliff1-albedo.png"
+
+	//---- Cube Map ----
+	g_flCubeMapBlur "0.000"
+	g_flCubeMapBrightness "1.000"
+
+	//---- Layer 1 ----
+	g_flLayer1BlendSoftness "0.500"
+	g_flLayer1BorderOffset "0.000"
+	g_flLayer1BorderSoftness "0.500"
+	g_flLayer1BorderStrength "0.500"
+	g_flLayer1Max "1.000"
+	g_vLayer1BorderColor "[1.000000 1.000000 1.000000 0.000000]"
+	g_vLayer1Scale "[1.000 1.000]"
+	TextureLayer1Color "materials/ground/mossy-mud1/mossy_mud1_albedo.png"
+	TextureLayer1Glossiness "materials/ground/mossy-mud1/mossy_mud1_roughness__inverted.png"
+	TextureLayer1Normal "materials/ground/mossy-mud1/mossy_mud1_normal-ogl.png"
+	TextureLayer1Reflectance "materials/default/default_refl.tga"
+	TextureLayer1RevealMask "materials/ground/mossy-mud1/mossy_mud1_height.png"
+
+	//---- Layer 2 ----
+	g_flLayer2BlendSoftness "0.500"
+	g_flLayer2BorderOffset "0.000"
+	g_flLayer2BorderSoftness "0.500"
+	g_flLayer2BorderStrength "0.500"
+	g_flLayer2Max "1.000"
+	g_vLayer2BorderColor "[1.000000 1.000000 1.000000 0.000000]"
+	g_vLayer2Scale "[0.750 0.7500]"
+	TextureLayer2Color "materials/rocks/ocean-rock/ocean-rock_albedo.png"
+	TextureLayer2Glossiness "materials/rocks/ocean-rock/ocean-rock_roughness__inverted.png"
+	TextureLayer2Normal "materials/rocks/ocean-rock/ocean-rock_normal-ogl.png"
+	TextureLayer2Reflectance "materials/default/default_refl.tga"
+	TextureLayer2RevealMask "materials/rocks/ocean-rock/ocean-rock_height.png"
+
+	//---- Lighting ----
+	g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
+	g_flAmbientOcclusionStrengthDirectSpecular "1.000"
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_flMetalness "0.000"
+  g_vReflectanceRange "[0.000 1.000]"
+	TextureAmbientOcclusion "materials/rocks/jagged-cliff1/jagged-cliff1-ao.png"
+	TextureGlossiness "materials/rocks/jagged-cliff1/jagged-cliff1-roughness__inverted.png"
+	TextureReflectance "materials/default/default_refl.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/rocks/jagged-cliff1/jagged-cliff1-normal-ogl.png"
+}

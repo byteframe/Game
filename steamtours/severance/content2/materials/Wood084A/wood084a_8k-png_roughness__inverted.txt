@@ -1,0 +1,5 @@
+"settings"
+{
+	"maxres"		"4096"
+	"brightness"		"0.900000"
+}

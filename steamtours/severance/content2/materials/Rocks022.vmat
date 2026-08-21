@@ -1,0 +1,33 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Lighting ----
+	F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
+
+	//---- Specular ----
+	F_SPECULAR 1
+
+	//---- Color ----
+	g_vColorTint "[0.584314 0.584314 0.584314 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/Rocks022/Rocks022_8K-PNG_Color.png"
+
+	//---- Lighting ----
+	g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
+	g_flAmbientOcclusionStrengthDirectSpecular "1.000"
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_flMetalness "0.000"
+	g_vReflectanceRange "[0.375 1.000]"
+	TextureAmbientOcclusion "materials/Rocks022/Rocks022_8K-PNG_AmbientOcclusion.png"
+	TextureGlossiness "materials/Rocks022/Rocks022_8K-PNG_Roughness__inverted.png"
+	TextureReflectance "materials/default/default_refl.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/Rocks022/Rocks022_8K-PNG_NormalGL.png"
+}

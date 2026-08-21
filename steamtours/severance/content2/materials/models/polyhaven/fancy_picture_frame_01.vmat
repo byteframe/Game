@@ -1,0 +1,38 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Lighting ----
+	F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
+
+	//---- Specular ----
+	F_SPECULAR 1
+	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_diff_4k.png"
+
+	//---- Cube Map ----
+	g_flCubeMapBlur "0.000"
+	g_flCubeMapBrightness "1.000"
+
+	//---- Lighting ----
+	g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
+	g_flAmbientOcclusionStrengthDirectSpecular "1.000"
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_flMetalness "0.000"
+	g_vReflectanceRange "[0.000 1.000]"
+	TextureAmbientOcclusion "materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_ao_4k.png"
+	TextureGlossiness "materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_glossiness_4k.png"
+	TextureReflectance "materials/default/default_refl.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_nor_gl_4k.png"
+}

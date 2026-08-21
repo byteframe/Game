@@ -1,0 +1,13 @@
+"Layer0"
+{
+	shader	"vr_standard.vfx"
+	TextureColor	"materials/models/slasherin/last_year/props/tx_monitor_01a_alb.tiff"
+	//caret F_RENDER_BACKFACES	"1"
+	F_SPECULAR	"1"
+	g_flPhongBoost	"0.200000"
+	TextureSpecularExponent	"materials/models/slasherin/last_year/props/tx_monitor_01a_r.tiff"
+	g_vSpecularColor	"[1.000000 1.000000 1.000000 1.000000]"
+	TextureNormal	"materials/models/slasherin/last_year/props/tx_monitor_01a_nrm.tiff"
+	TextureGlossiness	"materials/default/default_gloss.tga"
+	TextureRoughness	"materials/default/default_rough_s1import.tga"
+}

@@ -1,0 +1,64 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Specular ----
+	F_SPECULAR 1
+	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_canvas_diff_4k.png"
+
+	//---- Cube Map ----
+	g_flCubeMapBlur "0.000"
+	g_flCubeMapBrightness "1.000"
+
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_flMetalness "0.000"
+	g_vReflectanceRange "[0.000 0.450]"
+	TextureGlossiness "materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_canvas_glossiness_4k.png"
+	TextureReflectance "materials/default/default_refl.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_canvas_nor_gl_4k.png"
+
+	"StateHistory"
+	{
+		"State_0000"
+		{
+			"ThumbnailCRC32"		"0x00000000"
+			"Thumbnail"		"/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDCl8WXEF5JAdJJ2uyoTPguFYrnG3jpVmHxPPJkHSypHUGbp/47UiJbSahJNdokUanaXn3fOckjGMn8hz/LpItGsbtjbwwhWiGfMUEEnjKtnPI9qnm1Go6XOWn8UywLk6bn2E3/ANjVGHxsZ9Qt7Q6Zt86VY93n527jjONvvW9quhoq+WQEbOCxBwPf6Vwptlh8TWQXlRdxgE8HG8du361Qjq59csbhpI95S4tp2ZScDMibsZ4Ix35rcsdeJjLRTPIzIJJGbHXPJwvA/pWWPDOkPcSzvbu0srmR285xlick8H3q9FpNjFGsaRuEU5CmViM+vXrUu76DVkhusa/GbTlEZnyXJY5YA8KR2HAPrXAyXouPEmnMAoLXUZbaAOfMB6dO+OPSvQJtH06ZSHt856/vG/xqiPDGjRXEdwlniWNw6t5r8MDkHrRd9gP/2Q=="
+			"Material"
+			{
+				"Layer0"
+				{
+					"shader"		"vr_standard.vfx"
+					"F_SPECULAR"		"1"
+					"F_SPECULAR_CUBE_MAP"		"1"
+					"g_vColorTint"		"[1.000000 1.000000 1.000000 0.000000]"
+					"g_vTexCoordOffset"		"[0.000 0.000]"
+					"g_vTexCoordScale"		"[1.000 1.000]"
+					"g_vTexCoordScrollSpeed"		"[0.000 0.000]"
+					"TextureColor"		"materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_canvas_diff_4k.png"
+					"g_flCubeMapBlur"		"0.000000"
+					"g_flCubeMapBrightness"		"1.000000"
+					"g_flDirectionalLightmapMinZ"		"0.050000"
+					"g_flDirectionalLightmapStrength"		"1.000000"
+					"g_flMetalness"		"0.000000"
+					"g_vReflectanceRange"		"[0.000 1.000]"
+					"TextureGlossiness"		"materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_canvas_glossiness_4k.png"
+					"TextureReflectance"		"materials/default/default_refl.tga"
+					"TextureNormal"		"materials/models/polyhaven/fancy_picture_frame_01/fancy_picture_frame_01_canvas_nor_gl_4k.png"
+				}
+			}
+		}
+	}
+}

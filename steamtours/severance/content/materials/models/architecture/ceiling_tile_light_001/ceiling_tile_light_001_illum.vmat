@@ -1,0 +1,54 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Lighting ----
+	F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
+
+	//---- Self Illum ----
+	F_SELF_ILLUM 1
+
+	//---- Specular ----
+	F_METALNESS_TEXTURE 1
+	F_SPECULAR 1
+	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_color.png"
+
+	//---- Cube Map ----
+	g_flCubeMapBlur "0.000"
+	g_flCubeMapBrightness "1.000"
+
+	//---- Lighting ----
+	g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
+	g_flAmbientOcclusionStrengthDirectSpecular "1.000"
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_vMetalnessRange "[0.000 1.000]"
+	g_vReflectanceRange "[0.000 0.500]"
+	TextureAmbientOcclusion "materials/default/default_ao.tga"
+	TextureGlossiness "materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_4e774780_rough__inverted.png"
+	TextureMetalness "materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_29d1be89_metal.png"
+	TextureReflectance "materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_29d1be89_metal.png"
+
+	//---- Normal Map ----
+	TextureNormal "materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_normal.png"
+
+	//---- Self Illum ----
+	g_flSelfIllumScale "1.000"
+	g_vSelfIllumScrollSpeed "[0.000 0.000]"
+	g_vSelfIllumTint "[0.913726 0.909804 0.905882 0.000000]"
+	TextureSelfIllumMask "materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_selfillum.png"
+
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "world.concrete"
+	}
+}

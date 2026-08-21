@@ -1,0 +1,87 @@
+"2+ Hours | Music of Wellness" Theodore Shapiro -- https://www.youtube.com/watch?v=-K2CUMdhWwk
+"Kier Taming the Four Tempers" -- https://www.severance.wiki/kier_taming_the_four_tempers
+
+"Sketchfab" -- https://sketchfab.com)
+================================================================
+    https://sketchfab.com/3d-models/tree-root-chunk-48041053d41a4d9ab6853a0ca553380b
+
+"ambientCG" -- https://ambientcg.com/
+================================================================
+    ambientcg | https://ambientcg.com/view?id=Concrete034
+    ambientcg | https://ambientcg.com/view?id=Fabric019 (#1)
+    ambientcg | https://ambientcg.com/view?id=Granite002A
+    ambientcg | https://ambientcg.com/view?id=Leather025
+    ambientcg | https://ambientcg.com/view?id=Marble012
+    ambientcg | https://ambientcg.com/view?id=Paper006
+    ambientcg | https://ambientcg.com/view?id=Plaster001
+    ambientcg | https://ambientcg.com/view?id=Rocks022
+    ambientcg | https://ambientcg.com/view?id=Terrazzo001
+    ambientcg | https://ambientcg.com/view?id=TreeEnd002
+    ambientcg | https://ambientcg.com/view?id=Wood028
+    ambientcg | https://ambientcg.com/view?id=Wood084A
+
+"The Lab: Robot Repair" -- https://store.steampowered.com/app/450390/The_Lab/
+================================================================
+    vr | particles/atmospherics/plasterfx_combined.vpcf (#1)
+
+"Half-Life: Alyx" -- https://www.half-life.com/en/alyx
+================================================================
+    hlvr | materials/architecture/hotspot/metal_trim_hs01a.vmat
+    hlvr | sounds/hlvr/doors/latchlocked2.vsnd_c
+    hlvr | sounds/hlvr/world/doors/door_metal_close_01.vsnd_c
+    hlvr | sounds/hlvr/world/doors/door_metal_close_02.vsnd_c
+    hlvr | sounds/hlvr/world/doors/door_metal_full_open_01.vsnd_c
+    hlvr | sounds/hlvr/world/doors/door_metal_full_open_02.vsnd_c
+    hlvr | sounds/hlvr/world/doors/phys_door_metal_latch_extend.vsnd_c
+    hlvr | sounds/hlvr/world/doors/phys_door_metal_latch_retract.vsnd_c
+    hlvr | sounds/hlvr/world/doors/phys_door_metal_open.vsnd_c
+
+"PolyHaven (Models)" - https://polyhaven.com/models
+================================================================
+    polyhaven_models | models/polyhaven/fancy_picture_frame_01.vmdl
+
+"FreePBR" -- https://freepbr.com/
+================================================================
+    freepbr | https://freepbr.com/product/aluminum-squares-pbr/
+    freepbr | https://freepbr.com/product/mud-with-vegetation/
+    freepbr | https://freepbr.com/product/slate-rock-2-pbr-material/
+
+"Contagion" -- https://store.steampowered.com/app/238430)
+================================================================
+    contagion | materials/models/props_biotec/biotec_planter_plants.vmat
+
+"TheMask Scenebuild Megapack [S2FM]" -- steamcommunity.com/sharedfiles/filedetails/?id=2450874500
+================================================================
+    themask_scenebuild_megapack | materials/themask/scenebuildthemes/lights/lightfixture01_d.vmat
+
+"African Quarry Nature Asset Pack" -- steamcommunity.com/workshop/filedetails/?id=3356326808
+================================================================
+    3356326808 | models/afrika/plants/wk1ncbxja/05_wk1ncbxja_vard_lod0.vmdl_c
+
+"Asset Pack: Winter Peak" -- steamcommunity.com/workshop/filedetails/?id=1594869254
+================================================================
+    winterpeak | materials/models/props_truck/truck_glass.vmat_c
+
+"Asset Pack: Candy Emporium" -- steamcommunity.com/workshop/filedetails/?id=1546534740
+================================================================
+    candyshop | materials/metal/aluminium_001.vmat_c (#1)
+    candyshop | materials/metal/black_silver_001.vmat_c (#1)
+    candyshop | materials/metal/paint_002.vmat_c (#1)
+    candyshop | materials/metal/iron_001.vmat_c
+    candyshop | materials/metal/metal_001.vmat_c
+    candyshop | materials/metal/metal_002.vmat_c
+    candyshop | materials/metal/paint_001.vmat_c
+    candyshop | materials/metal/painted_metal_001.vmat_c
+    candyshop | materials/plastic/plastic_004.vmat_c
+    candyshop | materials/plastic/plastic_002.vmat_c
+    candyshop | materials/wood/painted_wood_001.vmat_c
+
+(STOCK) "SteamVR Home" -- https://developer.valvesoftware.com/wiki/SteamVR_Home
+================================================================
+      steamtours | materials/dev/dev_metal_rough40.vmat_c
+    steamvr_home | materials/concrete/concrete_wall003.vmat_c
+    steamvr_home | materials/concrete/concrete001.vmat_c
+    steamvr_home | materials/metal/metal_beam001.vmat_c
+    steamvr_home | materials/metal/metal_beam002.vmat_c
+    steamvr_home | models/props_foliage/river_rock001.vmdl_c
+    steamvr_home | materials/water/pavilion_water001.vmat_c

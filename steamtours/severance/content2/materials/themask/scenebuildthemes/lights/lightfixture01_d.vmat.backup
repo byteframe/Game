@@ -1,0 +1,21 @@
+"Layer0"
+{
+	"shader"	"vr_standard.vfx"
+	"F_SPECULAR"	"1"
+	"F_SPECULAR_CUBE_MAP"	"1"
+	"F_SELF_ILLUM"	"1"
+	"g_vSelfIllumTint"	"[1.100000 1.200000 1.300000 0.000000]"
+	"TextureSelfIllumMask"	"materials/themask/scenebuildthemes/lights/lightfixture01_d_selfillum.png"
+	"TextureNormal"	"materials/themask/scenebuildthemes/lights/lightfixture01_d_normal.png"
+	"TextureRoughness"	"materials/themask/scenebuildthemes/lights/lightfixture01_d_f16cf19a_rough.png"
+	"TextureColor"	"materials/themask/scenebuildthemes/lights/lightfixture01_d_color.png"
+	"TextureMetalness"	"materials/themask/scenebuildthemes/lights/lightfixture01_d_fa6baf13_metal.png"
+	"TextureAmbientOcclusion"	"materials/default/default_ao.tga"
+	"Compiled Textures"
+	{
+		"g_tSelfIllumMask"	"materials/themask/scenebuildthemes/lights/lightfixture01_d_selfillum_tga_b31b4ca.vtex"
+		"g_tNormal"	"materials/themask/scenebuildthemes/lights/lightfixture01_d_normal_tga_f16cf19a.vtex"
+		"g_tColor"	"materials/themask/scenebuildthemes/lights/lightfixture01_d_color_tga_fa6baf13.vtex"
+		"g_tAmbientOcclusion"	"materials/default/default_ao_tga_559f1ac6.vtex"
+	}
+}

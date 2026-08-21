@@ -1,4 +1,7 @@
-# select addon (lebedevartem, sharetextures, freepbr(fancy-scaled-gold-pbr), ambientcg, polyhaven, polyhaven-models, texturecan(653/650))
+#!/bin/sh
+source /mnt/d/Work/Game/steamtours/asset_packs/steamtours_environment.sh
+
+# select addon (lebedevartem, sharetextures, freepbr, ambientcg, polyhaven, polyhaven-models, texturecan)
 if [ -z ${1} ]; then
   echo "no arguments"
   exit 1
@@ -19,12 +22,18 @@ fi
 cd "${ROOT}" || exit 1
 
 # download if singular zip url
-[ ! -z ${2} ] && wget -O "${2/*=/}" "${2}"
+if [ ! -z ${2} ]; then
+  wget -O "${C}"/"${PACK}/materials/$(echo ${2} | sed -e s:.*=:: -e s:.*/:: -e s:_.k.*\.zip:.zip:)" "${2}"
+fi
 
 # extract zip files
 for FILE in $(find . -name "*.zip"); do
-  DEST=$(echo ${FILE:2} | sed -e 's:[_-][0-9][Kk]-[A-Z][A-Z][A-Z].*\.zip::' -e 's:[_-]bl\.zip::i')
-  unzip -j ${FILE} -d ${DEST} -x "__MACOSX/*" "*.blend" "*.usda" "*.usdc" "*.mtlx" "*.ini" "*.tres" "*.txt" "*NormalDX.*" "*normal_directx_.*" "*_preview.*" "${DEST}.*" && rm -v ${FILE}
+  DEST=$(echo ${FILE:2} | sed -e 's:[_-][0-9][Kk]-[A-Z][A-Z][A-Z].*\.zip::' -e 's:[_-]bl\.zip::i' -e 's:.zip::' -e 's:-:_:g')
+  unzip -j ${FILE} -d ${DEST} -x "__MACOSX/*" "*.blend" "*.usda" "*.usdx" "*.usdc" "*.mtlx" "*.ini" "*.tres" "*.txt" "*NormalDX.*" "*normal_directx_.*" "*_directx_*" "*_preview.*" "${DEST}.*" && rm -v ${FILE}
+  find ${DEST} -type f -name "*-*" | while read FILE; do
+    mv -v "${FILE}" "${FILE//-/_}"
+  done
+  rm ${FILE}
 done
 
 # define base material file
@@ -39,16 +48,16 @@ function create_material()
   if [ ${OVERWRITE} == yes ] || [ ! -e ../${VMAT}.vmat ]; then
     unset COLOR AO GLOSS REFLECTANCE METAL NORMAL SELFILLUM ALPHA OPACITY
     for FILE in *.*; do
-  
+
       # skip height maps and converted roughness maps
       if [[ ${FILE} != h.* ]] && [[ ${FILE} != H.* ]] \
       && [[ ${FILE} != *height* ]] && [[ ${FILE} != *Height* ]] \
       && [[ ${FILE} != *_disp_* ]] && [[ ${FILE} != *_*isplacement* ]] \
       && [[ ${FILE} != *__inverted* ]]; then
-  
+
         # gather pbr
         if [[ ${FILE} == d.* ]] || [[ ${FILE} == D.* ]] \
-        || [[ ${FILE} == *lbedo* ]] || [[ ${FILE} == *olor.* ]] || [[ ${FILE} == *alb.* ]] || [[ ${FILE} == *base*olor* ]] \
+        || [[ ${FILE} == *lbedo* ]] || [[ ${FILE} == *olor.* ]] || [[ ${FILE} == *alb.* ]] || [[ ${FILE} == *ase*olor* ]] \
         || [[ ${FILE} == *diffuse* ]] || [[ ${FILE} == *Diffuse* ]] || [[ ${FILE} == *_diff_* ]] \
         || [[ ${FILE} == *_color_* ]] \
         || ( [[ ${FILE} == *_col_* ]] && [ ${PACK} != 'polyhaven' ] ); then
@@ -59,20 +68,17 @@ function create_material()
         ||   [[ ${FILE} == *_normal_opengl_* ]] \
         ||   [[ ${FILE} == *_NormalGL* ]]; then
           NORMAL=${FILE}
-        elif [[ ${FILE} == *mbient* ]] || [[ ${FILE} == *AO* ]] || [[ ${FILE} == *ao* ]] \
-          || [[ ${FILE} == *mbient*cclusion* ]]; then
+        elif [[ ${FILE} == *mbient* ]] || [[ ${FILE} == *AO* ]] || [[ ${FILE} == *ao* ]] || [[ ${FILE} == *mbient*cclusion* ]]; then
           AO=${FILE}
-        elif [[ ${FILE} == i.* ]] || [[ ${FILE} == I.* ]] || [[ ${FILE} == e.* ]] \
-          || [[ ${FILE} == *_IdMask.* ]] || [[ ${FILE} == *_ID* ]]; then
+        elif [[ ${FILE} == i.* ]] || [[ ${FILE} == I.* ]] || [[ ${FILE} == e.* ]] || [[ ${FILE} == *_IdMask.* ]] || [[ ${FILE} == *_ID* ]]; then
           SELFILLUM=${FILE}
         elif [[ ${FILE} == *_alpha_* ]] || [[ ${FILE} == *_opacity_* ]]; then
           ALPHA=${FILE}
         elif [[ ${FILE} == *_Opacity.* ]] || [[ ${FILE} == *_opacity.* ]]; then
           OPACITY=${FILE}
-        elif [[ ${FILE} == *specular.* ]] || [[ ${FILE} == *Specular.* ]] || [[ ${FILE} == *_spec_* ]] \
-          || [[ ${FILE} == *specularLevel.* ]]; then
+        elif [[ ${FILE} == *specular.* ]] || [[ ${FILE} == *Specular.* ]] || [[ ${FILE} == *_spec_* ]] || [[ ${FILE} == *specularLevel.* ]]; then
           REFLECTANCE=${FILE}
-  
+
         # invert roughness with ffmpeg for use as gloss map
         elif [[ ${FILE} == r.* ]] || [[ ${FILE} == R.* ]] \
           || [[ ${FILE} == *oughn*ess* ]] || [[ ${FILE} == *rough.* ]] || [[ ${FILE} == *-rough*.* ]] || [[ ${FILE} == *_rough_* ]]; then
@@ -83,15 +89,18 @@ function create_material()
           if [ ! -e ${GLOSS} ]; then
             ffmpeg -hide_banner -y -nostats -loglevel 0 -i ${FILE} -vf negate ${GLOSS} < /dev/null
           fi
-  
+
         # or use gloss map if already present
         elif [[ ${FILE} == *_*lossiness* ]] || [[ ${FILE} == *_Gloss.* ]]; then
           GLOSS=${FILE}
-          
+
         # find other maps first to reduce chance of mistaking the metal map
-        elif [[ ${FILE} == m.* ]] || [[ ${FILE} == M.* ]] || [[ ${FILE} == *_metal_4k* ]] \
+        elif [[ ${FILE} == m.* ]] || [[ ${FILE} == M.* ]] || [[ ${FILE} == *_metal_*k* ]] \
           || [[ ${FILE} == *etal*ness* ]] || [[ ${FILE} == *etal*ic* ]] || [[ ${FILE} == *metal.* ]]; then
           METAL=${FILE}
+          if [ -z ${REFLECTANCE} ]; then
+            REFLECTANCE=${FILE}
+          fi
         elif [[ ${FILE} != *.vmat ]]; then
           echo "UNKNOWN MATERIAL FILE TYPE: ${FILE} // ${VMAT}"
         fi
@@ -175,7 +184,7 @@ if [ ${PACK} == freepbr ]; then
   find . -mindepth 2 -type d | while read LINE; do create_material ${LINE}; done
 else
   ls -d * | while read DIR; do
-    if [ -d "${ROOT}"/${DIR} ]; then
+    if [ -d "${ROOT}"/${DIR} ] && [ ${DIR} != vogue ]; then
       create_material ${DIR}
     fi
   done

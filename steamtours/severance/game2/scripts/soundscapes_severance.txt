@@ -1,0 +1,10 @@
+"soundscape_severance"
+{
+    "playlooping"
+    {
+        "volume"        "1.0"
+        "pitch"         "100"
+        "soundlevel"    "SNDLVL_None"
+        "wave"          "sounds/dashk2cumdhwwk.vsnd"
+    }
+}

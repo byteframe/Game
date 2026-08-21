@@ -1,6 +1,8 @@
 w = require('fs'),
 axios = require('axios'),
 download = require('download'),
+gm = require('gm');
+const { default: isJpg } = await import("is-jpg");
 texturecan = () => (
   content = '/mnt/s/texturecan/materials',
   game = '/mnt/w/texturecan/materials',
@@ -69,7 +71,7 @@ polyhaven = () => (
           : download(F[0], content + '/' + G[0]).then(() => (
             console.log(F[0]),
             get(F.slice(1)))))())))()))
-polyhaven_models = () => (
+polyhaven_models_old = () => (
   content = '/mnt/s/polyhaven_models',
   [ content + "/materials/models/polyhaven", content + "/models/polyhaven" ].forEach(e =>
     !w.existsSync(e) && w.mkdirSync(e, { recursive: true })),
@@ -97,6 +99,51 @@ polyhaven_models = () => (
               : download(F[0], d, { filename: f }).then(() => (
                 get(F.slice(1)),
                 console.log(F[0])))))())())))()))
+(polyhaven_models = (G = [ 'fancy_picture_frame_01' ], resolution = '4k', content = '/mnt/c/Program Files (x86)/Steam/steamapps/common/SteamVR/tools/steamvr_environments/content/steamtours_addons/zzz_test') => (
+  !Array.isArray(G) ? polyhaven_models([ G ], content)
+  : !G.length ? axios.get('https://api.polyhaven.com/assets?t=models').then(r => polyhaven_models(Object.keys(r.data), content))
+  :((files = []) =>
+    axios.get('https://api.polyhaven.com/files/' + G[0]).then(r => (
+      !w.existsSync(content + '/models/polyhaven/') &&
+        w.mkdirSync(content + '/models/polyhaven/', { recursive: true }),
+      !w.existsSync(content + '/materials/models/polyhaven/' + G[0]) &&
+        w.mkdirSync(content + '/materials/models/polyhaven/' + G[0], { recursive: true }),
+      files = files.concat(Object.keys(r.data).filter(e => !e.match(/(nor_dx|arm|usd|fbx|blend|gltf)/)).map(e => r.data[e][resolution]['png'].url)),
+      files.push(r.data.fbx[resolution].fbx.url),
+      w.writeFileSync(content + '/models/polyhaven/' + G[0] + ".vmdl",
+        w.readFileSync('/mnt/d/Work/Game/steamtours/asset_packs/fbx_template.vmdl', 'utf-8').
+          replace('m_pMaterialRemapList = null', 'm_pMaterialRemapList = \n\t{\n\t\tm_vMaterialRemapList = \n\t\t[\n\t\t\t{\n\t\t\t\tm_sSearchMaterial = "*"\n\t\t\t\tm_sReplaceMaterial = "materials/models/polyhaven/' + G[0].toLowerCase() + '.vmat"\n\t\t\t},\n\t\t]\n\t}').
+          replace('__NAME__', G[0]).replace('__FBX__', 'models/polyhaven/' + G[0] + '.fbx')),
+      (get = (F = files, m = '') =>
+        !F.length ? (
+          w.writeFileSync(content + "/materials/models/polyhaven/" + G[0] + ".vmat",
+            "Layer0\n{\n  shader \"vr_standard.vfx\"\n  F_SPECULAR 1\n  F_SPECULAR_CUBE_MAP 1" + m + "\n}"),
+          G.length > 1 && polyhaven_models(G.slice(1)))
+        :((d = F[0].endsWith('fbx') ? content + '/models/polyhaven' : content + '/materials/models/polyhaven/' + G[0],
+           f = F[0].replace(/.*\//, '').replace('_' + resolution + '.fbx', '.fbx').toLowerCase()) => (
+          vmat_line = () =>
+            f.includes("_diff_") ? m += "\n  TextureColor \"materials/models/polyhaven/" + G[0] + "/" + f + "\""
+            : f.includes("_nor_gl_") ? m += "\n  TextureNormal \"materials/models/polyhaven/" + G[0] + "/" + f + "\""
+            : f.match(/_(metallic|metal)_/) ? m += "\n  TextureReflectance \"materials/models/polyhaven/" + G[0] + "/" + f + "\"\n  g_vReflectanceRange \"[0.000 0.750]\"\n  F_METALNESS_TEXTURE 1\n  TextureMetalness \"materials/models/polyhaven/" + G[0] + "/" + f + "\""
+            : f.match(/_(roughness|rough)_/) ? m += "\n  TextureGlossiness \"materials/models/polyhaven/" + G[0] + "/" + f.replace(/_(roughness|rough)_/, '_glossiness_') + "\""
+            : f.includes("_ao_") ? m += "\n  F_INDIRECT_TEXTURES 2\n  TextureAmbientOcclusion \"materials/models/polyhaven/" + G[0] + "/" + f + "\""
+            : f.includes("_opacity_") ? m += "\n  F_TRANSLUCENT 1\n  TextureTranslucency \"materials/models/polyhaven/" + G[0] + "/" + f + "\""
+            : !f.includes('.fbx') && console.log('unknown texture: ' + f),
+          w.existsSync(d + "/" + (F[0].match(/_(roughness|rough)_/) ? f.replace(/_(roughness|rough)_/, '_glossiness_') : f)) ? (
+            vmat_line(),
+            get(F.slice(1), m))
+          : download(F[0], d, { filename: f }).then(() => (
+            (buffer =>
+              isJpg(buffer) && (
+                console.log('isJpg: ' + f),
+                w.renameSync(d + '/' + f, d + '/' + f.replace('png', 'jpg')),
+                f = f.replace('png', 'jpg')))(w.readFileSync(d + '/' + f)),
+            vmat_line(),
+            F[0].match(/_(roughness|rough)_/) &&
+              gm(d + '/' + f).negative().write(d + '/' + f.replace(/_(roughness|rough)_/, '_glossiness_'), x =>
+                x ? console.log(x) : w.unlinkSync(d + '/' + f)),
+            get(F.slice(1), m),
+            console.log(F[0])))))())())))()))()
 sharetextures = () => (
   content = '/mnt/s/sharetextures/materials/',
   game = '/mnt/w/sharetextures/materials/',
@@ -140,13 +187,15 @@ sharetextures = () => (
                     get_texture(t+1))))
                 : get_texture(t+1)))
             : get_texture(t+1))())))())))
-vogue = (h = 'https://archive.vogue.com/issue/18921217') => 
-  axios.get(h).then(r => (
-   ((img = r.data.match("https://vogueprod.blob.core.windows.net/vogueoutput.+?\.jpg")[0]) =>
-      download(img, '/home/byteframe/vogue').then(() => (
+(vogue = (h = 'https://archive.vogue.com/issue/19920301', d ='/home/byteframe/Desktop/vogue') =>
+  axios.get(h).then(r =>
+   ((img = r.data.match("https://.+?/vogueoutput.+?\.jpg")[0], f = img.replace(/.*\//, '')) =>
+      download(img, d).then(() => (
+        w.writeFileSync(d + "/" + f.replace(/\.jpg$/, ".vmat"), 'Layer0\n{\n  TextureColor "materials/vogue/' + f + '"\n}'),
         console.log(img),
-        setTimeout(vogue, 2000, "https://archive.vogue.com" + r.data.match("Next Issue\" href=\"/issue/[0-9]*")[0].substr(18)))))()))
-coverjunkie = () => (
+        setTimeout(vogue, 1500, "https://archive.vogue.com" + r.data.match("Next Issue\" href=\"/issue/[0-9]*")[0].substr(18)))))())
+  .catch(x => setTimeout(vogue, 10000, h)))()
+coverjunkie_bulk_old = () => (
   content = '/mnt/c/Users/byteframe/Desktop/coverjunkie',
   axios.get('https://coverjunkie.com/all-magazine-titles/').then(r =>
     ((titles = (r.data.match(/href="\/magazines\/.+?"/g).map(e => e.slice(17, -1)))) =>

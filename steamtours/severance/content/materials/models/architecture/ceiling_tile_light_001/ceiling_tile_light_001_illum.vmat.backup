@@ -1,0 +1,38 @@
+"Layer0"
+{
+	"shader"	"vr_complex.vfx"
+	"F_SELF_ILLUM"	"1"
+	"F_METALNESS_TEXTURE"	"1"
+	"F_SPECULAR"	"1"
+	"g_nScaleTexCoordUByModelScaleAxis"	"0"
+	"g_nScaleTexCoordVByModelScaleAxis"	"0"
+	"g_flModelTintAmount"	"1"
+	"g_flAmbientOcclusionDirectDiffuse"	"0"
+	"g_flAmbientOcclusionDirectSpecular"	"0"
+	"g_flSelfIllumAlbedoFactor"	"1"
+	"g_flSelfIllumBrightness"	"0"
+	"g_flSelfIllumScale"	"1"
+	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"g_vTexCoordOffset"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vTexCoordScale"	"[1.000000 1.000000 0.000000 0.000000]"
+	"g_vTexCoordScrollSpeed"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vSelfIllumScrollSpeed"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vSelfIllumTint"	"[0.913726 0.909804 0.905882 0.000000]"
+	"TextureAmbientOcclusion"	"materials/default/default_ao.tga"
+	"TextureNormal"	"materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_normal.png"
+	"TextureRoughness"	"materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_4e774780_rough.png"
+	"TextureColor"	"materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_color.png"
+	"TextureMetalness"	"materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_29d1be89_metal.png"
+	"TextureSelfIllumMask"	"materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_selfillum.png"
+	"Compiled Textures"
+	{
+		"g_tAmbientOcclusion"	"materials/default/default_ao_tga_559f1ac6.vtex"
+		"g_tNormal"	"materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_normal_psd_4e774780.vtex"
+		"g_tColor"	"materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_color_psd_29d1be89.vtex"
+		"g_tSelfIllumMask"	"materials/models/architecture/ceiling_tile_light_001/ceiling_tile_light_001_selfillum_psd_cf9b38ab.vtex"
+	}
+	"SystemAttributes"
+	{
+		"PhysicsSurfaceProperties"	"world.concrete"
+	}
+}

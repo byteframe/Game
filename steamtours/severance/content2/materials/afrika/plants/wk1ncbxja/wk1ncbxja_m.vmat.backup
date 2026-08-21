@@ -1,0 +1,71 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_complex.vfx"
+
+	//---- Animation ----
+	F_FOLIAGE_ANIMATION 1 // Wind
+
+	//---- Rendering ----
+	F_RENDER_BACKFACES 1
+
+	//---- Translucent ----
+	F_ALPHA_TEST 1
+
+	//---- Ambient Occlusion ----
+	g_flAmbientOcclusionDirectDiffuse "0.000"
+	g_flAmbientOcclusionDirectSpecular "0.000"
+	TextureAmbientOcclusion "materials/default/default_ao.tga"
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor "materials/afrika/plants/wk1ncbxja/wk1ncbxja_4k_basecolor.jpg"
+
+	//---- Fade ----
+	g_flFadeExponent "1.000"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Foliage Animation ----
+	g_bBranchMotionPerpendicular "1"
+	g_bJitterMotion "0"
+	g_flBranchDeflection "0.000"
+	g_flBranchDeflectionEnd "150.000"
+	g_flBranchDeflectionStart "0.000"
+	g_flFrondDeflectionEnd "50.000"
+	g_flFrondDeflectionStart "0.000"
+	g_flFrondFlutter "0.000"
+	g_flFrondPivotLength "0.200"
+	g_flFrondSpatialIncoherence "0.100"
+	g_flTrunkDeflection "0.000"
+	g_flTrunkDeflectionEnd "300.000"
+	g_flTrunkDeflectionStart "0.000"
+
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+
+	//---- Metalness ----
+	g_flMetalness "0.000"
+
+	//---- Normal ----
+	TextureNormal "materials/afrika/plants/wk1ncbxja/wk1ncbxja_4k_normal.jpg"
+
+	//---- Roughness ----
+	TextureRoughness "materials/afrika/plants/wk1ncbxja/wk1ncbxja_4k_roughness.jpg"
+
+	//---- Texture Coordinates ----
+	g_nScaleTexCoordUByModelScaleAxis "0"
+	g_nScaleTexCoordVByModelScaleAxis "0"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+
+	//---- Translucent ----
+	g_flAlphaTestReference "0.500"
+	g_flAntiAliasedEdgeStrength "1.000"
+	TextureTranslucency "materials/afrika/plants/wk1ncbxja/wk1ncbxja_4k_opacity.jpg"
+}

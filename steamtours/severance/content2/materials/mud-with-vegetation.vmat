@@ -1,0 +1,21 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[0.250 0.250]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/mud-with-vegetation/mud_with_vegetation_albedo.png"
+
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	TextureGlossiness "materials/mud-with-vegetation/mud_with_vegetation_Roughness__inverted.png"
+
+	//---- Normal Map ----
+	TextureNormal "materials/mud-with-vegetation/mud_with_vegetation_Normal-ogl.png"
+}

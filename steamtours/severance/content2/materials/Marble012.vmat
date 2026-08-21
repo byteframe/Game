@@ -1,0 +1,27 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Specular ----
+	F_SPECULAR 1
+
+	//---- Color ----
+	g_vColorTint "[0.458824 0.458824 0.458824 1.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/marble012/marble012_1k-jpg_color.jpg"
+
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_flMetalness "0.550"
+	g_vReflectanceRange "[0.420 1.000]"
+	TextureGlossiness "[0.575000 0.575000 0.575000 0.000000]"
+	TextureReflectance "materials/default/default_refl.tga"
+
+	//---- Normal Map ----
+	TextureNormal "[0.501961 0.501961 1.000000 0.000000]"
+}

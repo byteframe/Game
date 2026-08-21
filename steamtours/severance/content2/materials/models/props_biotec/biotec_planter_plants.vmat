@@ -1,0 +1,16 @@
+"Layer0"
+{
+	shader	"vr_standard.vfx"
+	TextureColor	"materials/models/props_biotec/biotec_planter_plants_diff.tiff"
+	g_vColorTint	"[2.000000 3.000000 1.000000 1.000000]"
+	F_ALPHA_TEST	"1"
+	TextureTranslucency	"materials/models/props_biotec/biotec_planter_plants_diff___a_trans.tiff"
+	g_flAntiAliasedEdgeStrength	"1.0"
+	g_flAlphaTestReference	"0.100000"
+	F_RENDER_BACKFACES	"1"
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties	"metal"
+	}
+	TextureRoughness	"materials/default/default_rough_s1import.tga"
+}

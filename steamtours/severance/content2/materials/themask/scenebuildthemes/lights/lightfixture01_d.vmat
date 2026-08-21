@@ -1,0 +1,46 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Self Illum ----
+	F_SELF_ILLUM 1
+
+	//---- Specular ----
+	F_SPECULAR 1
+	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
+
+	//---- Color ----
+	g_vColorTint "[0.952941 0.917647 0.858824 1.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/themask/scenebuildthemes/lights/lightfixture01_d_color.png"
+
+	//---- Cube Map ----
+	g_flCubeMapBlur "0.000"
+	g_flCubeMapBrightness "1.000"
+
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_flMetalness "0.000"
+	g_vReflectanceRange "[0.000 1.000]"
+	TextureGlossiness "materials/themask/scenebuildthemes/lights/lightfixture01_d_f16cf19a_rough__inverted.png"
+	TextureReflectance "materials/default/default_refl.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/themask/scenebuildthemes/lights/lightfixture01_d_normal.png"
+
+	//---- Self Illum ----
+	g_flSelfIllumScale "1.500"
+	g_vSelfIllumScrollSpeed "[0.000 0.000]"
+	g_vSelfIllumTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureSelfIllumMask "materials/themask/scenebuildthemes/lights/lightfixture01_d_selfillum.png"
+
+	DynamicParams
+	{
+		g_flSelfIllumScale "0.02 * sin( 60*time() ) + 1"
+	}
+}

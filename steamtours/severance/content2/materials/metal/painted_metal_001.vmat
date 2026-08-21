@@ -1,0 +1,80 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_standard.vfx"
+
+	//---- Lighting ----
+	F_INDIRECT_TEXTURES 2 // Ambient Occlusion Texture
+
+	//---- Specular ----
+	F_METALNESS_TEXTURE 1
+	F_SPECULAR 1
+	F_SPECULAR_CUBE_MAP 1 // In-game Cube Map
+	F_SPECULAR_CUBE_MAP_PROJECTION 1
+
+	//---- Color ----
+	g_vColorTint "[0.454902 0.498039 0.541176 1.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/metal/painted_metal_001_color.png"
+
+	//---- Cube Map ----
+	g_flCubeMapBlur "0.000"
+	g_flCubeMapBrightness "1.000"
+
+	//---- Lighting ----
+	g_flAmbientOcclusionStrengthDirectDiffuse "1.000"
+	g_flAmbientOcclusionStrengthDirectSpecular "1.000"
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_vMetalnessRange "[0.000 1.000]"
+	g_vReflectanceRange "[0.300 1.000]"
+	TextureAmbientOcclusion "materials/metal/painted_metal_001_ao.png"
+	TextureGlossiness "materials/default/default_gloss.tga"
+	TextureMetalness "[0.935000 0.935000 0.935000 0.000000]"
+	TextureReflectance "[0.100000 0.100000 0.100000 0.000000]"
+
+	//---- Normal Map ----
+	TextureNormal "materials/metal/painted_metal_001_normal.png"
+
+	"StateHistory"
+	{
+		"State_0000"
+		{
+			"ThumbnailCRC32"		"0x00000000"
+			"Thumbnail"		"/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDhIos1aS3yOlFumcVpRRgjpTJM57fA6VVlixW3LFjPTpWdcIOaAEt3AxWjFKAtYkUuO9WkuMDrQBpSyjHWs64fOaR7jI61VklzQB//2Q=="
+			"Material"
+			{
+				"Layer0"
+				{
+					"shader"		"vr_standard.vfx"
+					"F_INDIRECT_TEXTURES"		"2"
+					"F_METALNESS_TEXTURE"		"1"
+					"F_SPECULAR"		"1"
+					"F_SPECULAR_CUBE_MAP"		"1"
+					"F_SPECULAR_CUBE_MAP_PROJECTION"		"1"
+					"g_vColorTint"		"[0.521569 0.533333 0.545098 1.000000]"
+					"g_vTexCoordOffset"		"[0.000 0.000]"
+					"g_vTexCoordScale"		"[1.000 1.000]"
+					"g_vTexCoordScrollSpeed"		"[0.000 0.000]"
+					"TextureColor"		"materials/metal/painted_metal_001_color.png"
+					"g_flCubeMapBlur"		"0.000000"
+					"g_flCubeMapBrightness"		"1.000000"
+					"g_flAmbientOcclusionStrengthDirectDiffuse"		"1.000000"
+					"g_flAmbientOcclusionStrengthDirectSpecular"		"1.000000"
+					"g_flDirectionalLightmapMinZ"		"0.050000"
+					"g_flDirectionalLightmapStrength"		"1.000000"
+					"g_vMetalnessRange"		"[0.000 1.000]"
+					"g_vReflectanceRange"		"[0.300 1.000]"
+					"TextureAmbientOcclusion"		"materials/metal/painted_metal_001_ao.png"
+					"TextureGlossiness"		"materials/default/default_gloss.tga"
+					"TextureMetalness"		"[0.935000 0.935000 0.935000 0.000000]"
+					"TextureReflectance"		"[0.100000 0.100000 0.100000 0.000000]"
+					"TextureNormal"		"materials/metal/painted_metal_001_normal.png"
+				}
+			}
+		}
+	}
+}
