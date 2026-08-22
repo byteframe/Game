@@ -1,0 +1,29 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	resourceManifest = 
+	[
+		[ 
+			"soundevents/soundevents_addon.vsndevts",
+			"soundevents/soundevents_addon___winterpeak.vsndevts",
+			"soundevents/soundevents_addon___spacefarm.vsndevts",
+			"soundevents/soundevents_addon___summit_pavilion.vsndevts",
+			"soundevents/soundevents_addon___steamvr_home.vsndevts",
+			"soundevents/soundevents_core.vsndevts",
+			"soundevents/soundevents_examples.vsndevts",
+			"soundevents/destinations_core.vsndevts",
+			"soundevents/destinations_home.vsndevts",
+			"soundevents/destinations_props.vsndevts",
+			"soundevents/hlvr/soundevents_ambient.vsndevts",
+			"soundevents/hlvr/soundevents_buttons.vsndevts",
+			"soundevents/hlvr/soundevents_combine_machines.vsndevts",
+			"soundevents/hlvr/soundevents_mechanical_units.vsndevts",
+			"soundevents/hlvr/soundevents_physics_props.vsndevts",
+			"soundevents/hlvr/soundevents_physics_surfaces.vsndevts",
+			"soundevents/hlvr/soundevents_props.vsndevts",
+			"soundevents/hlvr/soundevents_world.vsndevts",
+			"soundevents/hlvr/soundevents_world_anim_int.vsndevts",
+			"soundevents/hlvr/soundevents_world_hinges.vsndevts",
+			"soundevents/hlvr/soundevents_xen_infestation.vsndevts",
+		],
+	]
+}

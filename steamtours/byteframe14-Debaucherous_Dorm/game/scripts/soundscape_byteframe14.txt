@@ -1,0 +1,10 @@
+"soundscape_byteframe14"
+{
+  "playlooping"
+  {
+    "volume"        "0.75"
+    "pitch"         "100"
+    "soundlevel"    "SNDLVL_NONE"
+    "wave"          "sounds/ambience_indoor.vsnd"
+  }
+}

@@ -1,0 +1,7 @@
+It's been 421 days since The Joining. Your relationship with Pluribus is on the back foot, and they've abandoned the town you live in. On the plus side, the college you went to is now empty, so today will be an adventure day! Have fun rummaging through the dorms, touching strangers' belongings.
+
+[b]Don't play this.[/b] Content warning for everything! This level is too avant-garde! Very 'en-eff-ess-dubya'! [u]You [b]WILL[/b] be fired from your place of employment even though you're likely to play this at home![/u]
+
+byteframe14 features quite a bit of interactivity and playfulness. I learned alot and applied myself with scripting and I/O. I will keep quiet so it will be more fun to find, though, one setup in particular I hope you don't. I think there's over 300 drawers/cabinets in total, and random prop spawning therein -- the latter of which may eventuate a (now negligible) amount of sputtering when the map loads. Also, apologies for the low-to-moderate texture streaming pop-in for us 8GB surfs. Ultimately, that is Jensen Huang's fault, but I did mitigate it immensely.
+
+A complete credits listing, gory post mortem, and full map/code source will be supplied on GitHub. The endless layers of overlapping crunch kinda gave me an ulcer... so it probably IS cursed and you should [u]have a nice day[/u] doing anything else besides playing it.

@@ -9,6 +9,8 @@
 *.vsnd_c
 *.vpcf_c
 *.vseq_c
+*.vsnap_C
+*.vcss_c
 *.vsndevts_c
 *.vtex_c
 *.vxml_c
@@ -34,6 +36,7 @@ steamtours/*/game/scripts/vscripts/animation
 *.jpg
 *.psd
 *.tiff
+*.exr
 !steamtours/*/content/materials/*.png
 !steamtours/*/content/materials/*.jpg
 !steamtours/*/content/materials/*.psd
@@ -47,3 +50,6 @@ steamtours/sourcesdk_content.zip
 steamtours/asset_packs/scripts/no_vtf-5.1.1/
 steamtours/asset_packs/scripts/cli-windows-x64/
 steamtours/TODO.md
+steamtours/byteframe14-Debaucherous_Dorm/content/materials/
+steamtours/byteframe14-Debaucherous_Dorm/content/models/*
+!steamtours/byteframe14-Debaucherous_Dorm/content/models/*.*

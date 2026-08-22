@@ -1,0 +1,12 @@
+#Browser TextTooltip {
+  max-width: 0px;
+  visibility: collapse;
+}
+.Container {
+  width: 100%;
+  height: 100%;
+}
+#Browser {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,16 @@
+"AddonInfo"
+{
+	"Dependencies"
+	{
+		"1"	"steamvr_home"
+		"2"	"1528888737"
+		"3"	"1594869254"
+		"4"	"1449922161"
+		"5"	"1546534740"
+		"6"	"byteframe14_00"
+		"7"	"byteframe14_01"
+		"8"	"byteframe14_02"
+		"9"	"byteframe14_03"
+		"10" "byteframe14_04"
+	}
+}

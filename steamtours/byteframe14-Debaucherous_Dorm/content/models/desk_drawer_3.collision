@@ -1,0 +1,517 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_CollisionAttributes = 
+	{
+		m_CollisionGroup = "default"
+		m_InteractAs = [  ]
+		m_InteractWith = [  ]
+		m_InteractExclude = [  ]
+	}
+	m_DMXReference = ""
+	m_Bodies = 
+	[
+		{
+			m_BindPose = 
+			[
+				0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 1.0,
+			]
+			m_LocalBindPose = 
+			[
+				0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 1.0,
+			]
+			m_Shapes = 
+			[
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ -1.003142, -0.000883, 0.36856 ],
+						[ -1.003142, -0.000883, 0.36856 ],
+					]
+					m_Vertices = 
+					[
+						[ 9.99685, 8.025, 0.72 ],
+						[ 9.997171, -7.838138, 0.268924 ],
+						[ -12.0031, -8.025, 0.72 ],
+						[ 9.99685, -8.025, 0.72 ],
+						[ -12.0031, 8.025, 0.72 ],
+						[ -12.003146, -7.826443, 0.268674 ],
+						[ 9.996851, 7.82402, 0.268672 ],
+						[ -12.003421, 7.833508, 0.268428 ],
+					]
+					m_Indices = 
+					[
+						3, 2, 1, 3,
+						1, 0, 4, 2,
+						3, 4, 3, 0,
+						4, 0, 7, 4,
+						7, 2, 5, 2,
+						7, 6, 7, 0,
+						6, 0, 1, 6,
+						1, 5, 6, 5,
+						7, 5, 1, 2,
+					]
+					m_UserFriendlyName = "Convex Hull 6"
+					m_uuid = "3cea26fa-9f29-4ae0-82c8-2c49413133c3"
+					m_SurfaceProp = ""
+				},
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ -1.003148, -7.775063, 7.447643 ],
+						[ -1.003148, -7.775063, 7.447643 ],
+					]
+					m_Vertices = 
+					[
+						[ 9.996852, -8.025063, 14.300104 ],
+						[ -12.003147, -8.025063, 14.300104 ],
+						[ -11.503147, -7.525063, 0.720782 ],
+						[ 9.996851, -8.025063, 0.469651 ],
+						[ -11.503148, -7.525063, 14.300032 ],
+						[ 9.496851, -7.525063, 14.300032 ],
+						[ 9.496852, -7.525063, 0.720783 ],
+						[ -12.003148, -8.025063, 0.469649 ],
+					]
+					m_Indices = 
+					[
+						3, 0, 1, 3,
+						1, 7, 4, 2,
+						7, 4, 7, 1,
+						6, 5, 0, 6,
+						0, 3, 6, 3,
+						7, 6, 7, 2,
+						6, 2, 4, 6,
+						4, 5, 5, 4,
+						1, 5, 1, 0,
+					]
+					m_UserFriendlyName = "Convex Hull 9"
+					m_uuid = "92a2aabd-594e-4f16-8136-567a3c66c42f"
+					m_SurfaceProp = ""
+				},
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ -11.753147, -0.001004, 7.410999 ],
+						[ -11.753147, -0.001004, 7.410999 ],
+					]
+					m_Vertices = 
+					[
+						[ -12.003148, 8.024998, 14.297695 ],
+						[ -12.003149, 7.960461, 0.325226 ],
+						[ -11.503147, 7.524992, 0.71583 ],
+						[ -12.003148, -7.968479, 0.330515 ],
+						[ -11.503147, 7.524997, 14.29777 ],
+						[ -11.503147, -7.525002, 0.72082 ],
+						[ -11.503147, -7.525001, 14.300032 ],
+						[ -12.003147, -8.025002, 14.300106 ],
+					]
+					m_Indices = 
+					[
+						3, 7, 0, 3,
+						0, 1, 4, 2,
+						0, 5, 3, 1,
+						5, 1, 2, 5,
+						7, 3, 6, 5,
+						2, 6, 2, 4,
+						6, 4, 0, 6,
+						0, 7, 6, 7,
+						5, 2, 1, 0,
+					]
+					m_UserFriendlyName = "Convex Hull 11"
+					m_uuid = "9f2300d2-af8c-42ef-9309-274fa739a1c8"
+					m_SurfaceProp = ""
+				},
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ 10.537252, 0.000002, 12.323672 ],
+						[ 10.537252, 0.000002, 12.323672 ],
+					]
+					m_Vertices = 
+					[
+						[ 10.398148, 2.856946, 12.740988 ],
+						[ 10.676358, 2.856947, 11.906357 ],
+						[ 10.676358, 2.856947, 12.740988 ],
+						[ 10.676358, -2.856943, 12.740988 ],
+						[ 10.398148, -2.856943, 12.740988 ],
+						[ 10.398148, 2.856947, 11.906357 ],
+						[ 10.398148, -2.856943, 11.906357 ],
+						[ 10.676358, -2.856943, 11.906357 ],
+					]
+					m_Indices = 
+					[
+						4, 3, 2, 4,
+						2, 0, 5, 0,
+						2, 5, 2, 1,
+						6, 5, 1, 6,
+						1, 7, 6, 7,
+						3, 6, 3, 4,
+						6, 4, 0, 6,
+						0, 5, 3, 7,
+						1, 3, 1, 2,
+					]
+					m_UserFriendlyName = "Convex Hull 0"
+					m_uuid = "d01f87dd-7346-4693-bb6a-26721b9ef5d0"
+					m_SurfaceProp = ""
+				},
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ 10.027328, -0.491622, 7.12395 ],
+						[ 10.027328, -0.491622, 7.12395 ],
+					]
+					m_Vertices = 
+					[
+						[ 10.226454, 8.293669, 0.440782 ],
+						[ 10.226455, -7.852884, 15.017343 ],
+						[ 9.496899, -7.528822, 14.30002 ],
+						[ 9.996898, 7.873749, 14.998673 ],
+						[ 9.496899, 7.524999, 0.718518 ],
+						[ 9.496899, -7.524953, 0.720781 ],
+						[ 9.496898, 7.525, 14.297769 ],
+						[ 10.398149, 7.960213, 14.778457 ],
+						[ 9.996898, -8.093962, 0.105134 ],
+						[ 9.996916, -8.102072, 14.904104 ],
+						[ 9.996898, 7.824025, 0.268671 ],
+						[ 10.398149, -7.739997, 0.152422 ],
+						[ 10.398148, 7.74, 0.152423 ],
+						[ 10.398149, -7.968325, 14.770346 ],
+						[ 10.234347, 8.087404, 14.918765 ],
+						[ 9.983061, -8.081944, 0.122171 ],
+						[ 10.226455, -8.293667, 0.440784 ],
+					]
+					m_Indices = 
+					[
+						6, 4, 5, 6,
+						5, 2, 6, 2,
+						3, 9, 1, 3,
+						9, 3, 2, 10,
+						8, 4, 10, 4,
+						0, 11, 16, 8,
+						12, 11, 8, 12,
+						8, 10, 12, 10,
+						0, 12, 0, 7,
+						13, 11, 12, 13,
+						12, 7, 13, 7,
+						1, 13, 1, 9,
+						13, 9, 16, 13,
+						16, 11, 14, 7,
+						0, 14, 0, 6,
+						14, 6, 3, 14,
+						3, 1, 14, 1,
+						7, 15, 9, 2,
+						15, 2, 5, 15,
+						5, 4, 15, 4,
+						8, 15, 8, 16,
+						15, 16, 9, 6,
+						0, 4,
+					]
+					m_UserFriendlyName = "Convex Hull 1"
+					m_uuid = "560da5d5-56bd-46db-b9eb-e488a78a721d"
+					m_SurfaceProp = ""
+				},
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ 10.113644, -0.092864, 7.584673 ],
+						[ 10.113644, -0.092864, 7.584673 ],
+					]
+					m_Vertices = 
+					[
+						[ 9.996898, 7.87375, 14.998672 ],
+						[ 10.230383, 7.852535, -0.000319 ],
+						[ 10.230377, -7.851992, 15.018152 ],
+						[ 10.234347, -8.195093, 0.206271 ],
+						[ 9.996897, 7.87375, 0.018672 ],
+						[ 9.996899, -7.87375, 14.998674 ],
+						[ 10.226453, 7.85289, 15.017343 ],
+						[ 9.996898, -8.275, 0.419922 ],
+					]
+					m_Indices = 
+					[
+						3, 2, 7, 4,
+						1, 3, 4, 3,
+						7, 5, 2, 0,
+						5, 0, 4, 5,
+						4, 7, 6, 2,
+						3, 6, 3, 1,
+						6, 1, 4, 6,
+						4, 0, 6, 0,
+						2, 5, 7, 2,
+					]
+					m_UserFriendlyName = "Convex Hull 2"
+					m_uuid = "13e2f247-94ee-4d22-884e-a24ef6401fe5"
+					m_SurfaceProp = ""
+				},
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ 10.889273, 0.803622, 12.93378 ],
+						[ 10.889273, 0.803622, 12.93378 ],
+					]
+					m_Vertices = 
+					[
+						[ 12.003148, -1.519445, 12.056171 ],
+						[ 9.996899, 8.024997, 14.297693 ],
+						[ 10.665648, -2.407496, 12.056171 ],
+						[ 10.98628, 2.703165, 12.056171 ],
+						[ 11.971017, 1.818949, 12.056171 ],
+						[ 9.496613, -7.524713, 14.300031 ],
+						[ 9.496897, 7.524999, 14.297769 ],
+						[ 11.983249, 1.603699, 12.591169 ],
+						[ 11.978164, -1.625232, 12.595244 ],
+						[ 10.665365, 2.40722, 12.05617 ],
+						[ 11.740045, -2.286113, 12.056171 ],
+						[ 11.468148, 2.546606, 12.056171 ],
+						[ 10.001438, 8.009066, 14.297696 ],
+						[ 9.996897, -8.025002, 14.300104 ],
+					]
+					m_Indices = 
+					[
+						5, 2, 13, 7,
+						0, 4, 8, 13,
+						0, 9, 6, 1,
+						9, 1, 3, 9,
+						2, 5, 9, 5,
+						6, 10, 0, 13,
+						10, 13, 2, 11,
+						4, 0, 11, 0,
+						10, 11, 10, 2,
+						11, 2, 9, 11,
+						9, 3, 11, 3,
+						1, 11, 1, 4,
+						12, 7, 4, 12,
+						4, 1, 12, 1,
+						6, 12, 6, 5,
+						12, 5, 13, 12,
+						13, 8, 12, 8,
+						7, 8, 0, 7,
+					]
+					m_UserFriendlyName = "Convex Hull 3"
+					m_uuid = "37961b85-3ad2-42a8-9cce-7fcd9b576e80"
+					m_SurfaceProp = ""
+				},
+				{
+					m_CollisionAttributes = 
+					{
+						m_CollisionGroup = "default"
+						m_InteractAs = [  ]
+						m_InteractWith = [  ]
+						m_InteractExclude = [  ]
+						m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+					}
+					m_nType = 2
+					m_flRadius = 0.0
+					m_vCenter = 
+					[
+						[ -1.003148, 7.775059, 7.445305 ],
+						[ -1.003148, 7.775059, 7.445305 ],
+					]
+					m_Vertices = 
+					[
+						[ 9.996852, 8.025059, 14.297694 ],
+						[ -12.003147, 8.025059, 0.467241 ],
+						[ 9.496853, 7.525059, 14.297768 ],
+						[ 9.99685, 8.025059, 0.467241 ],
+						[ 9.496852, 7.525059, 0.718516 ],
+						[ -11.503148, 7.525059, 0.718518 ],
+						[ -11.503146, 7.525059, 14.297768 ],
+						[ -12.003147, 8.025059, 14.297695 ],
+					]
+					m_Indices = 
+					[
+						4, 3, 0, 4,
+						0, 2, 5, 1,
+						3, 5, 3, 4,
+						6, 5, 4, 6,
+						4, 2, 6, 2,
+						0, 6, 0, 7,
+						6, 7, 1, 6,
+						1, 5, 3, 1,
+						7, 3, 7, 0,
+					]
+					m_UserFriendlyName = "Convex Hull 5"
+					m_uuid = "bb215e8f-20fe-4bec-add9-922ed8f14179"
+					m_SurfaceProp = ""
+				},
+			]
+			m_BoneName = ""
+			m_SurfaceProp = "default"
+			__oldschema_object_name = "PhysBody_"
+			m_pParent = "PhysBody_"
+			m_nSerial = 15
+			m_uuid = "1fa516c1-0991-4500-b152-eb9de93110ca"
+			m_bExternalRBrefFlag = false
+			m_nType = "AUTH_PHYS_BODY_DYNAMIC"
+			m_flMass = 0.0
+			m_bOverrideMassCenter = false
+			m_vMassCenterOverride = [ 0.0, 0.0, 0.0 ]
+			m_flInertiaScale = 1.0
+			m_vLinearVelocity = [ 0.0, 0.0, 0.0 ]
+			m_vAngularVelocity = [ 0.0, 0.0, 0.0 ]
+			m_flLinearDamping = 0.0
+			m_flAngularDamping = 0.0
+			m_bUseInCloth = false
+			m_bClothCollisionLayers = 
+			[
+				true, true, true, true,
+				true, true, true, true,
+				true, true, true, true,
+				true, true, true, true,
+			]
+			m_bAlwaysDynamicOnClient = false
+			m_CollisionAttributes = 
+			{
+				m_CollisionGroup = "default"
+				m_InteractAs = [  ]
+				m_InteractWith = [  ]
+				m_InteractExclude = [  ]
+				m_nMode = "AUTH_PHYS_COLL_ATTR_IGNORE"
+			}
+			m_flMeshSimplifyMaxError = 0.0
+		},
+	]
+	m_Joints = [  ]
+	m_Fx = 
+	{
+		m_Quads = [  ]
+		m_Rods = [  ]
+		m_SourceEdges = [  ]
+		m_Springs = [  ]
+		m_Constraints = [  ]
+		m_Capsules = [  ]
+		m_Nodes = [  ]
+		m_JiggleBones = [  ]
+		m_CollisionSpheres = [  ]
+		m_CollisionPlanes = [  ]
+		m_PresetNodeBases = [  ]
+		m_TaperedCapsuleRigids = [  ]
+		m_BoxRigids = [  ]
+		m_SphereRigids = [  ]
+		m_CtrlOffsets = [  ]
+		m_FitInfluences = [  ]
+		m_SourceQuads = [  ]
+		m_Ropes = [  ]
+		m_MorphLayers = [  ]
+		m_MorphSetData = [  ]
+		m_ModelVertexSetName = ""
+		m_nExtraIterations = 0
+		m_nExtraGoalIterations = 0
+		m_nExtraPressureIterations = 0
+		m_flGoalStrengthBias = 0.0
+		m_flAdditionalShearStretch = 0.0
+		m_flDefaultSurfaceStretch = 0.0
+		m_flDefaultThreadStretch = 0.0
+		m_flDefaultGravityScale = 1.0
+		m_flDefaultVelAirDrag = 0.0
+		m_flDefaultExpAirDrag = 0.0
+		m_flDefaultVelQuadAirDrag = 0.0
+		m_flDefaultExpQuadAirDrag = 0.0
+		m_flDefaultVelRodAirDrag = 0.0
+		m_flDefaultExpRodAirDrag = 0.0
+		m_flQuadVelocitySmoothRate = 0.0
+		m_flRodVelocitySmoothRate = 0.0
+		m_flInternalPressure = 0.0
+		m_flWindage = 0.0
+		m_flWindDrag = 0.0
+		m_nQuadVelocitySmoothIterations = 0
+		m_nRodVelocitySmoothIterations = 0
+		m_flDefaultGroundFriction = 0.0
+		m_flDefaultWorldCollisionPenetration = 0.0
+		m_flAddWorldCollisionRadius = 2.0
+		m_flLocalForce = 1.0
+		m_flLocalRotation = 0.0
+		m_flVolumetricSolveAmount = 0.0
+		m_flAddCurvature = 0.0
+		m_flQuadBendTolerance = 0.05
+		m_bFollowTheLead = false
+		m_bUsePerNodeLocalForceAndRotation = false
+		m_bUninertialRods = false
+		m_bExplicitMasses = false
+		m_bUnitlessDamping = true
+		m_bMadeInModelDoc = false
+		m_bForceWorldCollisionOnAllNodes = false
+		m_nMergePriority = 0
+		m_bNewStyle = true
+		m_bCanCollideWithWorldMeshes = false
+		m_bCanCollideWithWorldCapsulesAndSpheres = false
+		m_bCanCollideWithWorldHulls = false
+		m_bAddStiffnessRods = true
+		m_bRigidEdgeHinges = false
+		m_bSoftSkinAnimation = false
+		m_bAddBendOnlyRods = false
+		m_bStraightBendRods = false
+		m_bImmovableHint = false
+	}
+}

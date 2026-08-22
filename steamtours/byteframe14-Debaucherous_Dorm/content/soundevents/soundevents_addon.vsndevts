@@ -1,0 +1,584 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+  zphone_good =
+  {
+    type = "hlvr_default_3d"
+    volume = 0.3
+    pitch = 1.0
+    volume_falloff_max = 96.0
+    vsnd_files = 
+    [
+      "sounds/world/anim_int/piano/piano_a7.vsnd",
+      "sounds/world/anim_int/piano/piano_b7.vsnd",
+      "sounds/world/anim_int/piano/piano_c7.vsnd",
+      "sounds/world/anim_int/piano/piano_d7.vsnd",
+      "sounds/world/anim_int/piano/piano_e7.vsnd",
+      "sounds/world/anim_int/piano/piano_f7.vsnd",
+      "sounds/world/anim_int/piano/piano_g7.vsnd",
+    ]
+  }
+  zphone_bad =
+  {
+    type = "hlvr_default_3d"
+    volume = 0.1
+    pitch = 3.0
+    volume_falloff_max = 96.0
+    vsnd_files = 
+    [
+      "sounds/world/anim_int/piano/piano_a7.vsnd",
+      "sounds/world/anim_int/piano/piano_b7.vsnd",
+      "sounds/world/anim_int/piano/piano_c7.vsnd",
+      "sounds/world/anim_int/piano/piano_d7.vsnd",
+      "sounds/world/anim_int/piano/piano_e7.vsnd",
+      "sounds/world/anim_int/piano/piano_f7.vsnd",
+    ]
+  }
+  desk_bell_steampal =
+  {
+    type = "hlvr_default_3d"
+    volume = 0.5
+    volume_falloff_max = 96.0
+    vsnd_files = 
+    [
+      "sounds/world/desk_bell_01.vsnd",
+      "sounds/world/desk_bell_02.vsnd",
+      "sounds/world/desk_bell_03.vsnd",
+      "sounds/world/desk_bell_04.vsnd",
+      "sounds/world/desk_bell_05.vsnd",
+      "sounds/world/desk_bell_06.vsnd",
+      "sounds/world/desk_bell_07.vsnd",
+      "sounds/world/desk_bell_08.vsnd",
+    ]
+  }
+  shower_flow_loop_byteframe14 =
+  {
+    type = "hlvr_default_3d"
+    volume = 0.1
+    occlusion_amount = 0.8
+    volume_fade_in = 2.0
+    volume_fade_out = 2.0
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/shower/shower_flow_lp_01.vsnd",
+    ]
+  }
+  sink_drip_byteframe14 = 
+  {
+    type = "hlvr_default_3d"
+    volume = 0.1875
+    pitch = 0.3
+    occlusion_amount = 1.0
+    volume_falloff_max = 48.0
+    vsnd_files = 
+    [
+      "sounds/sink_drip_01.vsnd",
+      "sounds/sink_drip_02.vsnd",
+      "sounds/sink_drip_03.vsnd",
+      "sounds/sink_drip_04.vsnd",
+      "sounds/sink_drip_05.vsnd",
+      "sounds/sink_drip_06.vsnd",
+    ]
+  }
+  bot_chef_sizzle_byteframe14 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 500.0
+    occlusion_amount = 1.0
+    vsnd_files = 
+    [
+      "sounds/bot_chef_sizzle_01.vsnd",
+      "sounds/bot_chef_sizzle_02.vsnd",
+      "sounds/bot_chef_sizzle_03.vsnd",
+    ]
+  }
+  hlwn_candystore_bugs_lp_byteframe14 = 
+  {
+    type = "destinations.simple_vr"
+    volume = 1.0
+    volume_falloff_max = 96.0
+    occlusion_amount = 1.0
+    vsnd_files = "sounds/bugs_lp.vsnd"
+  }
+  clock_tick_byteframe14 = 
+  {
+    type = "hlvr_ambient_rand"
+    random_soundevent_01_name = "clock_tick_byteframe14_child"
+    random_soundevent_01_timer_min = 1
+    random_soundevent_01_timer_max = 1
+  }
+  clock_tick_byteframe14_child = 
+  {
+    type = "destinations.simple_vr"
+    volume = 0.25
+    volume_falloff_min = 64.0
+    volume_falloff_max = 128.0
+    vsnd_files = 
+    [
+      "sounds/props/clock_tick_01.vsnd",
+      "sounds/props/clock_tick_02.vsnd",
+      "sounds/props/clock_tick_03.vsnd",
+    ]
+  }
+  Inventory.GrabItem_byteframe14 = 
+  {
+    type = "destinations.simple_vr"
+    volume = 0.333
+    volume_falloff_max = 64.0
+    vsnd_files = "sounds/common/grab.vsnd"
+  }
+  summit_pavilion_waterfeature_byteframe14 = 
+  {
+    type = "destinations.simple_vr"
+    volume = 0.4
+    volume_falloff_min = 72.0
+    volume_falloff_max = 128.0
+    fade_out = 0.5
+    vsnd_files = [ "sounds/waterfeature.vsnd", ]
+  }
+  summit_pavilion_waterfeature_byteframe142 = 
+  {
+    type = "hlvr_default_3d"
+    volume = 0.07
+    volume_falloff_max = 80.0
+    vsnd_files = [ "sounds/waterfeature.vsnd", ]
+  }
+  bot_gardening_water_byteframe14 = 
+  {
+    type = "destinations.simple_vr"
+    volume = 0.4
+    volume_falloff_min = 20.0
+    volume_falloff_max = 500.0
+    occlusion_amount = 1.0
+    vsnd_files = [ "sounds/bot_gardening_water.vsnd", ]
+  }
+  prop_boxing_glove_impact_byteframe14 = 
+  {
+    type = "destinations.simple_vr"
+    volume = 0.5
+    vsnd_files = 
+    [
+      "sounds/props/boxing_glove_impact_01.vsnd",
+      "sounds/props/boxing_glove_impact_02.vsnd",
+      "sounds/props/boxing_glove_impact_03.vsnd",
+      "sounds/props/boxing_glove_impact_04.vsnd",
+    ]
+  }
+  fly_swarm_loop_byteframe14 = 
+  {
+    type = "destinations.simple_vr"
+    volume = 0.9
+    volume_falloff_min = 32.0
+    volume_falloff_max = 112.0
+    occlusion_amount = 0.9
+    fade_out = 8.0
+    occlusion_source_radius = 20.0
+    vsnd_files = 
+    [
+     "sounds/fly_swarm_loop.vsnd",
+    ]
+  }
+  fly_swarm_loop_byteframe14_b = 
+  {
+    type = "hlvr_default_3d"
+    volume = 0.6
+    volume_falloff_max = 96.0
+    occlusion_amount = 0.9
+    fade_out = 8.0
+    occlusion_source_radius = 20.0
+    vsnd_files = 
+    [
+     "sounds/fly_swarm_loop.vsnd",
+    ]
+  }
+  faucet_flow_loop_byteframe14 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.3
+    occlusion_amount = 0.8
+    volume_falloff_min = 32.0
+    volume_falloff_max = 256.0
+    fade_out = 5.5
+    vsnd_files = "sounds/faucet/faucet_flow_lp_01.vsnd"
+  }
+  drone_loop_wide_byteframe14 = 
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    volume_falloff_max = 96.0
+    vsnd_files = "sounds/tools/drone_loop_wide.vsnd"
+  }
+  toilet_close_001 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.3
+    vsnd_files = 
+    [
+      "sounds/object/toilet/toilet_close_001.vsnd",
+    ]
+  }
+  toilet_open_001 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.3
+    volume_falloff_max = 92.0
+    vsnd_files = 
+    [
+      "sounds/object/toilet/toilet_open_001.vsnd",
+    ]
+  }
+  toilet_fill_001 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.3
+    volume_falloff_max = 92.0
+    vsnd_files = 
+    [
+      "sounds/object/toilet/toilet_fill_001.vsnd",
+    ]
+  }
+  toilet_flush_001 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.5
+    volume_falloff_max = 92.0
+    vsnd_files = 
+    [
+      "sounds/object/toilet/toilet_flush_001.vsnd",
+    ]
+  }
+  insert_coin_001 =
+  {
+    type = "hlvr_default_3d"
+    volume = 00.6
+    volume_falloff_max = 128.0
+    vsnd_files = 
+    [
+      "sounds/object/vendingmachine/insert_coin_001.vsnd",
+    ]
+  }
+  dispense_001 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.5
+    volume_falloff_max = 144.0
+    vsnd_files = 
+    [
+      "sounds/object/vendingmachine/dispense_001.vsnd",
+    ]
+  }
+  use_keyboard_001 =
+  {
+    type = "destinations.simple_vr"
+    volume = 1.0
+    volume_falloff_max = 64.0
+    vsnd_files = 
+    [
+      "sounds/object/use_keyboard_001.vsnd",
+    ]
+  }
+  focus_exhale =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.30
+    volume_falloff_max = 96.0
+    vsnd_files = 
+    [
+      "sounds/player/focus_exhale.vsnd",
+      "sounds/player/focus_exhale_01.vsnd",
+      "sounds/player/focus_exhale_02.vsnd",
+      "sounds/player/focus_exhale_03.vsnd",
+      "sounds/player/focus_exhale_04.vsnd",
+      "sounds/player/focus_exhale_05.vsnd",
+    ]
+  }
+  focus_inhale =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.30
+    volume_falloff_max = 96.0
+    vsnd_files = 
+    [
+      "sounds/player/focus_inhale.vsnd",
+      "sounds/player/focus_inhale_01.vsnd",
+      "sounds/player/focus_inhale_02.vsnd",
+      "sounds/player/focus_inhale_03.vsnd",
+      "sounds/player/focus_inhale_04.vsnd",
+    ]
+  }
+  teengirl_cough =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.175
+    vsnd_files = 
+    [
+      "sounds/player/survivor/voice/teengirl/cough01.vsnd",
+      "sounds/player/survivor/voice/teengirl/cough02.vsnd",
+      "sounds/player/survivor/voice/teengirl/cough03.vsnd",
+      "sounds/player/survivor/voice/teengirl/cough04.vsnd",
+      "sounds/player/survivor/voice/teengirl/cough05.vsnd",
+    ]
+  }
+  lighter_close =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.75
+    volume_falloff_max = 64.0
+    vsnd_files = 
+    [
+      "sounds/weapons/lighter_close.vsnd",
+    ]
+  }
+  lighter_open =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.75
+    volume_falloff_max = 64.0
+    vsnd_files = 
+    [
+      "sounds/weapons/lighter_open.vsnd",
+    ]
+  }
+  lighter_strike =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.4
+    volume_falloff_max = 64.0
+    vsnd_files = 
+    [
+      "sounds/weapons/lighter_strike.vsnd",
+    ]
+  }
+  prop_dice_impact_hard_byteframe14 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.7
+    vsnd_files = 
+    [
+        "sounds/props/dice_impact_01.vsnd",
+        "sounds/props/dice_impact_02.vsnd",
+        "sounds/props/dice_impact_03.vsnd",
+        "sounds/props/dice_impact_04.vsnd",
+    ]
+  }
+  Paul_Blackford__Betamax__Betamax =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Betamax__Betamax.vsnd"
+  }
+  Paul_Blackford__Betamax__Business_Class =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.055
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Betamax__Business_Class.vsnd"
+  }
+  Paul_Blackford__Betamax__Footprints =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Betamax__Footprints.vsnd"
+  }
+  Paul_Blackford__Betamax__Fortress =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Betamax__Fortress.vsnd"
+  }
+  Paul_Blackford__Betamax__Helix =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.05
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Betamax__Helix.vsnd"
+  }
+  Paul_Blackford__Betamax__Neon_Shores =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.04
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Betamax__Neon_Shores.vsnd"
+  }
+  Paul_Blackford__Betamax__The_Homestretch =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Betamax__The_Homestretch.vsnd"
+  }
+  Paul_Blackford__Betamax__Vindicators =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.05
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Betamax__Vindicators.vsnd"
+  }
+  Paul_Blackford__Electro_Mysteries__Heist_Highway =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Electro_Mysteries__Heist_Highway.vsnd"
+  }
+  Paul_Blackford__Electro_Mysteries__Ice_Kingdom =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Electro_Mysteries__Ice_Kingdom.vsnd"
+  }
+  Paul_Blackford__Emma__October =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Emma__October.vsnd"
+  }
+  Paul_Blackford__Horizons__Nimbus =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Horizons__Nimbus.vsnd"
+  }
+  Paul_Blackford__Horizons__Proteus_2 =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Horizons__Proteus_2.vsnd"
+  }
+  Paul_Blackford__Horizons__Rhythm_Quest =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Horizons__Rhythm_Quest.vsnd"
+  }
+  Paul_Blackford__Inception_EP__Eternity =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Inception_EP__Eternity.vsnd"
+  }
+  Paul_Blackford__Inception_EP__Fort_Neuro =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Inception_EP__Fort_Neuro.vsnd"
+  }
+  Paul_Blackford__Light_Years__Hired_Guns =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Light_Years__Hired_Guns.vsnd"
+  }
+  Paul_Blackford__Night_Shift__Affogato =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.0575
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Night_Shift__Affogato.vsnd"
+  }
+  Paul_Blackford__Night_Shift__Esprit =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Night_Shift__Esprit.vsnd"
+  }
+  Paul_Blackford__Night_Shift__Night_Shift =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Night_Shift__Night_Shift.vsnd"
+  }
+  Paul_Blackford__Night_Shift__Smooth_My_Soul =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.06
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Night_Shift__Smooth_My_Soul.vsnd"
+  }
+  Paul_Blackford__Original_Concept__Friendly_Fyah =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Original_Concept__Friendly_Fyah.vsnd"
+  }
+  Paul_Blackford__Original_Concept__Super_Fruhstuck =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Original_Concept__Super_Fruhstuck.vsnd"
+  }
+  Paul_Blackford__Spectrums__Antartica =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Spectrums__Antartica.vsnd"
+  }
+  Paul_Blackford__Spectrums__Calipso =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Spectrums__Calipso.vsnd"
+  }
+  Paul_Blackford__Spectrums__Night_Crawler =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Spectrums__Night_Crawler.vsnd"
+  }
+  Paul_Blackford__Spectrums__Sepia =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Spectrums__Sepia.vsnd"
+  }
+  Paul_Blackford__Spectrums__Spectrums =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Spectrums__Spectrums.vsnd"
+  }
+  Paul_Blackford__Vapor_Waves_2__Artificial_Architecture =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.07
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Vapor_Waves_2__Artificial_Architecture.vsnd"
+  }
+  Paul_Blackford__Vapor_Waves_2__Cloud_Robotics =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.11
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Vapor_Waves_2__Cloud_Robotics.vsnd"
+  }
+  Paul_Blackford__Vapor_Waves__Future_Acceleration =
+  {
+    type = "destinations.simple_2d"
+    volume = 0.055
+    fade_out = 3.0
+    vsnd_files = "sounds/paul_blackford/Paul_Blackford__Vapor_Waves__Future_Acceleration.vsnd"
+  }
+}

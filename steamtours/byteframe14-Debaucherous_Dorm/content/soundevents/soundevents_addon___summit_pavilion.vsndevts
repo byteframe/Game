@@ -1,0 +1,235 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+  summit_pavilion_logfire_loop =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.25
+    volume_falloff_min = 100.0
+    volume_falloff_max = 450.0
+    vsnd_files = "sounds/log_fire.vsnd"
+  }
+  summit_pavilion_logfire_loop_close =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    volume_falloff_min = 50.0
+    volume_falloff_max = 200.0
+    vsnd_files = "sounds/log_fire_close.vsnd"
+  }
+  summit_pavilion_waterfeature =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.05
+    volume_falloff_min = 50.0
+    volume_falloff_max = 450.0
+    occlusion_amount = 0.9
+    occlusion_source_radius = 20.0
+    vsnd_files = "sounds/waterfeature.vsnd"
+  }
+  sndscp_summit_pavilion_interior_birds_parent =
+  {
+    type = "destinations_ambient_rand_five"
+    random_soundevent_01_name = "sndscp_summit_pavilion_interior_birds_01"
+    random_soundevent_01_timer_min = 15.0
+    random_soundevent_01_timer_max = 20.0
+    random_soundevent_02_name = "sndscp_summit_pavilion_interior_birds_02"
+    random_soundevent_02_timer_min = 14.0
+    random_soundevent_02_timer_max = 21.0
+  }
+  sndscp_summit_pavilion_interior_birds_01 =
+  {
+    type = "destinations.3line_rand_pos_3d"
+    volume = 0.1
+    volume_mult = 0.05
+    line_count = 1.0
+    line_a_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_a_pos_02 = [ -888.0, -352.0, 40.0 ]
+    vsnd_files = 
+    [
+      "sounds/bird_a_01.vsnd",
+      "sounds/bird_a_02.vsnd",
+      "sounds/bird_b_01.vsnd",
+      "sounds/bird_b_02.vsnd",
+      "sounds/bird_c_01.vsnd",
+      "sounds/bird_c_02.vsnd",
+      "sounds/bird_c_03.vsnd",
+    ]
+  }
+  sndscp_summit_pavilion_interior_birds_02 =
+  {
+    type = "destinations.3line_rand_pos_3d"
+    volume = 0.1
+    volume_mult = 0.05
+    line_count = 1.0
+    line_a_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_a_pos_02 = [ -200.0, 352.0, 40.0 ]
+    vsnd_files = 
+    [
+      "sounds/bird_melodic_01.vsnd",
+      "sounds/bird_melodic_02.vsnd",
+      "sounds/bird_melodic_03.vsnd",
+    ]
+  }
+  sndscp_summit_pavilion_threshold_birds_parent =
+  {
+    type = "destinations_ambient_rand_five"
+    random_soundevent_01_name = "sndscp_summit_pavilion_threshold_birds_01"
+    random_soundevent_01_timer_min = 8.0
+    random_soundevent_01_timer_max = 11.0
+    random_soundevent_02_name = "sndscp_summit_pavilion_threshold_birds_02"
+    random_soundevent_02_timer_min = 7.0
+    random_soundevent_02_timer_max = 14.0
+  }
+  sndscp_summit_pavilion_threshold_birds_01 =
+  {
+    type = "destinations.3line_rand_pos_3d"
+    volume = 0.1
+    volume_mult = 0.1
+    line_count = 1.0
+    line_a_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_a_pos_02 = [ -888.0, -352.0, 40.0 ]
+    vsnd_files = 
+    [
+      "sounds/bird_a_01.vsnd",
+      "sounds/bird_a_02.vsnd",
+      "sounds/bird_b_01.vsnd",
+      "sounds/bird_b_02.vsnd",
+      "sounds/bird_c_01.vsnd",
+      "sounds/bird_c_02.vsnd",
+      "sounds/bird_c_03.vsnd",
+    ]
+  }
+  sndscp_summit_pavilion_threshold_birds_02 =
+  {
+    type = "destinations.3line_rand_pos_3d"
+    volume = 0.1
+    volume_mult = 0.1
+    line_count = 1.0
+    line_a_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_a_pos_02 = [ -200.0, 352.0, 40.0 ]
+    vsnd_files = 
+    [
+      "sounds/bird_melodic_01.vsnd",
+      "sounds/bird_melodic_02.vsnd",
+      "sounds/bird_melodic_03.vsnd",
+    ]
+  }
+  sndscp_summit_pavilion_exterior_birds_parent =
+  {
+    type = "destinations_ambient_rand_five"
+    random_soundevent_01_name = "sndscp_summit_pavilion_exterior_birds_01"
+    random_soundevent_01_timer_min = 5.0
+    random_soundevent_01_timer_max = 9.0
+    random_soundevent_02_name = "sndscp_summit_pavilion_exterior_birds_02"
+    random_soundevent_02_timer_min = 4.0
+    random_soundevent_02_timer_max = 10.0
+  }
+  sndscp_summit_pavilion_exterior_birds_01 =
+  {
+    type = "destinations.3line_rand_pos_3d"
+    volume = 0.2
+    volume_mult = 0.15
+    line_count = 1.0
+    line_a_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_a_pos_02 = [ -888.0, -352.0, 40.0 ]
+    vsnd_files = 
+    [
+      "sounds/bird_a_01.vsnd",
+      "sounds/bird_a_02.vsnd",
+      "sounds/bird_b_01.vsnd",
+      "sounds/bird_b_02.vsnd",
+      "sounds/bird_c_01.vsnd",
+      "sounds/bird_c_02.vsnd",
+      "sounds/bird_c_03.vsnd",
+      "sounds/bird_d_01.vsnd",
+      "sounds/bird_d_02.vsnd",
+    ]
+  }
+  sndscp_summit_pavilion_exterior_birds_02 =
+  {
+    type = "destinations.3line_rand_pos_3d"
+    volume = 0.2
+    volume_mult = 0.15
+    line_count = 1.0
+    line_a_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_a_pos_02 = [ -200.0, 352.0, 40.0 ]
+    vsnd_files = 
+    [
+      "sounds/bird_melodic_01.vsnd",
+      "sounds/bird_melodic_02.vsnd",
+      "sounds/bird_melodic_03.vsnd",
+    ]
+  }
+  sndscp_summit_pavilion_cicada_exterior_parent =
+  {
+    type = "destinations_ambient_rand_five"
+    random_soundevent_01_name = "sndscp_summit_pavilion_cicada_exterior"
+    random_soundevent_01_timer_min = 3.0
+    random_soundevent_01_timer_max = 6.0
+  }
+  sndscp_summit_pavilion_cicada_exterior =
+  {
+    type = "destinations.3line_rand_pos_3d"
+    volume = 0.1
+    volume_mult = 0.2
+    line_count = 2.0
+    line_a_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_a_pos_02 = [ -888.0, -352.0, 40.0 ]
+    line_b_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_b_pos_02 = [ -200.0, 352.0, 40.0 ]
+    vsnd_files = 
+    [
+      "sounds/night_cicada_01.vsnd",
+      "sounds/night_cicada_02.vsnd",
+      "sounds/night_cicada_03.vsnd",
+    ]
+  }
+  sndscp_summit_pavilion_cicada_threshold_parent =
+  {
+    type = "destinations_ambient_rand_five"
+    random_soundevent_01_name = "sndscp_summit_pavilion_cicada_threshold"
+    random_soundevent_01_timer_min = 3.0
+    random_soundevent_01_timer_max = 6.0
+  }
+  sndscp_summit_pavilion_cicada_threshold =
+  {
+    type = "destinations.3line_rand_pos_3d"
+    volume = 0.1
+    volume_mult = 0.1
+    line_count = 2.0
+    line_a_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_a_pos_02 = [ -888.0, -352.0, 40.0 ]
+    line_b_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_b_pos_02 = [ -200.0, 352.0, 40.0 ]
+    vsnd_files = 
+    [
+      "sounds/night_cicada_01.vsnd",
+      "sounds/night_cicada_02.vsnd",
+      "sounds/night_cicada_03.vsnd",
+    ]
+  }
+  sndscp_summit_pavilion_cicada_interior_parent =
+  {
+    type = "destinations_ambient_rand_five"
+    random_soundevent_01_name = "sndscp_summit_pavilion_cicada_interior"
+    random_soundevent_01_timer_min = 6.0
+    random_soundevent_01_timer_max = 9.0
+  }
+  sndscp_summit_pavilion_cicada_interior =
+  {
+    type = "destinations.3line_rand_pos_3d"
+    volume = 0.15
+    volume_mult = 0.2
+    line_count = 2.0
+    line_a_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_a_pos_02 = [ -888.0, -352.0, 40.0 ]
+    line_b_pos_01 = [ -888.0, 352.0, 40.0 ]
+    line_b_pos_02 = [ -200.0, 352.0, 40.0 ]
+    vsnd_files = 
+    [
+      "sounds/night_cicada_01.vsnd",
+      "sounds/night_cicada_02.vsnd",
+      "sounds/night_cicada_03.vsnd",
+    ]
+  }
+}

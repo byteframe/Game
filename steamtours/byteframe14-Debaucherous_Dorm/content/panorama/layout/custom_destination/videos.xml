@@ -1,0 +1,17 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/base_styles.vcss_c" />
+    <include src="s2r://panorama/styles/videos.vcss_c" />
+  </styles>
+  <script>
+    OnLoad = () => (
+      $("#Browser").SetURL("https://store.steampowered.com/curator/2751860-primarydataloop/list/"
+        + Object.values(CustomNetTables.GetTableValue("youtube_videoid", "key_1"))[0]),
+      GameEvents.SendCustomGameEventToServer('increment_youtube_index', {}),
+      $("#Browser").SetAcceptsFocus(true),
+      $("#Browser").SetFocus());
+  </script>
+  <ClientUIDialogPanel>
+    <HTML id="Browser" embedded="true" onload="OnLoad();" style="clip: rect( 25%, 95%, 75%, 0% );" />
+  </ClientUIDialogPanel>
+</root>

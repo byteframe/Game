@@ -1,0 +1,456 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+  alarm_loop_1 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.4
+    occlusion_amount = 0.5
+    volume_falloff_min = 500.0
+    volume_falloff_max = 1500.0
+    vsnd_files = "sounds/alarm/alarm_lp_01.vsnd"
+  }
+  alarm_loop_2 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.4
+    occlusion_amount = 0.5
+    volume_falloff_min = 500.0
+    volume_falloff_max = 1500.0
+    vsnd_files = "sounds/alarm/alarm_lp_02.vsnd"
+  }
+  alarm_start =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.4
+    occlusion_amount = 0.5
+    volume_falloff_min = 500.0
+    volume_falloff_max = 1500.0
+    vsnd_files = "sounds/alarm/alarm_start_01.vsnd"
+  }
+  alarm_button =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.3
+    occlusion_amount = 0.5
+    volume_falloff_min = 500.0
+    volume_falloff_max = 1500.0
+    vsnd_files = "sounds/alarm/alarm_button.vsnd"
+  }
+  cassette_pickup =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 1.0
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/cassette/cassette_pickup_01.vsnd",
+      "sounds/cassette/cassette_pickup_02.vsnd",
+      "sounds/cassette/cassette_pickup_03.vsnd",
+    ]
+  }
+  cassette_insert =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 1.0
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/cassette/cassette_insert_01.vsnd",
+    ]
+  }
+  cassette_play =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 1.0
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/cassette/cassette_play_01.vsnd",
+    ]
+  }
+  cassette_holiday_jingle_1 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.7
+    volume_falloff_min = 50.0
+    volume_falloff_max = 700.0
+    vsnd_files = 
+    [
+      "sounds/cassette/cassette_holiday_jingle_01.vsnd",
+    ]
+  }
+  cassette_holiday_jingle_2 =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.7
+    volume_falloff_min = 50.0
+    volume_falloff_max = 700.0
+    vsnd_files = 
+    [
+      "sounds/cassette/cassette_holiday_jingle_02.vsnd",
+    ]
+  }
+  cassette_eject =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 1.0
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/cassette/cassette_eject_01.vsnd",
+    ]
+  }
+  faucet_start =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.1
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = "sounds/faucet/faucet_start_01.vsnd"
+  }
+  faucet_flow_loop =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.1
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = "sounds/faucet/faucet_flow_lp_01.vsnd"
+  }
+  faucet_stop =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.1
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = "sounds/faucet/faucet_stop_01.vsnd"
+  }
+  firework_big_explosion =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    volume_falloff_min = 5000.0
+    volume_falloff_max = 6000.0
+    vsnd_files = 
+    [
+      "sounds/fireworks/fireworks_bang_01.vsnd",
+      "sounds/fireworks/fireworks_bang_02.vsnd",
+      "sounds/fireworks/fireworks_bang_03.vsnd",
+    ]
+  }
+  firework_whizby =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.4
+    occlusion_amount = 0.5
+    volume_falloff_min = 500.0
+    volume_falloff_max = 1500.0
+    vsnd_files = 
+    [
+      "sounds/fireworks/fireworks_takeoff_01.vsnd",
+      "sounds/fireworks/fireworks_takeoff_02.vsnd",
+      "sounds/fireworks/fireworks_takeoff_03.vsnd",
+      "sounds/fireworks/fireworks_takeoff_04.vsnd",
+    ]
+  }
+  fish_flap =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 1.0
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/fish_flap/fish_flap_01.vsnd",
+      "sounds/fish_flap/fish_flap_02.vsnd",
+      "sounds/fish_flap/fish_flap_03.vsnd",
+      "sounds/fish_flap/fish_flap_04.vsnd",
+      "sounds/fish_flap/fish_flap_05.vsnd",
+      "sounds/fish_flap/fish_flap_06.vsnd",
+      "sounds/fish_flap/fish_flap_07.vsnd",
+      "sounds/fish_flap/fish_flap_08.vsnd",
+      "sounds/fish_flap/fish_flap_09.vsnd",
+      "sounds/fish_flap/fish_flap_10.vsnd",
+      "sounds/fish_flap/fish_flap_11.vsnd",
+      "sounds/fish_flap/fish_flap_12.vsnd",
+      "sounds/fish_flap/fish_flap_13.vsnd",
+      "sounds/fish_flap/fish_flap_14.vsnd",
+    ]
+  }
+  fridge_open =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/fridge/fridge_open_01.vsnd",
+    ]
+  }
+  fridge_close =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/fridge/fridge_close_01.vsnd",
+    ]
+  }
+  furnace_loop =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/furnace/furnace_lp_01.vsnd",
+    ]
+  }
+  horn_blast_long =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.4
+    occlusion_amount = 0.5
+    volume_falloff_min = 500.0
+    volume_falloff_max = 1500.0
+    vsnd_files = 
+    [
+      "sounds/horn/horn_blast_long_01.vsnd",
+    ]
+  }
+  horn_blast_quick =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.4
+    occlusion_amount = 0.5
+    volume_falloff_min = 500.0
+    volume_falloff_max = 1500.0
+    vsnd_files = 
+    [
+      "sounds/horn/horn_blast_quick_01.vsnd",
+    ]
+  }
+  ladder_hatch_pull =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/ladder/ladder_hatch_pull_01.vsnd",
+    ]
+  }
+  ladder_slide_down =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/ladder/ladder_slide_down_01.vsnd",
+    ]
+  }
+  seal_bark =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.3
+    volume_falloff_min = 20.0
+    volume_falloff_max = 600.0
+    vsnd_files = 
+    [
+      "sounds/seal_bark/seal_bark_mono_01.vsnd",
+      "sounds/seal_bark/seal_bark_mono_02.vsnd",
+      "sounds/seal_bark/seal_bark_mono_03.vsnd",
+      "sounds/seal_bark/seal_bark_mono_04.vsnd",
+      "sounds/seal_bark/seal_bark_mono_05.vsnd",
+    ]
+  }
+  seal_splash_in =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    volume_falloff_min = 20.0
+    volume_falloff_max = 800.0
+    vsnd_files = 
+    [
+      "sounds/water/splash_seal_in_02.vsnd",
+      "sounds/water/splash_seal_in_03.vsnd",
+      "sounds/water/splash_seal_in_04.vsnd",
+    ]
+  }
+  seal_peak =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.3
+    volume_falloff_min = 20.0
+    volume_falloff_max = 600.0
+    vsnd_files = 
+    [
+      "sounds/water/subtle_movement_01.vsnd",
+      "sounds/water/subtle_movement_02.vsnd",
+      "sounds/water/subtle_movement_03.vsnd",
+      "sounds/water/subtle_movement_04.vsnd",
+    ]
+  }
+  seal_flap =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.05
+    volume_falloff_min = 20.0
+    volume_falloff_max = 500.0
+    vsnd_files = 
+    [
+      "sounds/seal_flap/seal_flap_01.vsnd",
+      "sounds/seal_flap/seal_flap_02.vsnd",
+      "sounds/seal_flap/seal_flap_03.vsnd",
+      "sounds/seal_flap/seal_flap_04.vsnd",
+      "sounds/seal_flap/seal_flap_05.vsnd",
+      "sounds/seal_flap/seal_flap_06.vsnd",
+      "sounds/seal_flap/seal_flap_07.vsnd",
+      "sounds/seal_flap/seal_flap_08.vsnd",
+      "sounds/seal_flap/seal_flap_09.vsnd",
+      "sounds/seal_flap/seal_flap_10.vsnd",
+      "sounds/seal_flap/seal_flap_11.vsnd",
+      "sounds/seal_flap/seal_flap_12.vsnd",
+      "sounds/seal_flap/seal_flap_13.vsnd",
+      "sounds/seal_flap/seal_flap_14.vsnd",
+    ]
+  }
+  shower_start =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.1
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/shower/shower_start_01.vsnd",
+    ]
+  }
+  shower_flow_loop =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.1
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/shower/shower_flow_lp_01.vsnd",
+    ]
+  }
+  shower_stop =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.1
+    occlusion_amount = 0.8
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = 
+    [
+      "sounds/shower/shower_stop_01.vsnd",
+    ]
+  }
+  truck_door_open_a =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.5
+    vsnd_files = "sounds/truck_door/truck_door_open_a.vsnd"
+  }
+  truck_door_open_b =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.5
+    vsnd_files = "sounds/truck_door/truck_door_open_b.vsnd"
+  }
+  truck_door_close_a =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.5
+    vsnd_files = "sounds/truck_door/truck_door_close_a.vsnd"
+  }
+  truck_door_close_b =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.5
+    vsnd_files = "sounds/truck_door/truck_door_close_b.vsnd"
+  }
+  truck_door_move_slide =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.5
+    vsnd_files = "sounds/truck_door/truck_door_move_slide.vsnd"
+  }
+  fish_jump_out =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.5
+    volume_falloff_min = 20.0
+    volume_falloff_max = 800.0
+    vsnd_files = 
+    [
+      "sounds/water/splash_fish_out_01.vsnd",
+      "sounds/water/splash_fish_out_02.vsnd",
+      "sounds/water/splash_fish_out_03.vsnd",
+      "sounds/water/splash_fish_out_04.vsnd",
+    ]
+  }
+  fish_splash_in =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.5
+    volume_falloff_min = 20.0
+    volume_falloff_max = 800.0
+    vsnd_files = 
+    [
+      "sounds/water/splash_fish_in_01.vsnd",
+      "sounds/water/splash_fish_in_02.vsnd",
+      "sounds/water/splash_fish_in_03.vsnd",
+    ]
+  }
+  yeti_vcr_loop =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.5
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = "sounds/yeti/vcr_yeti.vsnd"
+  }
+  yeti_cassette_loop =
+  {
+    type = "destinations.simple_vr"
+    volume = 0.2
+    occlusion_amount = 0.5
+    volume_falloff_min = 20.0
+    volume_falloff_max = 300.0
+    vsnd_files = "sounds/yeti/cassette_yeti.vsnd"
+  }
+}
